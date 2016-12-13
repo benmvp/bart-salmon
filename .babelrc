@@ -1,0 +1,11 @@
+{
+    "presets": [
+        "react-native",
+        "react",
+        ["env", {
+            "targets": {
+                "browsers": ["last 2 versions", "safari >= 7"]
+            }
+        }]
+    ]
+}
