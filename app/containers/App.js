@@ -7,7 +7,6 @@ export default class App extends Component {
             <View style={{justifyContent: 'center', flex: 1, alignItems: 'center'}}>
                 <Text>Bart Salmon (native)</Text>
             </View>
-
-        );
+        )
     }
 }

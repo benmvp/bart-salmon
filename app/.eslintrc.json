@@ -1,0 +1,6 @@
+{
+    "extends": "eventbrite-react",
+    "rules": {
+        "semi": ["error", "never"]
+    }
+}

@@ -5,12 +5,14 @@
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"test": "jest",
+		"ios-dev": "react-native run-ios",
 		"ios-bundle": "react-native bundle --dev false --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
-    	"ios-dev-bundle": "react-native bundle --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
-    	"android-bundle": "react-native bundle --dev false --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
-    	"android-dev-bundle": "react-native bundle --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
-    	"web-bundle": "webpack --config web/webpack/web.prod.config.js --progress --colors",
-		"web-dev": "webpack-dev-server --config web/webpack/web.dev.config.js --inline --hot --colors"
+		"ios-dev-bundle": "react-native bundle --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
+		"android-dev": "react-native run-android",
+		"android-bundle": "react-native bundle --dev false --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
+		"android-dev-bundle": "react-native bundle --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
+		"web-dev": "webpack-dev-server --config web/webpack/web.dev.config.js --inline --hot --colors",
+		"web-bundle": "webpack --config web/webpack/web.prod.config.js --progress --colors"
 	},
 	"dependencies": {
 		"react": "^15.4.1",
@@ -18,12 +20,19 @@
 		"react-native": "0.39.2"
 	},
 	"devDependencies": {
+		"babel-eslint": "^7.1.1",
 		"babel-jest": "17.0.2",
 		"babel-loader": "^6.2.9",
 		"babel-preset-env": "^1.0.2",
 		"babel-preset-react": "^6.16.0",
 		"babel-preset-react-native": "1.9.0",
 		"css-loader": "^0.26.1",
+		"eslint": "^3.12.1",
+		"eslint-config-eventbrite-react": "^2.0.1",
+		"eslint-plugin-import": "^2.2.0",
+		"eslint-plugin-jsx-a11y": "^3.0.1",
+		"eslint-plugin-react": "^6.8.0",
+		"gh-pages": "^0.12.0",
 		"jest": "17.0.3",
 		"node-sass": "^4.0.0",
 		"react-hot-loader": "^1.3.1",
