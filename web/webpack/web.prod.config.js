@@ -3,7 +3,7 @@ const webpack = require('webpack')
 
 module.exports = {
     entry: [
-        path.join(__dirname, '../../app/web/index.js'),
+        path.join(__dirname, '../../app/index.web.js'),
     ],
     output: {
         path: path.join(__dirname, '../public/'),
@@ -15,18 +15,8 @@ module.exports = {
             {
                 test: /(\.web)?\.js$/,
                 exclude: /node_modules/,
-                loaders: ['react-hot', 'babel-loader'],
-                include: path.join(__dirname, '../../app'),
-                query: {
-                    presets: [
-                        'react',
-                        ['env', {
-                            targets: {
-                                browsers: ['last 2 versions', 'safari >= 7']
-                            }
-                        }]
-                    ]
-                },
+                loader: 'babel-loader',
+                include: path.join(__dirname, '../../app')
             },
             {
                 test: /\.scss$/,
