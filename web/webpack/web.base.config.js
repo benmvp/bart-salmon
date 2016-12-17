@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const autoprefixer = require('autoprefixer')
 
 module.exports = {
     entry: [
@@ -17,12 +18,18 @@ module.exports = {
                 loaders: [
                     'style?sourceMap',
                     'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+                    'postcss',
                     'sass?sourceMap'
                 ],
                 include: path.join(__dirname, '../../app')
             },
         ],
     },
+    postcss: [
+        autoprefixer({
+            browsers: ['last 2 versions']
+        })
+    ],
     resolve: {
         alias: {
             // allows for single component that can work on Web & Native!

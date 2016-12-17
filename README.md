@@ -5,11 +5,11 @@ An app aiming to maximize likelihood of getting a Bart seat by going backwards (
 
 Bart Salmon is both a web and native app, aiming to provide a useful service as well as an opportunity to learn new technologies:
 
-- [React](https://facebook.github.io/react/) & [React Native](https://facebook.github.io/react-native/) sharing code
-- [Webpack](https://webpack.github.io/) (with hot module reloading)
-- [Redux](http://redux.js.org/)
-- [React CSS Modules](https://github.com/gajus/babel-plugin-react-css-modules)
-- [Flow](https://flowtype.org/)
-- [Jest](https://facebook.github.io/jest/)
-- [ESLint](http://eslint.org/)
-- [SASS](http://sass-lang.com/) & [Sass Lint](https://github.com/sasstools/sass-lint)
+- **UI:** [React](https://facebook.github.io/react/) & [React Native](https://facebook.github.io/react-native/) sharing code
+- **Styling:** [React CSS Modules](https://github.com/gajus/babel-plugin-react-css-modules), [SASS](http://sass-lang.com/), [Autoprefixer](https://github.com/postcss/autoprefixer) & [Sass Lint](https://github.com/sasstools/sass-lint)
+- **Data Flow:** [Redux](http://redux.js.org/)
+- **Routing:** _TBD_
+- **API:** [Bart API](http://api.bart.gov/docs/overview/index.aspx)
+- **Bundling:** [Webpack](https://webpack.github.io/) (with hot module reloading) & [Babel](http://babeljs.io/)
+- **Static Typing:** [Flow](https://flowtype.org/) & [ESLint](http://eslint.org/)
+- **Testing:** [Jest](https://facebook.github.io/jest/) & [Enzyme](https://github.com/airbnb/enzyme)
