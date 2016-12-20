@@ -1,13 +1,17 @@
-/**
- * @flow
- */
+// @flow
 
-import React, { Component } from 'react';
-import {AppRegistry} from 'react-native';
-import App from './app/containers/App';
+ import React, { Component } from 'react';
+ import {AppRegistry} from 'react-native';
+ import {Provider} from 'react-redux'
+ import App from './app/containers/App';
+ import configureStore from './app/store/configureStore'
 
-const BartSalmon = () => (
-    <App />
-);
+ const store = configureStore()
+
+ const BartSalmon = () => (
+     <Provider store={store}>
+         <App />
+     </Provider>
+ );
 
 AppRegistry.registerComponent('BartSalmon', () => BartSalmon);
