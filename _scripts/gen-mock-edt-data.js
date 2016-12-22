@@ -2,8 +2,10 @@ import {join} from 'path'
 import {writeFile} from './fsUtils'
 import {getEstimatedDepartureTimes} from '../app/api'
 
-const _writeEstimatedDepartureTimes = async (station = undefined) => {
+(async (station = undefined) => {
     try {
+        console.log('Writing estimated departure times...')
+
         let estimatedDepartureTimesJSON = JSON.stringify(
             await getEstimatedDepartureTimes(station),
             null,
@@ -11,14 +13,12 @@ const _writeEstimatedDepartureTimes = async (station = undefined) => {
         )
 
         await writeFile(
-            join(__dirname, '../_mockData/etds.json'),
+            join(__dirname, '../_mockData/edts.json'),
             estimatedDepartureTimesJSON
         )
+
+        console.log('\tDONE!')
     } catch(ex) {
         console.error(ex)
     }
-}
-
-console.log('Writing estimated departure times...')
-_writeEstimatedDepartureTimes()
-console.log('\tDONE!')
+}) ()

@@ -19,6 +19,7 @@
 		"deploy:web": "yarn run bundle:web&&gh-pages -d web/public"
 	},
 	"dependencies": {
+		"humps": "^2.0.0",
 		"isomorphic-fetch": "^2.2.1",
 		"lodash": "^4.17.2",
 		"react": "^15.4.1",
