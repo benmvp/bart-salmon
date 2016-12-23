@@ -4,6 +4,7 @@ import {camelizeKeys} from 'humps'
 import {formatUrl} from 'url-lib'
 import {parseString} from 'xml2js'
 import keyBy from 'lodash/keyBy'
+import omit from 'lodash/omit'
 
 import 'isomorphic-fetch'
 
@@ -69,6 +70,13 @@ const _normalizeStation = (stationInfo) => (
     })
 )
 
+const _normalizeRoute = (routeInfo) => (
+    camelizeKeys({
+        ...omit(routeInfo, 'config', 'numStns'),
+        stations: routeInfo.config.station
+    })
+)
+
 export const getEstimatedDepartureTimes = (station = 'ALL') => (
     _fetchJson('etd', 'etd', {orig: station})
         .then((respJson) => (
@@ -96,4 +104,23 @@ export const getStations = () => (
             ))
         ))
         .then((stations) => keyBy(stations, 'abbr'))
+)
+
+export const getRoutes = () => (
+    _fetchJson('route', 'routes')
+        .then((respJson) => (
+            Promise.all(
+                respJson.routes.route.map(({number}) => (
+                    _fetchJson('route', 'routeinfo', {route: number})
+                ))
+            )
+        ))
+        .then((respRoutes) => (
+            respRoutes.map((respRoute) => (
+                _normalizeRoute(
+                    _normalizeArrayResponse(respRoute.routes, 'route')
+                )
+            ))
+        ))
+        .then((routes) => keyBy(routes, 'number'))
 )
