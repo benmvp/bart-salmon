@@ -72,7 +72,7 @@ const _normalizeStation = (stationInfo) => (
 
 const _normalizeRoute = (routeInfo) => (
     camelizeKeys({
-        ...omit(routeInfo, 'config', 'numStns'),
+        ...omit(routeInfo, 'config', 'num_stns'),
         stations: routeInfo.config.station
     })
 )

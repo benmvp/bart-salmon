@@ -9,7 +9,6 @@
     "direction": "",
     "color": "#ffff33",
     "holidays": "1",
-    "numStns": "26",
     "stations": [
       "PITT",
       "NCON",
@@ -49,7 +48,6 @@
     "direction": "",
     "color": "#ffff33",
     "holidays": "1",
-    "numStns": "26",
     "stations": [
       "MLBR",
       "SFIA",
@@ -89,7 +87,6 @@
     "direction": "",
     "color": "#ff9933",
     "holidays": "1",
-    "numStns": "19",
     "stations": [
       "WARM",
       "FRMT",
@@ -122,7 +119,6 @@
     "direction": "",
     "color": "#ff9933",
     "holidays": "1",
-    "numStns": "19",
     "stations": [
       "RICH",
       "DELN",
@@ -155,7 +151,6 @@
     "direction": "",
     "color": "#339933",
     "holidays": "0",
-    "numStns": "20",
     "stations": [
       "WARM",
       "FRMT",
@@ -189,7 +184,6 @@
     "direction": "",
     "color": "#339933",
     "holidays": "0",
-    "numStns": "20",
     "stations": [
       "DALY",
       "BALB",
@@ -223,7 +217,6 @@
     "direction": "",
     "color": "#ff0000",
     "holidays": "0",
-    "numStns": "23",
     "stations": [
       "RICH",
       "DELN",
@@ -260,7 +253,6 @@
     "direction": "",
     "color": "#ff0000",
     "holidays": "0",
-    "numStns": "23",
     "stations": [
       "MLBR",
       "SBRN",
@@ -297,7 +289,6 @@
     "direction": "",
     "color": "#0099cc",
     "holidays": "1",
-    "numStns": "17",
     "stations": [
       "DUBL",
       "WDUB",
@@ -329,7 +320,6 @@
     "direction": "",
     "color": "#0099cc",
     "holidays": "1",
-    "numStns": "17",
     "stations": [
       "DALY",
       "BALB",
@@ -361,7 +351,6 @@
     "direction": "north",
     "color": "#d5cfa3",
     "holidays": "1",
-    "numStns": "2",
     "stations": [
       "COLS",
       "OAKL"
@@ -377,7 +366,6 @@
     "direction": "south",
     "color": "#d5cfa3",
     "holidays": "1",
-    "numStns": "2",
     "stations": [
       "OAKL",
       "COLS"
