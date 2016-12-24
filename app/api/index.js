@@ -122,5 +122,5 @@ export const getRoutes = () => (
                 )
             ))
         ))
-        .then((routes) => keyBy(routes, 'number'))
+        .then((routes) => keyBy(routes, 'routeID'))
 )
