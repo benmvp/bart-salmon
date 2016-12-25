@@ -1,6 +1,7 @@
 // import {combineReducers} from 'redux'
 
-const rootReducer = (state = {}/*, action*/) => (
+// const rootReducer = (state = {}, action) => (
+const rootReducer = (state = {}) => (
     state
 )
 

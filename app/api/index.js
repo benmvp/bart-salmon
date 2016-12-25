@@ -5,6 +5,7 @@ import {formatUrl} from 'url-lib'
 import {parseString} from 'xml2js'
 import keyBy from 'lodash/keyBy'
 import omit from 'lodash/omit'
+import {Route, Routes} from '../data/flowtypes'
 
 import 'isomorphic-fetch'
 
@@ -70,14 +71,16 @@ const _normalizeStation = (stationInfo) => (
     })
 )
 
-const _normalizeRoute = (routeInfo) => (
+const _normalizeRoute = (routeInfo:Object): Route => (
     camelizeKeys({
         ...omit(routeInfo, 'config', 'num_stns'),
+        number: +routeInfo.number,
+        holidays: !!+routeInfo.holidays,
         stations: routeInfo.config.station
     })
 )
 
-export const getEstimatedDepartureTimes = (station = 'ALL') => (
+export const getEstimatedDepartureTimes = (station:string = 'ALL'): Promise<Object> => (
     _fetchJson('etd', 'etd', {orig: station})
         .then((respJson) => (
             keyBy(
@@ -87,7 +90,7 @@ export const getEstimatedDepartureTimes = (station = 'ALL') => (
         ))
 )
 
-export const getStations = () => (
+export const getStations = (): Promise<Object> => (
     _fetchJson('stn', 'stns')
         .then((respJson) => (
             Promise.all(
@@ -97,16 +100,12 @@ export const getStations = () => (
             )
         ))
         .then((respStations) => (
-            respStations.map((respStation) => (
-                _normalizeStation(
-                    _normalizeArrayResponse(respStation.stations, 'station')
-                )
-            ))
+            respStations.map((respStation) => _normalizeStation(respStation.stations.station))
         ))
         .then((stations) => keyBy(stations, 'abbr'))
 )
 
-export const getRoutes = () => (
+export const getRoutes = (): Promise<Routes> => (
     _fetchJson('route', 'routes')
         .then((respJson) => (
             Promise.all(
@@ -116,11 +115,7 @@ export const getRoutes = () => (
             )
         ))
         .then((respRoutes) => (
-            respRoutes.map((respRoute) => (
-                _normalizeRoute(
-                    _normalizeArrayResponse(respRoute.routes, 'route')
-                )
-            ))
+            respRoutes.map((respRoute) => _normalizeRoute(respRoute.routes.route))
         ))
         .then((routes) => keyBy(routes, 'routeID'))
 )
