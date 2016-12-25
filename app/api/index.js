@@ -31,7 +31,7 @@ const _parseXml = (xmlString) => (
     })
 )
 
-const _fetchJson = (type, command, params) => {
+const _fetchJson = (type:string, command:string, params:?Object = undefined):Promise<Object> => {
     let url = formatUrl(
         `${_API_BASE}${type}.aspx`,
         [
@@ -49,11 +49,11 @@ const _fetchJson = (type, command, params) => {
         .then((xmlAsJS) => xmlAsJS.root)
 }
 
-const _forceArray = (value) => (
+const _forceArray = (value:mixed):any[] => (
     Array.isArray(value) ? value : [value]
 )
 
-const _normalizeArrayResponse = (arrayResponse, itemName) => (
+const _normalizeArrayResponse = (arrayResponse:Object, itemName:string):mixed => (
     arrayResponse ? arrayResponse[itemName] : []
 )
 
@@ -107,15 +107,15 @@ export const getStations = (): Promise<Object> => (
 
 export const getRoutes = (): Promise<Routes> => (
     _fetchJson('route', 'routes')
-        .then((respJson) => (
+        .then((respJson):Promise<Object[]> => (
             Promise.all(
                 respJson.routes.route.map(({number}) => (
                     _fetchJson('route', 'routeinfo', {route: number})
                 ))
             )
         ))
-        .then((respRoutes) => (
-            respRoutes.map((respRoute) => _normalizeRoute(respRoute.routes.route))
+        .then((respRoutes:Object[]) => (
+            respRoutes.map((respRoute:Object):Route => _normalizeRoute(respRoute.routes.route))
         ))
-        .then((routes) => keyBy(routes, 'routeID'))
+        .then((routes:Route[]) => keyBy(routes, 'routeID'))
 )

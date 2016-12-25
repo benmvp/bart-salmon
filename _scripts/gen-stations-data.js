@@ -1,3 +1,4 @@
+// @flow
 import {genDataFile} from './utils'
 import {getStations} from '../app/api'
 

@@ -1,3 +1,4 @@
+// @flow
 import {genDataFile} from './utils'
 import {getRoutes} from '../app/api'
 

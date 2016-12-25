@@ -1,7 +1,10 @@
+// @flow
 import {join} from 'path'
 import {writeFile} from './fsUtils'
 
-export const genDataFile = async (func, path, description) => {
+type GetDataFunction = () => Promise<Object>
+
+export const genDataFile = async (func:GetDataFunction, path:string, description:string):Promise<*> => {
     try {
         console.log(`Writing ${description} data...`)
 
