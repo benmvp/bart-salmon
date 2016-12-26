@@ -1,5 +1,5 @@
 // @flow
-import _ from 'lodash'
+import lazy from 'lazy.js'
 import {Route} from '../data/flowtypes'
 import {getEstimatedTimesOfDeparture} from '../api'
 import routesLookup from '../data/routes.json'
@@ -8,8 +8,8 @@ import stationsLookup from '../data/stations.json'
 const DEFAULT_NUM_SUGGESTIONS = 5
 const STATION_ROUTE_DIRECTIONS = ['northRoutes', 'southRoutes']
 
-export const _determineRouteIdsFromOrigin = (origin:string, destination:string):string[] => (
-    _.chain(routesLookup)
+const _determineRouteIdsFromOrigin = (origin:string, destination:string):string[] => (
+    lazy(routesLookup)
         .values()
         // if the route is valid its stations list will have both the origin and destination in it
         // with origin coming before destination
@@ -20,13 +20,13 @@ export const _determineRouteIdsFromOrigin = (origin:string, destination:string):
             return originIndex > -1 && originIndex < destinationIndex
         })
         .map(({routeID}) => routeID)
-        .value()
+        .toArray()
 )
 
 export const getSalmonSuggestions = async (origin:string, destination:string, numSuggestions:number = DEFAULT_NUM_SUGGESTIONS): Promise<any[]> => {
-    let stationInfo = stationsLookup[origin]
     let etdLookup = await getEstimatedTimesOfDeparture()
     let etdForOrigin = etdLookup[origin].etd
+    let stationInfo = stationsLookup[origin]
 
     // 1. Determine the desired routes based on the origin/destination
     // (w/o making a "trip" API request)
@@ -35,23 +35,20 @@ export const getSalmonSuggestions = async (origin:string, destination:string, nu
     // 2. Generate a list of the trains heading in the OPPOSITE direction sorted
     // by ascending arrival times (arrivalTime)
     let oppositeRouteDestinations = new Set(
-        _.chain(STATION_ROUTE_DIRECTIONS)
+        lazy(STATION_ROUTE_DIRECTIONS)
             // get the list of route IDs in either direction
             .map((routeDirection) => stationInfo[routeDirection])
 
-            // find the route IDs in that are in the opposite direction by taking
-            // the negation of whether or not the targetRouteIds are in the routes
-            // for the direction
-            .find((routesInDirection) => !_.intersection(routesInDirection, targetRouteIds).length)
+            // find the route IDs in that are in the opposite direction by seeing
+            // if the targetRouteIds are NOT in the routes for the direction
+            .find((routesInDirection) => lazy(routesInDirection).intersection(targetRouteIds).isEmpty())
 
             // transform those opposite routeIDs into their final destinations
             // (for easy lookup later)
             .map((routeId) => routesLookup[routeId].destination)
-
-            .value()
     )
 
-    let oppositeDirectionTrains = _.chain(etdForOrigin)
+    let oppositeDirectionTrains = lazy(etdForOrigin)
         // take ETDs grouped by destination & filter down trains to the ones
         // going in the opposite direction by looking to see if the train's
         // destination is in the oppositeRouteDestinations
@@ -60,10 +57,12 @@ export const getSalmonSuggestions = async (origin:string, destination:string, nu
         // for each set of ETDs for the destinations going in the opposite direction
         // add the destination info to the ETD info
         .map((destinationEtdInfo) => (
-            destinationEtdInfo.estimate.map((estimate) => ({
-                ...estimate,
-                ..._.omit(destinationEtdInfo, 'estimate')
-            }))
+            destinationEtdInfo.estimate.map((estimate) => (
+                lazy(destinationEtdInfo)
+                    .omit(['estimate'])
+                    .merge(estimate)
+                    .toObject()
+            ))
         ))
 
         // flatten out the groupings (now that each one has the destination info)
@@ -71,9 +70,9 @@ export const getSalmonSuggestions = async (origin:string, destination:string, nu
 
         // now that we've flattened we can sort by the arrival times mixing the
         // destinations
-        .sortBy(['minutes'])
+        .sortBy('minutes')
 
-        .value()
+        .toArray()
 
     // console.log(targetRouteIds, oppositeDirectionTrains)
 

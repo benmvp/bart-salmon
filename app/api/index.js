@@ -4,8 +4,7 @@ import {camelize} from 'humps'
 import {formatUrl} from 'url-lib'
 import {parseString} from 'xml2js'
 import {parseNumbers} from 'xml2js/lib/processors'
-import keyBy from 'lodash/keyBy'
-import omit from 'lodash/omit'
+import lazy from 'lazy.js'
 import {Route, Routes} from '../data/flowtypes'
 
 import 'isomorphic-fetch'
@@ -68,24 +67,25 @@ const _normalizePlatforms = (platformsJson) => _forceArray(_normalizeArrayRespon
 
 const _normalizeStation = (stationInfo) => ({
     ...stationInfo,
-    northRoutes: _normalizeRoutes(stationInfo['northRoutes']),
-    southRoutes: _normalizeRoutes(stationInfo['southRoutes']),
-    northPlatforms: _normalizePlatforms(stationInfo['northPlatforms']),
-    southPlatforms: _normalizePlatforms(stationInfo['southPlatforms'])
+    northRoutes: _normalizeRoutes(stationInfo.northRoutes),
+    southRoutes: _normalizeRoutes(stationInfo.southRoutes),
+    northPlatforms: _normalizePlatforms(stationInfo.northPlatforms),
+    southPlatforms: _normalizePlatforms(stationInfo.southPlatforms)
 })
 
-const _normalizeRoute = (routeInfo:Object): Route => ({
-    ...omit(routeInfo, 'config', 'numStns'),
-    stations: routeInfo.config.station
-})
+const _normalizeRoute = (routeInfo:Object): Route => (
+    lazy(routeInfo)
+        .omit(['config', 'numStns'])
+        .merge({stations: routeInfo.config.station})
+        .toObject()
+)
 
 export const getEstimatedTimesOfDeparture = (): Promise<{[id:string]: Object}> => (
     _fetchJson('etd', 'etd', {orig: 'ALL'})
         .then((respJson) => (
-            keyBy(
-                _normalizeArrayResponse(respJson, 'station'),
-                'abbr'
-            )
+            lazy(_normalizeArrayResponse(respJson, 'station'))
+                .indexBy('abbr')
+                .toObject()
         ))
 )
 
@@ -101,7 +101,11 @@ export const getStations = (): Promise<Object> => (
         .then((respStations) => (
             respStations.map((respStation) => _normalizeStation(respStation.stations.station))
         ))
-        .then((stations) => keyBy(stations, 'abbr'))
+        .then((stations) => (
+            lazy(stations)
+                .indexBy('abbr')
+                .toObject()
+        ))
 )
 
 export const getRoutes = (): Promise<Routes> => (
@@ -116,5 +120,9 @@ export const getRoutes = (): Promise<Routes> => (
         .then((respRoutes:Object[]) => (
             respRoutes.map((respRoute:Object):Route => _normalizeRoute(respRoute.routes.route))
         ))
-        .then((routes:Route[]) => keyBy(routes, 'routeID'))
+        .then((routes:Route[]) => (
+            lazy(routes)
+                .indexBy('routeID')
+                .toObject()
+        ))
 )
