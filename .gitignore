@@ -43,3 +43,6 @@ android/app/libs
 
 # Web
 bundle.js
+
+# Code coverage
+coverage

@@ -80,8 +80,8 @@ const _normalizeRoute = (routeInfo:Object): Route => (
     })
 )
 
-export const getEstimatedDepartureTimes = (station:string = 'ALL'): Promise<Object> => (
-    _fetchJson('etd', 'etd', {orig: station})
+export const getEstimatedTimesOfDeparture = (): Promise<{[id:string]: Object}> => (
+    _fetchJson('etd', 'etd', {orig: 'ALL'})
         .then((respJson) => (
             keyBy(
                 camelizeKeys(_normalizeArrayResponse(respJson, 'station')),

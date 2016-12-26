@@ -7,6 +7,7 @@
 		"flow": "flow",
 		"check": "yarn run eslint && yarn run flow",
 		"test": "jest",
+		"test:coverage": "jest --coverage true",
 		"start": "yarn run start:web",
 		"start:rn": "node node_modules/react-native/local-cli/cli.js start",
 		"start:android": "react-native run-android",
@@ -21,7 +22,7 @@
 		"deploy:web": "yarn run bundle:web&&gh-pages -d web/public",
 		"gen:routes": "babel-node _scripts/gen-routes-data.js",
 		"gen:stations": "babel-node _scripts/gen-stations-data.js",
-		"gen:mock:edt": "babel-node _scripts/gen-mock-edt-data.js"
+		"gen:mock:etd": "babel-node _scripts/gen-mock-etd-data.js"
 	},
 	"dependencies": {
 		"humps": "^2.0.0",

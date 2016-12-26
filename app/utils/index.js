@@ -2,48 +2,51 @@
 import _ from 'lodash'
 import routes from '../data/routes.json'
 import {Route} from '../data/flowtypes'
+import {getEstimatedTimesOfDeparture} from '../api'
 
 const DEFAULT_NUM_SUGGESTIONS = 5
 
-export const _determineRouteIdFromOrigin = (origin:string, destination:string):string => (
+export const _determineRouteIdsFromOrigin = (origin:string, destination:string):Set<string> => new Set(
     _.chain(routes)
         .values()
         // if the route is valid its stations list will have both the origin and destination in it
         // with origin coming before destination
-        .find(({stations}:Route) => stations.indexOf(origin) < stations.indexOf(destination))
+        .filter(({stations}:Route) => {
+            let originIndex = stations.indexOf(origin)
+            let destinationIndex = stations.indexOf(destination)
+
+            return originIndex > -1 && originIndex < destinationIndex
+        })
+        .map(({routeID}) => routeID)
         .value()
-        .routeID
 )
 
-export const getSalmonSuggestions = (origin:string, destination:string, numSuggestions:number = DEFAULT_NUM_SUGGESTIONS): any[] => {
-    // time to next train in opposite direction at origin station
-    // time for that train to approach each station
-    // list of trains that will get to destination from given station
-    // time for each destination train to get back to origin station
-
-    // 1. Determine the desired route based on the origin/destination
+export const getSalmonSuggestions = async (origin:string, destination:string, numSuggestions:number = DEFAULT_NUM_SUGGESTIONS): Promise<any[]> => {
+    // 1. Determine the desired routes based on the origin/destination
     // (w/o making a "trip" API request)
-    let targetRouteId = _determineRouteIdFromOrigin(origin, destination)
+    let targetRouteIds = _determineRouteIdsFromOrigin(origin, destination)
 
-    // 2. Determine estimated time for target route to arrive at origin and
-    // add to suggestions
+    // console.log([...targetRouteIds])
 
-    // 3. Generate a list of the trains heading in the OPPOSITE direction sorted
+    // 2. Generate a list of the trains heading in the OPPOSITE direction sorted
     // by ascending arrival times (arrivalTime)
+    let estimatedDepartureTimes = await getEstimatedTimesOfDeparture()
 
-    // 4. For each train, determine the estimated time it would take to get to
+    // console.log(origin, estimatedDepartureTimes[origin].etd)
+
+    // 3. For each train, determine the estimated time it would take to get to
     // each following station in its route (backwardsTime)
 
-    // 5. For each train at each station, determine the estimated wait time until
+    // 4. For each train at each station, determine the estimated wait time until
     // targetRouteId arrives at that station (waitTime)
 
-    // 6. For each train at each station after waiting, determine estimated time
+    // 5. For each train at each station after waiting, determine estimated time
     // it would take to return to the origin on target route (returnTime)
 
-    // 7. Add up arrivalTime + backwardsTime + waitTime + returnTime for each
+    // 6. Add up arrivalTime + backwardsTime + waitTime + returnTime for each
     // backwards/return route pair and add to list of suggestions
 
-    // 8. Sort by ascending time and take the first numSuggestions suggestions
+    // 7. Sort by ascending time and take the first numSuggestions suggestions
 
     return []
 }
