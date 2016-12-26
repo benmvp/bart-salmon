@@ -1,8 +1,9 @@
 // @flow
 
-import {camelizeKeys} from 'humps'
+import {camelize} from 'humps'
 import {formatUrl} from 'url-lib'
 import {parseString} from 'xml2js'
+import {parseNumbers} from 'xml2js/lib/processors'
 import keyBy from 'lodash/keyBy'
 import omit from 'lodash/omit'
 import {Route, Routes} from '../data/flowtypes'
@@ -19,6 +20,10 @@ const _parseXml = (xmlString) => (
                 explicitArray: false,
                 trim: true,
                 normalize: true,
+                tagNameProcessors: [camelize],
+                attrNameProcessors: [camelize],
+                valueProcessors: [parseNumbers],
+                attrValueProcessors: [parseNumbers],
             },
             (err, result) => {
                 if (err) {
@@ -61,30 +66,24 @@ const _normalizeRoutes = (routesJson) => _forceArray(_normalizeArrayResponse(rou
 
 const _normalizePlatforms = (platformsJson) => _forceArray(_normalizeArrayResponse(platformsJson, 'platform'))
 
-const _normalizeStation = (stationInfo) => (
-    camelizeKeys({
-        ...stationInfo,
-        northRoutes: _normalizeRoutes(stationInfo['north_routes']),
-        southRoutes: _normalizeRoutes(stationInfo['south_routes']),
-        northPlatforms: _normalizePlatforms(stationInfo['north_platforms']),
-        southPlatforms: _normalizePlatforms(stationInfo['south_platforms'])
-    })
-)
+const _normalizeStation = (stationInfo) => ({
+    ...stationInfo,
+    northRoutes: _normalizeRoutes(stationInfo['north_routes']),
+    southRoutes: _normalizeRoutes(stationInfo['south_routes']),
+    northPlatforms: _normalizePlatforms(stationInfo['north_platforms']),
+    southPlatforms: _normalizePlatforms(stationInfo['south_platforms'])
+})
 
-const _normalizeRoute = (routeInfo:Object): Route => (
-    camelizeKeys({
-        ...omit(routeInfo, 'config', 'num_stns'),
-        number: +routeInfo.number,
-        holidays: !!+routeInfo.holidays,
-        stations: routeInfo.config.station
-    })
-)
+const _normalizeRoute = (routeInfo:Object): Route => ({
+    ...omit(routeInfo, 'config', 'numStns'),
+    stations: routeInfo.config.station
+})
 
 export const getEstimatedTimesOfDeparture = (): Promise<{[id:string]: Object}> => (
     _fetchJson('etd', 'etd', {orig: 'ALL'})
         .then((respJson) => (
             keyBy(
-                camelizeKeys(_normalizeArrayResponse(respJson, 'station')),
+                _normalizeArrayResponse(respJson, 'station'),
                 'abbr'
             )
         ))

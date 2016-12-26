@@ -1,5 +1,5 @@
 // @flow
 import {genDataFile} from './utils'
-import {getEstimatedDepartureTimes} from '../app/api'
+import {getEstimatedTimesOfDeparture} from '../app/api'
 
-genDataFile(getEstimatedDepartureTimes, '../_mockData/etds.json', 'estimated times of departure')
+genDataFile(getEstimatedTimesOfDeparture, '../app/api/__mocks__/etds.json', 'estimated times of departure')

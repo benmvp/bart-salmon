@@ -8,7 +8,7 @@
     "destination": "SFIA",
     "direction": "",
     "color": "#ffff33",
-    "holidays": true,
+    "holidays": 1,
     "stations": [
       "PITT",
       "NCON",
@@ -47,7 +47,7 @@
     "destination": "DUBL",
     "direction": "",
     "color": "#0099cc",
-    "holidays": true,
+    "holidays": 1,
     "stations": [
       "DALY",
       "BALB",
@@ -78,7 +78,7 @@
     "destination": "WARM",
     "direction": "",
     "color": "#339933",
-    "holidays": false,
+    "holidays": 0,
     "stations": [
       "DALY",
       "BALB",
@@ -111,7 +111,7 @@
     "destination": "DALY",
     "direction": "",
     "color": "#0099cc",
-    "holidays": true,
+    "holidays": 1,
     "stations": [
       "DUBL",
       "WDUB",
@@ -142,7 +142,7 @@
     "destination": "DALY",
     "direction": "",
     "color": "#339933",
-    "holidays": false,
+    "holidays": 0,
     "stations": [
       "WARM",
       "FRMT",
@@ -175,7 +175,7 @@
     "destination": "RICH",
     "direction": "",
     "color": "#ff9933",
-    "holidays": true,
+    "holidays": 1,
     "stations": [
       "WARM",
       "FRMT",
@@ -207,7 +207,7 @@
     "destination": "RICH",
     "direction": "",
     "color": "#ff0000",
-    "holidays": false,
+    "holidays": 0,
     "stations": [
       "MLBR",
       "SBRN",
@@ -243,7 +243,7 @@
     "destination": "WARM",
     "direction": "",
     "color": "#ff9933",
-    "holidays": true,
+    "holidays": 1,
     "stations": [
       "RICH",
       "DELN",
@@ -275,7 +275,7 @@
     "destination": "MLBR",
     "direction": "",
     "color": "#ff0000",
-    "holidays": false,
+    "holidays": 0,
     "stations": [
       "RICH",
       "DELN",
@@ -311,7 +311,7 @@
     "destination": "PITT",
     "direction": "",
     "color": "#ffff33",
-    "holidays": true,
+    "holidays": 1,
     "stations": [
       "MLBR",
       "SFIA",
@@ -350,7 +350,7 @@
     "destination": "OAKL",
     "direction": "north",
     "color": "#d5cfa3",
-    "holidays": true,
+    "holidays": 1,
     "stations": [
       "COLS",
       "OAKL"
@@ -365,7 +365,7 @@
     "destination": "COLS",
     "direction": "south",
     "color": "#d5cfa3",
-    "holidays": true,
+    "holidays": 1,
     "stations": [
       "OAKL",
       "COLS"

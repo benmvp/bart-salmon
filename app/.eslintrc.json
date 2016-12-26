@@ -2,5 +2,8 @@
     "extends": "eventbrite-react",
     "rules": {
         "semi": ["error", "never"]
+    },
+    "globals": {
+        "jest": true
     }
 }
