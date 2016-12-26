@@ -3,7 +3,7 @@ import {getSalmonSuggestions} from '../'
 jest.mock('../../api')
 
 describe('getSalmonSuggestions', () => {
-    it('returns default number of valid suggestions for POWL -> PITT (SFIA-PITT)', async () => {
+    it.only('returns default number of valid suggestions for POWL -> PITT (SFIA-PITT)', async () => {
         let actualSalmonSuggestions = await getSalmonSuggestions('POWL', 'PITT')
 
         expect(actualSalmonSuggestions).toEqual([])

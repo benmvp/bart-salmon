@@ -27,7 +27,7 @@
 	"dependencies": {
 		"humps": "^2.0.0",
 		"isomorphic-fetch": "^2.2.1",
-		"lazy.js": "^0.4.2",
+		"lodash": "^4.17.3",
 		"react": "^15.4.1",
 		"react-dom": "^15.4.1",
 		"react-native": "0.39.2",
