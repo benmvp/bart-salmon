@@ -68,10 +68,10 @@ const _normalizePlatforms = (platformsJson) => _forceArray(_normalizeArrayRespon
 
 const _normalizeStation = (stationInfo) => ({
     ...stationInfo,
-    northRoutes: _normalizeRoutes(stationInfo['north_routes']),
-    southRoutes: _normalizeRoutes(stationInfo['south_routes']),
-    northPlatforms: _normalizePlatforms(stationInfo['north_platforms']),
-    southPlatforms: _normalizePlatforms(stationInfo['south_platforms'])
+    northRoutes: _normalizeRoutes(stationInfo['northRoutes']),
+    southRoutes: _normalizeRoutes(stationInfo['southRoutes']),
+    northPlatforms: _normalizePlatforms(stationInfo['northPlatforms']),
+    southPlatforms: _normalizePlatforms(stationInfo['southPlatforms'])
 })
 
 const _normalizeRoute = (routeInfo:Object): Route => ({
