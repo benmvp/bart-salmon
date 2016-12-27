@@ -1,47 +1,73 @@
-import {getSalmonSuggestions} from '../'
+import {getSuggestedSalmonRoutes} from '../'
 
 jest.mock('../../api')
 
-describe('getSalmonSuggestions', () => {
-    it.only('returns default number of valid suggestions for POWL -> PITT (SFIA-PITT)', async () => {
-        let actualSalmonSuggestions = await getSalmonSuggestions('POWL', 'PITT')
+describe('getSuggestedSalmonRoutes', () => {
+    xit('returns no suggestions when at origin station (Westbound)', async () => {
+        let actualSalmonSuggestions = await getSuggestedSalmonRoutes('PITT', 'SFIA')
 
         expect(actualSalmonSuggestions).toEqual([])
     })
 
-    it('returns default number of valid suggestions for EMBR -> CAST (DALY-DUBL)', async () => {
-        let actualSalmonSuggestions = await getSalmonSuggestions('EMBR', 'CAST')
+    xit('returns no suggestions when at origin station (Eastbound)', async () => {
+        let actualSalmonSuggestions = await getSuggestedSalmonRoutes('DALY', 'RICH')
 
         expect(actualSalmonSuggestions).toEqual([])
     })
 
-    it('returns default number of valid suggestions for 16TH -> NBRK (MLBR-RICH)', async () => {
-        let actualSalmonSuggestions = await getSalmonSuggestions('16TH', 'NBRK')
+    it('returns default number of suggestions for PITT line', async () => {
+        let actualSalmonSuggestions = await getSuggestedSalmonRoutes('POWL', 'PITT')
 
-        expect(actualSalmonSuggestions).toEqual([])
+        // console.log(actualSalmonSuggestions)
+
+        // expect(actualSalmonSuggestions).toEqual([])
     })
 
-    it('returns default number of valid suggestions for MONT -> FRMT (DALY-WARM)', async () => {
-        let actualSalmonSuggestions = await getSalmonSuggestions('MONT', 'FRMT')
+    it('returns default number of suggestions for DUBL line', async () => {
+        let actualSalmonSuggestions = await getSuggestedSalmonRoutes('EMBR', 'CAST')
 
-        expect(actualSalmonSuggestions).toEqual([])
+        // expect(actualSalmonSuggestions).toEqual([])
     })
 
-    it('returns default number of valid suggestions for 16TH -> MCAR (SFIA-PITT / MLBR-RICH)', async () => {
-        let actualSalmonSuggestions = await getSalmonSuggestions('16TH', 'MCAR')
+    it('returns default number of suggestions for RICH line', async () => {
+        let actualSalmonSuggestions = await getSuggestedSalmonRoutes('16TH', 'NBRK')
 
-        expect(actualSalmonSuggestions).toEqual([])
+        // expect(actualSalmonSuggestions).toEqual([])
     })
 
-    it('returns default number of valid suggestions for WOAK -> DALY (MANY)', async () => {
-        let actualSalmonSuggestions = await getSalmonSuggestions('WOAK', 'DALY')
+    it('returns default number of suggestions for WARM line', async () => {
+        let actualSalmonSuggestions = await getSuggestedSalmonRoutes('MONT', 'FRMT')
 
-        expect(actualSalmonSuggestions).toEqual([])
+        // expect(actualSalmonSuggestions).toEqual([])
     })
 
-    it('returns default number of valid suggestions for 19TH -> PLZA (WARM-RICH / MLBR-RICH)', async () => {
-        let actualSalmonSuggestions = await getSalmonSuggestions('19TH', 'PLZA')
+    it('returns default number of suggestions for Westbound line', async () => {
+        let actualSalmonSuggestions = await getSuggestedSalmonRoutes('PHIL', 'EMBR')
 
-        expect(actualSalmonSuggestions).toEqual([])
+        // expect(actualSalmonSuggestions).toEqual([])
+    })
+
+    it('returns default number of suggestions when more than one Northbound line is available', async () => {
+        let actualSalmonSuggestions = await getSuggestedSalmonRoutes('19TH', 'PLZA')
+
+        // expect(actualSalmonSuggestions).toEqual([])
+    })
+
+    it('returns default number of suggestions when more than one Southbound line is available', async () => {
+        let actualSalmonSuggestions = await getSuggestedSalmonRoutes('12TH', 'BAYF')
+
+        // expect(actualSalmonSuggestions).toEqual([])
+    })
+
+    it('returns default number of suggestions when more than one Eastbound line is available', async () => {
+        let actualSalmonSuggestions = await getSuggestedSalmonRoutes('16TH', 'MCAR')
+
+        // expect(actualSalmonSuggestions).toEqual([])
+    })
+
+    it('returns default number of suggestions when many Westbound lines are available', async () => {
+        let actualSalmonSuggestions = await getSuggestedSalmonRoutes('WOAK', 'DALY')
+
+        // expect(actualSalmonSuggestions).toEqual([])
     })
 })

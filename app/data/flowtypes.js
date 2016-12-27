@@ -13,3 +13,31 @@ export type Route = {
 }
 
 export type Routes = {[id:string]: Route}
+
+export type Train = {
+    destination: string,
+    abbreviation: string,
+    limited: number,
+    minutes: number,
+    platform: number,
+    direction: string,
+    length: number,
+    color: string,
+    hexcolor: string,
+    bikeflag: number
+}
+
+export type SalmonRoute = {
+    waitTime: number,
+
+    backwardsTrain: Train,
+    backwardsRouteID: string,
+    backwardsStation: string,
+    backwardsRideTime: number,
+    backwardsRideNumStations: number,
+    backwardsWaitTime: number,
+
+    returnTrain: Train,
+    returnRouteID: string,
+    returnRideTime: number
+}
