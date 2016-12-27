@@ -190,7 +190,19 @@ const _getWaitTimesForBackwardsTimeRoutePaths = (_backwardsTimeRoutePaths, etdsL
         .flatten()
 )
 
-export const getSalmonSuggestions = async (origin:string, destination:string, numSuggestions:number = DEFAULT_NUM_SUGGESTIONS): Promise<any[]> => {
+const _getSalmonTimeRoutePaths = (_backwardsTimeRoutePathsWithWaits, origin: string) => (
+    _backwardsTimeRoutePathsWithWaits
+        .map((trainInfo) => ({
+            ...trainInfo,
+            returnRideTime: _minutesBetweenStation(
+                trainInfo.backwardsStation,
+                origin,
+                trainInfo.returnRouteID
+            )
+        }))
+)
+
+export const getSalmonSuggestions = async (origin: string, destination: string, numSuggestions: number = DEFAULT_NUM_SUGGESTIONS): Promise<any[]> => {
     let etdsLookup = await getEstimatedTimesOfDeparture()
 
     // 1. Determine the desired routes based on the origin/destination
@@ -226,6 +238,10 @@ export const getSalmonSuggestions = async (origin:string, destination:string, nu
 
     // 5. For each train at each station after waiting, determine estimated time
     // it would take to return to the origin on target route (returnRideTime)
+
+    let _salmonTimeRoutePaths = _getSalmonTimeRoutePaths(_backwardsTimeRoutePathsWithWaits, origin)
+
+    // console.log(_salmonTimeRoutePaths.value())
 
     // 6. Add up waitTime + backwardsRideTime + backwardsWaitTime + returnTime for each
     // backwards/return route pair and add to list of suggestions

@@ -852,76 +852,104 @@
     "holidays": 1,
     "stations": [
       {
-        "name": "24TH",
+        "name": "SFIA",
         "timeFromOrigin": 0
       },
       {
-        "name": "16TH",
-        "timeFromOrigin": 2
-      },
-      {
-        "name": "CIVC",
+        "name": "SBRN",
         "timeFromOrigin": 5
       },
       {
-        "name": "POWL",
-        "timeFromOrigin": 6
-      },
-      {
-        "name": "MONT",
+        "name": "SSAN",
         "timeFromOrigin": 8
       },
       {
-        "name": "EMBR",
-        "timeFromOrigin": 9
+        "name": "COLM",
+        "timeFromOrigin": 11
       },
       {
-        "name": "WOAK",
-        "timeFromOrigin": 16
+        "name": "DALY",
+        "timeFromOrigin": 15
       },
       {
-        "name": "12TH",
-        "timeFromOrigin": 20
+        "name": "BALB",
+        "timeFromOrigin": 19
       },
       {
-        "name": "19TH",
+        "name": "GLEN",
         "timeFromOrigin": 21
       },
       {
-        "name": "MCAR",
-        "timeFromOrigin": 25
+        "name": "24TH",
+        "timeFromOrigin": 24
       },
       {
-        "name": "ROCK",
-        "timeFromOrigin": 27
+        "name": "16TH",
+        "timeFromOrigin": 26
       },
       {
-        "name": "ORIN",
+        "name": "CIVC",
+        "timeFromOrigin": 29
+      },
+      {
+        "name": "POWL",
+        "timeFromOrigin": 30
+      },
+      {
+        "name": "MONT",
+        "timeFromOrigin": 32
+      },
+      {
+        "name": "EMBR",
         "timeFromOrigin": 33
       },
       {
-        "name": "LAFY",
-        "timeFromOrigin": 37
+        "name": "WOAK",
+        "timeFromOrigin": 40
       },
       {
-        "name": "WCRK",
-        "timeFromOrigin": 42
+        "name": "12TH",
+        "timeFromOrigin": 44
       },
       {
-        "name": "PHIL",
+        "name": "19TH",
         "timeFromOrigin": 45
       },
       {
+        "name": "MCAR",
+        "timeFromOrigin": 49
+      },
+      {
+        "name": "ROCK",
+        "timeFromOrigin": 51
+      },
+      {
+        "name": "ORIN",
+        "timeFromOrigin": 57
+      },
+      {
+        "name": "LAFY",
+        "timeFromOrigin": 61
+      },
+      {
+        "name": "WCRK",
+        "timeFromOrigin": 66
+      },
+      {
+        "name": "PHIL",
+        "timeFromOrigin": 69
+      },
+      {
         "name": "CONC",
-        "timeFromOrigin": 50
+        "timeFromOrigin": 74
       },
       {
         "name": "NCON",
-        "timeFromOrigin": 53
+        "timeFromOrigin": 77
       },
       {
         "name": "PITT",
-        "timeFromOrigin": 60
+        "timeFromOrigin": 84
       }
     ]
   },
