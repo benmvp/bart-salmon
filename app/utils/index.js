@@ -5,7 +5,13 @@ import {getEstimatedTimesOfDeparture} from '../api'
 import routesLookup from '../data/routes.json'
 import stationsLookup from '../data/stations.json'
 
+// default number of salmon suggestions to return
 const DEFAULT_NUM_SUGGESTIONS = 5
+
+// minimum number of minutes to wait at the backwards station
+// the higher this number is the more likely to make the train
+const MINIMUM_BACKWARDS_STATION_WAIT_TIME = 1
+
 const _STATION_ROUTE_DIRECTIONS = _(['northRoutes', 'southRoutes'])
 
 const _routeStationPredicate = (target, {name}) => name === target
@@ -29,13 +35,16 @@ const _normalizeMinutes = (minutes:mixed):number => (
     Number.isNaN(minutes) ? 0 : +minutes
 )
 
-const _getBackwardsTrains = (origin:string, etdsLookup:{[id:string]: Object}, targetRouteIds:string[]) => {
-    let etdsForOrigin = etdsLookup[origin].etd
-    let originStationInfo = stationsLookup[origin]
-    let backwardsRouteDestinations = new Set(
+const _getBackwardsRoutesDestinations = (
+    stationName: string,
+    targetRouteIds: string[]
+): Set<string> => {
+    let stationInfo = stationsLookup[stationName]
+
+    return new Set(
         _STATION_ROUTE_DIRECTIONS
             // get the list of route IDs in either direction
-            .map((routeDirection) => originStationInfo[routeDirection])
+            .map((routeDirection) => stationInfo[routeDirection])
 
             // find the route IDs in that are in the opposite direction by seeing
             // if the targetRouteIds are NOT in the routes for the direction
@@ -45,14 +54,38 @@ const _getBackwardsTrains = (origin:string, etdsLookup:{[id:string]: Object}, ta
             // (for easy lookup later)
             .map((routeId) => routesLookup[routeId].destination)
     )
+}
 
-    return _(etdsForOrigin)
+const _getReturnRouteDestinations = (targetRouteIds: string[]): Set<string> => new Set(
+    targetRouteIds.map((routeID) => routesLookup[routeID].destination)
+)
+
+const _getRouteDestinations = (
+    stationName: string,
+    targetRouteIds: string[],
+    isOpposite: boolean
+): Set<string> => (
+    isOpposite
+        ? _getBackwardsRoutesDestinations(stationName, targetRouteIds)
+        : _getReturnRouteDestinations(targetRouteIds)
+)
+
+const _genFlattenedDestinationEtdsForStation = (
+    stationName: string,
+    etdsLookup:{[id:string]: Object},
+    targetRouteIds: string[],
+    isOpposite: boolean = false
+) => {
+    let routeDestinations = _getRouteDestinations(stationName, targetRouteIds, isOpposite)
+    let etdsForStation = etdsLookup[stationName].etd
+
+    return _(etdsForStation)
         // take ETDs grouped by destination & filter down trains to the ones
-        // going in the opposite direction by looking to see if the train's
-        // destination is in the backwardsRouteDestinations
-        .filter((destinationEtdInfo) => backwardsRouteDestinations.has(destinationEtdInfo.abbreviation))
+        // going in specified route direction by looking to see if the train's
+        // destination is in the routeDestinations
+        .filter((destinationEtdInfo) => routeDestinations.has(destinationEtdInfo.abbreviation))
 
-        // for each set of ETDs for the destinations going in the opposite direction
+        // for each set of ETDs for the destinations going in the route direction
         // add the destination info to the ETD info
         .map((destinationEtdInfo) => (
             // TODO: Make this map a lodash sequence for performance optimization
@@ -66,18 +99,23 @@ const _getBackwardsTrains = (origin:string, etdsLookup:{[id:string]: Object}, ta
 
         // flatten out the groupings (now that each one has the destination info)
         .flatten()
-
-        .map((trainInfo) => ({
-            ...trainInfo,
-            arrivalTime: _normalizeMinutes(trainInfo.minutes),
-            routeID: _(routesLookup)
-                .values()
-                .find(({destination, color}) => (
-                    trainInfo.abbreviation === destination && trainInfo.hexcolor === color
-                ))
-                .routeID
-        }))
 }
+
+const _getRouteIDFromTrainInfo = ({abbreviation, hexcolor}) => (
+    _(routesLookup)
+        .values()
+        .find(({destination, color}) => (abbreviation === destination && hexcolor === color))
+        .routeID
+)
+
+const _getBackwardsTrains = (origin:string, etdsLookup:{[id:string]: Object}, targetRouteIds:string[]) => (
+    _genFlattenedDestinationEtdsForStation(origin, etdsLookup, targetRouteIds, true)
+        .map((trainInfo) => ({
+            backwardsTrain: trainInfo,
+            waitTime: _normalizeMinutes(trainInfo.minutes),
+            backwardsRouteID: _getRouteIDFromTrainInfo(trainInfo)
+        }))
+)
 
 const _minutesBetweenStation = (start, end, routeID) => {
     let routeStations = routesLookup[routeID].stations
@@ -93,7 +131,7 @@ const _getBackwardsTimeRoutePaths = (_backwardsTrains, origin:string) => (
         // from origin to stations after origin (including time to get to that
         // station)
         .map((trainInfo) => {
-            let routeID = trainInfo.routeID
+            let routeID = trainInfo.backwardsRouteID
             let routeForTrain = routesLookup[routeID]
             let stationsForTrain = routeForTrain.stations
 
@@ -102,19 +140,53 @@ const _getBackwardsTimeRoutePaths = (_backwardsTrains, origin:string) => (
                 .takeRightWhile(({name}) => name !== origin)
 
                 // merge in the train information plus the time it takes from
-                // origin to station (backwardsTime)
+                // origin to station (backwardsRideTime)
                 .map(({name}) => ({
                     ...trainInfo,
-                    backwardsStationName: name,
-                    backwardsTime: _minutesBetweenStation(origin, name, routeID)
+                    backwardsStation: name,
+                    backwardsRideTime: _minutesBetweenStation(origin, name, routeID)
                 }))
 
-                // TODO: Remove for potential optimization
+                // TODO: Remove for potential optimization?
                 .value()
         })
 
         // flatten out the nested list to get a list of backwards route paths
         // that include info on how long it takes to get to the backwards station
+        .flatten()
+)
+
+const _getWaitTimesForBackwardsTimeRoutePaths = (_backwardsTimeRoutePaths, etdsLookup:{[id:string]: Object}, targetRouteIds:string[]) => (
+    // for each backwards train, calculate how long it'll take to get to the
+    // backwards station (waitTime + backwardsRideTime), then find all of the
+    // arrivals to that backwards station within targetRouteIds. Need to filter
+    // down to only arrivals to the backwards station that are greater than
+    // (waitTime + backwardsRideTime). The valid backwards train arrival time
+    // (backwardsArrivalTime) minus (waitTime + backwardsRideTime) is backwardsWaitTime
+    _backwardsTimeRoutePaths
+        .map((trainInfo) => {
+            let {waitTime, backwardsRideTime, backwardsStation} = trainInfo
+            let timeToBackwardsStation = waitTime + backwardsRideTime
+
+            return _genFlattenedDestinationEtdsForStation(backwardsStation, etdsLookup, targetRouteIds)
+                // after getting all the returning trains on the target routes,
+                // include the wait time at the backwards station (negative values
+                // mean that there isn't enough time to make it)
+                .map((returnTrainInfo) => ({
+                    ...trainInfo,
+                    returnTrain: returnTrainInfo,
+                    backwardsWaitTime: _normalizeMinutes(returnTrainInfo.minutes) - timeToBackwardsStation,
+                    returnRouteID: _getRouteIDFromTrainInfo(returnTrainInfo)
+                }))
+
+                // only include the trains where the wait time at the backwards
+                // station is greater that the minimum allowable to increase the
+                // likelihood of making the train
+                .filter(({backwardsWaitTime}) => backwardsWaitTime >= MINIMUM_BACKWARDS_STATION_WAIT_TIME)
+
+                // TODO: Remove for potential optimization?
+                .value()
+        })
         .flatten()
 )
 
@@ -128,24 +200,34 @@ export const getSalmonSuggestions = async (origin:string, destination:string, nu
     // console.log(targetRouteIds)
 
     // 2. Generate a list of the trains heading in the OPPOSITE direction w/
-    // their arrival times (arrivalTime)
+    // their arrival times (waitTime)
     let _backwardsTrains = _getBackwardsTrains(origin, etdsLookup, targetRouteIds)
 
     // console.log(_backwardsTrains.value())
+    // console.log(_backwardsTrains.size())
 
     // 3. For each train, determine the estimated time it would take to get to
-    // each following station in its route (backwardsTime)
+    // each following station in its route (backwardsRideTime)
     let _backwardsTimeRoutePaths = _getBackwardsTimeRoutePaths(_backwardsTrains, origin)
 
     // console.log(_backwardsTimeRoutePaths.value())
+    // console.log(_backwardsTimeRoutePaths.size())
 
     // 4. For each train at each station, determine the estimated wait time until
-    // targetRouteId arrives at that station (waitTime)
+    // targetRouteId arrives at that station (backwardsWaitTime)
+    let _backwardsTimeRoutePathsWithWaits = _getWaitTimesForBackwardsTimeRoutePaths(
+        _backwardsTimeRoutePaths,
+        etdsLookup,
+        targetRouteIds
+    )
+
+    // console.log(_backwardsTimeRoutePathsWithWaits.value())
+    // console.log(_backwardsTimeRoutePathsWithWaits.size())
 
     // 5. For each train at each station after waiting, determine estimated time
-    // it would take to return to the origin on target route (returnTime)
+    // it would take to return to the origin on target route (returnRideTime)
 
-    // 6. Add up arrivalTime + backwardsTime + waitTime + returnTime for each
+    // 6. Add up waitTime + backwardsRideTime + backwardsWaitTime + returnTime for each
     // backwards/return route pair and add to list of suggestions
 
     // 7. Sort by ascending time and take the first numSuggestions suggestions
