@@ -2,6 +2,8 @@ const path = require('path')
 const webpack = require('webpack')
 const autoprefixer = require('autoprefixer')
 
+const appPath = path.join(__dirname, '../../app')
+
 module.exports = {
     entry: [
         path.join(__dirname, '../../app/index.web.js'),
@@ -21,8 +23,13 @@ module.exports = {
                     'postcss',
                     'sass?sourceMap'
                 ],
-                include: path.join(__dirname, '../../app')
+                include: appPath
             },
+            {
+                test: /\.json$/,
+                loaders: ['json'],
+                include: appPath
+            }
         ],
     },
     postcss: [
@@ -30,12 +37,6 @@ module.exports = {
             browsers: ['last 2 versions']
         })
     ],
-    resolve: {
-        alias: {
-            // allows for single component that can work on Web & Native!
-            'react-native': 'react-native-web'
-        }
-    },
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
