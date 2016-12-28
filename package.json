@@ -7,7 +7,7 @@
 		"flow": "flow",
 		"check": "yarn run eslint && yarn run flow",
 		"test": "jest --verbose",
-		"test:coverage": "yarn test -- --coverage true",
+		"test:coverage": "yarn test -- --coverage",
 		"start": "yarn run start:web",
 		"start:rn": "node node_modules/react-native/local-cli/cli.js start",
 		"start:android": "react-native run-android",
