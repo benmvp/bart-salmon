@@ -9,7 +9,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 4,
+            "minutes": 2,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -18,16 +18,16 @@
             "bikeflag": 1
           },
           {
-            "minutes": 10,
+            "minutes": 7,
             "platform": 2,
             "direction": "North",
-            "length": 8,
+            "length": 9,
             "color": "BLUE",
             "hexcolor": "#0099cc",
             "bikeflag": 1
           },
           {
-            "minutes": 19,
+            "minutes": 16,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -43,7 +43,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": "Leaving",
+            "minutes": 13,
             "platform": 1,
             "direction": "South",
             "length": 9,
@@ -52,7 +52,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 15,
+            "minutes": 27,
             "platform": 1,
             "direction": "South",
             "length": 9,
@@ -61,7 +61,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 30,
+            "minutes": 42,
             "platform": 1,
             "direction": "South",
             "length": 9,
@@ -77,7 +77,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 7,
+            "minutes": 4,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -86,7 +86,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 13,
+            "minutes": 10,
             "platform": 1,
             "direction": "South",
             "length": 6,
@@ -95,7 +95,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 21,
+            "minutes": 19,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -111,7 +111,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 13,
+            "minutes": 10,
             "platform": 2,
             "direction": "North",
             "length": 6,
@@ -120,7 +120,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 28,
+            "minutes": 25,
             "platform": 2,
             "direction": "North",
             "length": 6,
@@ -129,10 +129,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 43,
+            "minutes": 40,
             "platform": 2,
             "direction": "North",
-            "length": 8,
+            "length": 6,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
             "bikeflag": 1
@@ -151,16 +151,16 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 6,
+            "minutes": 3,
             "platform": 2,
             "direction": "North",
-            "length": 8,
+            "length": 9,
             "color": "BLUE",
             "hexcolor": "#0099cc",
             "bikeflag": 1
           },
           {
-            "minutes": 14,
+            "minutes": 12,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -169,7 +169,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 21,
+            "minutes": 18,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -185,7 +185,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 4,
+            "minutes": 2,
             "platform": 1,
             "direction": "South",
             "length": 9,
@@ -194,7 +194,149 @@
             "bikeflag": 1
           },
           {
-            "minutes": 19,
+            "minutes": 17,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 31,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Fremont",
+        "abbreviation": "FRMT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 8,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 14,
+            "platform": 1,
+            "direction": "South",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 23,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Richmond",
+        "abbreviation": "RICH",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 6,
+            "platform": 2,
+            "direction": "North",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 21,
+            "platform": 2,
+            "direction": "North",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 36,
+            "platform": 2,
+            "direction": "North",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          }
+        ]
+      }
+    ]
+  },
+  "COLS": {
+    "name": "Coliseum",
+    "abbr": "COLS",
+    "etd": [
+      {
+        "destination": "Daly City",
+        "abbreviation": "DALY",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 8,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 15,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 23,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Dublin/Pleasanton",
+        "abbreviation": "DUBL",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 5,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 20,
             "platform": 1,
             "direction": "South",
             "length": 9,
@@ -219,16 +361,16 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 2,
+            "minutes": 3,
             "platform": 1,
             "direction": "South",
-            "length": 6,
+            "length": 8,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
             "bikeflag": 1
           },
           {
-            "minutes": 11,
+            "minutes": 10,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -253,170 +395,28 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 9,
-            "platform": 2,
-            "direction": "North",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 24,
-            "platform": 2,
-            "direction": "North",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 39,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          }
-        ]
-      }
-    ]
-  },
-  "COLS": {
-    "name": "Coliseum",
-    "abbr": "COLS",
-    "etd": [
-      {
-        "destination": "Daly City",
-        "abbreviation": "DALY",
-        "limited": 0,
-        "estimate": [
-          {
             "minutes": 2,
             "platform": 2,
             "direction": "North",
-            "length": 8,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 11,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
             "bikeflag": 1
           },
           {
             "minutes": 18,
             "platform": 2,
             "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Dublin/Pleasanton",
-        "abbreviation": "DUBL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 8,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 22,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 37,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Fremont",
-        "abbreviation": "FRMT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": "Leaving",
-            "platform": 1,
-            "direction": "South",
-            "length": 4,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 5,
-            "platform": 1,
-            "direction": "South",
             "length": 6,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
             "bikeflag": 1
           },
           {
-            "minutes": 14,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Richmond",
-        "abbreviation": "RICH",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 5,
+            "minutes": 33,
             "platform": 2,
             "direction": "North",
             "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 20,
-            "platform": 2,
-            "direction": "North",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 35,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
             "bikeflag": 1
@@ -435,148 +435,6 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 7,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 14,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 22,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Dublin/Pleasanton",
-        "abbreviation": "DUBL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 12,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 26,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 41,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Fremont",
-        "abbreviation": "FRMT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 4,
-            "platform": 1,
-            "direction": "South",
-            "length": 4,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 9,
-            "platform": 1,
-            "direction": "South",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 18,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Richmond",
-        "abbreviation": "RICH",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 1,
-            "platform": 2,
-            "direction": "North",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 16,
-            "platform": 2,
-            "direction": "North",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 31,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          }
-        ]
-      }
-    ]
-  },
-  "BAYF": {
-    "name": "Bay Fair",
-    "abbr": "BAYF",
-    "etd": [
-      {
-        "destination": "Daly City",
-        "abbreviation": "DALY",
-        "limited": 0,
-        "estimate": [
-          {
             "minutes": 4,
             "platform": 2,
             "direction": "North",
@@ -595,7 +453,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 19,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -611,7 +469,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": "Leaving",
+            "minutes": 9,
             "platform": 1,
             "direction": "South",
             "length": 9,
@@ -620,7 +478,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 15,
+            "minutes": 24,
             "platform": 1,
             "direction": "South",
             "length": 9,
@@ -629,7 +487,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 30,
+            "minutes": 38,
             "platform": 1,
             "direction": "South",
             "length": 9,
@@ -645,30 +503,30 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 7,
+            "minutes": 6,
             "platform": 1,
             "direction": "South",
-            "length": 4,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 12,
-            "platform": 1,
-            "direction": "South",
-            "length": 6,
+            "length": 8,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
             "bikeflag": 1
           },
           {
-            "minutes": 22,
+            "minutes": 14,
             "platform": 1,
             "direction": "South",
             "length": 8,
             "color": "GREEN",
             "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 21,
+            "platform": 1,
+            "direction": "South",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
             "bikeflag": 1
           }
         ]
@@ -691,13 +549,155 @@
             "minutes": 28,
             "platform": 2,
             "direction": "North",
-            "length": 8,
+            "length": 6,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
             "bikeflag": 1
           },
           {
             "minutes": 43,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          }
+        ]
+      }
+    ]
+  },
+  "BAYF": {
+    "name": "Bay Fair",
+    "abbr": "BAYF",
+    "etd": [
+      {
+        "destination": "Daly City",
+        "abbreviation": "DALY",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 8,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 16,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Dublin/Pleasanton",
+        "abbreviation": "DUBL",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 12,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 27,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 42,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Fremont",
+        "abbreviation": "FRMT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 2,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 10,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 18,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Richmond",
+        "abbreviation": "RICH",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 10,
+            "platform": 2,
+            "direction": "North",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 25,
+            "platform": 2,
+            "direction": "North",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 40,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -719,7 +719,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": "Leaving",
+            "minutes": 12,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -728,16 +728,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 14,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 29,
+            "minutes": 27,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -753,7 +744,16 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 1,
+            "minutes": 6,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 13,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -762,21 +762,12 @@
             "bikeflag": 1
           },
           {
-            "minutes": 11,
+            "minutes": 21,
             "platform": 1,
             "direction": "South",
-            "length": 4,
+            "length": 8,
             "color": "GREEN",
             "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 16,
-            "platform": 1,
-            "direction": "South",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
             "bikeflag": 1
           }
         ]
@@ -787,7 +778,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 9,
+            "minutes": 6,
             "platform": 2,
             "direction": "North",
             "length": 6,
@@ -796,16 +787,16 @@
             "bikeflag": 1
           },
           {
-            "minutes": 23,
+            "minutes": 21,
             "platform": 2,
             "direction": "North",
-            "length": 8,
+            "length": 6,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
             "bikeflag": 1
           },
           {
-            "minutes": 38,
+            "minutes": 36,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -827,7 +818,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 10,
+            "minutes": 7,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -836,19 +827,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 25,
+            "minutes": 23,
             "platform": 2,
             "direction": "North",
             "length": 9,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 40,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
             "color": "GREEN",
             "hexcolor": "#339933",
             "bikeflag": 1
@@ -861,7 +843,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 5,
+            "minutes": 3,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -870,19 +852,19 @@
             "bikeflag": 1
           },
           {
-            "minutes": 15,
+            "minutes": 10,
             "platform": 1,
             "direction": "South",
-            "length": 4,
+            "length": 8,
             "color": "GREEN",
             "hexcolor": "#339933",
             "bikeflag": 1
           },
           {
-            "minutes": 20,
+            "minutes": 17,
             "platform": 1,
             "direction": "South",
-            "length": 6,
+            "length": 8,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
             "bikeflag": 1
@@ -895,7 +877,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 5,
+            "minutes": "Leaving",
             "platform": 2,
             "direction": "North",
             "length": 6,
@@ -904,16 +886,16 @@
             "bikeflag": 1
           },
           {
-            "minutes": 19,
+            "minutes": 17,
             "platform": 2,
             "direction": "North",
-            "length": 8,
+            "length": 6,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
             "bikeflag": 1
           },
           {
-            "minutes": 34,
+            "minutes": 32,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -935,7 +917,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 5,
+            "minutes": 3,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -944,19 +926,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 20,
+            "minutes": 17,
             "platform": 2,
             "direction": "North",
             "length": 9,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 35,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
             "color": "GREEN",
             "hexcolor": "#339933",
             "bikeflag": 1
@@ -969,16 +942,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 4,
-            "platform": 1,
-            "direction": "South",
-            "length": 4,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 10,
+            "minutes": 8,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -987,12 +951,21 @@
             "bikeflag": 1
           },
           {
-            "minutes": 20,
+            "minutes": 15,
             "platform": 1,
             "direction": "South",
-            "length": 4,
+            "length": 8,
             "color": "GREEN",
             "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 23,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
             "bikeflag": 1
           }
         ]
@@ -1003,28 +976,28 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 14,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 29,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 44,
+            "minutes": 11,
             "platform": 2,
             "direction": "North",
             "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 26,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 41,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
             "bikeflag": 1
@@ -1041,35 +1014,15 @@
         "destination": "Daly City",
         "abbreviation": "DALY",
         "limited": 0,
-        "estimate": [
-          {
-            "minutes": "Leaving",
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 16,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 31,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          }
-        ]
+        "estimate": {
+          "minutes": 13,
+          "platform": 2,
+          "direction": "North",
+          "length": 8,
+          "color": "GREEN",
+          "hexcolor": "#339933",
+          "bikeflag": 1
+        }
       },
       {
         "destination": "Richmond",
@@ -1077,28 +1030,28 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 10,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 25,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 40,
+            "minutes": 7,
             "platform": 2,
             "direction": "North",
             "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 22,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 37,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
             "bikeflag": 1
@@ -1117,7 +1070,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 9,
+            "minutes": 2,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1126,7 +1079,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 25,
+            "minutes": 6,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1135,44 +1088,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 39,
+            "minutes": 17,
             "platform": 1,
             "direction": "North",
             "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 43,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 58,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 73,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
             "color": "YELLOW",
             "hexcolor": "#ffff33",
             "bikeflag": 1
@@ -1185,7 +1104,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 15,
+            "minutes": 12,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -1194,7 +1113,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 30,
+            "minutes": 27,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -1203,7 +1122,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 45,
+            "minutes": 42,
             "platform": 2,
             "direction": "South",
             "length": 10,
@@ -1225,7 +1144,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 1,
+            "minutes": 8,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1234,7 +1153,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 14,
+            "minutes": 11,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1243,44 +1162,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 30,
+            "minutes": 22,
             "platform": 1,
             "direction": "North",
             "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 49,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 64,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 79,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
             "color": "YELLOW",
             "hexcolor": "#ffff33",
             "bikeflag": 1
@@ -1293,7 +1178,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 10,
+            "minutes": 6,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -1302,7 +1187,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 24,
+            "minutes": 21,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -1311,7 +1196,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 39,
+            "minutes": 36,
             "platform": 2,
             "direction": "South",
             "length": 10,
@@ -1333,7 +1218,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 6,
+            "minutes": 3,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1342,7 +1227,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 19,
+            "minutes": 12,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1351,44 +1236,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 34,
+            "minutes": 16,
             "platform": 1,
             "direction": "North",
             "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 53,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 68,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 83,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
             "color": "YELLOW",
             "hexcolor": "#ffff33",
             "bikeflag": 1
@@ -1401,7 +1252,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 5,
+            "minutes": 2,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -1410,7 +1261,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 19,
+            "minutes": 16,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -1419,7 +1270,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 34,
+            "minutes": 31,
             "platform": 2,
             "direction": "South",
             "length": 10,
@@ -1441,7 +1292,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 10,
+            "minutes": 2,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1450,7 +1301,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 23,
+            "minutes": 7,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1459,115 +1310,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 38,
-            "platform": 1,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 58,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 73,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 88,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "SF Airport",
-        "abbreviation": "SFIA",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": "Leaving",
-            "platform": 2,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 15,
-            "platform": 2,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 30,
-            "platform": 2,
-            "direction": "South",
-            "length": 10,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      }
-    ]
-  },
-  "PHIL": {
-    "name": "Pleasant Hill/Contra Costa Centre",
-    "abbr": "PHIL",
-    "etd": [
-      {
-        "destination": "Pittsburg/Bay Point",
-        "abbreviation": "PITT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 13,
-            "platform": 1,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 26,
-            "platform": 1,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 41,
+            "minutes": 17,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1613,9 +1356,9 @@
       }
     ]
   },
-  "CONC": {
-    "name": "Concord",
-    "abbr": "CONC",
+  "PHIL": {
+    "name": "Pleasant Hill/Contra Costa Centre",
+    "abbr": "PHIL",
     "etd": [
       {
         "destination": "Pittsburg/Bay Point",
@@ -1623,7 +1366,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 2,
+            "minutes": 5,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1632,7 +1375,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 10,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1641,7 +1384,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 32,
+            "minutes": 19,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1657,7 +1400,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 7,
+            "minutes": 9,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -1666,7 +1409,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 21,
+            "minutes": 24,
             "platform": 2,
             "direction": "South",
             "length": 10,
@@ -1675,7 +1418,81 @@
             "bikeflag": 1
           },
           {
-            "minutes": 36,
+            "minutes": 39,
+            "platform": 2,
+            "direction": "South",
+            "length": 10,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      }
+    ]
+  },
+  "CONC": {
+    "name": "Concord",
+    "abbr": "CONC",
+    "etd": [
+      {
+        "destination": "Pittsburg/Bay Point",
+        "abbreviation": "PITT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 9,
+            "platform": 1,
+            "direction": "North",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 15,
+            "platform": 1,
+            "direction": "North",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 24,
+            "platform": 1,
+            "direction": "North",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "SF Airport",
+        "abbreviation": "SFIA",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 4,
+            "platform": 2,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 18,
+            "platform": 2,
+            "direction": "South",
+            "length": 10,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 33,
             "platform": 2,
             "direction": "South",
             "length": 10,
@@ -1697,7 +1514,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 5,
+            "minutes": 3,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1706,7 +1523,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 21,
+            "minutes": 12,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1715,7 +1532,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 35,
+            "minutes": 18,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1731,7 +1548,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 3,
+            "minutes": "Leaving",
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -1740,7 +1557,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 15,
             "platform": 2,
             "direction": "South",
             "length": 10,
@@ -1749,7 +1566,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 33,
+            "minutes": 30,
             "platform": 2,
             "direction": "South",
             "length": 10,
@@ -1770,7 +1587,7 @@
       "limited": 0,
       "estimate": [
         {
-          "minutes": 10,
+          "minutes": 7,
           "platform": 2,
           "direction": "South",
           "length": 10,
@@ -1779,7 +1596,7 @@
           "bikeflag": 1
         },
         {
-          "minutes": 25,
+          "minutes": 22,
           "platform": 2,
           "direction": "South",
           "length": 10,
@@ -1788,7 +1605,7 @@
           "bikeflag": 1
         },
         {
-          "minutes": 40,
+          "minutes": 37,
           "platform": 2,
           "direction": "South",
           "length": 10,
@@ -1809,7 +1626,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 10,
+            "minutes": 7,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -1818,7 +1635,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 25,
+            "minutes": 22,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -1827,7 +1644,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 40,
+            "minutes": 37,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -1852,7 +1669,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 15,
+            "minutes": 14,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -1861,7 +1678,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 30,
+            "minutes": 28,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -1877,7 +1694,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": "Leaving",
+            "minutes": 10,
             "platform": 3,
             "direction": "North",
             "length": 8,
@@ -1886,7 +1703,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 14,
             "platform": 3,
             "direction": "North",
             "length": 8,
@@ -1895,41 +1712,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 31,
-            "platform": 3,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 36,
-            "platform": 3,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 51,
-            "platform": 3,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 66,
+            "minutes": 23,
             "platform": 3,
             "direction": "North",
             "length": 9,
@@ -1945,7 +1728,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 1,
+            "minutes": "Leaving",
             "platform": 1,
             "direction": "North",
             "length": 6,
@@ -1954,7 +1737,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 8,
+            "minutes": 5,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -1963,7 +1746,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 16,
+            "minutes": 13,
             "platform": 1,
             "direction": "North",
             "length": 6,
@@ -1979,7 +1762,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 8,
+            "minutes": 5,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -1988,7 +1771,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 23,
+            "minutes": 20,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -1997,7 +1780,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 38,
+            "minutes": 35,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -2019,7 +1802,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 8,
+            "minutes": 5,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -2028,7 +1811,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 23,
+            "minutes": 20,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -2037,7 +1820,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 38,
+            "minutes": 35,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -2053,7 +1836,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 14,
+            "minutes": 12,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -2062,7 +1845,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 29,
+            "minutes": 26,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -2071,10 +1854,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 44,
+            "minutes": 41,
             "platform": 2,
             "direction": "South",
-            "length": 8,
+            "length": 9,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -2087,7 +1870,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 3,
+            "minutes": "Leaving",
             "platform": 3,
             "direction": "North",
             "length": 8,
@@ -2096,7 +1879,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 19,
+            "minutes": 11,
             "platform": 3,
             "direction": "North",
             "length": 8,
@@ -2105,44 +1888,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 33,
+            "minutes": 15,
             "platform": 3,
             "direction": "North",
             "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 37,
-            "platform": 3,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 52,
-            "platform": 3,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 67,
-            "platform": 3,
-            "direction": "North",
-            "length": 9,
             "color": "YELLOW",
             "hexcolor": "#ffff33",
             "bikeflag": 1
@@ -2155,7 +1904,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 3,
+            "minutes": 2,
             "platform": 1,
             "direction": "North",
             "length": 6,
@@ -2164,7 +1913,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 10,
+            "minutes": 6,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -2173,7 +1922,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 15,
             "platform": 1,
             "direction": "North",
             "length": 6,
@@ -2189,7 +1938,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 6,
+            "minutes": 3,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -2198,7 +1947,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 21,
+            "minutes": 18,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -2207,7 +1956,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 36,
+            "minutes": 33,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -2229,7 +1978,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 5,
+            "minutes": "Leaving",
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -2238,7 +1987,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 20,
+            "minutes": 17,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -2247,7 +1996,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 35,
+            "minutes": 32,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -2263,7 +2012,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 10,
+            "minutes": 9,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -2272,7 +2021,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 25,
+            "minutes": 23,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -2281,10 +2030,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 40,
+            "minutes": 38,
             "platform": 2,
             "direction": "South",
-            "length": 8,
+            "length": 9,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -2297,7 +2046,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 6,
+            "minutes": "Leaving",
             "platform": 3,
             "direction": "North",
             "length": 8,
@@ -2306,7 +2055,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 22,
+            "minutes": 4,
             "platform": 3,
             "direction": "North",
             "length": 8,
@@ -2315,44 +2064,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 36,
+            "minutes": 14,
             "platform": 3,
             "direction": "North",
             "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 41,
-            "platform": 3,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 56,
-            "platform": 3,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 71,
-            "platform": 3,
-            "direction": "North",
-            "length": 9,
             "color": "YELLOW",
             "hexcolor": "#ffff33",
             "bikeflag": 1
@@ -2365,7 +2080,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 2,
+            "minutes": "Leaving",
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -2374,7 +2089,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 6,
+            "minutes": 5,
             "platform": 1,
             "direction": "North",
             "length": 6,
@@ -2383,7 +2098,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 13,
+            "minutes": 10,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -2399,7 +2114,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 3,
+            "minutes": "Leaving",
             "platform": 4,
             "direction": "South",
             "length": 8,
@@ -2408,7 +2123,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 15,
             "platform": 4,
             "direction": "South",
             "length": 8,
@@ -2417,7 +2132,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 33,
+            "minutes": 30,
             "platform": 4,
             "direction": "South",
             "length": 8,
@@ -2439,7 +2154,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 6,
+            "minutes": 3,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -2448,7 +2163,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 20,
+            "minutes": 17,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -2457,7 +2172,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 35,
+            "minutes": 32,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -2473,7 +2188,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 5,
+            "minutes": 2,
             "platform": 1,
             "direction": "North",
             "length": 9,
@@ -2482,7 +2197,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 19,
+            "minutes": 16,
             "platform": 1,
             "direction": "North",
             "length": 9,
@@ -2491,7 +2206,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 34,
+            "minutes": 31,
             "platform": 1,
             "direction": "North",
             "length": 9,
@@ -2513,7 +2228,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 10,
+            "minutes": 7,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -2522,7 +2237,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 25,
+            "minutes": 22,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -2531,7 +2246,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 40,
+            "minutes": 37,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -2547,7 +2262,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 15,
+            "minutes": 13,
             "platform": 1,
             "direction": "North",
             "length": 9,
@@ -2556,7 +2271,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 29,
+            "minutes": 26,
             "platform": 1,
             "direction": "North",
             "length": 9,
@@ -2565,7 +2280,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 44,
+            "minutes": 41,
             "platform": 1,
             "direction": "North",
             "length": 9,
@@ -2595,7 +2310,7 @@
           "bikeflag": 1
         },
         {
-          "minutes": 20,
+          "minutes": 17,
           "platform": 2,
           "direction": "South",
           "length": 9,
@@ -2604,7 +2319,7 @@
           "bikeflag": 1
         },
         {
-          "minutes": 35,
+          "minutes": 32,
           "platform": 2,
           "direction": "South",
           "length": 9,
@@ -2620,21 +2335,26 @@
     "abbr": "WOAK",
     "etd": [
       {
+        "destination": "24th Street",
+        "abbreviation": "24TH",
+        "limited": 0,
+        "estimate": {
+          "minutes": 3,
+          "platform": 1,
+          "direction": "South",
+          "length": 8,
+          "color": "YELLOW",
+          "hexcolor": "#ffff33",
+          "bikeflag": 1
+        }
+      },
+      {
         "destination": "Daly City",
         "abbreviation": "DALY",
         "limited": 0,
         "estimate": [
           {
-            "minutes": "Leaving",
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 9,
+            "minutes": 7,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -2643,12 +2363,21 @@
             "bikeflag": 1
           },
           {
-            "minutes": 15,
+            "minutes": 13,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 21,
             "platform": 1,
             "direction": "South",
             "length": 8,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
+            "color": "GREEN",
+            "hexcolor": "#339933",
             "bikeflag": 1
           }
         ]
@@ -2659,7 +2388,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 10,
+            "minutes": 8,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -2668,7 +2397,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 25,
+            "minutes": 22,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -2677,7 +2406,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 40,
+            "minutes": 37,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -2693,7 +2422,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 1,
+            "minutes": 14,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -2702,19 +2431,19 @@
             "bikeflag": 1
           },
           {
-            "minutes": 16,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 30,
+            "minutes": 29,
             "platform": 2,
             "direction": "North",
             "length": 10,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 44,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
             "color": "GREEN",
             "hexcolor": "#339933",
             "bikeflag": 1
@@ -2736,7 +2465,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 20,
+            "minutes": 19,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -2745,7 +2474,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 35,
+            "minutes": 32,
             "platform": 1,
             "direction": "South",
             "length": 9,
@@ -2761,7 +2490,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 14,
+            "minutes": 6,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -2770,7 +2499,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 27,
+            "minutes": 10,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -2779,41 +2508,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 42,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 32,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 47,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 62,
+            "minutes": 20,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -2829,7 +2524,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 5,
+            "minutes": "Leaving",
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -2838,16 +2533,16 @@
             "bikeflag": 1
           },
           {
-            "minutes": 23,
+            "minutes": 17,
             "platform": 2,
             "direction": "North",
-            "length": 10,
+            "length": 8,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
           },
           {
-            "minutes": 34,
+            "minutes": 32,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -2863,7 +2558,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 12,
+            "minutes": 10,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -2872,7 +2567,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 27,
+            "minutes": 25,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -2881,7 +2576,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 42,
+            "minutes": 39,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -2898,313 +2593,49 @@
     "abbr": "EMBR",
     "etd": [
       {
+        "destination": "24th Street",
+        "abbreviation": "24TH",
+        "limited": 0,
+        "estimate": {
+          "minutes": 10,
+          "platform": 1,
+          "direction": "South",
+          "length": 8,
+          "color": "YELLOW",
+          "hexcolor": "#ffff33",
+          "bikeflag": 1
+        }
+      },
+      {
         "destination": "Daly City",
         "abbreviation": "DALY",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": "Leaving",
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 8,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 16,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Dublin/Pleasanton",
-        "abbreviation": "DUBL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 4,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 18,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 33,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Fremont",
-        "abbreviation": "FRMT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 9,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 23,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 38,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Millbrae",
-        "abbreviation": "MLBR",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 12,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 27,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 42,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pittsburg/Bay Point",
-        "abbreviation": "PITT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 8,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 20,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 35,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 25,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 40,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 55,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Richmond",
-        "abbreviation": "RICH",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 17,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 27,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 42,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "SF Airport",
-        "abbreviation": "SFIA",
         "limited": 0,
         "estimate": [
           {
             "minutes": 5,
             "platform": 1,
             "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 19,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 34,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      }
-    ]
-  },
-  "MONT": {
-    "name": "Montgomery St.",
-    "abbr": "MONT",
-    "etd": [
-      {
-        "destination": "Daly City",
-        "abbreviation": "DALY",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 3,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 9,
-            "platform": 1,
-            "direction": "South",
             "length": 9,
             "color": "BLUE",
             "hexcolor": "#0099cc",
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 13,
             "platform": 1,
             "direction": "South",
             "length": 8,
             "color": "GREEN",
             "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 20,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
             "bikeflag": 1
           }
         ]
@@ -3233,284 +2664,6 @@
             "bikeflag": 1
           },
           {
-            "minutes": 31,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Fremont",
-        "abbreviation": "FRMT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 8,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 21,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 36,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Millbrae",
-        "abbreviation": "MLBR",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 13,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 28,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 43,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pittsburg/Bay Point",
-        "abbreviation": "PITT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 6,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 19,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 34,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 24,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 39,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 54,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Richmond",
-        "abbreviation": "RICH",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 15,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 26,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 41,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "SF Airport",
-        "abbreviation": "SFIA",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 6,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 21,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 36,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      }
-    ]
-  },
-  "POWL": {
-    "name": "Powell St.",
-    "abbr": "POWL",
-    "etd": [
-      {
-        "destination": "Daly City",
-        "abbreviation": "DALY",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 4,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 10,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 19,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Dublin/Pleasanton",
-        "abbreviation": "DUBL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": "Leaving",
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 15,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
             "minutes": 30,
             "platform": 2,
             "direction": "North",
@@ -3536,7 +2689,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 20,
+            "minutes": 22,
             "platform": 2,
             "direction": "North",
             "length": 10,
@@ -3545,7 +2698,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 35,
+            "minutes": 37,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -3561,7 +2714,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 15,
+            "minutes": 12,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -3570,111 +2723,9 @@
             "bikeflag": 1
           },
           {
-            "minutes": 30,
+            "minutes": 26,
             "platform": 1,
             "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 45,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pittsburg/Bay Point",
-        "abbreviation": "PITT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 5,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 17,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 32,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 22,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 37,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 52,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Richmond",
-        "abbreviation": "RICH",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 14,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 24,
-            "platform": 2,
-            "direction": "North",
             "length": 8,
             "color": "RED",
             "hexcolor": "#ff0000",
@@ -3682,185 +2733,9 @@
           },
           {
             "minutes": 39,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "SF Airport",
-        "abbreviation": "SFIA",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 8,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 22,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 37,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      }
-    ]
-  },
-  "CIVC": {
-    "name": "Civic Center/UN Plaza",
-    "abbr": "CIVC",
-    "etd": [
-      {
-        "destination": "Daly City",
-        "abbreviation": "DALY",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 5,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 12,
             "platform": 1,
             "direction": "South",
             "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 20,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Dublin/Pleasanton",
-        "abbreviation": "DUBL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 13,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 28,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 43,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Fremont",
-        "abbreviation": "FRMT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 5,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 18,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 33,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Millbrae",
-        "abbreviation": "MLBR",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 1,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 16,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 31,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -3882,53 +2757,19 @@
             "bikeflag": 1
           },
           {
-            "minutes": 16,
+            "minutes": 13,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 18,
             "platform": 2,
             "direction": "North",
             "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 31,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 20,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 35,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 50,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
             "color": "YELLOW",
             "hexcolor": "#ffff33",
             "bikeflag": 1
@@ -3941,10 +2782,268 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 12,
+            "minutes": 11,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 25,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 40,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "SF Airport",
+        "abbreviation": "SFIA",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 2,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 17,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 32,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      }
+    ]
+  },
+  "MONT": {
+    "name": "Montgomery St.",
+    "abbr": "MONT",
+    "etd": [
+      {
+        "destination": "24th Street",
+        "abbreviation": "24TH",
+        "limited": 0,
+        "estimate": {
+          "minutes": 11,
+          "platform": 1,
+          "direction": "South",
+          "length": 8,
+          "color": "YELLOW",
+          "hexcolor": "#ffff33",
+          "bikeflag": 1
+        }
+      },
+      {
+        "destination": "Daly City",
+        "abbreviation": "DALY",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 7,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 15,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Dublin/Pleasanton",
+        "abbreviation": "DUBL",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 14,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 29,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Fremont",
+        "abbreviation": "FRMT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 6,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 21,
             "platform": 2,
             "direction": "North",
             "length": 10,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 36,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Millbrae",
+        "abbreviation": "MLBR",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 13,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 27,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 41,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Pittsburg/Bay Point",
+        "abbreviation": "PITT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 2,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 11,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 17,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Richmond",
+        "abbreviation": "RICH",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 9,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -3975,7 +3074,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 9,
+            "minutes": 4,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -3984,7 +3083,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 24,
+            "minutes": 18,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -3993,7 +3092,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 39,
+            "minutes": 33,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -4005,17 +3104,31 @@
       }
     ]
   },
-  "16TH": {
-    "name": "16th St. Mission",
-    "abbr": "16TH",
+  "POWL": {
+    "name": "Powell St.",
+    "abbr": "POWL",
     "etd": [
+      {
+        "destination": "24th Street",
+        "abbreviation": "24TH",
+        "limited": 0,
+        "estimate": {
+          "minutes": 13,
+          "platform": 1,
+          "direction": "South",
+          "length": 8,
+          "color": "YELLOW",
+          "hexcolor": "#ffff33",
+          "bikeflag": 1
+        }
+      },
       {
         "destination": "Daly City",
         "abbreviation": "DALY",
         "limited": 0,
         "estimate": [
           {
-            "minutes": 8,
+            "minutes": 1,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -4024,7 +3137,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 14,
+            "minutes": 8,
             "platform": 1,
             "direction": "South",
             "length": 9,
@@ -4033,7 +3146,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 23,
+            "minutes": 16,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -4049,7 +3162,265 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 11,
+            "minutes": 13,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 27,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 42,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Fremont",
+        "abbreviation": "FRMT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 4,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 19,
+            "platform": 2,
+            "direction": "North",
+            "length": 10,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 34,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Millbrae",
+        "abbreviation": "MLBR",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 14,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 28,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 42,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Pittsburg/Bay Point",
+        "abbreviation": "PITT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 10,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 15,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Richmond",
+        "abbreviation": "RICH",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 8,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 22,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 37,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "SF Airport",
+        "abbreviation": "SFIA",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 5,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 19,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 34,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      }
+    ]
+  },
+  "CIVC": {
+    "name": "Civic Center/UN Plaza",
+    "abbr": "CIVC",
+    "etd": [
+      {
+        "destination": "24th Street",
+        "abbreviation": "24TH",
+        "limited": 0,
+        "estimate": {
+          "minutes": 14,
+          "platform": 1,
+          "direction": "South",
+          "length": 8,
+          "color": "YELLOW",
+          "hexcolor": "#ffff33",
+          "bikeflag": 1
+        }
+      },
+      {
+        "destination": "Daly City",
+        "abbreviation": "DALY",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 3,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 9,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 18,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Dublin/Pleasanton",
+        "abbreviation": "DUBL",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 12,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -4092,7 +3463,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 16,
+            "minutes": 18,
             "platform": 2,
             "direction": "North",
             "length": 10,
@@ -4101,7 +3472,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 31,
+            "minutes": 33,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -4117,7 +3488,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 3,
+            "minutes": 16,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -4126,7 +3497,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 30,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -4135,10 +3506,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 33,
+            "minutes": 43,
             "platform": 1,
             "direction": "South",
-            "length": 8,
+            "length": 9,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -4151,10 +3522,10 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 1,
+            "minutes": 8,
             "platform": 2,
             "direction": "North",
-            "length": 8,
+            "length": 9,
             "color": "YELLOW",
             "hexcolor": "#ffff33",
             "bikeflag": 1
@@ -4169,41 +3540,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 29,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 18,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 33,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 48,
+            "minutes": 23,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -4219,16 +3556,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 10,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 21,
+            "minutes": 6,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -4237,7 +3565,16 @@
             "bikeflag": 1
           },
           {
-            "minutes": 36,
+            "minutes": 20,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 35,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -4253,16 +3590,276 @@
         "limited": 0,
         "estimate": [
           {
+            "minutes": 6,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 21,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 36,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      }
+    ]
+  },
+  "16TH": {
+    "name": "16th St. Mission",
+    "abbr": "16TH",
+    "etd": [
+      {
+        "destination": "24th Street",
+        "abbreviation": "24TH",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 2,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 16,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Daly City",
+        "abbreviation": "DALY",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 5,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
             "minutes": 11,
             "platform": 1,
             "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 20,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Dublin/Pleasanton",
+        "abbreviation": "DUBL",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 9,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 23,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 38,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Fremont",
+        "abbreviation": "FRMT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 15,
+            "platform": 2,
+            "direction": "North",
+            "length": 10,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 30,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Millbrae",
+        "abbreviation": "MLBR",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 18,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 32,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 46,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Pittsburg/Bay Point",
+        "abbreviation": "PITT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 6,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 12,
+            "platform": 2,
+            "direction": "North",
             "length": 8,
             "color": "YELLOW",
             "hexcolor": "#ffff33",
             "bikeflag": 1
           },
           {
-            "minutes": 26,
+            "minutes": 21,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Richmond",
+        "abbreviation": "RICH",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 4,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 18,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 33,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "SF Airport",
+        "abbreviation": "SFIA",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 8,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -4271,7 +3868,16 @@
             "bikeflag": 1
           },
           {
-            "minutes": 41,
+            "minutes": 23,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 38,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -4293,6 +3899,259 @@
         "limited": 0,
         "estimate": [
           {
+            "minutes": 7,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 13,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 22,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Dublin/Pleasanton",
+        "abbreviation": "DUBL",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 8,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 21,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 36,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Fremont",
+        "abbreviation": "FRMT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 13,
+            "platform": 2,
+            "direction": "North",
+            "length": 10,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 28,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 43,
+            "platform": 2,
+            "direction": "North",
+            "length": 10,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Millbrae",
+        "abbreviation": "MLBR",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 3,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 20,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 34,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Pittsburg/Bay Point",
+        "abbreviation": "PITT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 4,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 10,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 19,
+            "platform": 2,
+            "direction": "North",
+            "length": 9,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Richmond",
+        "abbreviation": "RICH",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 2,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 16,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 31,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "SF Airport",
+        "abbreviation": "SFIA",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 11,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 25,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 40,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      }
+    ]
+  },
+  "GLEN": {
+    "name": "Glen Park",
+    "abbr": "GLEN",
+    "etd": [
+      {
+        "destination": "Daly City",
+        "abbreviation": "DALY",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 1,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
+          {
             "minutes": 10,
             "platform": 1,
             "direction": "South",
@@ -4309,15 +4168,6 @@
             "color": "BLUE",
             "hexcolor": "#0099cc",
             "bikeflag": 1
-          },
-          {
-            "minutes": 25,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
           }
         ]
       },
@@ -4327,7 +4177,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 9,
+            "minutes": 5,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -4336,7 +4186,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 24,
+            "minutes": 19,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -4345,7 +4195,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 39,
+            "minutes": 34,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -4361,16 +4211,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 1,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 14,
+            "minutes": 11,
             "platform": 2,
             "direction": "North",
             "length": 10,
@@ -4379,10 +4220,19 @@
             "bikeflag": 1
           },
           {
-            "minutes": 29,
+            "minutes": 26,
             "platform": 2,
             "direction": "North",
             "length": 9,
+            "color": "GREEN",
+            "hexcolor": "#339933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 41,
+            "platform": 2,
+            "direction": "North",
+            "length": 10,
             "color": "GREEN",
             "hexcolor": "#339933",
             "bikeflag": 1
@@ -4404,7 +4254,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 20,
+            "minutes": 22,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -4413,7 +4263,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 35,
+            "minutes": 37,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -4429,7 +4279,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 12,
+            "minutes": 7,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -4438,7 +4288,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 27,
+            "minutes": 21,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -4447,44 +4297,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 42,
+            "minutes": 36,
             "platform": 2,
             "direction": "North",
             "length": 10,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 16,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 31,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 46,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
             "color": "YELLOW",
             "hexcolor": "#ffff33",
             "bikeflag": 1
@@ -4497,28 +4313,28 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 8,
+            "minutes": 13,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 28,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 43,
             "platform": 2,
             "direction": "North",
             "length": 10,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 19,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 34,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -4561,15 +4377,24 @@
       }
     ]
   },
-  "GLEN": {
-    "name": "Glen Park",
-    "abbr": "GLEN",
+  "BALB": {
+    "name": "Balboa Park",
+    "abbr": "BALB",
     "etd": [
       {
         "destination": "Daly City",
         "abbreviation": "DALY",
         "limited": 0,
         "estimate": [
+          {
+            "minutes": 3,
+            "platform": 1,
+            "direction": "South",
+            "length": 9,
+            "color": "BLUE",
+            "hexcolor": "#0099cc",
+            "bikeflag": 1
+          },
           {
             "minutes": 12,
             "platform": 1,
@@ -4580,21 +4405,12 @@
             "bikeflag": 1
           },
           {
-            "minutes": 19,
+            "minutes": 18,
             "platform": 1,
             "direction": "South",
             "length": 9,
             "color": "BLUE",
             "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 27,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
             "bikeflag": 1
           }
         ]
@@ -4605,7 +4421,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 6,
+            "minutes": 3,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -4614,7 +4430,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 21,
+            "minutes": 16,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -4623,7 +4439,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 36,
+            "minutes": 31,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -4639,7 +4455,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 11,
+            "minutes": 8,
             "platform": 2,
             "direction": "North",
             "length": 10,
@@ -4648,7 +4464,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 26,
+            "minutes": 23,
             "platform": 2,
             "direction": "North",
             "length": 9,
@@ -4657,7 +4473,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 41,
+            "minutes": 38,
             "platform": 2,
             "direction": "North",
             "length": 10,
@@ -4682,7 +4498,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 23,
+            "minutes": 25,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -4691,7 +4507,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 38,
+            "minutes": 39,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -4707,7 +4523,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 9,
+            "minutes": 5,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -4716,7 +4532,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 24,
+            "minutes": 19,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -4725,44 +4541,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 39,
+            "minutes": 34,
             "platform": 2,
             "direction": "North",
             "length": 10,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 14,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 29,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 44,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
             "color": "YELLOW",
             "hexcolor": "#ffff33",
             "bikeflag": 1
@@ -4775,28 +4557,28 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 6,
+            "minutes": 11,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 26,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 41,
             "platform": 2,
             "direction": "North",
             "length": 10,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 16,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 31,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -4827,285 +4609,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 31,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      }
-    ]
-  },
-  "BALB": {
-    "name": "Balboa Park",
-    "abbr": "BALB",
-    "etd": [
-      {
-        "destination": "Daly City",
-        "abbreviation": "DALY",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 6,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 15,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 21,
-            "platform": 1,
-            "direction": "South",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Dublin/Pleasanton",
-        "abbreviation": "DUBL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 4,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 19,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 34,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "BLUE",
-            "hexcolor": "#0099cc",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Fremont",
-        "abbreviation": "FRMT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 9,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 24,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 39,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "GREEN",
-            "hexcolor": "#339933",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Millbrae",
-        "abbreviation": "MLBR",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 10,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 25,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 40,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pittsburg/Bay Point",
-        "abbreviation": "PITT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 7,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 22,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 37,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 11,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 26,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 41,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Richmond",
-        "abbreviation": "RICH",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 4,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 14,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 29,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "SF Airport",
-        "abbreviation": "SFIA",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 3,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 18,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 33,
+            "minutes": 30,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -5136,7 +4640,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 16,
+            "minutes": 13,
             "platform": 1,
             "direction": "North",
             "length": 9,
@@ -5145,7 +4649,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 31,
+            "minutes": 28,
             "platform": 1,
             "direction": "North",
             "length": 9,
@@ -5161,16 +4665,16 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 6,
+            "minutes": 5,
             "platform": 1,
             "direction": "North",
-            "length": 10,
+            "length": 8,
             "color": "GREEN",
             "hexcolor": "#339933",
             "bikeflag": 1
           },
           {
-            "minutes": 21,
+            "minutes": 20,
             "platform": 1,
             "direction": "North",
             "length": 9,
@@ -5179,7 +4683,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 36,
+            "minutes": 35,
             "platform": 1,
             "direction": "North",
             "length": 10,
@@ -5195,7 +4699,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 14,
+            "minutes": 11,
             "platform": 3,
             "direction": "South",
             "length": 8,
@@ -5204,7 +4708,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 29,
+            "minutes": 28,
             "platform": 3,
             "direction": "South",
             "length": 8,
@@ -5213,7 +4717,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 44,
+            "minutes": 43,
             "platform": 3,
             "direction": "South",
             "length": 8,
@@ -5229,7 +4733,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 2,
+            "minutes": 1,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -5238,7 +4742,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 15,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -5247,44 +4751,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 33,
+            "minutes": 30,
             "platform": 2,
             "direction": "North",
             "length": 10,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pleasant Hill",
-        "abbreviation": "PHIL",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 8,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 23,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 38,
-            "platform": 1,
-            "direction": "North",
-            "length": 9,
             "color": "YELLOW",
             "hexcolor": "#ffff33",
             "bikeflag": 1
@@ -5297,7 +4767,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 10,
+            "minutes": 7,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -5306,7 +4776,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 25,
+            "minutes": 22,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -5315,10 +4785,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 40,
+            "minutes": 37,
             "platform": 2,
             "direction": "North",
-            "length": 9,
+            "length": 10,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -5331,7 +4801,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 7,
+            "minutes": 4,
             "platform": 3,
             "direction": "South",
             "length": 8,
@@ -5340,7 +4810,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 22,
+            "minutes": 19,
             "platform": 3,
             "direction": "South",
             "length": 8,
@@ -5349,7 +4819,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 37,
+            "minutes": 34,
             "platform": 3,
             "direction": "South",
             "length": 8,
@@ -5371,7 +4841,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 14,
+            "minutes": 12,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5380,7 +4850,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 29,
+            "minutes": 27,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5389,7 +4859,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 44,
+            "minutes": 42,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5405,7 +4875,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 7,
+            "minutes": 6,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -5414,7 +4884,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 22,
+            "minutes": 19,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -5423,10 +4893,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 37,
+            "minutes": 34,
             "platform": 2,
             "direction": "South",
-            "length": 8,
+            "length": 9,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -5439,7 +4909,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 5,
+            "minutes": 4,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -5448,7 +4918,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 10,
+            "minutes": 8,
             "platform": 1,
             "direction": "North",
             "length": 6,
@@ -5457,7 +4927,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 16,
+            "minutes": 13,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -5479,7 +4949,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 12,
+            "minutes": 9,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5488,7 +4958,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 27,
+            "minutes": 24,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5497,115 +4967,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 42,
-            "platform": 2,
-            "direction": "South",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Millbrae",
-        "abbreviation": "MLBR",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 5,
-            "platform": 2,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 20,
-            "platform": 2,
-            "direction": "South",
-            "length": 9,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 35,
-            "platform": 2,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Richmond",
-        "abbreviation": "RICH",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": "Leaving",
-            "platform": 1,
-            "direction": "North",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 7,
-            "platform": 1,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 12,
-            "platform": 1,
-            "direction": "North",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          }
-        ]
-      }
-    ]
-  },
-  "NBRK": {
-    "name": "North Berkeley",
-    "abbr": "NBRK",
-    "etd": [
-      {
-        "destination": "Fremont",
-        "abbreviation": "FRMT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 10,
-            "platform": 2,
-            "direction": "South",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 25,
-            "platform": 2,
-            "direction": "South",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 40,
+            "minutes": 39,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5621,7 +4983,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 2,
+            "minutes": 3,
             "platform": 2,
             "direction": "South",
             "length": 8,
@@ -5642,7 +5004,7 @@
             "minutes": 32,
             "platform": 2,
             "direction": "South",
-            "length": 8,
+            "length": 9,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -5655,16 +5017,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 3,
-            "platform": 1,
-            "direction": "North",
-            "length": 6,
-            "color": "ORANGE",
-            "hexcolor": "#ff9933",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 10,
+            "minutes": 6,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -5673,12 +5026,129 @@
             "bikeflag": 1
           },
           {
-            "minutes": 14,
+            "minutes": 10,
             "platform": 1,
             "direction": "North",
             "length": 6,
             "color": "ORANGE",
             "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 16,
+            "platform": 1,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      }
+    ]
+  },
+  "NBRK": {
+    "name": "North Berkeley",
+    "abbr": "NBRK",
+    "etd": [
+      {
+        "destination": "Fremont",
+        "abbreviation": "FRMT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 7,
+            "platform": 2,
+            "direction": "South",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 22,
+            "platform": 2,
+            "direction": "South",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 37,
+            "platform": 2,
+            "direction": "South",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Millbrae",
+        "abbreviation": "MLBR",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "platform": 2,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 14,
+            "platform": 2,
+            "direction": "South",
+            "length": 9,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 29,
+            "platform": 2,
+            "direction": "South",
+            "length": 9,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Richmond",
+        "abbreviation": "RICH",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 8,
+            "platform": 1,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 13,
+            "platform": 1,
+            "direction": "North",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 18,
+            "platform": 1,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
             "bikeflag": 1
           }
         ]
@@ -5695,7 +5165,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 6,
+            "minutes": 4,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5704,7 +5174,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 21,
+            "minutes": 19,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5713,7 +5183,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 36,
+            "minutes": 33,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5729,7 +5199,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 14,
+            "minutes": 11,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -5738,16 +5208,16 @@
             "bikeflag": 1
           },
           {
-            "minutes": 29,
+            "minutes": 26,
             "platform": 2,
             "direction": "South",
-            "length": 8,
+            "length": 9,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
           },
           {
-            "minutes": 44,
+            "minutes": 41,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -5763,7 +5233,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 6,
+            "minutes": 2,
             "platform": 1,
             "direction": "North",
             "length": 6,
@@ -5772,7 +5242,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 13,
+            "minutes": 11,
             "platform": 1,
             "direction": "North",
             "length": 8,
@@ -5781,7 +5251,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 16,
             "platform": 1,
             "direction": "North",
             "length": 6,
@@ -5803,7 +5273,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 4,
+            "minutes": "Leaving",
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5812,7 +5282,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 15,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5821,7 +5291,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 33,
+            "minutes": 30,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5837,7 +5307,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 11,
+            "minutes": 8,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -5846,16 +5316,16 @@
             "bikeflag": 1
           },
           {
-            "minutes": 26,
+            "minutes": 23,
             "platform": 2,
             "direction": "South",
-            "length": 8,
+            "length": 9,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
           },
           {
-            "minutes": 41,
+            "minutes": 38,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -5871,16 +5341,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 2,
-            "platform": 1,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 9,
+            "minutes": 4,
             "platform": 1,
             "direction": "North",
             "length": 6,
@@ -5889,12 +5350,21 @@
             "bikeflag": 1
           },
           {
-            "minutes": 16,
+            "minutes": 14,
             "platform": 1,
             "direction": "North",
             "length": 8,
             "color": "RED",
             "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 18,
+            "platform": 1,
+            "direction": "North",
+            "length": 6,
+            "color": "ORANGE",
+            "hexcolor": "#ff9933",
             "bikeflag": 1
           }
         ]
@@ -5911,7 +5381,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 12,
+            "minutes": 10,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5920,7 +5390,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 27,
+            "minutes": 25,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5929,7 +5399,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 42,
+            "minutes": 40,
             "platform": 2,
             "direction": "South",
             "length": 6,
@@ -5945,7 +5415,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 5,
+            "minutes": 2,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -5954,16 +5424,16 @@
             "bikeflag": 1
           },
           {
-            "minutes": 20,
+            "minutes": 17,
             "platform": 2,
             "direction": "South",
-            "length": 8,
+            "length": 9,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
           },
           {
-            "minutes": 35,
+            "minutes": 32,
             "platform": 2,
             "direction": "South",
             "length": 9,
@@ -5985,7 +5455,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 2,
+            "minutes": "Leaving",
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -5994,7 +5464,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 15,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -6003,149 +5473,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 33,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Pittsburg/Bay Point",
-        "abbreviation": "PITT",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 14,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 29,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 44,
-            "platform": 2,
-            "direction": "North",
-            "length": 10,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "Richmond",
-        "abbreviation": "RICH",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 7,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 22,
-            "platform": 2,
-            "direction": "North",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 37,
-            "platform": 2,
-            "direction": "North",
-            "length": 9,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          }
-        ]
-      },
-      {
-        "destination": "SF Airport",
-        "abbreviation": "SFIA",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 11,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 26,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 41,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "YELLOW",
-            "hexcolor": "#ffff33",
-            "bikeflag": 1
-          }
-        ]
-      }
-    ]
-  },
-  "SSAN": {
-    "name": "South San Francisco",
-    "abbr": "SSAN",
-    "etd": [
-      {
-        "destination": "Millbrae",
-        "abbreviation": "MLBR",
-        "limited": 0,
-        "estimate": [
-          {
-            "minutes": 7,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 21,
-            "platform": 1,
-            "direction": "South",
-            "length": 8,
-            "color": "RED",
-            "hexcolor": "#ff0000",
-            "bikeflag": 1
-          },
-          {
-            "minutes": 36,
+            "minutes": 32,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -6161,7 +5489,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 11,
+            "minutes": 12,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -6170,7 +5498,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 26,
+            "minutes": 27,
             "platform": 2,
             "direction": "North",
             "length": 10,
@@ -6179,7 +5507,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 41,
+            "minutes": 42,
             "platform": 2,
             "direction": "North",
             "length": 10,
@@ -6204,7 +5532,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 18,
+            "minutes": 19,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -6213,10 +5541,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 33,
+            "minutes": 34,
             "platform": 2,
             "direction": "North",
-            "length": 9,
+            "length": 10,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -6229,7 +5557,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 14,
+            "minutes": 8,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -6238,7 +5566,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 29,
+            "minutes": 23,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -6247,7 +5575,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 44,
+            "minutes": 38,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -6259,9 +5587,9 @@
       }
     ]
   },
-  "SBRN": {
-    "name": "San Bruno",
-    "abbr": "SBRN",
+  "SSAN": {
+    "name": "South San Francisco",
+    "abbr": "SSAN",
     "etd": [
       {
         "destination": "Millbrae",
@@ -6269,7 +5597,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 10,
+            "minutes": 4,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -6278,7 +5606,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 25,
+            "minutes": 18,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -6287,7 +5615,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 40,
+            "minutes": 36,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -6337,7 +5665,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": "Leaving",
+            "minutes": 2,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -6346,7 +5674,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 15,
+            "minutes": 16,
             "platform": 2,
             "direction": "North",
             "length": 8,
@@ -6355,10 +5683,10 @@
             "bikeflag": 1
           },
           {
-            "minutes": 30,
+            "minutes": 31,
             "platform": 2,
             "direction": "North",
-            "length": 9,
+            "length": 10,
             "color": "RED",
             "hexcolor": "#ff0000",
             "bikeflag": 1
@@ -6371,7 +5699,7 @@
         "limited": 0,
         "estimate": [
           {
-            "minutes": 3,
+            "minutes": 12,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -6380,7 +5708,7 @@
             "bikeflag": 1
           },
           {
-            "minutes": 17,
+            "minutes": 26,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -6389,7 +5717,149 @@
             "bikeflag": 1
           },
           {
-            "minutes": 32,
+            "minutes": 41,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      }
+    ]
+  },
+  "SBRN": {
+    "name": "San Bruno",
+    "abbr": "SBRN",
+    "etd": [
+      {
+        "destination": "Millbrae",
+        "abbreviation": "MLBR",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 7,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 22,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 39,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Pittsburg/Bay Point",
+        "abbreviation": "PITT",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 5,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 20,
+            "platform": 2,
+            "direction": "North",
+            "length": 10,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 35,
+            "platform": 2,
+            "direction": "North",
+            "length": 10,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "Richmond",
+        "abbreviation": "RICH",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 12,
+            "platform": 2,
+            "direction": "North",
+            "length": 8,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 27,
+            "platform": 2,
+            "direction": "North",
+            "length": 10,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 42,
+            "platform": 2,
+            "direction": "North",
+            "length": 10,
+            "color": "RED",
+            "hexcolor": "#ff0000",
+            "bikeflag": 1
+          }
+        ]
+      },
+      {
+        "destination": "SF Airport",
+        "abbreviation": "SFIA",
+        "limited": 0,
+        "estimate": [
+          {
+            "minutes": 2,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 15,
+            "platform": 1,
+            "direction": "South",
+            "length": 8,
+            "color": "YELLOW",
+            "hexcolor": "#ffff33",
+            "bikeflag": 1
+          },
+          {
+            "minutes": 30,
             "platform": 1,
             "direction": "South",
             "length": 8,
@@ -6419,19 +5889,19 @@
           "bikeflag": 1
         },
         {
-          "minutes": 26,
+          "minutes": 23,
           "platform": 3,
           "direction": "North",
-          "length": 9,
+          "length": 10,
           "color": "RED",
           "hexcolor": "#ff0000",
           "bikeflag": 1
         },
         {
-          "minutes": 41,
+          "minutes": 38,
           "platform": 3,
           "direction": "North",
-          "length": 8,
+          "length": 10,
           "color": "RED",
           "hexcolor": "#ff0000",
           "bikeflag": 1
@@ -6448,7 +5918,7 @@
       "limited": 0,
       "estimate": [
         {
-          "minutes": 3,
+          "minutes": "Leaving",
           "platform": 3,
           "direction": "North",
           "length": 8,
@@ -6457,7 +5927,7 @@
           "bikeflag": 1
         },
         {
-          "minutes": 18,
+          "minutes": 15,
           "platform": 3,
           "direction": "North",
           "length": 10,
@@ -6466,7 +5936,7 @@
           "bikeflag": 1
         },
         {
-          "minutes": 33,
+          "minutes": 30,
           "platform": 3,
           "direction": "North",
           "length": 10,
