@@ -5,7 +5,7 @@ import {genDataFile} from './utils'
 import {Route, Routes} from '../app/data/flowtypes'
 
 const _getSampleSchedule = (schedules: Object[]): Object => (
-    schedules[0]
+    schedules[schedules.length - 3]
 )
 
 const _getStopProp = (stopInfo: Object, propertyName: string): any => (
