@@ -11,6 +11,8 @@
 		"test": "jest --verbose",
 		"test:coverage": "yarn test -- --coverage",
 		"validate": "yarn run check:static && yarn test",
+	    "validate:coverage": "yarn run check:static && yarn test:coverage",
+		"coveralls": "cat ./coverage/lcov.info | coveralls",
 		"start": "yarn run start:web",
 		"start:rn": "node node_modules/react-native/local-cli/cli.js start",
 		"start:android": "react-native run-android",
@@ -53,6 +55,7 @@
 		"babel-preset-env": "^1.0.2",
 		"babel-preset-react": "^6.16.0",
 		"babel-preset-react-native": "1.9.0",
+		"coveralls": "^2.11.15",
 		"css-loader": "^0.26.1",
 		"enzyme": "^2.6.0",
 		"eslint": "^3.12.1",
@@ -84,7 +87,7 @@
 	"engines": {
 		"node": ">=6"
 	},
-    "pre-commit": [
-      "validate"
-    ]
+	"pre-commit": [
+		"validate"
+	]
 }

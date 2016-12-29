@@ -8,4 +8,7 @@ node_js:
 cache: yarn
 
 # Run the the validate script
-script: "yarn run validate"
+script: "yarn run validate:coverage"
+
+# Send coverage data to Coveralls
+after_script: "yarn run coveralls"
