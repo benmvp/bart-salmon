@@ -10,9 +10,17 @@ export const getSuggestedSalmonRoutes = async (
     origin: string,
     destination: string,
     numSuggestions: number = DEFAULT_NUM_SUGGESTIONS
-): Promise<SalmonRoute[]> => getSuggestedSalmonRoutesFromETDs(
-    await getEstimatedTimesOfDeparture(),
-    origin,
-    destination,
-    numSuggestions
-)
+): Promise<SalmonRoute[]> => {
+    try {
+        return getSuggestedSalmonRoutesFromETDs(
+            await getEstimatedTimesOfDeparture(),
+            origin,
+            destination,
+            numSuggestions
+        )
+    } catch (ex) {
+        // throw ex
+        // TODO: log error somewhere
+        return []
+    }
+}

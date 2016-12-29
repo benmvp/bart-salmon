@@ -207,70 +207,64 @@ const getSuggestedSalmonRoutesFromETDs = (
     destination: string,
     numSuggestions: number
 ): SalmonRoute[] => {
-    try {
-        // 1. Determine the desired routes based on the origin/destination
-        // (w/o making a "trip" API request)
-        let targetRouteIds = _determineRouteIdsFromOrigin(origin, destination)
+    // 1. Determine the desired routes based on the origin/destination
+    // (w/o making a "trip" API request)
+    let targetRouteIds = _determineRouteIdsFromOrigin(origin, destination)
 
-        // console.log(targetRouteIds)
+    // console.log(targetRouteIds)
 
-        // 2. Generate a list of the trains heading in the OPPOSITE direction w/
-        // their arrival times (waitTime)
-        let _backwardsTrains = _getBackwardsTrains(origin, etdsLookup, targetRouteIds)
+    // 2. Generate a list of the trains heading in the OPPOSITE direction w/
+    // their arrival times (waitTime)
+    let _backwardsTrains = _getBackwardsTrains(origin, etdsLookup, targetRouteIds)
 
-        // console.log(_backwardsTrains.value())
-        // console.log(_backwardsTrains.size())
+    // console.log(_backwardsTrains.value())
+    // console.log(_backwardsTrains.size())
 
-        // 3. For each train, determine the estimated time it would take to get to
-        // each following station in its route (backwardsRideTime)
-        let _backwardsTimeRoutePaths = _getBackwardsTimeRoutePaths(_backwardsTrains, origin)
+    // 3. For each train, determine the estimated time it would take to get to
+    // each following station in its route (backwardsRideTime)
+    let _backwardsTimeRoutePaths = _getBackwardsTimeRoutePaths(_backwardsTrains, origin)
 
-        // console.log(_backwardsTimeRoutePaths.value())
-        // console.log(_backwardsTimeRoutePaths.size())
+    // console.log(_backwardsTimeRoutePaths.value())
+    // console.log(_backwardsTimeRoutePaths.size())
 
-        // 4. For each train at each station, determine the estimated wait time until
-        // targetRouteId arrives at that station (backwardsWaitTime)
-        let _backwardsTimeRoutePathsWithWaits = _getWaitTimesForBackwardsTimeRoutePaths(
-            _backwardsTimeRoutePaths,
-            etdsLookup,
-            targetRouteIds
-        )
+    // 4. For each train at each station, determine the estimated wait time until
+    // targetRouteId arrives at that station (backwardsWaitTime)
+    let _backwardsTimeRoutePathsWithWaits = _getWaitTimesForBackwardsTimeRoutePaths(
+        _backwardsTimeRoutePaths,
+        etdsLookup,
+        targetRouteIds
+    )
 
-        // console.log(_backwardsTimeRoutePathsWithWaits.value())
-        // console.log(_backwardsTimeRoutePathsWithWaits.size())
+    // console.log(_backwardsTimeRoutePathsWithWaits.value())
+    // console.log(_backwardsTimeRoutePathsWithWaits.size())
 
-        // 5. For each train at each station after waiting, determine estimated time
-        // it would take to return to the origin on target route (returnRideTime)
+    // 5. For each train at each station after waiting, determine estimated time
+    // it would take to return to the origin on target route (returnRideTime)
 
-        let _salmonTimeRoutePaths = _getSalmonTimeRoutePaths(_backwardsTimeRoutePathsWithWaits, origin)
+    let _salmonTimeRoutePaths = _getSalmonTimeRoutePaths(_backwardsTimeRoutePathsWithWaits, origin)
 
-        // console.log(_salmonTimeRoutePaths.value())
+    // console.log(_salmonTimeRoutePaths.value())
 
-        return _salmonTimeRoutePaths
-            // 6. Add up waitTime + backwardsRideTime + backwardsWaitTime + returnRideTime
-            // (salmonTime) for each salmon route path and sort by ascending total time
-            // NOTE: This can be made significantly complicated to determine which routes
-            // have most priority
-            .sortBy([
-                // first sort by salmonTime
-                ({waitTime, backwardsRideTime, backwardsWaitTime, returnRideTime}) => (
-                    waitTime + backwardsRideTime + backwardsWaitTime + returnRideTime
-                ),
-                // then by wait time (for ties in salmonTime)
-                ({waitTime, backwardsWaitTime}) => (waitTime + backwardsWaitTime)
-            ])
+    return _salmonTimeRoutePaths
+        // 6. Add up waitTime + backwardsRideTime + backwardsWaitTime + returnRideTime
+        // (salmonTime) for each salmon route path and sort by ascending total time
+        // NOTE: This can be made significantly complicated to determine which routes
+        // have most priority
+        .sortBy([
+            // first sort by salmonTime
+            ({waitTime, backwardsRideTime, backwardsWaitTime, returnRideTime}) => (
+                waitTime + backwardsRideTime + backwardsWaitTime + returnRideTime
+            ),
+            // then by wait time (for ties in salmonTime)
+            ({waitTime, backwardsWaitTime}) => (waitTime + backwardsWaitTime)
+        ])
 
-            // 7. Take the first numSuggestions suggestions
-            .take(numSuggestions)
+        // 7. Take the first numSuggestions suggestions
+        .take(numSuggestions)
 
-            // 8. Sort again? With the set of suggestions, we may want to reprioritize
+        // 8. Sort again? With the set of suggestions, we may want to reprioritize
 
-            .value()
-    } catch (ex) {
-        // throw ex
-        // TODO: log error somewhere
-        return []
-    }
+        .value()
 }
 
 export default getSuggestedSalmonRoutesFromETDs

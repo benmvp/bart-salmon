@@ -82,7 +82,11 @@
 		"webpack-dev-server": "^1.16.2"
 	},
 	"jest": {
-		"preset": "react-native"
+		"preset": "react-native",
+		"coveragePathIgnorePatterns": [
+			"/node-modules/",
+			"<rootDir>/app/store/"
+		]
 	},
 	"engines": {
 		"node": ">=6"
