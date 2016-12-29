@@ -19,8 +19,8 @@ export const getSuggestedSalmonRoutes = async (
             numSuggestions
         )
     } catch (ex) {
-        // throw ex
+        throw ex
         // TODO: log error somewhere
-        return []
+        // return []
     }
 }
