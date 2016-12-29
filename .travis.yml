@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "node"
+  - "6"
+  - "5"
+  - "4"
+
+# cache dependencies in $HOME/.yarn-cache across builds
+cache: yarn
+
+# Run the the validate script
+script: "yarn run validate"
