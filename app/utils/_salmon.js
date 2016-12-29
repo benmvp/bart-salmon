@@ -1,12 +1,8 @@
 // @flow
 import _ from 'lodash'
-import {Route, SalmonRoute} from '../data/flowtypes'
-import {getEstimatedTimesOfDeparture} from '../api'
+import type {Route, SalmonRoute} from '../data/flowtypes'
 import routesLookup from '../data/routes.json'
 import stationsLookup from '../data/stations.json'
-
-// default number of salmon suggestions to return
-const DEFAULT_NUM_SUGGESTIONS = 5
 
 // minimum number of minutes to wait at the backwards station
 // the higher this number is the more likely to make the train
@@ -205,14 +201,13 @@ const _getSalmonTimeRoutePaths = (_backwardsTimeRoutePathsWithWaits, origin: str
 /*
  * Given origin and destination stations, returns a list of suggested salmon routes
  */
-const getSuggestedSalmonRoutes = async (
+const getSuggestedSalmonRoutesFromETDs = (
+    etdsLookup: {[id:string]: Object},
     origin: string,
     destination: string,
-    numSuggestions: number = DEFAULT_NUM_SUGGESTIONS
-): Promise<SalmonRoute[]> => {
+    numSuggestions: number
+): SalmonRoute[] => {
     try {
-        let etdsLookup = await getEstimatedTimesOfDeparture()
-
         // 1. Determine the desired routes based on the origin/destination
         // (w/o making a "trip" API request)
         let targetRouteIds = _determineRouteIdsFromOrigin(origin, destination)
@@ -278,4 +273,4 @@ const getSuggestedSalmonRoutes = async (
     }
 }
 
-export default getSuggestedSalmonRoutes
+export default getSuggestedSalmonRoutesFromETDs

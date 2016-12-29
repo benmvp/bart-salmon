@@ -1,18 +1,22 @@
 [ignore]
-; We fork some components by platform
+# We fork some components by platform
 .*/*[.]android.js
 
-; Ignore "BUCK" generated dirs
+# Ignore "BUCK" generated dirs
 <PROJECT_ROOT>/\.buckd/
 
-; Ignore unexpected extra "@providesModule"
+# Ignore unexpected extra "@providesModule"
 .*/node_modules/.*/node_modules/fbjs/.*
 
-; Ignore duplicate module providers
-; For RN Apps installed via npm, "Libraries" folder is inside
-; "node_modules/react-native" but in the source repo it is in the root
+# Ignore duplicate module providers
+# For RN Apps installed via npm, "Libraries" folder is inside
+# "node_modules/react-native" but in the source repo it is in the root
 .*/Libraries/react-native/React.js
 .*/Libraries/react-native/ReactNative.js
+
+<PROJECT_ROOT>/node_modules/react-native/packager/react-packager/
+<PROJECT_ROOT>/node_modules/react-native/local-cli/
+<PROJECT_ROOT>/node_modules/react-native/Libraries/
 
 [include]
 
@@ -23,6 +27,8 @@ flow/
 
 [options]
 module.system=haste
+
+module.file_ext=.scss
 
 experimental.strict_type_args=true
 
