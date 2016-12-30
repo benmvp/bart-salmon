@@ -1,4 +1,4 @@
-exports[`test does not blow up when requesting high number of suggestions 1`] = `
+exports[`for "Holidays" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -564,7 +564,7 @@ Array [
 ]
 `;
 
-exports[`test returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`for "Holidays" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -602,7 +602,7 @@ Array [
 ]
 `;
 
-exports[`test returns suggestions for DUBL line 1`] = `
+exports[`for "Holidays" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -772,7 +772,7 @@ Array [
 ]
 `;
 
-exports[`test returns suggestions for PITT line 1`] = `
+exports[`for "Holidays" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -942,7 +942,7 @@ Array [
 ]
 `;
 
-exports[`test returns suggestions for RICH line 1`] = `
+exports[`for "Holidays" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -1112,7 +1112,7 @@ Array [
 ]
 `;
 
-exports[`test returns suggestions for Westbound line 1`] = `
+exports[`for "Holidays" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -1282,7 +1282,7 @@ Array [
 ]
 `;
 
-exports[`test returns suggestions when many Westbound lines are available 1`] = `
+exports[`for "Holidays" returns suggestions when many Westbound lines are available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -1617,7 +1617,7 @@ Array [
 ]
 `;
 
-exports[`test returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`for "Holidays" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -1952,7 +1952,7 @@ Array [
 ]
 `;
 
-exports[`test returns suggestions when more than one Northbound line is available 1`] = `
+exports[`for "Holidays" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
