@@ -15,5 +15,7 @@ Bart Salmon is both a web and native app, aiming to provide a useful service as 
 - **Routing:** [React Router](https://github.com/ReactTraining/react-router) (React) & _TBD_ (React Native)
 - **API:** [Bart API](http://api.bart.gov/docs/overview/index.aspx)
 - **Bundling:** [Webpack](https://webpack.github.io/) (with hot module reloading) & [Babel](http://babeljs.io/)
-- **Static Typing:** [Flow](https://flowtype.org/) & [ESLint](http://eslint.org/)
+- **Static Checking:** [Flow](https://flowtype.org/) & [ESLint](http://eslint.org/)
 - **Testing:** [Jest](https://facebook.github.io/jest/) & [Enzyme](https://github.com/airbnb/enzyme)
+- **Continuous Integration:** [Travis CI](https://travis-ci.org/benmvp/bart-salmon) & [Coveralls](https://coveralls.io/github/benmvp/bart-salmon?branch=master) 
+- **Environments:** Chrome, Firefox, Edge & Safari 10+

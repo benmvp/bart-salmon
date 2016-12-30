@@ -16,7 +16,7 @@ module.exports = Object.assign(
                     {
                         test: /(\.web)?\.js$/,
                         exclude: /node_modules/,
-                        loaders: ['babel-loader', 'remove-flow-types'],
+                        loaders: ['babel-loader'],
                         include: path.join(__dirname, '../../app')
                     }
                 ],

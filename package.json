@@ -23,7 +23,7 @@
 		"bundle:android": "react-native bundle --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
 		"bundle:android:dev": "react-native bundle --dev false --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
 		"bundle:web": "webpack --config web/webpack/web.prod.config.js --progress --colors",
-		"deploy:web": "yarn run bundle:web&&gh-pages -d web/public",
+		"deploy:web": "yarn run bundle:web && gh-pages --dist web/public --message 'Manual deploy'",
 		"gen:routes": "babel-node _scripts/gen-routes-data.js",
 		"gen:stations": "babel-node _scripts/gen-stations-data.js",
 		"gen:mock:etd": "babel-node _scripts/gen-mock-etd-data.js"
