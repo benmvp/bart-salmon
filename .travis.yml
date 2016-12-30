@@ -24,4 +24,4 @@ deploy:
   script:  ./_scripts/travis-deploy.sh
   on:
     branch: master
-    node: "6"
+    node: "node"
