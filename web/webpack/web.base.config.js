@@ -2,9 +2,11 @@ const path = require('path')
 const webpack = require('webpack')
 const autoprefixer = require('autoprefixer')
 
-const appPath = path.join(__dirname, '../../app')
+const APP_PATH = path.join(__dirname, '../../app')
+const NODE_ENV = process.env.NODE_ENV || 'development'
 
 module.exports = {
+    devtool: 'cheap-module-eval-source-map',
     entry: [
         path.join(__dirname, '../../app/index.web.js'),
     ],
@@ -23,12 +25,12 @@ module.exports = {
                     'postcss',
                     'sass?sourceMap'
                 ],
-                include: appPath
+                include: APP_PATH
             },
             {
                 test: /\.json$/,
                 loaders: ['json'],
-                include: appPath
+                include: APP_PATH
             }
         ],
     },
@@ -41,7 +43,7 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env': {
                 // Useful to reduce the size of client-side libraries, e.g. react
-                NODE_ENV: JSON.stringify('production'),
+                NODE_ENV: JSON.stringify(NODE_ENV),
                 PLATFORM_ENV: JSON.stringify('web'),
             },
         })

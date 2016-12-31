@@ -43,6 +43,7 @@ android/app/libs
 
 # Web
 bundle.js
+bundle.js.map
 
 # Code coverage
 coverage

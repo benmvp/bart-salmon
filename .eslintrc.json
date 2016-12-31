@@ -5,5 +5,12 @@
     },
     "globals": {
         "jest": true
+    },
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "web/webpack/web.dev.config.js"
+            }
+        }
     }
 }

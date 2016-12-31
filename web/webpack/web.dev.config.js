@@ -7,7 +7,6 @@ module.exports = Object.assign(
     {},
     baseConfig,
     {
-        devtool: 'cheap-module-eval-source-map',
         entry: [
             'webpack-dev-server/client?http://localhost:8080',
             ...baseConfig.entry
