@@ -17,6 +17,7 @@ git config --global user.email "ben@benmvp.com"
 git config --global user.name "Travis CI Auto-Deployer"
 
 # Run gh-pages script
+# GITHUB_TOKEN is an env variable set in Travis CI
 ./node_modules/.bin/gh-pages \
   --repo https://$GITHUB_TOKEN@github.com/benmvp/bart-salmon.git \
   --dist web/public \
