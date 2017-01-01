@@ -14,6 +14,7 @@ EXAMPLE_ETDS_LOOKUPS.forEach(({etdsLookup, title}) => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromETDs(etdsLookup, 'SSAN', 'WDUB', 0)
 
             expect(actualSalmonSuggestions).toHaveLength(0)
+            expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns single suggestion when 1 suggestion is requested', () => {
@@ -66,7 +67,7 @@ EXAMPLE_ETDS_LOOKUPS.forEach(({etdsLookup, title}) => {
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
-        xit('returns suggestions for WARM line', () => {
+        it('returns suggestions for WARM line', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromETDs(etdsLookup, 'MONT', 'FRMT', 5)
 
             expect(actualSalmonSuggestions).toHaveLength(5)
@@ -87,7 +88,7 @@ EXAMPLE_ETDS_LOOKUPS.forEach(({etdsLookup, title}) => {
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
-        xit('returns suggestions when more than one Southbound line is available', () => {
+        it('returns suggestions when more than one Southbound line is available', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromETDs(etdsLookup, '12TH', 'BAYF', 5)
 
             expect(actualSalmonSuggestions).toHaveLength(5)

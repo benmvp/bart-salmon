@@ -2,13 +2,10 @@
 import _ from 'lodash'
 import {fetchJson} from '../app/api/fetch'
 import {genDataFile} from './utils'
-
-const _forceArray = (value:mixed):any[] => (
-    Array.isArray(value) ? value : [value]
-)
+import {forceArray} from '../app/utils/general'
 
 const _normalizeArrayResponse = (arrayResponse:Object, itemName:string):mixed => (
-    arrayResponse ? _forceArray(arrayResponse[itemName]) : []
+    arrayResponse ? forceArray(arrayResponse[itemName]) : []
 )
 
 const _normalizeRoutes = (routesJson) => _normalizeArrayResponse(routesJson, 'route')

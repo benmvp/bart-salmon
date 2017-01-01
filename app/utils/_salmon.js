@@ -1,6 +1,8 @@
 // @flow
 import _ from 'lodash'
 import type {Route, SalmonRoute} from '../data/flowtypes'
+import {forceArray} from './general'
+
 import routesLookup from '../data/routes.json'
 import stationsLookup from '../data/stations.json'
 
@@ -10,19 +12,30 @@ const MINIMUM_BACKWARDS_STATION_WAIT_TIME = 1
 
 const _STATION_ROUTE_DIRECTIONS = _(['northRoutes', 'southRoutes'])
 
-const _routeStationPredicate = (target, {name}) => name === target
+const _isStationARouteStation = (target, {name}): boolean => name === target
 
-const _determineRouteIdsFromOrigin = (origin:string, destination:string):string[] => (
+/*
+ * Determines if the specified origin & destination are in the list of stations
+ * (for a route) with origin coming before destination
+ */
+const _areStationsOnRouteStations = (start: string, end: string, stations): boolean => {
+    let startIndex = stations.findIndex(_isStationARouteStation.bind(null, start))
+    let endIndex = stations.findIndex(_isStationARouteStation.bind(null, end))
+
+    return startIndex > -1 && startIndex < endIndex
+}
+
+const _determineRouteIdsFromOrigin = (origin: string, destination: string, trainColor: string = undefined):string[] => (
     _(routesLookup)
         .values()
         // if the route is valid its stations list will have both the origin and destination in it
         // with origin coming before destination
-        .filter(({stations}:Route) => {
-            let originIndex = stations.findIndex(_routeStationPredicate.bind(null, origin))
-            let destinationIndex = stations.findIndex(_routeStationPredicate.bind(null, destination))
+        .filter(({stations}:Route) => _areStationsOnRouteStations(origin, destination, stations))
 
-            return originIndex > -1 && originIndex < destinationIndex
-        })
+        // optionally filter down to routes that match the optional trainColor
+        .filter(({color}) => !trainColor || trainColor === color)
+
+        // just pull out the routeID
         .map(({routeID}) => routeID)
         .value()
 )
@@ -31,39 +44,59 @@ const _normalizeMinutes = (minutes:mixed):number => (
     Number.isNaN(minutes) ? 0 : +minutes
 )
 
-const _getBackwardsRoutesDestinations = (
-    stationName: string,
-    targetRouteIds: string[]
-): Set<string> => {
-    let stationInfo = stationsLookup[stationName]
+/*
+ * Given a list of route IDs and a source station returns a list of potential
+ * train destination stations
+ */
+const _getAllDestinationsFromRoutes = (sourceStation: string, routeIds: string[]): Set<string> => new Set (
+    _(routeIds)
+        // transform each routeID into a nested list of potential train destinations
+        .map((routeId) => (
+            _(routesLookup[routeId].stations)
+                // For all the stations for the given route, filter down to just
+                // the stations *after* the source station. These are the possible
+                // train destinations
+                .takeRightWhile(({name}) => name !== sourceStation)
 
-    return new Set(
-        _STATION_ROUTE_DIRECTIONS
-            // get the list of route IDs in either direction
-            .map((routeDirection) => stationInfo[routeDirection])
+                // just give back the station names
+                .map(({name}) => name)
+                .value()
+        ))
 
-            // find the route IDs in that are in the opposite direction by seeing
-            // if the targetRouteIds are NOT in the routes for the direction
-            .find((routesInDirection) => _(routesInDirection).intersection(targetRouteIds).isEmpty())
-
-            // transform those opposite routeIDs into their final destinations
-            // (for easy lookup later)
-            .map((routeId) => routesLookup[routeId].destination)
-    )
-}
-
-const _getReturnRouteDestinations = (targetRouteIds: string[]): Set<string> => new Set(
-    targetRouteIds.map((routeID) => routesLookup[routeID].destination)
+        // flatten out the list
+        .flatten()
 )
 
-const _getRouteDestinations = (
+const _getBackwardsRoutesDestinations = (sourceStation: string, targetRouteIds: string[]): Set<string> => {
+    let stationInfo = stationsLookup[sourceStation]
+    let backwardsRouteIds = _STATION_ROUTE_DIRECTIONS
+        // get the list of route IDs in either direction
+        .map((routeDirection) => stationInfo[routeDirection])
+
+        // find the route IDs in that are in the opposite direction by seeing
+        // if the targetRouteIds are NOT in the routes for the direction
+        .find((routesInDirection) => _(routesInDirection).intersection(targetRouteIds).isEmpty())
+
+    return _getAllDestinationsFromRoutes(sourceStation, backwardsRouteIds)
+}
+
+const _getReturnRouteDestinations = (sourceStation, targetRouteIds: string[]): Set<string> => (
+    _getAllDestinationsFromRoutes(sourceStation, targetRouteIds)
+)
+
+/*
+ * Given a curren station and a set of target routes, returns a list of possible
+ * train destinations either in the direction of each of the target routes or the
+ * opposite
+ */
+const _getPossibleRouteDestinations = (
     stationName: string,
     targetRouteIds: string[],
     isOpposite: boolean
 ): Set<string> => (
     isOpposite
         ? _getBackwardsRoutesDestinations(stationName, targetRouteIds)
-        : _getReturnRouteDestinations(targetRouteIds)
+        : _getReturnRouteDestinations(stationName, targetRouteIds)
 )
 
 const _genFlattenedDestinationEtdsForStation = (
@@ -72,8 +105,10 @@ const _genFlattenedDestinationEtdsForStation = (
     targetRouteIds: string[],
     isOpposite: boolean = false
 ) => {
-    let routeDestinations = _getRouteDestinations(stationName, targetRouteIds, isOpposite)
+    let routeDestinations = _getPossibleRouteDestinations(stationName, targetRouteIds, isOpposite)
     let etdsForStation = etdsLookup[stationName].etd
+
+    // console.log({stationName, targetRouteIds, routeDestinations, isOpposite, etdsForStation})
 
     return _(etdsForStation)
         // take ETDs grouped by destination & filter down trains to the ones
@@ -84,39 +119,32 @@ const _genFlattenedDestinationEtdsForStation = (
         // for each set of ETDs for the destinations going in the route direction
         // add the destination info to the ETD info
         .map((destinationEtdInfo) => (
-            // TODO: Make this map a lodash sequence for performance optimization
-            destinationEtdInfo.estimate.map((estimate) => (
-                _(destinationEtdInfo)
-                    .omit(['estimate'])
-                    .merge(estimate)
-                    .value()
-            ))
+            forceArray(destinationEtdInfo.estimate)
+                .map((estimate) => (
+                    _(destinationEtdInfo)
+                        .omit(['estimate'])
+                        .merge(estimate)
+                        .value()
+                ))
         ))
 
         // flatten out the groupings (now that each one has the destination info)
         .flatten()
 }
 
-const _getRouteIDFromTrainInfo = ({abbreviation, hexcolor}) => (
-    _(routesLookup)
-        .values()
-        .find(({destination, color}) => (abbreviation === destination && hexcolor === color))
-        .routeID
-)
-
 const _getBackwardsTrains = (origin:string, etdsLookup:{[id:string]: Object}, targetRouteIds:string[]) => (
     _genFlattenedDestinationEtdsForStation(origin, etdsLookup, targetRouteIds, true)
         .map((trainInfo) => ({
             backwardsTrain: trainInfo,
             waitTime: _normalizeMinutes(trainInfo.minutes),
-            backwardsRouteID: _getRouteIDFromTrainInfo(trainInfo)
+            backwardsRouteID: _determineRouteIdsFromOrigin(origin, trainInfo.abbreviation, trainInfo.hexcolor)[0]
         }))
 )
 
 const _minutesBetweenStation = (start, end, routeID) => {
     let routeStations = routesLookup[routeID].stations
-    let startRouteStationInfo = routeStations.find(_routeStationPredicate.bind(null, start))
-    let endRouteStationInfo = routeStations.find(_routeStationPredicate.bind(null, end))
+    let startRouteStationInfo = routeStations.find(_isStationARouteStation.bind(null, start))
+    let endRouteStationInfo = routeStations.find(_isStationARouteStation.bind(null, end))
 
     return endRouteStationInfo.timeFromOrigin - startRouteStationInfo.timeFromOrigin
 }
@@ -172,7 +200,7 @@ const _getWaitTimesForBackwardsTimeRoutePaths = (_backwardsTimeRoutePaths, etdsL
                     ...trainInfo,
                     returnTrain: returnTrainInfo,
                     backwardsWaitTime: _normalizeMinutes(returnTrainInfo.minutes) - timeToBackwardsStation,
-                    returnRouteID: _getRouteIDFromTrainInfo(returnTrainInfo)
+                    returnRouteID: _determineRouteIdsFromOrigin(backwardsStation, returnTrainInfo.abbreviation, returnTrainInfo.hexcolor)[0]
                 }))
 
                 // only include the trains where the wait time at the backwards
@@ -188,6 +216,9 @@ const _getWaitTimesForBackwardsTimeRoutePaths = (_backwardsTimeRoutePaths, etdsL
 
 const _getSalmonTimeRoutePaths = (_backwardsTimeRoutePathsWithWaits, origin: string) => (
     _backwardsTimeRoutePathsWithWaits
+        .filter(({backwardsStation, returnRouteID}) => (
+            _areStationsOnRouteStations(backwardsStation, origin, routesLookup[returnRouteID].stations)
+        ))
         .map((trainInfo) => ({
             ...trainInfo,
             returnRideTime: _minutesBetweenStation(
@@ -262,7 +293,7 @@ const getSuggestedSalmonRoutesFromETDs = (
         // 7. Take the first numSuggestions suggestions
         .take(numSuggestions)
 
-        // 8. Sort again? With the set of suggestions, we may want to reprioritize
+        // 8. Sort again? With the set of suggestions, we may want to reprioritize...
 
         .value()
 }
