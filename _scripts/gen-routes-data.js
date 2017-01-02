@@ -16,7 +16,7 @@ const _getStopOrigTime = (stopInfo: Object): string => _getStopProp(stopInfo, 'o
 
 const _toMinutes = (stopInfo:Object): number => {
     let time = _getStopOrigTime(stopInfo)
-    let [, hours, minutes] = time.match(/^(\d\d?)\:(\d\d)/) || []
+    let [, hours, minutes] = time.match(/^(\d\d?):(\d\d)/) || []
 
     return +hours * 60 + +minutes
 }
@@ -32,7 +32,7 @@ const _normalizeRoute = (routeInfo:Object, schedules:Object[]): Route => {
             stations: stationsInSampleSchedule
                 .map((stopInfo) => ({
                     name: _getStopProp(stopInfo, 'station'),
-                    timeFromOrigin: _toMinutes(stopInfo) -  firstStopTime
+                    timeFromOrigin: _toMinutes(stopInfo) - firstStopTime
                 }))
         })
         .value()

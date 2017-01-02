@@ -26,6 +26,7 @@
 		"deploy:web": "yarn run bundle:web && gh-pages --dist web/public --message 'Manual deploy'",
 		"gen:routes": "babel-node _scripts/gen-routes-data.js",
 		"gen:stations": "babel-node _scripts/gen-stations-data.js",
+		"gen:station-routes": "babel-node _scripts/gen-station-routes-data.js",
 		"gen:mock:etd": "babel-node _scripts/gen-mock-etd-data.js"
 	},
 	"dependencies": {

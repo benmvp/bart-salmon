@@ -109,14 +109,14 @@ EXAMPLE_ETDS_LOOKUPS.forEach(({etdsLookup, title}) => {
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
-        xit('returns suggestions when changing trains is needed (Eastbound)', () => {
+        it('returns suggestions when changing trains is needed (Eastbound)', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromETDs(etdsLookup, 'COLS', 'NCON', 5)
 
             expect(actualSalmonSuggestions).toHaveLength(5)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
-        xit('returns suggestions when changing trains is needed (Westbound)', () => {
+        it('returns suggestions when changing trains is needed (Westbound)', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromETDs(etdsLookup, 'LAFY', 'HAYW', 5)
 
             expect(actualSalmonSuggestions).toHaveLength(5)
