@@ -2,7 +2,7 @@
 import _ from 'lodash'
 import {fetchJson} from '../app/api/fetch'
 import {genDataFile} from './utils'
-import {Route, Routes} from '../app/data/flowtypes'
+import type {Route, Routes} from '../app/data/flowtypes'
 
 const _getSampleSchedule = (schedules: Object[]): Object => (
     schedules[schedules.length - 3]

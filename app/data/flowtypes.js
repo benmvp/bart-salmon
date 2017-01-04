@@ -1,3 +1,5 @@
+// @flow
+
 export type Route = {
     name: string,
     abbr: string,

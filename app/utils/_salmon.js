@@ -246,7 +246,7 @@ const _getAllSalmonRoutesFromETDS = (
     etdsLookup: {[id:string]: Object},
     origin: string,
     destination: string,
-    allowTransfers: ?boolean = false
+    allowTransfers?: boolean = false
 ) => {
     // 1. Determine the desired routes based on the origin/destination
     // (w/o making a "trip" API request)

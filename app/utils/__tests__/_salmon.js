@@ -1,15 +1,43 @@
 import getSuggestedSalmonRoutesFromETDs from '../_salmon'
+import etdsMorningRushLookup from '../../api/__mocks__/etds-rush-am.json'
+import etdsEveningRushLookup from '../../api/__mocks__/etds-rush-pm.json'
 import etdsHolidayLookup from '../../api/__mocks__/etds-holiday.json'
 
 const EXAMPLE_ETDS_LOOKUPS = [
     {
+        etdsLookup: etdsMorningRushLookup,
+        title: 'Morning Rush'
+    },
+    {
+        etdsLookup: etdsEveningRushLookup,
+        title: 'Evening Rush'
+    },
+    {
         etdsLookup: etdsHolidayLookup,
         title: 'Holidays'
-    }
+    },
 ]
 
 EXAMPLE_ETDS_LOOKUPS.forEach(({etdsLookup, title}) => {
     describe(`for "${title}"`, () => {
+        it('throws an error when an invalid origin is used', () => {
+            expect(
+                () => getSuggestedSalmonRoutesFromETDs(etdsLookup, 'FOO', 'COLM')
+            ).toThrow()
+        })
+
+        it('throws an error when an invalid destination is used', () => {
+            expect(
+                () => getSuggestedSalmonRoutesFromETDs(etdsLookup, 'PLZA', 'BAR')
+            ).toThrow()
+        })
+
+        it('throws an error when origin === destination', () => {
+            expect(
+                () => getSuggestedSalmonRoutesFromETDs(etdsLookup, 'BALB', 'BALB')
+            ).toThrow()
+        })
+
         it('returns no suggestions when 0 suggestions are requested', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromETDs(etdsLookup, 'SSAN', 'WDUB', 0)
 
