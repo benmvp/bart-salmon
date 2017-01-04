@@ -2,7 +2,22 @@
 import _ from 'lodash'
 import {fetchJson} from '../app/api/fetch'
 import {genDataFile} from './utils'
-import type {Route, Routes} from '../app/data/flowtypes'
+
+type Route = {
+    name: string,
+    abbr: string,
+    routeID: string,
+    number: number,
+    origin: string,
+    destination: string,
+    direction: string,
+    color: string,
+    routeID: string,
+    holidays: boolean,
+    stations: string[]
+}
+
+type RoutesLookup = {[id:string]: Route}
 
 const _getSampleSchedule = (schedules: Object[]): Object => (
     schedules[schedules.length - 3]
@@ -21,7 +36,7 @@ const _toMinutes = (stopInfo:Object): number => {
     return +hours * 60 + +minutes
 }
 
-const _normalizeRoute = (routeInfo:Object, schedules:Object[]): Route => {
+const _normalizeRoute = (routeInfo: Object, schedules: Object[]): Route => {
     let sampleSchedule = _getSampleSchedule(schedules)
     let stationsInSampleSchedule = sampleSchedule.stop.filter((stopInfo) => !!_getStopOrigTime(stopInfo))
     let firstStopTime = _toMinutes(stationsInSampleSchedule[0])
@@ -38,7 +53,7 @@ const _normalizeRoute = (routeInfo:Object, schedules:Object[]): Route => {
         .value()
 }
 
-const _fetchPerRoute = (respJson: Object, fetchType:string, fetchCommand: string) => (
+const _fetchPerRoute = (respJson: Object, fetchType: string, fetchCommand: string) => (
     Promise.all(
         respJson.routes.route.map(({number}) => (
             fetchJson(fetchType, fetchCommand, {route: number})
@@ -46,7 +61,7 @@ const _fetchPerRoute = (respJson: Object, fetchType:string, fetchCommand: string
     )
 )
 
-const _getRoutes = (): Promise<Routes> => (
+const _getRoutes = (): Promise<RoutesLookup> => (
     fetchJson('route', 'routes')
         .then((respJson):Promise<Object[]> => (
             Promise.all([
@@ -57,12 +72,12 @@ const _getRoutes = (): Promise<Routes> => (
                 _fetchPerRoute(respJson, 'sched', 'routesched'),
             ])
         ))
-        .then(([respRoutes:Object[], respSchedules:Object[]]) => (
-            respRoutes.map((respRoute:Object, index):Route => (
+        .then(([respRoutes: Object[], respSchedules: Object[]]) => (
+            respRoutes.map((respRoute: Object, index): Route => (
                 _normalizeRoute(respRoute.routes.route, respSchedules[index].route.train)
             ))
         ))
-        .then((routes:Route[]) => _.keyBy(routes, 'routeID'))
+        .then((routes: Route[]) => _.keyBy(routes, 'routeID'))
 )
 
 genDataFile(_getRoutes, '../app/data/routes.json', 'routes')

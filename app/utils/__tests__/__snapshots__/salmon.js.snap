@@ -2,7 +2,7 @@ exports[`for "Evening Rush" does not blow up when requesting high number of sugg
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -18,7 +18,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "24TH",
       "bikeflag": 1,
@@ -35,7 +35,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -51,7 +51,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "24TH",
       "bikeflag": 1,
@@ -68,7 +68,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -84,7 +84,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -101,7 +101,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -117,7 +117,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -134,7 +134,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -150,7 +150,7 @@ Array [
     },
     "backwardsWaitTime": 13,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -167,7 +167,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -183,7 +183,7 @@ Array [
     },
     "backwardsWaitTime": 13,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -200,7 +200,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -216,7 +216,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -233,7 +233,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -249,7 +249,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -266,7 +266,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -282,7 +282,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -299,7 +299,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -315,7 +315,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -332,7 +332,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -348,7 +348,7 @@ Array [
     },
     "backwardsWaitTime": 22,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -365,7 +365,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -381,7 +381,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -398,7 +398,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -414,7 +414,7 @@ Array [
     },
     "backwardsWaitTime": 22,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -431,7 +431,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -447,7 +447,7 @@ Array [
     },
     "backwardsWaitTime": 13,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -464,7 +464,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -480,7 +480,7 @@ Array [
     },
     "backwardsWaitTime": 12,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -497,7 +497,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 21,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -513,7 +513,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 21,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -530,7 +530,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 21,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -546,7 +546,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 21,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -563,7 +563,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -579,7 +579,7 @@ Array [
     },
     "backwardsWaitTime": 12,
     "returnRideTime": 18,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -596,7 +596,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -612,7 +612,7 @@ Array [
     },
     "backwardsWaitTime": 12,
     "returnRideTime": 18,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -629,7 +629,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -645,7 +645,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 18,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -662,7 +662,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -678,7 +678,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 18,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -695,7 +695,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -711,7 +711,7 @@ Array [
     },
     "backwardsWaitTime": 22,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -728,7 +728,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -744,7 +744,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -761,7 +761,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -777,7 +777,7 @@ Array [
     },
     "backwardsWaitTime": 22,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -794,7 +794,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -810,7 +810,7 @@ Array [
     },
     "backwardsWaitTime": 13,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -827,7 +827,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -843,7 +843,7 @@ Array [
     },
     "backwardsWaitTime": 12,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -867,7 +867,7 @@ exports[`for "Evening Rush" returns single suggestion when 1 suggestion is reque
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "BAYF",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -883,7 +883,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 5",
+    "returnRouteId": "ROUTE 5",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -905,7 +905,7 @@ exports[`for "Evening Rush" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -921,7 +921,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -938,7 +938,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -954,7 +954,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -971,7 +971,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -987,7 +987,7 @@ Array [
     },
     "backwardsWaitTime": 14,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -1004,7 +1004,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -1020,7 +1020,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -1037,7 +1037,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -1053,7 +1053,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -1075,7 +1075,7 @@ exports[`for "Evening Rush" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -1091,7 +1091,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -1108,7 +1108,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -1124,7 +1124,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -1141,7 +1141,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "16TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -1157,7 +1157,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -1174,7 +1174,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "16TH",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -1190,7 +1190,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -1207,7 +1207,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "16TH",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -1223,7 +1223,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -1245,7 +1245,7 @@ exports[`for "Evening Rush" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -1261,7 +1261,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -1278,7 +1278,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -1294,7 +1294,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -1311,7 +1311,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "BALB",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -1327,7 +1327,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -1344,7 +1344,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -1360,7 +1360,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -1377,7 +1377,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "GLEN",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -1393,7 +1393,7 @@ Array [
     },
     "backwardsWaitTime": 11,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -1415,7 +1415,7 @@ exports[`for "Evening Rush" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "16TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -1431,7 +1431,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -1448,7 +1448,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "CIVC",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -1464,7 +1464,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 3,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -1481,7 +1481,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "POWL",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -1497,7 +1497,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -1514,7 +1514,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "POWL",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -1530,7 +1530,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -1547,7 +1547,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "GLEN",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -1563,7 +1563,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 10,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -1585,7 +1585,7 @@ exports[`for "Evening Rush" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -1601,7 +1601,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -1618,7 +1618,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -1634,7 +1634,7 @@ Array [
     },
     "backwardsWaitTime": 14,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -1651,7 +1651,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -1667,7 +1667,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -1684,7 +1684,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -1700,7 +1700,7 @@ Array [
     },
     "backwardsWaitTime": 21,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -1717,7 +1717,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -1733,7 +1733,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -1755,7 +1755,7 @@ exports[`for "Evening Rush" returns suggestions when changing trains is needed (
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "SANL",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -1771,7 +1771,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -1788,7 +1788,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 6",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "SANL",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -1804,7 +1804,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -1821,7 +1821,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "SANL",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -1837,7 +1837,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -1854,7 +1854,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "HAYW",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -1870,7 +1870,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 12,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -1887,7 +1887,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 11,
-    "backwardsRouteID": "ROUTE 6",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "HAYW",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -1903,7 +1903,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 12,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -1925,7 +1925,7 @@ exports[`for "Evening Rush" returns suggestions when changing trains is needed (
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PHIL",
@@ -1941,7 +1941,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "24TH",
       "bikeflag": 1,
@@ -1958,7 +1958,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PHIL",
@@ -1974,7 +1974,7 @@ Array [
     },
     "backwardsWaitTime": 11,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -1991,7 +1991,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PHIL",
@@ -2007,7 +2007,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -2024,7 +2024,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 16,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PHIL",
@@ -2040,7 +2040,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 16,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -2057,7 +2057,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -2073,7 +2073,7 @@ Array [
     },
     "backwardsWaitTime": 13,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -2095,7 +2095,7 @@ exports[`for "Evening Rush" returns suggestions when many Westbound lines are av
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -2111,7 +2111,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "24TH",
       "bikeflag": 1,
@@ -2128,7 +2128,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -2144,7 +2144,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -2161,7 +2161,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -2177,7 +2177,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -2194,7 +2194,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "MCAR",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -2210,7 +2210,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -2227,7 +2227,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -2243,7 +2243,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -2260,7 +2260,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -2276,7 +2276,7 @@ Array [
     },
     "backwardsWaitTime": 12,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -2293,7 +2293,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -2309,7 +2309,7 @@ Array [
     },
     "backwardsWaitTime": 10,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -2326,7 +2326,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -2342,7 +2342,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -2359,7 +2359,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "RICH",
@@ -2375,7 +2375,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -2392,7 +2392,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -2408,7 +2408,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -2430,7 +2430,7 @@ exports[`for "Evening Rush" returns suggestions when more than one Eastbound lin
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -2446,7 +2446,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -2463,7 +2463,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -2479,7 +2479,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -2496,7 +2496,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "GLEN",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -2512,7 +2512,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -2529,7 +2529,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -2545,7 +2545,7 @@ Array [
     },
     "backwardsWaitTime": 10,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -2562,7 +2562,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -2578,7 +2578,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -2595,7 +2595,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -2611,7 +2611,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -2628,7 +2628,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -2644,7 +2644,7 @@ Array [
     },
     "backwardsWaitTime": 13,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -2661,7 +2661,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -2677,7 +2677,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -2694,7 +2694,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -2710,7 +2710,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -2727,7 +2727,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "BALB",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -2743,7 +2743,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -2765,7 +2765,7 @@ exports[`for "Evening Rush" returns suggestions when more than one Northbound li
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -2781,7 +2781,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 3,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -2798,7 +2798,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "WOAK",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -2814,7 +2814,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -2831,7 +2831,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -2847,7 +2847,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -2864,7 +2864,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -2880,7 +2880,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -2897,7 +2897,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -2913,7 +2913,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -2935,7 +2935,7 @@ exports[`for "Evening Rush" returns suggestions when more than one Southbound li
 Array [
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -2951,7 +2951,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -2968,7 +2968,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "RICH",
@@ -2984,7 +2984,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -3001,7 +3001,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "RICH",
@@ -3017,7 +3017,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -3034,7 +3034,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "NCON",
@@ -3050,7 +3050,7 @@ Array [
     },
     "backwardsWaitTime": 11,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -3067,7 +3067,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3083,7 +3083,7 @@ Array [
     },
     "backwardsWaitTime": 16,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -3105,7 +3105,7 @@ exports[`for "Holidays" does not blow up when requesting high number of suggesti
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3121,7 +3121,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3138,7 +3138,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3154,7 +3154,7 @@ Array [
     },
     "backwardsWaitTime": 10,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3171,7 +3171,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3187,7 +3187,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3204,7 +3204,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3220,7 +3220,7 @@ Array [
     },
     "backwardsWaitTime": 18,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3237,7 +3237,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3253,7 +3253,7 @@ Array [
     },
     "backwardsWaitTime": 15,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3270,7 +3270,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3286,7 +3286,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3303,7 +3303,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3319,7 +3319,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3336,7 +3336,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3352,7 +3352,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3369,7 +3369,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 21,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3385,7 +3385,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 21,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3402,7 +3402,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3418,7 +3418,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 18,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3435,7 +3435,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3451,7 +3451,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 18,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3468,7 +3468,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3484,7 +3484,7 @@ Array [
     },
     "backwardsWaitTime": 25,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3501,7 +3501,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3517,7 +3517,7 @@ Array [
     },
     "backwardsWaitTime": 22,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3534,7 +3534,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3550,7 +3550,7 @@ Array [
     },
     "backwardsWaitTime": 11,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3567,7 +3567,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3583,7 +3583,7 @@ Array [
     },
     "backwardsWaitTime": 19,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3600,7 +3600,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3616,7 +3616,7 @@ Array [
     },
     "backwardsWaitTime": 16,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3633,7 +3633,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -3649,7 +3649,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -3673,7 +3673,7 @@ exports[`for "Holidays" returns single suggestion when 1 suggestion is requested
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "BAYF",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -3689,7 +3689,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 5",
+    "returnRouteId": "ROUTE 5",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -3711,7 +3711,7 @@ exports[`for "Holidays" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -3727,7 +3727,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -3744,7 +3744,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -3760,7 +3760,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -3777,7 +3777,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -3793,7 +3793,7 @@ Array [
     },
     "backwardsWaitTime": 11,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -3810,7 +3810,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "16TH",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -3826,7 +3826,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -3843,7 +3843,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "POWL",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -3859,7 +3859,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 3,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -3881,7 +3881,7 @@ exports[`for "Holidays" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "16TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -3897,7 +3897,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -3914,7 +3914,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "CIVC",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -3930,7 +3930,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -3947,7 +3947,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "CIVC",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -3963,7 +3963,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -3980,7 +3980,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -3996,7 +3996,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -4013,7 +4013,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "16TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -4029,7 +4029,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -4051,7 +4051,7 @@ exports[`for "Holidays" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "BALB",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -4067,7 +4067,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -4084,7 +4084,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "GLEN",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -4100,7 +4100,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -4117,7 +4117,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "GLEN",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -4133,7 +4133,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -4150,7 +4150,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -4166,7 +4166,7 @@ Array [
     },
     "backwardsWaitTime": 12,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -4183,7 +4183,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -4199,7 +4199,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -4221,7 +4221,7 @@ exports[`for "Holidays" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -4237,7 +4237,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -4254,7 +4254,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "16TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -4270,7 +4270,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -4287,7 +4287,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "16TH",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -4303,7 +4303,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -4320,7 +4320,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "CIVC",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -4336,7 +4336,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 3,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -4353,7 +4353,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "CIVC",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -4369,7 +4369,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 3,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -4391,7 +4391,7 @@ exports[`for "Holidays" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4407,7 +4407,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -4424,7 +4424,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4440,7 +4440,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -4457,7 +4457,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4473,7 +4473,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -4490,7 +4490,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4506,7 +4506,7 @@ Array [
     },
     "backwardsWaitTime": 16,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -4523,7 +4523,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4539,7 +4539,7 @@ Array [
     },
     "backwardsWaitTime": 11,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -4561,7 +4561,7 @@ exports[`for "Holidays" returns suggestions when changing trains is needed (East
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "SANL",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -4577,7 +4577,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -4594,7 +4594,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "SANL",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -4610,7 +4610,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -4627,7 +4627,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "SANL",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -4643,7 +4643,7 @@ Array [
     },
     "backwardsWaitTime": 19,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -4660,7 +4660,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "SANL",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -4676,7 +4676,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -4693,7 +4693,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "SANL",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -4709,7 +4709,7 @@ Array [
     },
     "backwardsWaitTime": 21,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -4731,7 +4731,7 @@ exports[`for "Holidays" returns suggestions when changing trains is needed (West
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4747,7 +4747,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -4764,7 +4764,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4780,7 +4780,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -4797,7 +4797,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4813,7 +4813,7 @@ Array [
     },
     "backwardsWaitTime": 20,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -4830,7 +4830,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4846,7 +4846,7 @@ Array [
     },
     "backwardsWaitTime": 11,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -4863,7 +4863,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4879,7 +4879,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -4901,7 +4901,7 @@ exports[`for "Holidays" returns suggestions when many Westbound lines are availa
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4917,7 +4917,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -4934,7 +4934,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "LAKE",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -4950,7 +4950,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 5",
+    "returnRouteId": "ROUTE 5",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -4967,7 +4967,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -4983,7 +4983,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -5000,7 +5000,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5016,7 +5016,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -5033,7 +5033,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5049,7 +5049,7 @@ Array [
     },
     "backwardsWaitTime": 10,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -5066,7 +5066,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5082,7 +5082,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -5099,7 +5099,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "FTVL",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -5115,7 +5115,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 10,
-    "returnRouteID": "ROUTE 11",
+    "returnRouteId": "ROUTE 11",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -5132,7 +5132,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "MCAR",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5148,7 +5148,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -5165,7 +5165,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "MCAR",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5181,7 +5181,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -5198,7 +5198,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5214,7 +5214,7 @@ Array [
     },
     "backwardsWaitTime": 13,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -5236,7 +5236,7 @@ exports[`for "Holidays" returns suggestions when more than one Eastbound line is
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -5252,7 +5252,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -5269,7 +5269,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -5285,7 +5285,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -5302,7 +5302,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "BALB",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -5318,7 +5318,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5335,7 +5335,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "GLEN",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -5351,7 +5351,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5368,7 +5368,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "GLEN",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -5384,7 +5384,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5401,7 +5401,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -5417,7 +5417,7 @@ Array [
     },
     "backwardsWaitTime": 12,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5434,7 +5434,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -5450,7 +5450,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5467,7 +5467,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -5483,7 +5483,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5500,7 +5500,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -5516,7 +5516,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5533,7 +5533,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
@@ -5549,7 +5549,7 @@ Array [
     },
     "backwardsWaitTime": 15,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -5571,7 +5571,7 @@ exports[`for "Holidays" returns suggestions when more than one Northbound line i
 Array [
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -5587,7 +5587,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5604,7 +5604,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -5620,7 +5620,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 3,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5637,7 +5637,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -5653,7 +5653,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 3,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5670,7 +5670,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "LAKE",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -5686,7 +5686,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5703,7 +5703,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "WOAK",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -5719,7 +5719,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -5741,7 +5741,7 @@ exports[`for "Holidays" returns suggestions when more than one Southbound line i
 Array [
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5757,7 +5757,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -5774,7 +5774,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5790,7 +5790,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -5807,7 +5807,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "RICH",
@@ -5823,7 +5823,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -5840,7 +5840,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "RICH",
@@ -5856,7 +5856,7 @@ Array [
     },
     "backwardsWaitTime": 14,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -5873,7 +5873,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "MCAR",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5889,7 +5889,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -5911,7 +5911,7 @@ exports[`for "Morning Rush" does not blow up when requesting high number of sugg
 Array [
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5927,7 +5927,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -5944,7 +5944,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5960,7 +5960,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -5977,7 +5977,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -5993,7 +5993,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -6010,7 +6010,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6026,7 +6026,7 @@ Array [
     },
     "backwardsWaitTime": 10,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -6043,7 +6043,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6059,7 +6059,7 @@ Array [
     },
     "backwardsWaitTime": 16,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -6076,7 +6076,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6092,7 +6092,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -6109,7 +6109,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6125,7 +6125,7 @@ Array [
     },
     "backwardsWaitTime": 10,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -6142,7 +6142,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6158,7 +6158,7 @@ Array [
     },
     "backwardsWaitTime": 25,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -6175,7 +6175,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6191,7 +6191,7 @@ Array [
     },
     "backwardsWaitTime": 15,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -6208,7 +6208,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6224,7 +6224,7 @@ Array [
     },
     "backwardsWaitTime": 18,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -6241,7 +6241,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6257,7 +6257,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -6274,7 +6274,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6290,7 +6290,7 @@ Array [
     },
     "backwardsWaitTime": 26,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -6307,7 +6307,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6323,7 +6323,7 @@ Array [
     },
     "backwardsWaitTime": 16,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -6340,7 +6340,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6356,7 +6356,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -6373,7 +6373,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6389,7 +6389,7 @@ Array [
     },
     "backwardsWaitTime": 12,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -6406,7 +6406,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6422,7 +6422,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -6439,7 +6439,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6455,7 +6455,7 @@ Array [
     },
     "backwardsWaitTime": 20,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -6472,7 +6472,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6488,7 +6488,7 @@ Array [
     },
     "backwardsWaitTime": 10,
     "returnRideTime": 13,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -6505,7 +6505,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 21,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6521,7 +6521,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 21,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -6538,7 +6538,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6554,7 +6554,7 @@ Array [
     },
     "backwardsWaitTime": 15,
     "returnRideTime": 18,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -6571,7 +6571,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -6587,7 +6587,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 18,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -6611,7 +6611,7 @@ exports[`for "Morning Rush" returns single suggestion when 1 suggestion is reque
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "BAYF",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -6627,7 +6627,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 11",
+    "returnRouteId": "ROUTE 11",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -6649,7 +6649,7 @@ exports[`for "Morning Rush" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -6665,7 +6665,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -6682,7 +6682,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -6698,7 +6698,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -6715,7 +6715,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -6731,7 +6731,7 @@ Array [
     },
     "backwardsWaitTime": 12,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -6748,7 +6748,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -6764,7 +6764,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -6781,7 +6781,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "MONT",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -6797,7 +6797,7 @@ Array [
     },
     "backwardsWaitTime": 15,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 12",
+    "returnRouteId": "ROUTE 12",
     "returnTrain": Object {
       "abbreviation": "DUBL",
       "bikeflag": 1,
@@ -6819,7 +6819,7 @@ exports[`for "Morning Rush" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "CIVC",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -6835,7 +6835,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -6852,7 +6852,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "CIVC",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -6868,7 +6868,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -6885,7 +6885,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -6901,7 +6901,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -6918,7 +6918,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -6934,7 +6934,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -6951,7 +6951,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -6967,7 +6967,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -6989,7 +6989,7 @@ exports[`for "Morning Rush" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -7005,7 +7005,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -7022,7 +7022,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -7038,7 +7038,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -7055,7 +7055,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "BALB",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -7071,7 +7071,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -7088,7 +7088,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "BALB",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -7104,7 +7104,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -7121,7 +7121,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "BALB",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -7137,7 +7137,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -7159,7 +7159,7 @@ exports[`for "Morning Rush" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "16TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -7175,7 +7175,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -7192,7 +7192,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "16TH",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -7208,7 +7208,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -7225,7 +7225,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "CIVC",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -7241,7 +7241,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 3,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -7258,7 +7258,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "CIVC",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -7274,7 +7274,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 3,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -7291,7 +7291,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "CIVC",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -7307,7 +7307,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 3,
-    "returnRouteID": "ROUTE 6",
+    "returnRouteId": "ROUTE 6",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -7329,7 +7329,7 @@ exports[`for "Morning Rush" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7345,7 +7345,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -7362,7 +7362,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7378,7 +7378,7 @@ Array [
     },
     "backwardsWaitTime": 14,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -7395,7 +7395,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7411,7 +7411,7 @@ Array [
     },
     "backwardsWaitTime": 21,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -7428,7 +7428,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7444,7 +7444,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -7461,7 +7461,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "CONC",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7477,7 +7477,7 @@ Array [
     },
     "backwardsWaitTime": 29,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -7499,7 +7499,7 @@ exports[`for "Morning Rush" returns suggestions when changing trains is needed (
 Array [
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "BAYF",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -7515,7 +7515,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -7532,7 +7532,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 6",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "BAYF",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -7548,7 +7548,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -7565,7 +7565,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "SANL",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -7581,7 +7581,7 @@ Array [
     },
     "backwardsWaitTime": 13,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -7598,7 +7598,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "SANL",
     "backwardsTrain": Object {
       "abbreviation": "DUBL",
@@ -7614,7 +7614,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -7631,7 +7631,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 6",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "SANL",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -7647,7 +7647,7 @@ Array [
     },
     "backwardsWaitTime": 10,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -7669,7 +7669,7 @@ exports[`for "Morning Rush" returns suggestions when changing trains is needed (
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7685,7 +7685,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -7702,7 +7702,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7718,7 +7718,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -7735,7 +7735,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7751,7 +7751,7 @@ Array [
     },
     "backwardsWaitTime": 16,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -7768,7 +7768,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "WCRK",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7784,7 +7784,7 @@ Array [
     },
     "backwardsWaitTime": 6,
     "returnRideTime": 4,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -7801,7 +7801,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "PHIL",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7817,7 +7817,7 @@ Array [
     },
     "backwardsWaitTime": 10,
     "returnRideTime": 8,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -7839,7 +7839,7 @@ exports[`for "Morning Rush" returns suggestions when many Westbound lines are av
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7855,7 +7855,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -7872,7 +7872,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7888,7 +7888,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -7905,7 +7905,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PHIL",
@@ -7921,7 +7921,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -7938,7 +7938,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteID": "ROUTE 6",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "LAKE",
     "backwardsTrain": Object {
       "abbreviation": "FRMT",
@@ -7954,7 +7954,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 11",
+    "returnRouteId": "ROUTE 11",
     "returnTrain": Object {
       "abbreviation": "DALY",
       "bikeflag": 1,
@@ -7971,7 +7971,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -7987,7 +7987,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -8004,7 +8004,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "PHIL",
@@ -8020,7 +8020,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -8037,7 +8037,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteID": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "RICH",
@@ -8053,7 +8053,7 @@ Array [
     },
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 1",
+    "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
       "bikeflag": 1,
@@ -8070,7 +8070,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "MCAR",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -8086,7 +8086,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 9,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -8103,7 +8103,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -8119,7 +8119,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -8136,7 +8136,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PHIL",
@@ -8152,7 +8152,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 6,
-    "returnRouteID": "ROUTE 7",
+    "returnRouteId": "ROUTE 7",
     "returnTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -8174,7 +8174,7 @@ exports[`for "Morning Rush" returns suggestions when more than one Eastbound lin
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -8190,7 +8190,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -8207,7 +8207,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -8223,7 +8223,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -8240,7 +8240,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -8256,7 +8256,7 @@ Array [
     },
     "backwardsWaitTime": 10,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -8273,7 +8273,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -8289,7 +8289,7 @@ Array [
     },
     "backwardsWaitTime": 8,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -8306,7 +8306,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -8322,7 +8322,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -8339,7 +8339,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "24TH",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -8355,7 +8355,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 2,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -8372,7 +8372,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "GLEN",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -8388,7 +8388,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -8405,7 +8405,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "GLEN",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -8421,7 +8421,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 2",
+    "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -8438,7 +8438,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "BALB",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -8454,7 +8454,7 @@ Array [
     },
     "backwardsWaitTime": 9,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -8471,7 +8471,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 7,
-    "backwardsRouteID": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "BALB",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -8487,7 +8487,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -8509,7 +8509,7 @@ exports[`for "Morning Rush" returns suggestions when more than one Northbound li
 Array [
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -8525,7 +8525,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 3,
-    "returnRouteID": "ROUTE 3",
+    "returnRouteId": "ROUTE 3",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -8542,7 +8542,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "WOAK",
     "backwardsTrain": Object {
       "abbreviation": "SFIA",
@@ -8558,7 +8558,7 @@ Array [
     },
     "backwardsWaitTime": 3,
     "returnRideTime": 5,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -8575,7 +8575,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteID": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
@@ -8591,7 +8591,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -8608,7 +8608,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -8624,7 +8624,7 @@ Array [
     },
     "backwardsWaitTime": 7,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -8641,7 +8641,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "12TH",
     "backwardsTrain": Object {
       "abbreviation": "DALY",
@@ -8657,7 +8657,7 @@ Array [
     },
     "backwardsWaitTime": 5,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 8",
+    "returnRouteId": "ROUTE 8",
     "returnTrain": Object {
       "abbreviation": "RICH",
       "bikeflag": 1,
@@ -8679,7 +8679,7 @@ exports[`for "Morning Rush" returns suggestions when more than one Southbound li
 Array [
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -8695,7 +8695,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -8712,7 +8712,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "RICH",
@@ -8728,7 +8728,7 @@ Array [
     },
     "backwardsWaitTime": 4,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -8745,7 +8745,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 1,
-    "backwardsRouteID": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "RICH",
@@ -8761,7 +8761,7 @@ Array [
     },
     "backwardsWaitTime": 10,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -8778,7 +8778,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteID": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "MCAR",
     "backwardsTrain": Object {
       "abbreviation": "RICH",
@@ -8794,7 +8794,7 @@ Array [
     },
     "backwardsWaitTime": 2,
     "returnRideTime": 7,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,
@@ -8811,7 +8811,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteID": "ROUTE 2",
+    "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "19TH",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
@@ -8827,7 +8827,7 @@ Array [
     },
     "backwardsWaitTime": 19,
     "returnRideTime": 1,
-    "returnRouteID": "ROUTE 4",
+    "returnRouteId": "ROUTE 4",
     "returnTrain": Object {
       "abbreviation": "FRMT",
       "bikeflag": 1,

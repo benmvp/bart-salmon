@@ -1,26 +1,25 @@
 // @flow
-import getSuggestedSalmonRoutesFromETDs from './_salmon'
+import getSuggestedSalmonRoutesFromEtds from './salmon'
 import {getEstimatedTimesOfDeparture} from '../api'
-import type {SalmonRoute} from '../data/flowtypes'
+import type {SalmonRoute, StationName} from './flow'
 
 // default number of salmon suggestions to return
-const DEFAULT_NUM_SUGGESTIONS = 5
+export const DEFAULT_NUM_SUGGESTIONS = 5
 
 export const getSuggestedSalmonRoutes = async (
-    origin: string,
-    destination: string,
+    origin: StationName,
+    destination: StationName,
     numSuggestions: number = DEFAULT_NUM_SUGGESTIONS
 ): Promise<SalmonRoute[]> => {
     try {
-        return getSuggestedSalmonRoutesFromETDs(
+        return getSuggestedSalmonRoutesFromEtds(
             await getEstimatedTimesOfDeparture(),
             origin,
             destination,
             numSuggestions
         )
     } catch (ex) {
-        throw ex
         // TODO: log error somewhere
-        // return []
+        throw ex
     }
 }
