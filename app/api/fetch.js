@@ -4,11 +4,9 @@ import {formatUrl} from 'url-lib'
 import {parseString} from 'xml2js'
 import {parseNumbers} from 'xml2js/lib/processors'
 
-import 'isomorphic-fetch'
-
 const API_BASE = 'http://api.bart.gov/api/'
 
-const _parseXml = (xmlString:string):Promise<Object> => (
+const _parseXml = (xmlString: string): Promise<Object> => (
     new Promise((resolve, reject) => {
         parseString(
             xmlString,
@@ -33,7 +31,7 @@ const _parseXml = (xmlString:string):Promise<Object> => (
     })
 )
 
-export const fetchJson = (type:string, command:string, params:?Object = undefined):Promise<Object> => {
+export const fetchJson = (type: string, command: string, params: ?Object = undefined): Promise<Object> => {
     let url = formatUrl(
         `${API_BASE}${type}.aspx`,
         [
