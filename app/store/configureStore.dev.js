@@ -3,8 +3,10 @@ import {composeWithDevTools} from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
 import createLogger from 'redux-logger'
 import rootReducer from '../reducers'
+import {ReduxStore} from './flow'
+import {ReduxState} from '../reducers/flow'
 
-const configureStore = (preloadedState) => {
+const configureStore = (preloadedState: ReduxState): ReduxStore => {
     let store = createStore(
         rootReducer,
         preloadedState,
