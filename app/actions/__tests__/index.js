@@ -71,7 +71,7 @@ describe('getSalmonInfo', () => {
         await asyncAction(mockDispatch, getState)
 
         expect(mockDispatch).toHaveBeenCalledTimes(2)
-        expect(mockDispatch).toHaveBeenLastCalledWith({
+        expect(mockDispatch).lastCalledWith({
             type: 'RECEIVE_SALMON_INFO',
             payload: {
                 routes: [
@@ -128,11 +128,11 @@ describe('getSalmonInfo', () => {
 
         expect(mockDispatch).toHaveBeenCalledTimes(2)
 
-        // let actualErrorActionType = mockDispatch.mock.calls[1][0]
-        //
-        // expect(actualErrorActionType).toEqual({
-        //     type: 'ERROR_SALMON_INFO',
-        //     error: expect.any(Error)
-        // })
+        let actualErrorActionType = mockDispatch.mock.calls[1][0]
+
+        expect(actualErrorActionType).toEqual({
+            type: 'ERROR_SALMON_INFO',
+            error: expect.any(Error)
+        })
     })
 })
