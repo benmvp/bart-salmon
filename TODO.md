@@ -5,11 +5,11 @@
 - [x] Add Google Analytics to web app
 - [x] Fix JavaScript tests for "salmon algorithm"
 - [x] Add more ETDs mock data for other time periods (morning rush, evening rush, etc)
-- [ ] Add [Sentry](https://sentry.io/) JavaScript error logging
 - [x] Implement Redux layer
-- [ ] Test Redux layer
-- [ ] Build React Native app
+- [x] Test Redux layer
+- [ ] Build React Native app (w/ [`react-native-web`](https://github.com/necolas/react-native-web/))
 - [ ] Build responsive React app
+- [ ] Add [Sentry](https://sentry.io/) JavaScript error logging
 - [ ] Add acceptance testing framework ([NightwatchJS](http://nightwatchjs.org/), [Intern](https://theintern.github.io/), [WebDriverIO](http://webdriver.io/), [CodeceptJS](http://codecept.io/), etc.)
 
 ## Beta

@@ -40,7 +40,7 @@ const errorSalmonInfo = (error: Error): ReduxAction => ({
     error
 })
 
-export const getSalmonSuggestions = (): ReduxAsyncAction => (
+export const getSalmonInfo = (): ReduxAsyncAction => (
     async (dispatch: ReduxDispatch, getState: ReduxGetState) => {
         dispatch(fetchSalmonInfo())
 

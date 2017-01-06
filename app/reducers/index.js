@@ -9,7 +9,7 @@ const DEFAULT_ORIGIN_STATION = 'POWL'
 const DEFAULT_DESTINATION_STATION = 'DUBL'
 
 
-const origin = (state: StationName = DEFAULT_ORIGIN_STATION, {type, payload}: ReduxAction): string => {
+const origin = (state: StationName = DEFAULT_ORIGIN_STATION, {type, payload}: ReduxAction): StationName => {
     let newState = state
 
     if (type === 'SET_ORIGIN' && payload) {
@@ -19,7 +19,7 @@ const origin = (state: StationName = DEFAULT_ORIGIN_STATION, {type, payload}: Re
     return newState
 }
 
-const destination = (state: StationName = DEFAULT_DESTINATION_STATION, {type, payload}: ReduxAction): string => {
+const destination = (state: StationName = DEFAULT_DESTINATION_STATION, {type, payload}: ReduxAction): StationName => {
     let newState = state
 
     if (type === 'SET_DESTINATION' && payload) {

@@ -3,6 +3,7 @@
 import getSuggestedSalmonRoutesFromEtds from '../salmon'
 import etdsMorningRushLookup from '../../api/__mocks__/etds-rush-am.json'
 import etdsEveningRushLookup from '../../api/__mocks__/etds-rush-pm.json'
+import etdsNoondayLookup from '../../api/__mocks__/etds-noonday.json'
 import etdsHolidayLookup from '../../api/__mocks__/etds-holiday.json'
 
 const EXAMPLE_ETDS_LOOKUPS = [
@@ -13,6 +14,10 @@ const EXAMPLE_ETDS_LOOKUPS = [
     {
         etdsLookup: etdsEveningRushLookup,
         title: 'Evening Rush'
+    },
+    {
+        etdsLookup: etdsNoondayLookup,
+        title: 'Weekday Noonday'
     },
     {
         etdsLookup: etdsHolidayLookup,
