@@ -1,6 +1,6 @@
 // @flow
 import _ from 'lodash'
-import {fetchJson} from '../app/api/fetch'
+import fetchBartInfo from '../app/api/bart'
 import {genDataFile} from './utils'
 import {forceArray} from '../app/utils/general'
 
@@ -21,11 +21,11 @@ const _normalizeStation = (stationInfo) => ({
 })
 
 const _getStations = (): Promise<Object> => (
-    fetchJson('stn', 'stns')
+    fetchBartInfo('stn', 'stns')
         .then((respJson) => (
             Promise.all(
                 respJson.stations.station.map(({abbr}) => (
-                    fetchJson('stn', 'stninfo', {orig: abbr})
+                    fetchBartInfo('stn', 'stninfo', {orig: abbr})
                 ))
             )
         ))

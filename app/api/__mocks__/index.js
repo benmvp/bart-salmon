@@ -1,4 +1,5 @@
-import etds from './etds.json'
+// @flow
+import etds from './etds-rush-pm.json'
 
 export const getEstimatedTimesOfDeparture = () => (
     new Promise((resolve) => {

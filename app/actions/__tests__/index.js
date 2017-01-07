@@ -63,7 +63,7 @@ describe('getSalmonInfo', () => {
         let getState = () => ({
             origin: 'DELN',
             destination: 'EMBR',
-            numSalmonRoutes: 1,
+            numSalmonRoutes: 3,
             isFetchingSalmonRoutes: false,
             salmonRoutes: []
         })
@@ -71,46 +71,10 @@ describe('getSalmonInfo', () => {
         await asyncAction(mockDispatch, getState)
 
         expect(mockDispatch).toHaveBeenCalledTimes(2)
-        expect(mockDispatch).lastCalledWith({
-            type: 'RECEIVE_SALMON_INFO',
-            payload: {
-                routes: [
-                    {
-                        backwardsRideTime: 5,
-                        backwardsRouteId: 'ROUTE 3',
-                        backwardsStation: 'RICH',
-                        backwardsTrain: {
-                            abbreviation: 'RICH',
-                            bikeflag: 1,
-                            color: 'ORANGE',
-                            destination: 'Richmond',
-                            direction: 'North',
-                            hexcolor: '#ff9933',
-                            length: 4,
-                            limited: 0,
-                            minutes: 2,
-                            platform: 1
-                        },
-                        backwardsWaitTime: 7,
-                        returnRideTime: 4,
-                        returnRouteId: 'ROUTE 7',
-                        returnTrain: {
-                            abbreviation: 'MLBR',
-                            bikeflag: 1,
-                            color: 'RED',
-                            destination: 'Millbrae',
-                            direction: 'South',
-                            hexcolor: '#ff0000',
-                            length: 5,
-                            limited: 0,
-                            minutes: 14,
-                            platform: 2
-                        },
-                        waitTime: 2
-                    }
-                ]
-            }
-        })
+
+        let actualReceiveActionType = mockDispatch.mock.calls[1][0]
+
+        expect(actualReceiveActionType).toMatchSnapshot()
     })
 
     it('dispatches ERROR_SALMON_INFO action', async () => {

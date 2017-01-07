@@ -1,9 +1,9 @@
 // @flow
 
-import _ from 'lodash'
-import {fetchJson} from './fetch'
+import keyBy from 'lodash/keyBy'
+import fetchBartInfo from './bart'
 
 export const getEstimatedTimesOfDeparture = (): Promise<{[id:string]: Object}> => (
-    fetchJson('etd', 'etd', {orig: 'ALL'})
-        .then((respJson) => _.keyBy(respJson.station, 'abbr'))
+    fetchBartInfo('etd', 'etd', {orig: 'ALL'})
+        .then((respJson) => keyBy(respJson.station, 'abbr'))
 )

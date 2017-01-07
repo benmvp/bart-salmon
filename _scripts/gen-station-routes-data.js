@@ -1,6 +1,6 @@
 // @flow
 import _ from 'lodash'
-import {fetchJson} from '../app/api/fetch'
+import fetchBartInfo from '../app/api/bart'
 import {genDataFile} from './utils'
 import {forceArray} from '../app/utils/general'
 import stationsLookup from '../app/data/stations.json'
@@ -11,7 +11,7 @@ type StationRoute = {
 }
 
 const _getDepartSchedules = (orig: string, dest: string): Promise<Object> => (
-    fetchJson('sched', 'depart', {orig, dest, time: '5:00pm', date: '01/04/2017'})
+    fetchBartInfo('sched', 'depart', {orig, dest, time: '5:00pm', date: '01/04/2017'})
 )
 
 const _routesOrNull = (_routes) => (_routes.isEmpty() ? undefined : _routes.value())

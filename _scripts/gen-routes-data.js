@@ -1,6 +1,6 @@
 // @flow
 import _ from 'lodash'
-import {fetchJson} from '../app/api/fetch'
+import fetchBartInfo from '../app/api/bart'
 import {genDataFile} from './utils'
 
 type Route = {
@@ -17,7 +17,7 @@ type Route = {
     stations: string[]
 }
 
-type RoutesLookup = {[id:string]: Route}
+type RoutesLookup = {[id: string]: Route}
 
 const _getSampleSchedule = (schedules: Object[]): Object => (
     schedules[schedules.length - 3]
@@ -56,13 +56,13 @@ const _normalizeRoute = (routeInfo: Object, schedules: Object[]): Route => {
 const _fetchPerRoute = (respJson: Object, fetchType: string, fetchCommand: string) => (
     Promise.all(
         respJson.routes.route.map(({number}) => (
-            fetchJson(fetchType, fetchCommand, {route: number})
+            fetchBartInfo(fetchType, fetchCommand, {route: number})
         ))
     )
 )
 
 const _getRoutes = (): Promise<RoutesLookup> => (
-    fetchJson('route', 'routes')
+    fetchBartInfo('route', 'routes')
         .then((respJson):Promise<Object[]> => (
             Promise.all([
                 // fetches for routes info

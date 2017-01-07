@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <uri><![CDATA[http://api.bart.gov/api/sched.aspx?cmd=depart&amp;orig=ASHB&amp;dest=CIVC&amp;date=now&amp;b=2&amp;a=2&amp;l=1]]></uri>
+    <origin>ASHB</origin>
+    <destination>CIVC</destination>
+    <sched_num>39</sched_num>
+    <schedule>
+        <date>Jan 5, 2017</date>
+        <time>10:09 PM</time>
+        <before>2</before>
+        <after>2</after>
+        <request>
+            <trip origin="ASHB" destination="CIVC" fare="3.85" origTimeMin="9:30 PM" origTimeDate="01/05/2017 " destTimeMin="9:56 PM" destTimeDate="01/05/2017" clipper="1.40" tripTime="26" co2="8.62">
+                <fares level="normal">
+                    <fare amount="3.85" class="cash" />
+                    <fare amount="1.40" class="rtcclipper" />
+                </fares>
+                <leg order="1" transfercode="T" origin="ASHB" destination="MCAR" origTimeMin="9:30 PM" origTimeDate="01/05/2017" destTimeMin="9:35 PM" destTimeDate="01/05/2017" line="ROUTE 4" bikeflag="1" trainHeadStation="FRMT" load="1" trainId="237062115" trainIdx="67" />
+                <leg order="2" transfercode="" origin="MCAR" destination="CIVC" origTimeMin="9:35 PM" origTimeDate="01/05/2017" destTimeMin="9:56 PM" destTimeDate="01/05/2017" line="ROUTE 1" bikeflag="1" trainHeadStation="MLBR" load="1" trainId="367102057" trainIdx="87" />
+            </trip>
+            <trip origin="ASHB" destination="CIVC" fare="3.85" origTimeMin="9:50 PM" origTimeDate="01/05/2017 " destTimeMin="10:16 PM" destTimeDate="01/05/2017" clipper="1.40" tripTime="26" co2="8.62">
+                <fares level="normal">
+                    <fare amount="3.85" class="cash" />
+                    <fare amount="1.40" class="rtcclipper" />
+                </fares>
+                <leg order="1" transfercode="T" origin="ASHB" destination="MCAR" origTimeMin="9:50 PM" origTimeDate="01/05/2017" destTimeMin="9:55 PM" destTimeDate="01/05/2017" line="ROUTE 4" bikeflag="1" trainHeadStation="FRMT" load="1" trainId="239062135" trainIdx="68" />
+                <leg order="2" transfercode="" origin="MCAR" destination="CIVC" origTimeMin="9:55 PM" origTimeDate="01/05/2017" destTimeMin="10:16 PM" destTimeDate="01/05/2017" line="ROUTE 1" bikeflag="1" trainHeadStation="MLBR" load="1" trainId="369102117" trainIdx="88" />
+            </trip>
+            <trip origin="ASHB" destination="CIVC" fare="3.85" origTimeMin="10:10 PM" origTimeDate="01/05/2017 " destTimeMin="10:36 PM" destTimeDate="01/05/2017" clipper="1.40" tripTime="26" co2="8.62">
+                <fares level="normal">
+                    <fare amount="3.85" class="cash" />
+                    <fare amount="1.40" class="rtcclipper" />
+                </fares>
+                <leg order="1" transfercode="T" origin="ASHB" destination="MCAR" origTimeMin="10:10 PM" origTimeDate="01/05/2017" destTimeMin="10:15 PM" destTimeDate="01/05/2017" line="ROUTE 4" bikeflag="1" trainHeadStation="FRMT" load="1" trainId="221042155" trainIdx="69" />
+                <leg order="2" transfercode="" origin="MCAR" destination="CIVC" origTimeMin="10:15 PM" origTimeDate="01/05/2017" destTimeMin="10:36 PM" destTimeDate="01/05/2017" line="ROUTE 1" bikeflag="1" trainHeadStation="MLBR" load="1" trainId="371052137" trainIdx="89" />
+            </trip>
+            <trip origin="ASHB" destination="CIVC" fare="3.85" origTimeMin="10:30 PM" origTimeDate="01/05/2017 " destTimeMin="10:56 PM" destTimeDate="01/05/2017" clipper="1.40" tripTime="26" co2="8.62">
+                <fares level="normal">
+                    <fare amount="3.85" class="cash" />
+                    <fare amount="1.40" class="rtcclipper" />
+                </fares>
+                <leg order="1" transfercode="T" origin="ASHB" destination="MCAR" origTimeMin="10:30 PM" origTimeDate="01/05/2017" destTimeMin="10:35 PM" destTimeDate="01/05/2017" line="ROUTE 4" bikeflag="1" trainHeadStation="FRMT" load="1" trainId="223042215" trainIdx="70" />
+                <leg order="2" transfercode="" origin="MCAR" destination="CIVC" origTimeMin="10:35 PM" origTimeDate="01/05/2017" destTimeMin="10:56 PM" destTimeDate="01/05/2017" line="ROUTE 1" bikeflag="1" trainHeadStation="MLBR" load="1" trainId="373102157" trainIdx="90" />
+            </trip>
+        </request>
+    </schedule>
+    <message>
+        <special_schedule><![CDATA[Floor replacement on elevators in Walnut Creek parking garage 1/2-6/2017 <a href="http://www.bart.gov/news/articles/2016/news20161222-0">Read more...</a><br><br>Pleasant Hill parking garage elevators will be out of service one at a time through 2017. <a href="http://www.bart.gov/news/articles/2016/news20161130">Read more...</a>]]></special_schedule>
+        <co2_emissions><![CDATA[<p>CO<sub>2</sub> emissions saved by this BART trip: <strong>8.6 pounds.</strong> <a href="http://www.bart.gov/guide/carbon">Read more</a></p>]]></co2_emissions>
+        <legend>bikeflag: 1 = bikes allowed. 0 = no bikes allowed. transfercode: blank = no transfer, N = normal transfer, T = timed transfer, connecting trains will wait up to five minutes for transferring passengers. S = scheduled transfer, connecting trains will not wait for transferring passengers if there is a delay.</legend>
+    </message>
+</root>
