@@ -1,12 +1,18 @@
+// @flow
 import React, {Component} from 'react'
-import {View, Text} from 'react-native'
+import {Provider} from 'react-redux'
+import {Router} from 'react-native-router-flux'
+import configureStore from '../store/configureStore'
+import scenes from './scenes'
+
+const store = configureStore()
 
 export default class App extends Component {
     render() {
         return (
-            <View style={{justifyContent: 'center', flex: 1, alignItems: 'center'}}>
-                <Text>Bart Salmon (native)</Text>
-            </View>
+            <Provider store={store}>
+                <Router scenes={scenes} />
+            </Provider>
         )
     }
 }

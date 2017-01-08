@@ -31,6 +31,13 @@ module.exports = {
                 test: /\.json$/,
                 loaders: ['json'],
                 include: APP_PATH
+            },
+            {
+                test: /\.(gif|jpe?g|png|svg)$/,
+                loader: 'url-loader',
+                query: {
+                    name: '[name].[hash:16].[ext]'
+                }
             }
         ],
     },
@@ -39,6 +46,11 @@ module.exports = {
             browsers: ['last 2 versions']
         })
     ],
+    resolve: {
+        alias: {
+            'react-native': 'react-native-web'
+        }
+    },
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {

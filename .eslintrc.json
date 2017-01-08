@@ -1,17 +1,17 @@
 {
     "extends": "eventbrite-react",
-    "rules": {
-        "semi": ["error", "never"],
-        "import/named": "off"
-    },
-    "globals": {
-        "jest": true
-    },
     "settings": {
         "import/resolver": {
             "webpack": {
                 "config": "web/webpack/web.dev.config.js"
             }
         }
+    },
+    "globals": {
+        "jest": true
+    },
+    "rules": {
+        "import/named": "off",
+        "semi": ["error", "never"]
     }
 }

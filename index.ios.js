@@ -1,15 +1,5 @@
-import React from 'react'
+// @flow
 import {AppRegistry} from 'react-native'
-import {Provider} from 'react-redux'
 import App from './app/containers/App'
-import configureStore from './app/store/configureStore'
 
-const store = configureStore()
-
-const BartSalmon = () => (
-    <Provider store={store}>
-        <App />
-    </Provider>
-)
-
-AppRegistry.registerComponent('BartSalmon', () => BartSalmon)
+AppRegistry.registerComponent('BartSalmon', () => App)
