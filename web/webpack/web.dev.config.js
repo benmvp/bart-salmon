@@ -20,7 +20,7 @@ module.exports = Object.assign(
                 loaders: [
                     ...baseConfig.module.loaders,
                     {
-                        test: /(\.web)?\.js$/,
+                        test: /(\.web)?\.jsx?$/,
                         exclude: /node_modules/,
                         include: path.join(__dirname, '../../app'),
                         loaders: [

@@ -1,15 +1,7 @@
 // @flow
 import React, {Component, PropTypes} from 'react'
-import {View, StyleSheet} from 'react-native'
-
-const styles = StyleSheet.create({
-    root: {
-        height: '100vh',
-    },
-    main: {
-        flex: 1,
-    }
-})
+import {View} from 'react-native'
+import styles from './Page.web.styles'
 
 export default class Page extends Component {
     static propTypes = {

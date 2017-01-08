@@ -1,14 +1,7 @@
 // @flow
 import React, {Component} from 'react'
-import {View, Text, StyleSheet} from 'react-native'
-
-const styles = StyleSheet.create({
-    view: {
-        justifyContent: 'center',
-        flex: 1,
-        alignItems: 'center'
-    }
-})
+import {View, Text} from 'react-native'
+import styles from './Home.styles'
 
 export default class Home extends Component {
     render() {

@@ -17,7 +17,7 @@ module.exports = Object.assign(
                 loaders: [
                     ...baseConfig.module.loaders,
                     {
-                        test: /(\.web)?\.js$/,
+                        test: /(\.web)?\.jsx?$/,
                         exclude: /node_modules/,
                         include: path.join(__dirname, '../../app'),
                         loader: `babel-loader?cacheDirectory=true&extends=${PATH_TO_BABELRC_WEB}`,
