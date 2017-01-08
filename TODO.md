@@ -9,7 +9,7 @@
 - [x] Test Redux layer
 - [ ] Build React Native app (w/ [`react-native-web`](https://github.com/necolas/react-native-web/))
 - [ ] Build responsive React app
-- [ ] Add [Sentry](https://sentry.io/) JavaScript error logging
+- [ ] Add JavaScript error logging ([Sentry](https://sentry.io/) or [Bugsnag](https://bugsnag.com/))
 - [ ] Add acceptance testing framework ([NightwatchJS](http://nightwatchjs.org/), [Intern](https://theintern.github.io/), [WebDriverIO](http://webdriver.io/), [CodeceptJS](http://codecept.io/), etc.)
 
 ## Beta

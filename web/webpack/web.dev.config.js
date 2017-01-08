@@ -3,6 +3,8 @@ const webpack = require('webpack')
 
 const baseConfig = require('./web.base.config.js')
 
+const PATH_TO_BABELRC_WEB = path.join(__dirname, './.babelrc.web.json')
+
 module.exports = Object.assign(
     {},
     baseConfig,
@@ -20,8 +22,11 @@ module.exports = Object.assign(
                     {
                         test: /(\.web)?\.js$/,
                         exclude: /node_modules/,
-                        loaders: ['react-hot', 'babel-loader'],
-                        include: path.join(__dirname, '../../app')
+                        include: path.join(__dirname, '../../app'),
+                        loaders: [
+                            'react-hot',
+                            `babel-loader?cacheDirectory=true&extends=${PATH_TO_BABELRC_WEB}`
+                        ]
                     }
                 ],
             }

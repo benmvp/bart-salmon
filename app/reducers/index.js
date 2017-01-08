@@ -1,7 +1,7 @@
 // @flow
 
 import {combineReducers} from 'redux'
-import {DEFAULT_NUM_SUGGESTIONS as DEFAULT_NUM_SALMON_ROUTES} from '../utils'
+import {DEFAULT_NUM_SALMON_ROUTES} from '../utils/constants'
 import type {SalmonRoute, StationName} from '../utils/flow'
 import type {ReduxAction} from '../actions/flow'
 

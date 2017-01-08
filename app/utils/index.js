@@ -1,15 +1,13 @@
 // @flow
 import getSuggestedSalmonRoutesFromEtds from './salmon'
 import {getEstimatedTimesOfDeparture} from '../api'
+import {DEFAULT_NUM_SALMON_ROUTES} from './constants'
 import type {SalmonRoute, StationName} from './flow'
-
-// default number of salmon suggestions to return
-export const DEFAULT_NUM_SUGGESTIONS = 5
 
 export const getSuggestedSalmonRoutes = async (
     origin: StationName,
     destination: StationName,
-    numSuggestions: number = DEFAULT_NUM_SUGGESTIONS
+    numSuggestions: number = DEFAULT_NUM_SALMON_ROUTES
 ): Promise<SalmonRoute[]> => {
     try {
         return getSuggestedSalmonRoutesFromEtds(
