@@ -8,11 +8,9 @@ import routes from './routes'
 const store = configureStore()
 
 export default class App extends Component {
-    render() {
-        return (
-            <Provider store={store}>
-                <Router routes={routes} history={browserHistory} />
-            </Provider>
-        )
-    }
+    render = () => (
+        <Provider store={store}>
+            <Router routes={routes} history={browserHistory} />
+        </Provider>
+    )
 }

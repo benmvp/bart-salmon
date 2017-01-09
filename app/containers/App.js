@@ -8,11 +8,9 @@ import scenes from './scenes'
 const store = configureStore()
 
 export default class App extends Component {
-    render() {
-        return (
-            <Provider store={store}>
-                <Router scenes={scenes} />
-            </Provider>
-        )
-    }
+    render = () => (
+        <Provider store={store}>
+            <Router scenes={scenes} />
+        </Provider>
+    )
 }

@@ -12,6 +12,7 @@
     },
     "rules": {
         "import/named": "off",
+        "no-invalid-this": "off",
         "semi": ["error", "never"]
     }
 }

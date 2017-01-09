@@ -8,7 +8,7 @@ export default class Page extends Component {
         children: PropTypes.node.isRequired
     }
 
-    render() {
+    render = () => {
         let {children} = this.props
 
         return (

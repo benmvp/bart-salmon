@@ -1,14 +1,24 @@
 // @flow
 import React, {Component} from 'react'
-import {View, Text} from 'react-native'
+import {View, Text, TouchableHighlight} from 'react-native'
+import {gotoRoute} from '../utils/routing'
 import styles from './Home.styles'
 
+const MenuLink = ({children, onPress}) => (
+    <TouchableHighlight onPress={onPress}>
+        <View style={styles.menuLink}>
+            <Text style={[styles.menuLinkText, styles.menuLinkContent]}>{children}</Text>
+            <Text style={styles.menuLinkText}>&gt;</Text>
+        </View>
+    </TouchableHighlight>
+)
+
 export default class Home extends Component {
-    render() {
-        return (
-            <View style={styles.view}>
-                <Text>Bart Salmon</Text>
-            </View>
-        )
-    }
+    render = () => (
+        <View style={styles.root}>
+            <MenuLink onPress={gotoRoute.bind(null, 'salmon')}>
+                Salmon Routes
+            </MenuLink>
+        </View>
+    )
 }
