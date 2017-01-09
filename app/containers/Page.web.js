@@ -1,7 +1,7 @@
 // @flow
 import React, {Component, PropTypes} from 'react'
 import {View} from 'react-native'
-import styles from './Page.web.styles'
+import styles from './Page.styles'
 
 export default class Page extends Component {
     static propTypes = {

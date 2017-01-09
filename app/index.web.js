@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import {render} from 'react-dom'
-import App from './containers/App.web'
+import App from './containers/App'
 
 import './index.scss'
 
