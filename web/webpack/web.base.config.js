@@ -6,7 +6,7 @@ const APP_PATH = path.join(__dirname, '../../app')
 const NODE_ENV = process.env.NODE_ENV || 'development'
 
 module.exports = {
-    devtool: 'eval-source-map',
+    devtool: 'cheap-module-eval-source-map',
     entry: [
         path.join(__dirname, '../../app/index.web.js'),
     ],
