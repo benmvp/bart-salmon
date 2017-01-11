@@ -5,6 +5,8 @@ import etdsMorningRushLookup from '../../api/__mocks__/etds-rush-am.json'
 import etdsEveningRushLookup from '../../api/__mocks__/etds-rush-pm.json'
 import etdsNoondayLookup from '../../api/__mocks__/etds-noonday.json'
 import etdsHolidayLookup from '../../api/__mocks__/etds-holiday.json'
+import etdsMajorDelaysLookup from '../../api/__mocks__/etds-major-delays.json'
+import etdsLateNightLookup from '../../api/__mocks__/etds-late-night.json'
 
 const EXAMPLE_ETDS_LOOKUPS = [
     {
@@ -22,6 +24,14 @@ const EXAMPLE_ETDS_LOOKUPS = [
     {
         etdsLookup: etdsHolidayLookup,
         title: 'Holidays'
+    },
+    {
+        etdsLookup: etdsMajorDelaysLookup,
+        title: 'Major Delays'
+    },
+    {
+        etdsLookup: etdsLateNightLookup,
+        title: 'Late Night'
     },
 ]
 
@@ -86,77 +96,77 @@ EXAMPLE_ETDS_LOOKUPS.forEach(({etdsLookup, title}) => {
         it('returns suggestions for PITT line', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, 'POWL', 'PITT', 5)
 
-            expect(actualSalmonSuggestions).toHaveLength(5)
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns suggestions for DUBL line', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, 'EMBR', 'CAST', 5)
 
-            expect(actualSalmonSuggestions).toHaveLength(5)
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns suggestions for RICH line', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, '16TH', 'NBRK', 5)
 
-            expect(actualSalmonSuggestions).toHaveLength(5)
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns suggestions for WARM line', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, 'MONT', 'FRMT', 5)
 
-            expect(actualSalmonSuggestions).toHaveLength(5)
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns suggestions for Westbound line', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, 'PHIL', 'EMBR', 5)
 
-            expect(actualSalmonSuggestions).toHaveLength(5)
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns suggestions when more than one Northbound line is available', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, '19TH', 'PLZA', 5)
 
-            expect(actualSalmonSuggestions).toHaveLength(5)
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns suggestions when more than one Southbound line is available', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, '12TH', 'BAYF', 5)
 
-            expect(actualSalmonSuggestions).toHaveLength(5)
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns suggestions when more than one Eastbound line is available', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, '16TH', 'MCAR', 10)
 
-            expect(actualSalmonSuggestions).toHaveLength(10)
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns suggestions when many Westbound lines are available', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, 'WOAK', 'DALY', 10)
 
-            expect(actualSalmonSuggestions).toHaveLength(10)
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns suggestions when changing trains is needed (Eastbound)', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, 'COLS', 'NCON', 5)
 
-            expect(actualSalmonSuggestions).toHaveLength(5)
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns suggestions when changing trains is needed (Westbound)', () => {
             let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, 'LAFY', 'HAYW', 5)
 
-            expect(actualSalmonSuggestions).toHaveLength(5)
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
     })

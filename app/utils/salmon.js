@@ -28,10 +28,9 @@ const _areStationsOnRouteStations = (start: StationName, end: StationName, stati
 
 const _getRouteIdsWithStartAndEnd = (start: StationName, end: StationName, trainColor: ?string = undefined): RouteId[] => (
     // get all of the routes that directly connect the two stations
-    _(stationRoutesLookup[start][end].directRoutes)
+    stationRoutesLookup[start][end].directRoutes
         // optionally filter down to routes that match the optional trainColor
         .filter((routeId: RouteId): boolean => !trainColor || routesLookup[routeId].color === trainColor)
-        .value()
 )
 
 /*
@@ -148,6 +147,9 @@ const _getBackwardsTrains = (origin: StationName, etdsLookup: {[id:string]: Obje
             waitTime: _normalizeMinutes(trainInfo.minutes),
             backwardsRouteId: _getRouteIdsWithStartAndEnd(origin, trainInfo.abbreviation, trainInfo.hexcolor)[0]
         }))
+
+        // filter down to only the routes where a route ID was found
+        .filter(({backwardsRouteId}) => !!backwardsRouteId)
 )
 
 const _minutesBetweenStation = (start: StationName, end: StationName, routeId: RouteId): number => {
@@ -215,6 +217,9 @@ const _getWaitTimesForBackwardsTimeRoutePaths = (_backwardsTimeRoutePaths, etdsL
                     backwardsWaitTime: _normalizeMinutes(returnTrainInfo.minutes) - timeToBackwardsStation,
                     returnRouteId: _getRouteIdsWithStartAndEnd(backwardsStation, returnTrainInfo.abbreviation, returnTrainInfo.hexcolor)[0]
                 }))
+
+                // filter down to only the routes where a route ID was found
+                .filter(({returnRouteId}) => !!returnRouteId)
 
                 // only include the trains where the wait time at the backwards
                 // station is greater that the minimum allowable to increase the

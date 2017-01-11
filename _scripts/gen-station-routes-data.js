@@ -10,23 +10,31 @@ type StationRoute = {
     multiRoutes: ?string[]
 }
 
-const _getDepartSchedules = (orig: string, dest: string): Promise<Object> => (
-    fetchBartInfo('sched', 'depart', {orig, dest, time: '5:00pm', date: '01/04/2017'})
+const _fetchDepartSchedules = (orig: string, dest: string, time: string): Promise<Object> => (
+    fetchBartInfo('sched', 'depart', {orig, dest, time, date: '1/11/2017'})
 )
+
+const _getDepartSchedules = async (origin: string, destination: string, time: string): Promise<Object> => {
+    let departSchedules
+
+    try {
+        departSchedules = await _fetchDepartSchedules(origin, destination, time)
+    } catch(ex) {
+        // try again just in case there was some transient issue
+        departSchedules = await _fetchDepartSchedules(origin, destination, time)
+    }
+
+    return departSchedules
+}
 
 const _routesOrNull = (_routes) => (_routes.isEmpty() ? undefined : _routes.value())
 
 const _getRoutesForOriginDestination = async (origin: string, destination: string): Promise<Object> => {
-    let departSchedules
+    let departSchedulesEvening = await _getDepartSchedules(origin, destination, '5:00pm')
+    let departSchedulesLateNight = await _getDepartSchedules(origin, destination, '11:00pm')
 
-    try {
-        departSchedules = await _getDepartSchedules(origin, destination)
-    } catch(ex) {
-        // try again just in case there was some transient issue
-        departSchedules = await _getDepartSchedules(origin, destination)
-    }
-
-    let _trips = _(forceArray(departSchedules.schedule.request.trip))
+    let _trips = _(forceArray(departSchedulesEvening.schedule.request.trip))
+        .union(forceArray(departSchedulesLateNight.schedule.request.trip))
     let directRoutes = _trips
         .filter((tripInfo) => forceArray(tripInfo.leg).length === 1)
         .map((tripInfo) => forceArray(tripInfo.leg)[0].$.line)
