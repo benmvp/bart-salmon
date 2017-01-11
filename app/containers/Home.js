@@ -5,10 +5,10 @@ import {gotoRoute} from '../utils/routing'
 import styles from './Home.styles'
 
 const MenuLink = ({children, onPress}) => (
-    <TouchableHighlight onPress={onPress}>
+    <TouchableHighlight underlayColor="#ddd" onPress={onPress}>
         <View style={styles.menuLink}>
             <Text style={[styles.menuLinkText, styles.menuLinkContent]}>{children}</Text>
-            <Text style={styles.menuLinkText}>&gt;</Text>
+            <Text style={styles.menuLinkText}>⟩</Text>
         </View>
     </TouchableHighlight>
 )

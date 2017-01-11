@@ -25,7 +25,7 @@ module.exports = Object.assign(
                         include: path.join(__dirname, '../../app'),
                         loaders: [
                             'react-hot',
-                            `babel-loader?cacheDirectory=true&extends=${PATH_TO_BABELRC_WEB}`
+                            `babel-loader?extends=${PATH_TO_BABELRC_WEB}`
                         ]
                     }
                 ],
@@ -34,6 +34,7 @@ module.exports = Object.assign(
         devServer: {
             contentBase: path.join(__dirname, '../public'),
             stats: 'errors-only',
+            historyApiFallback: true
         },
         plugins: [
             ...baseConfig.plugins,

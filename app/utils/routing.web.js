@@ -1,6 +1,14 @@
 // @flow
 import {browserHistory} from 'react-router'
 
+export const getBasePath = () => (
+    process.env.NODE_ENV === 'production'
+        ? '/bart-salmon'
+        : '/'
+)
+
 export const gotoRoute = (routeName: string) => {
-    browserHistory.push(`/${routeName}`)
+    let basePath = getBasePath()
+
+    browserHistory.push(`${basePath}${routeName}`)
 }
