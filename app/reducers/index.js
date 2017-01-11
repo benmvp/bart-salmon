@@ -6,7 +6,7 @@ import type {SalmonRoute, StationName} from '../utils/flow'
 import type {ReduxAction} from '../actions/flow'
 
 const DEFAULT_ORIGIN_STATION = 'POWL'
-const DEFAULT_DESTINATION_STATION = 'DUBL'
+const DEFAULT_DESTINATION_STATION = 'PITT'
 
 
 const origin = (state: StationName = DEFAULT_ORIGIN_STATION, {type, payload}: ReduxAction): StationName => {

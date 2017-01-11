@@ -53,8 +53,10 @@ export default class SalmonRoutes extends Component {
 
     render = () => {
         let {routes} = this.props
-        let salmonRoutes = routes.map((route) => (
-            <SalmonRoute key={route.backwardsRouteId + route.backwardsStation + route.returnRouteId} route={route} />
+
+        // TODO: Salmon routes need some sort of unique identifier
+        let salmonRoutes = routes.map((route, index) => (
+            <SalmonRoute key={index} route={route} />
         ))
 
         return (
