@@ -1,8 +1,10 @@
 // @flow
-import getSuggestedSalmonRoutesFromEtds from './salmon'
+import {getSuggestedSalmonRoutesFromEtds, getSalmonTimeFromRoute as _getSalmonTimeFromRoute} from './salmon'
 import {getEstimatedTimesOfDeparture} from '../api'
 import {DEFAULT_NUM_SALMON_ROUTES} from './constants'
 import type {SalmonRoute, StationName} from './flow'
+
+export const getSalmonTimeFromRoute = _getSalmonTimeFromRoute
 
 export const getSuggestedSalmonRoutes = async (
     origin: StationName,

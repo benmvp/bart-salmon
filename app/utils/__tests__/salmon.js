@@ -1,6 +1,6 @@
 // @flow
 
-import getSuggestedSalmonRoutesFromEtds from '../salmon'
+import {getSalmonTimeFromRoute, getSuggestedSalmonRoutesFromEtds} from '../salmon'
 import etdsMorningRushLookup from '../../api/__mocks__/etds-rush-am.json'
 import etdsEveningRushLookup from '../../api/__mocks__/etds-rush-pm.json'
 import etdsNoondayLookup from '../../api/__mocks__/etds-noonday.json'
@@ -34,6 +34,47 @@ const EXAMPLE_ETDS_LOOKUPS = [
         title: 'Late Night'
     },
 ]
+
+describe('getSalmonTimeFromRoute', () => {
+    it('returns the salmon time for a given route', () => {
+        let expectedSalmonTime = 18
+        let actualSalmonTime = getSalmonTimeFromRoute({
+            backwardsRideTime: 5,
+            backwardsRouteId: 'ROUTE 3',
+            backwardsStation: 'RICH',
+            backwardsTrain: {
+                abbreviation: 'RICH',
+                bikeflag: 1,
+                color: 'ORANGE',
+                destination: 'Richmond',
+                direction: 'North',
+                hexcolor: '#ff9933',
+                length: 4,
+                limited: 0,
+                minutes: 2,
+                platform: 1
+            },
+            backwardsWaitTime: 7,
+            returnRideTime: 4,
+            returnRouteId: 'ROUTE 7',
+            returnTrain: {
+                abbreviation: 'MLBR',
+                bikeflag: 1,
+                color: 'RED',
+                destination: 'Millbrae',
+                direction: 'South',
+                hexcolor: '#ff0000',
+                length: 5,
+                limited: 0,
+                minutes: 14,
+                platform: 2
+            },
+            waitTime: 2
+        })
+
+        expect(actualSalmonTime).toBe(expectedSalmonTime)
+    })
+})
 
 EXAMPLE_ETDS_LOOKUPS.forEach(({etdsLookup, title}) => {
     describe(`for "${title}"`, () => {

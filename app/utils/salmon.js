@@ -295,10 +295,14 @@ const _getAllSalmonRoutesFromEtds = (
     return _salmonTimeRoutePaths
 }
 
+export const getSalmonTimeFromRoute = ({waitTime, backwardsRideTime, backwardsWaitTime, returnRideTime}: SalmonRoute): number => (
+    waitTime + backwardsRideTime + backwardsWaitTime + returnRideTime
+)
+
 /*
  * Given origin and destination stations, returns a list of suggested salmon routes
  */
-const getSuggestedSalmonRoutesFromEtds = (
+export const getSuggestedSalmonRoutesFromEtds = (
     etdsLookup: {[id:string]: Object},
     origin: StationName,
     destination: StationName,
@@ -319,19 +323,28 @@ const getSuggestedSalmonRoutesFromEtds = (
         // have most priority
         .sortBy([
             // first sort by salmonTime
-            ({waitTime, backwardsRideTime, backwardsWaitTime, returnRideTime}) => (
-                waitTime + backwardsRideTime + backwardsWaitTime + returnRideTime
-            ),
-            // then by wait time (for ties in salmonTime)
+            (salmonRoute) => getSalmonTimeFromRoute(salmonRoute),
+            // then by initial wait time (want to catch the soonest opposite train)
+            ({waitTime}) => waitTime,
+            // then by total wait time (the lower the total wait the further backwards
+            // it should travel)
             ({waitTime, backwardsWaitTime}) => (waitTime + backwardsWaitTime)
         ])
 
-        // 7. Take the first numSuggestions suggestions
-        .take(numSuggestions)
+        // 7. filter out duplicate routes which are basically just progressively
+        // getting off a station earlier
+        .uniqBy((salmonRoute) => {
+            let salmonTime = getSalmonTimeFromRoute(salmonRoute)
+            let {waitTime, backwardsTrain: {abbreviation}} = salmonRoute
 
-        // 8. Sort again? With the set of suggestions, we may want to reprioritize...
+            // waitTime + train abbreviation uniquely identifies a train and then
+            // we add in salmonTime so that if the same train comes later it could
+            // still be vialbe
+            return `${salmonTime}-${abbreviation}-${waitTime}`
+        })
+
+        // 8. Take the first numSuggestions suggestions
+        .take(numSuggestions)
 
         .value()
 }
-
-export default getSuggestedSalmonRoutesFromEtds

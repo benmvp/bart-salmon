@@ -1,6 +1,7 @@
 // @flow
 import React, {Component, PropTypes} from 'react'
 import {View, Text} from 'react-native'
+import {getSalmonTimeFromRoute} from '../../utils'
 
 import styles from './SalmonRoutes.styles'
 
@@ -18,15 +19,15 @@ const TRAIN_PROP_TYPE = PropTypes.shape({
 })
 
 const SalmonRoute = ({route}) => {
-    let {waitTime, backwardsRideTime, backwardsTrain, backwardsStation, backwardsWaitTime, returnRideTime, returnTrain} = route
-    let totalTime = waitTime + backwardsRideTime + backwardsWaitTime + returnRideTime
+    let {waitTime, backwardsTrain, backwardsStation, backwardsWaitTime, returnTrain} = route
+    let salmonTime = getSalmonTimeFromRoute(route)
 
     return (
         <View style={styles.salmonRoute}>
             <Text>{backwardsTrain.destination} train ({waitTime} min wait)</Text>
             <Text>Get off at {backwardsStation}</Text>
             <Text>{returnTrain.destination} train ({backwardsWaitTime} min wait)</Text>
-            <Text>Salmon time: {totalTime}</Text>
+            <Text>Salmon time: {salmonTime}</Text>
         </View>
     )
 }
