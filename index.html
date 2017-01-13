@@ -6,11 +6,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <div id="app"></div>
-
-        <script src="bundle.js"></script>
 
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -21,5 +16,27 @@
           ga('create', 'UA-65375615-1', 'auto');
           ga('send', 'pageview');
         </script>
+    </head>
+    <body>
+        <div id="app"></div>
+
+        <script>
+            (function() {
+                // pull out the stored routing redirect (if it exists)
+                var routingRedirect = sessionStorage.getItem('routingRedirect');
+
+                // remove it now that we have a reference
+                sessionStorage.removeItem('routingRedirect');
+
+                // if we have a routing redirect for the 404 page, we need to
+                // replace the URL to look like it was when we had the 404 so that
+                // the react routing can kick-in and do the right thing!
+                if (routingRedirect && routingRedirect !== location.href) {
+                    history.replaceState(null, null, routingRedirect);
+                }
+            })();
+        </script>
+
+        <script src="bundle.js"></script>
     </body>
 </html>
