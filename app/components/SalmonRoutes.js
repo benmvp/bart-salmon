@@ -1,7 +1,7 @@
 // @flow
 import React, {Component, PropTypes} from 'react'
 import {View, Text} from 'react-native'
-import {getSalmonTimeFromRoute} from '../../utils'
+import {getSalmonTimeFromRoute} from '../utils'
 
 import styles from './SalmonRoutes.styles'
 

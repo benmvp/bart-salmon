@@ -24,7 +24,6 @@ export type SalmonRoute = {
     backwardsRouteId: RouteId,
     backwardsStation: StationName,
     backwardsRideTime: number,
-    backwardsRideNumStations: number,
     backwardsWaitTime: number,
 
     returnTrain: Train,
