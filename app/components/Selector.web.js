@@ -1,15 +1,21 @@
 import React, {Component, PropTypes} from 'react'
 
+import styles from './Selector.styles'
+
 const _getOptions = (values) => (
     values.map(({value, display}) => (
         <option key={value} value={value}>{display || value}</option>
     ))
 )
 
+const _findValueInfo = (valueToFind, values) => (
+    values.find(({value}) => value === valueToFind)
+)
+
 const _validateValue = (valueToValidate, values) => {
     let validatedValue = valueToValidate
 
-    let valueExists = values.find(({value}) => value === validatedValue)
+    let valueExists = _findValueInfo(validatedValue, values)
 
     if (!valueExists && values.length) {
         validatedValue = values[0].value
@@ -43,10 +49,16 @@ export default class Selector extends Component {
 
         value = _validateValue(value, values)
 
+        let {display} = _findValueInfo(value, values)
+
         return (
-            <select value={value} onChange={this._handleChange}>
-                {_getOptions(values)}
-            </select>
+            <div style={styles.root}>
+                <span style={styles.display}>{display}</span>
+                <span style={styles.arrow}>▼</span>
+                <select style={styles.select} value={value} onChange={this._handleChange}>
+                    {_getOptions(values)}
+                </select>
+            </div>
         )
     }
 }

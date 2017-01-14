@@ -33,14 +33,14 @@ class HomePage extends Component {
 
         return (
             <View style={styles.root}>
-                <View accessibilityRole="section">
-                    <Text>Origin</Text>
+                <View accessibilityRole="section" style={styles.selectorsShell}>
+                    <Text accessibilityRole="label" style={styles.label}>Origin</Text>
                     <StationSelector station={origin} onChange={dispatchSetOrigin} />
-                    <Text>Destination</Text>
+                    <Text accessibilityRole="label" style={[styles.label, styles.labelWithMargin]}>Destination</Text>
                     <StationSelector station={destination} onChange={dispatchSetDestination} />
                 </View>
 
-                <TouchableHighlight underlayColor="#ddd" onPress={gotoRoute.bind(null, 'routes')}>
+                <TouchableHighlight style={styles.swimButton} underlayColor="#ddd" onPress={gotoRoute.bind(null, 'routes')}>
                     <Text style={styles.swimButtonText}>SWIM</Text>
                 </TouchableHighlight>
             </View>
