@@ -16,9 +16,13 @@ class Salmon extends Component {
 
         return (
             <View style={styles.root}>
-                <Text>From: {origin}</Text>
-                <Text>To: {destination}</Text>
-                <SalmonRoutes routes={salmonRoutes} />
+                <View style={styles.nextTrain}>
+                    <Text>From: {origin}</Text>
+                    <Text>To: {destination}</Text>
+                </View>
+                <View style={styles.salmonRoutes}>
+                    <SalmonRoutes routes={salmonRoutes} />
+                </View>
             </View>
 
         )
