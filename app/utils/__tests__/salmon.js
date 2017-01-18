@@ -210,5 +210,12 @@ EXAMPLE_ETDS_LOOKUPS.forEach(({etdsLookup, title}) => {
             expect(actualSalmonSuggestions).not.toHaveLength(0)
             expect(actualSalmonSuggestions).toMatchSnapshot()
         })
+
+        it('includes a suggestion for a train that is leaving', () => {
+            let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, 'LAKE', 'PITT', 5)
+
+            expect(actualSalmonSuggestions).not.toHaveLength(0)
+            expect(actualSalmonSuggestions).toMatchSnapshot()
+        })
     })
 })

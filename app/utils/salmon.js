@@ -51,7 +51,7 @@ const _getTargetRouteIds = (origin: StationName, destination: StationName, allow
 }
 
 const _normalizeMinutes = (minutes: mixed): number => (
-    Number.isNaN(minutes) ? 0 : +minutes
+    Number.isNaN(+minutes) ? 0 : +minutes
 )
 
 /*
@@ -221,11 +221,6 @@ const _getWaitTimesForBackwardsTimeRoutePaths = (_backwardsTimeRoutePaths, etdsL
                 // filter down to only the routes where a route ID was found
                 .filter(({returnRouteId}) => !!returnRouteId)
 
-                // only include the trains where the wait time at the backwards
-                // station is greater that the minimum allowable to increase the
-                // likelihood of making the train
-                .filter(({backwardsWaitTime}) => backwardsWaitTime >= MINIMUM_BACKWARDS_STATION_WAIT_TIME)
-
                 // TODO: Remove for potential optimization?
                 .value()
         })
@@ -317,7 +312,12 @@ export const getSuggestedSalmonRoutesFromEtds = (
     }
 
     return _allSalmonRoutes
-        // 6. Add up waitTime + backwardsRideTime + backwardsWaitTime + returnRideTime
+        // 6. Only include the trains where the wait time at the backwards
+        // station is greater that the minimum allowable to increase the
+        // likelihood of making the train
+        .filter(({backwardsWaitTime}) => backwardsWaitTime >= MINIMUM_BACKWARDS_STATION_WAIT_TIME)
+
+        // 7. Add up waitTime + backwardsRideTime + backwardsWaitTime + returnRideTime
         // (salmonTime) for each salmon route path and sort by ascending total time
         // NOTE: This can be made significantly complicated to determine which routes
         // have most priority
@@ -331,7 +331,7 @@ export const getSuggestedSalmonRoutesFromEtds = (
             ({waitTime, backwardsWaitTime}) => (waitTime + backwardsWaitTime)
         ])
 
-        // 7. filter out duplicate routes which are basically just progressively
+        // 8. filter out duplicate routes which are basically just progressively
         // getting off a station earlier
         .uniqBy((salmonRoute) => {
             let salmonTime = getSalmonTimeFromRoute(salmonRoute)
@@ -343,7 +343,7 @@ export const getSuggestedSalmonRoutesFromEtds = (
             return `${salmonTime}-${abbreviation}-${waitTime}`
         })
 
-        // 8. Take the first numSuggestions suggestions
+        // 9. Take the first numSuggestions suggestions
         .take(numSuggestions)
 
         .value()
