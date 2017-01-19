@@ -1,4 +1,2218 @@
-exports[`for "Evening Rush" does not blow up when requesting high number of suggestions 1`] = `
+exports[`getNextArrivalsFromEtds for "Evening Rush" does not blow up when requesting high number of arrivals 1`] = `
+Array [
+  Object {
+    "abbreviation": "24TH",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "24th Street",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 9,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 12,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "24TH",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "24th Street",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 20,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 25,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 40,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Evening Rush" includes an arrival for a train that is leaving 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 2,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 14,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 29,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Evening Rush" returns arrivals when at origin station 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 11,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 26,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 41,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Evening Rush" returns arrivals when many lines are available 1`] = `
+Array [
+  Object {
+    "abbreviation": "24TH",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "24th Street",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 0,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#0099cc",
+    "length": 9,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 9,
+    "limited": 0,
+    "minutes": 8,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "24TH",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "24th Street",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 11,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "GREEN",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#339933",
+    "length": 10,
+    "limited": 0,
+    "minutes": 11,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 14,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#0099cc",
+    "length": 9,
+    "limited": 0,
+    "minutes": 17,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 9,
+    "limited": 0,
+    "minutes": 23,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "24TH",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "24th Street",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 25,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Evening Rush" returns arrivals when more than one line is available 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff0000",
+    "length": 10,
+    "limited": 0,
+    "minutes": 3,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 7,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff0000",
+    "length": 10,
+    "limited": 0,
+    "minutes": 14,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Evening Rush" returns no arrivals when 0 are requested 1`] = `Array []`;
+
+exports[`getNextArrivalsFromEtds for "Evening Rush" returns single arrival when 1 is requested 1`] = `
+Array [
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "North",
+    "hexcolor": "#0099cc",
+    "length": 9,
+    "limited": 0,
+    "minutes": 0,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Evening Rush" returns suggestions when changing trains is needed 1`] = `
+Array [
+  Object {
+    "abbreviation": "24TH",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "24th Street",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 7,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "24TH",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "24th Street",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 15,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 21,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 36,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Holidays" does not blow up when requesting high number of arrivals 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 6,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 21,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 36,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Holidays" includes an arrival for a train that is leaving 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 10,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 25,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 40,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Holidays" returns arrivals when at origin station 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 7,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 22,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 37,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Holidays" returns arrivals when many lines are available 1`] = `
+Array [
+  Object {
+    "abbreviation": "24TH",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "24th Street",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 3,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 8,
+    "limited": 0,
+    "minutes": 5,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "GREEN",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#339933",
+    "length": 8,
+    "limited": 0,
+    "minutes": 7,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 10,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#0099cc",
+    "length": 9,
+    "limited": 0,
+    "minutes": 13,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 8,
+    "limited": 0,
+    "minutes": 19,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "GREEN",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#339933",
+    "length": 8,
+    "limited": 0,
+    "minutes": 21,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 25,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 9,
+    "limited": 0,
+    "minutes": 32,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 39,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Holidays" returns arrivals when more than one line is available 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 2,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff0000",
+    "length": 8,
+    "limited": 0,
+    "minutes": 6,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 15,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Holidays" returns no arrivals when 0 are requested 1`] = `Array []`;
+
+exports[`getNextArrivalsFromEtds for "Holidays" returns single arrival when 1 is requested 1`] = `
+Array [
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "GREEN",
+    "destination": "Daly City",
+    "direction": "North",
+    "hexcolor": "#339933",
+    "length": 8,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Holidays" returns suggestions when changing trains is needed 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 2,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 16,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 31,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Late Night" does not blow up when requesting high number of arrivals 1`] = `
+Array [
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 12,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 35,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 52,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Late Night" includes an arrival for a train that is leaving 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 5,
+    "limited": 0,
+    "minutes": 14,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 34,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 8,
+    "limited": 0,
+    "minutes": 54,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Late Night" returns arrivals when at origin station 1`] = `
+Array [
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 9,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 22,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 42,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Late Night" returns arrivals when many lines are available 1`] = `
+Array [
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#0099cc",
+    "length": 9,
+    "limited": 0,
+    "minutes": 13,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 13,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#0099cc",
+    "length": 8,
+    "limited": 0,
+    "minutes": 27,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 31,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#0099cc",
+    "length": 8,
+    "limited": 0,
+    "minutes": 45,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 52,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Late Night" returns arrivals when more than one line is available 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 0,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 5,
+    "limited": 0,
+    "minutes": 22,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 40,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Late Night" returns no arrivals when 0 are requested 1`] = `Array []`;
+
+exports[`getNextArrivalsFromEtds for "Late Night" returns single arrival when 1 is requested 1`] = `
+Array [
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "North",
+    "hexcolor": "#0099cc",
+    "length": 8,
+    "limited": 0,
+    "minutes": 11,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Late Night" returns suggestions when changing trains is needed 1`] = `
+Array [
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 8,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 30,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SFO/Millbrae",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 47,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Major Delays" does not blow up when requesting high number of arrivals 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 3,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 5,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 7,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 11,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 13,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 25,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Major Delays" includes an arrival for a train that is leaving 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 8,
+    "limited": 0,
+    "minutes": 3,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 12,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 8,
+    "limited": 0,
+    "minutes": 22,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Major Delays" returns arrivals when at origin station 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 0,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 17,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 25,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Major Delays" returns arrivals when many lines are available 1`] = `
+Array [
+  Object {
+    "abbreviation": "MONT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Montgomery",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 5,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#0099cc",
+    "length": 9,
+    "limited": 0,
+    "minutes": 6,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 9,
+    "limited": 0,
+    "minutes": 9,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 10,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "GREEN",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#339933",
+    "length": 10,
+    "limited": 0,
+    "minutes": 11,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MONT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Montgomery",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 11,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 20,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 10,
+    "limited": 0,
+    "minutes": 25,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 9,
+    "limited": 0,
+    "minutes": 27,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 28,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Major Delays" returns arrivals when more than one line is available 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 1,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MCAR",
+    "bikeflag": 1,
+    "color": "WHITE",
+    "destination": "MacArthur",
+    "direction": "North",
+    "hexcolor": "#ffffff",
+    "length": 10,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 8,
+    "limited": 0,
+    "minutes": 8,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff0000",
+    "length": 9,
+    "limited": 0,
+    "minutes": 14,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Major Delays" returns no arrivals when 0 are requested 1`] = `Array []`;
+
+exports[`getNextArrivalsFromEtds for "Major Delays" returns single arrival when 1 is requested 1`] = `
+Array [
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "North",
+    "hexcolor": "#0099cc",
+    "length": 8,
+    "limited": 0,
+    "minutes": 3,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Major Delays" returns suggestions when changing trains is needed 1`] = `
+Array [
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 0,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 2,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 7,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 9,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 16,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Morning Rush" does not blow up when requesting high number of arrivals 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 3,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 12,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 16,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 28,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 29,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 43,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Morning Rush" includes an arrival for a train that is leaving 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 3,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 8,
+    "limited": 0,
+    "minutes": 18,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 33,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Morning Rush" returns arrivals when at origin station 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 0,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 14,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 29,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Morning Rush" returns arrivals when many lines are available 1`] = `
+Array [
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 8,
+    "limited": 0,
+    "minutes": 0,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "GREEN",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#339933",
+    "length": 10,
+    "limited": 0,
+    "minutes": 2,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MONT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Montgomery",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#0099cc",
+    "length": 9,
+    "limited": 0,
+    "minutes": 6,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 7,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 9,
+    "limited": 0,
+    "minutes": 10,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 11,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 19,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 10,
+    "limited": 0,
+    "minutes": 24,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 33,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Morning Rush" returns arrivals when more than one line is available 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff0000",
+    "length": 8,
+    "limited": 0,
+    "minutes": 3,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 6,
+    "limited": 0,
+    "minutes": 8,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff0000",
+    "length": 8,
+    "limited": 0,
+    "minutes": 15,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Morning Rush" returns no arrivals when 0 are requested 1`] = `Array []`;
+
+exports[`getNextArrivalsFromEtds for "Morning Rush" returns single arrival when 1 is requested 1`] = `
+Array [
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "North",
+    "hexcolor": "#0099cc",
+    "length": 9,
+    "limited": 0,
+    "minutes": 5,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Morning Rush" returns suggestions when changing trains is needed 1`] = `
+Array [
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 7,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 12,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 23,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 24,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 39,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Weekday Noonday" does not blow up when requesting high number of arrivals 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 5,
+    "limited": 0,
+    "minutes": 3,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 18,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 33,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Weekday Noonday" includes an arrival for a train that is leaving 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 4,
+    "limited": 0,
+    "minutes": 7,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 4,
+    "limited": 0,
+    "minutes": 22,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 4,
+    "limited": 0,
+    "minutes": 37,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns arrivals when at origin station 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 6,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 19,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 34,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns arrivals when many lines are available 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 5,
+    "limited": 0,
+    "minutes": 1,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "GREEN",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#339933",
+    "length": 10,
+    "limited": 0,
+    "minutes": 3,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "BLUE",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#0099cc",
+    "length": 9,
+    "limited": 0,
+    "minutes": 10,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 5,
+    "limited": 0,
+    "minutes": 10,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 4,
+    "limited": 0,
+    "minutes": 15,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "GREEN",
+    "destination": "Daly City",
+    "direction": "South",
+    "hexcolor": "#339933",
+    "length": 10,
+    "limited": 0,
+    "minutes": 18,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 5,
+    "limited": 0,
+    "minutes": 22,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 5,
+    "limited": 0,
+    "minutes": 29,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
+    "length": 5,
+    "limited": 0,
+    "minutes": 44,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns arrivals when more than one line is available 1`] = `
+Array [
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff0000",
+    "length": 5,
+    "limited": 0,
+    "minutes": 5,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "ORANGE",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff9933",
+    "length": 4,
+    "limited": 0,
+    "minutes": 12,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "RICH",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Richmond",
+    "direction": "North",
+    "hexcolor": "#ff0000",
+    "length": 4,
+    "limited": 0,
+    "minutes": 20,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns no arrivals when 0 are requested 1`] = `Array []`;
+
+exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns single arrival when 1 is requested 1`] = `
+Array [
+  Object {
+    "abbreviation": "DALY",
+    "bikeflag": 1,
+    "color": "GREEN",
+    "destination": "Daly City",
+    "direction": "North",
+    "hexcolor": "#339933",
+    "length": 10,
+    "limited": 0,
+    "minutes": 1,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns suggestions when changing trains is needed 1`] = `
+Array [
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 14,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 29,
+    "platform": 2,
+  },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 44,
+    "platform": 2,
+  },
+]
+`;
+
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -660,10 +2874,76 @@ Array [
     },
     "waitTime": 23,
   },
+  Object {
+    "backwardsRideTime": 27,
+    "backwardsRouteId": "ROUTE 2",
+    "backwardsStation": "PITT",
+    "backwardsTrain": Object {
+      "abbreviation": "NCON",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "North Concord",
+      "direction": "North",
+      "hexcolor": "#ffff33",
+      "length": 9,
+      "limited": 0,
+      "minutes": 9,
+      "platform": 1,
+    },
+    "backwardsWaitTime": 5,
+    "returnRideTime": 28,
+    "returnRouteId": "ROUTE 1",
+    "returnTrain": Object {
+      "abbreviation": "SFIA",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "SF Airport",
+      "direction": "South",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 41,
+      "platform": 2,
+    },
+    "waitTime": 9,
+  },
+  Object {
+    "backwardsRideTime": 27,
+    "backwardsRouteId": "ROUTE 2",
+    "backwardsStation": "PITT",
+    "backwardsTrain": Object {
+      "abbreviation": "PITT",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "Pittsburg/Bay Point",
+      "direction": "North",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 9,
+      "platform": 1,
+    },
+    "backwardsWaitTime": 5,
+    "returnRideTime": 28,
+    "returnRouteId": "ROUTE 1",
+    "returnTrain": Object {
+      "abbreviation": "SFIA",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "SF Airport",
+      "direction": "South",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 41,
+      "platform": 2,
+    },
+    "waitTime": 9,
+  },
 ]
 `;
 
-exports[`for "Evening Rush" includes a suggestion for a train that is leaving 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -833,9 +3113,9 @@ Array [
 ]
 `;
 
-exports[`for "Evening Rush" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`for "Evening Rush" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -873,7 +3153,7 @@ Array [
 ]
 `;
 
-exports[`for "Evening Rush" returns suggestions for DUBL line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -1043,7 +3323,7 @@ Array [
 ]
 `;
 
-exports[`for "Evening Rush" returns suggestions for PITT line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 6,
@@ -1213,7 +3493,7 @@ Array [
 ]
 `;
 
-exports[`for "Evening Rush" returns suggestions for RICH line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -1383,7 +3663,7 @@ Array [
 ]
 `;
 
-exports[`for "Evening Rush" returns suggestions for WARM line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -1553,7 +3833,7 @@ Array [
 ]
 `;
 
-exports[`for "Evening Rush" returns suggestions for Westbound line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -1617,6 +3897,39 @@ Array [
       "length": 10,
       "limited": 0,
       "minutes": 23,
+      "platform": 2,
+    },
+    "waitTime": 4,
+  },
+  Object {
+    "backwardsRideTime": 15,
+    "backwardsRouteId": "ROUTE 2",
+    "backwardsStation": "PITT",
+    "backwardsTrain": Object {
+      "abbreviation": "PITT",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "Pittsburg/Bay Point",
+      "direction": "North",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 4,
+      "platform": 1,
+    },
+    "backwardsWaitTime": 7,
+    "returnRideTime": 15,
+    "returnRouteId": "ROUTE 1",
+    "returnTrain": Object {
+      "abbreviation": "SFIA",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "SF Airport",
+      "direction": "South",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 26,
       "platform": 2,
     },
     "waitTime": 4,
@@ -1687,43 +4000,10 @@ Array [
     },
     "waitTime": 20,
   },
-  Object {
-    "backwardsRideTime": 9,
-    "backwardsRouteId": "ROUTE 2",
-    "backwardsStation": "NCON",
-    "backwardsTrain": Object {
-      "abbreviation": "NCON",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "North Concord",
-      "direction": "North",
-      "hexcolor": "#ffff33",
-      "length": 9,
-      "limited": 0,
-      "minutes": 21,
-      "platform": 1,
-    },
-    "backwardsWaitTime": 4,
-    "returnRideTime": 8,
-    "returnRouteId": "ROUTE 1",
-    "returnTrain": Object {
-      "abbreviation": "SFIA",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "SF Airport",
-      "direction": "South",
-      "hexcolor": "#ffff33",
-      "length": 10,
-      "limited": 0,
-      "minutes": 34,
-      "platform": 2,
-    },
-    "waitTime": 21,
-  },
 ]
 `;
 
-exports[`for "Evening Rush" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -1893,7 +4173,7 @@ Array [
 ]
 `;
 
-exports[`for "Evening Rush" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -2063,7 +4343,7 @@ Array [
 ]
 `;
 
-exports[`for "Evening Rush" returns suggestions when many Westbound lines are available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when many Westbound lines are available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -2398,7 +4678,7 @@ Array [
 ]
 `;
 
-exports[`for "Evening Rush" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -2733,7 +5013,7 @@ Array [
 ]
 `;
 
-exports[`for "Evening Rush" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -2903,7 +5183,7 @@ Array [
 ]
 `;
 
-exports[`for "Evening Rush" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -3073,7 +5353,7 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" does not blow up when requesting high number of suggestions 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -3471,10 +5751,43 @@ Array [
     },
     "waitTime": 22,
   },
+  Object {
+    "backwardsRideTime": 27,
+    "backwardsRouteId": "ROUTE 2",
+    "backwardsStation": "PITT",
+    "backwardsTrain": Object {
+      "abbreviation": "PITT",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "Pittsburg/Bay Point",
+      "direction": "North",
+      "hexcolor": "#ffff33",
+      "length": 8,
+      "limited": 0,
+      "minutes": 8,
+      "platform": 1,
+    },
+    "backwardsWaitTime": 2,
+    "returnRideTime": 28,
+    "returnRouteId": "ROUTE 1",
+    "returnTrain": Object {
+      "abbreviation": "SFIA",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "SF Airport",
+      "direction": "South",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 37,
+      "platform": 2,
+    },
+    "waitTime": 8,
+  },
 ]
 `;
 
-exports[`for "Holidays" includes a suggestion for a train that is leaving 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -3644,9 +5957,9 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`for "Holidays" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -3684,7 +5997,7 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" returns suggestions for DUBL line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -3854,7 +6167,7 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" returns suggestions for PITT line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -4024,7 +6337,7 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" returns suggestions for RICH line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -4194,7 +6507,7 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" returns suggestions for WARM line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -4364,7 +6677,7 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" returns suggestions for Westbound line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -4433,6 +6746,39 @@ Array [
     "waitTime": 10,
   },
   Object {
+    "backwardsRideTime": 15,
+    "backwardsRouteId": "ROUTE 2",
+    "backwardsStation": "PITT",
+    "backwardsTrain": Object {
+      "abbreviation": "PITT",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "Pittsburg/Bay Point",
+      "direction": "North",
+      "hexcolor": "#ffff33",
+      "length": 8,
+      "limited": 0,
+      "minutes": 5,
+      "platform": 1,
+    },
+    "backwardsWaitTime": 2,
+    "returnRideTime": 15,
+    "returnRouteId": "ROUTE 1",
+    "returnTrain": Object {
+      "abbreviation": "SFIA",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "SF Airport",
+      "direction": "South",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 22,
+      "platform": 2,
+    },
+    "waitTime": 5,
+  },
+  Object {
     "backwardsRideTime": 9,
     "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
@@ -4498,43 +6844,10 @@ Array [
     },
     "waitTime": 10,
   },
-  Object {
-    "backwardsRideTime": 9,
-    "backwardsRouteId": "ROUTE 2",
-    "backwardsStation": "NCON",
-    "backwardsTrain": Object {
-      "abbreviation": "PITT",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "Pittsburg/Bay Point",
-      "direction": "North",
-      "hexcolor": "#ffff33",
-      "length": 8,
-      "limited": 0,
-      "minutes": 19,
-      "platform": 1,
-    },
-    "backwardsWaitTime": 2,
-    "returnRideTime": 8,
-    "returnRouteId": "ROUTE 1",
-    "returnTrain": Object {
-      "abbreviation": "SFIA",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "SF Airport",
-      "direction": "South",
-      "hexcolor": "#ffff33",
-      "length": 10,
-      "limited": 0,
-      "minutes": 30,
-      "platform": 2,
-    },
-    "waitTime": 19,
-  },
 ]
 `;
 
-exports[`for "Holidays" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -4704,7 +7017,7 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -4874,7 +7187,7 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" returns suggestions when many Westbound lines are available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when many Westbound lines are available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -5209,7 +7522,7 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -5544,7 +7857,7 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -5714,7 +8027,7 @@ Array [
 ]
 `;
 
-exports[`for "Holidays" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -5884,7 +8197,7 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" does not blow up when requesting high number of suggestions 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -6184,6 +8497,39 @@ Array [
     "waitTime": 31,
   },
   Object {
+    "backwardsRideTime": 27,
+    "backwardsRouteId": "ROUTE 2",
+    "backwardsStation": "PITT",
+    "backwardsTrain": Object {
+      "abbreviation": "PITT",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "Pittsburg/Bay Point",
+      "direction": "North",
+      "hexcolor": "#ffff33",
+      "length": 9,
+      "limited": 0,
+      "minutes": 6,
+      "platform": 1,
+    },
+    "backwardsWaitTime": 9,
+    "returnRideTime": 28,
+    "returnRouteId": "ROUTE 1",
+    "returnTrain": Object {
+      "abbreviation": "MLBR",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "SFO/Millbrae",
+      "direction": "South",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 42,
+      "platform": 2,
+    },
+    "waitTime": 6,
+  },
+  Object {
     "backwardsRideTime": 21,
     "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "NCON",
@@ -6351,7 +8697,7 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" includes a suggestion for a train that is leaving 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 11,
@@ -6521,9 +8867,9 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`for "Late Night" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -6561,7 +8907,7 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" returns suggestions for DUBL line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -6731,7 +9077,7 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" returns suggestions for PITT line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -6833,9 +9179,9 @@ Array [
     "waitTime": 0,
   },
   Object {
-    "backwardsRideTime": 18,
+    "backwardsRideTime": 30,
     "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "COLM",
+    "backwardsStation": "SFIA",
     "backwardsTrain": Object {
       "abbreviation": "24TH",
       "bikeflag": 1,
@@ -6848,8 +9194,8 @@ Array [
       "minutes": 2,
       "platform": 1,
     },
-    "backwardsWaitTime": 49,
-    "returnRideTime": 18,
+    "backwardsWaitTime": 26,
+    "returnRideTime": 29,
     "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
@@ -6860,15 +9206,15 @@ Array [
       "hexcolor": "#ffff33",
       "length": 10,
       "limited": 0,
-      "minutes": 69,
-      "platform": 2,
+      "minutes": 58,
+      "platform": 3,
     },
     "waitTime": 2,
   },
   Object {
-    "backwardsRideTime": 18,
+    "backwardsRideTime": 30,
     "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "COLM",
+    "backwardsStation": "SFIA",
     "backwardsTrain": Object {
       "abbreviation": "MLBR",
       "bikeflag": 1,
@@ -6881,8 +9227,8 @@ Array [
       "minutes": 22,
       "platform": 1,
     },
-    "backwardsWaitTime": 29,
-    "returnRideTime": 18,
+    "backwardsWaitTime": 6,
+    "returnRideTime": 29,
     "returnRouteId": "ROUTE 2",
     "returnTrain": Object {
       "abbreviation": "PITT",
@@ -6893,15 +9239,15 @@ Array [
       "hexcolor": "#ffff33",
       "length": 10,
       "limited": 0,
-      "minutes": 69,
-      "platform": 2,
+      "minutes": 58,
+      "platform": 3,
     },
     "waitTime": 22,
   },
 ]
 `;
 
-exports[`for "Late Night" returns suggestions for RICH line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -7071,7 +9417,7 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" returns suggestions for WARM line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -7241,7 +9587,7 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" returns suggestions for Westbound line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -7272,6 +9618,39 @@ Array [
       "length": 10,
       "limited": 0,
       "minutes": 34,
+      "platform": 2,
+    },
+    "waitTime": 24,
+  },
+  Object {
+    "backwardsRideTime": 15,
+    "backwardsRouteId": "ROUTE 2",
+    "backwardsStation": "PITT",
+    "backwardsTrain": Object {
+      "abbreviation": "PITT",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "Pittsburg/Bay Point",
+      "direction": "North",
+      "hexcolor": "#ffff33",
+      "length": 9,
+      "limited": 0,
+      "minutes": 24,
+      "platform": 1,
+    },
+    "backwardsWaitTime": 3,
+    "returnRideTime": 15,
+    "returnRouteId": "ROUTE 1",
+    "returnTrain": Object {
+      "abbreviation": "MLBR",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "SFO/Millbrae",
+      "direction": "South",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 42,
       "platform": 2,
     },
     "waitTime": 24,
@@ -7375,43 +9754,10 @@ Array [
     },
     "waitTime": 24,
   },
-  Object {
-    "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 2",
-    "backwardsStation": "CONC",
-    "backwardsTrain": Object {
-      "abbreviation": "PITT",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "Pittsburg/Bay Point",
-      "direction": "North",
-      "hexcolor": "#ffff33",
-      "length": 10,
-      "limited": 0,
-      "minutes": 36,
-      "platform": 1,
-    },
-    "backwardsWaitTime": 13,
-    "returnRideTime": 5,
-    "returnRouteId": "ROUTE 1",
-    "returnTrain": Object {
-      "abbreviation": "MLBR",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "SFO/Millbrae",
-      "direction": "South",
-      "hexcolor": "#ffff33",
-      "length": 10,
-      "limited": 0,
-      "minutes": 54,
-      "platform": 2,
-    },
-    "waitTime": 36,
-  },
 ]
 `;
 
-exports[`for "Late Night" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -7581,7 +9927,7 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -7751,7 +10097,7 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" returns suggestions when many Westbound lines are available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when many Westbound lines are available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -8086,7 +10432,7 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -8421,7 +10767,7 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -8591,7 +10937,7 @@ Array [
 ]
 `;
 
-exports[`for "Late Night" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -8761,7 +11107,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" does not blow up when requesting high number of suggestions 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -8931,7 +11277,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" includes a suggestion for a train that is leaving 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -9101,9 +11447,9 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`for "Major Delays" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -9141,7 +11487,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" returns suggestions for DUBL line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -9311,7 +11657,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" returns suggestions for PITT line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -9481,7 +11827,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" returns suggestions for RICH line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -9651,7 +11997,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" returns suggestions for WARM line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -9821,7 +12167,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" returns suggestions for Westbound line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -9857,9 +12203,9 @@ Array [
     "waitTime": 1,
   },
   Object {
-    "backwardsRideTime": 9,
+    "backwardsRideTime": 15,
     "backwardsRouteId": "ROUTE 2",
-    "backwardsStation": "NCON",
+    "backwardsStation": "PITT",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -9872,8 +12218,8 @@ Array [
       "minutes": 1,
       "platform": 1,
     },
-    "backwardsWaitTime": 14,
-    "returnRideTime": 8,
+    "backwardsWaitTime": 1,
+    "returnRideTime": 15,
     "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
@@ -9884,7 +12230,7 @@ Array [
       "hexcolor": "#ffff33",
       "length": 10,
       "limited": 0,
-      "minutes": 24,
+      "minutes": 17,
       "platform": 2,
     },
     "waitTime": 1,
@@ -9922,10 +12268,43 @@ Array [
     },
     "waitTime": 1,
   },
+  Object {
+    "backwardsRideTime": 15,
+    "backwardsRouteId": "ROUTE 2",
+    "backwardsStation": "PITT",
+    "backwardsTrain": Object {
+      "abbreviation": "PITT",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "Pittsburg/Bay Point",
+      "direction": "North",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 1,
+      "platform": 1,
+    },
+    "backwardsWaitTime": 9,
+    "returnRideTime": 15,
+    "returnRouteId": "ROUTE 1",
+    "returnTrain": Object {
+      "abbreviation": "SFIA",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "SF Airport",
+      "direction": "South",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 25,
+      "platform": 2,
+    },
+    "waitTime": 1,
+  },
 ]
 `;
 
-exports[`for "Major Delays" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -10095,7 +12474,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -10232,7 +12611,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" returns suggestions when many Westbound lines are available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when many Westbound lines are available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -10567,7 +12946,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -10902,7 +13281,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -11072,7 +13451,7 @@ Array [
 ]
 `;
 
-exports[`for "Major Delays" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -11242,7 +13621,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" does not blow up when requesting high number of suggestions 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -11775,7 +14154,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" includes a suggestion for a train that is leaving 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -11945,9 +14324,9 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`for "Morning Rush" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -11985,7 +14364,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" returns suggestions for DUBL line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -12155,7 +14534,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" returns suggestions for PITT line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -12325,7 +14704,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" returns suggestions for RICH line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -12495,7 +14874,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" returns suggestions for WARM line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -12665,7 +15044,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" returns suggestions for Westbound line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -12729,6 +15108,39 @@ Array [
       "length": 10,
       "limited": 0,
       "minutes": 26,
+      "platform": 2,
+    },
+    "waitTime": 7,
+  },
+  Object {
+    "backwardsRideTime": 15,
+    "backwardsRouteId": "ROUTE 2",
+    "backwardsStation": "PITT",
+    "backwardsTrain": Object {
+      "abbreviation": "PITT",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "Pittsburg/Bay Point",
+      "direction": "North",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 7,
+      "platform": 1,
+    },
+    "backwardsWaitTime": 7,
+    "returnRideTime": 15,
+    "returnRouteId": "ROUTE 1",
+    "returnTrain": Object {
+      "abbreviation": "SFIA",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "SF Airport",
+      "direction": "South",
+      "hexcolor": "#ffff33",
+      "length": 10,
+      "limited": 0,
+      "minutes": 29,
       "platform": 2,
     },
     "waitTime": 7,
@@ -12799,43 +15211,10 @@ Array [
     },
     "waitTime": 21,
   },
-  Object {
-    "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 2",
-    "backwardsStation": "CONC",
-    "backwardsTrain": Object {
-      "abbreviation": "PITT",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "Pittsburg/Bay Point",
-      "direction": "North",
-      "hexcolor": "#ffff33",
-      "length": 10,
-      "limited": 0,
-      "minutes": 7,
-      "platform": 1,
-    },
-    "backwardsWaitTime": 29,
-    "returnRideTime": 5,
-    "returnRouteId": "ROUTE 1",
-    "returnTrain": Object {
-      "abbreviation": "SFIA",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "SF Airport",
-      "direction": "South",
-      "hexcolor": "#ffff33",
-      "length": 10,
-      "limited": 0,
-      "minutes": 41,
-      "platform": 2,
-    },
-    "waitTime": 7,
-  },
 ]
 `;
 
-exports[`for "Morning Rush" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 8,
@@ -13005,7 +15384,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -13175,7 +15554,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" returns suggestions when many Westbound lines are available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when many Westbound lines are available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -13510,7 +15889,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -13845,7 +16224,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -14015,7 +16394,7 @@ Array [
 ]
 `;
 
-exports[`for "Morning Rush" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -14185,7 +16564,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" does not blow up when requesting high number of suggestions 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -14487,7 +16866,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" includes a suggestion for a train that is leaving 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -14657,9 +17036,9 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`for "Weekday Noonday" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -14697,7 +17076,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns suggestions for DUBL line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -14867,7 +17246,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns suggestions for PITT line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -15037,7 +17416,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns suggestions for RICH line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -15207,7 +17586,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns suggestions for WARM line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -15377,7 +17756,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns suggestions for Westbound line 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -15512,9 +17891,9 @@ Array [
     "waitTime": 20,
   },
   Object {
-    "backwardsRideTime": 9,
+    "backwardsRideTime": 15,
     "backwardsRouteId": "ROUTE 2",
-    "backwardsStation": "NCON",
+    "backwardsStation": "PITT",
     "backwardsTrain": Object {
       "abbreviation": "PITT",
       "bikeflag": 1,
@@ -15527,8 +17906,8 @@ Array [
       "minutes": 6,
       "platform": 1,
     },
-    "backwardsWaitTime": 27,
-    "returnRideTime": 8,
+    "backwardsWaitTime": 13,
+    "returnRideTime": 15,
     "returnRouteId": "ROUTE 1",
     "returnTrain": Object {
       "abbreviation": "SFIA",
@@ -15539,7 +17918,7 @@ Array [
       "hexcolor": "#ffff33",
       "length": 10,
       "limited": 0,
-      "minutes": 42,
+      "minutes": 34,
       "platform": 2,
     },
     "waitTime": 6,
@@ -15547,7 +17926,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -15717,7 +18096,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -15887,7 +18266,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns suggestions when many Westbound lines are available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when many Westbound lines are available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -16222,7 +18601,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -16557,7 +18936,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -16727,7 +19106,7 @@ Array [
 ]
 `;
 
-exports[`for "Weekday Noonday" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,

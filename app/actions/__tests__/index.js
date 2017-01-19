@@ -48,7 +48,8 @@ describe('getSalmonInfo', () => {
             destination: 'RICH',
             numSalmonRoutes: 7,
             isFetchingSalmonRoutes: false,
-            salmonRoutes: []
+            salmonRoutes: [],
+            arrivals: []
         })
 
         await asyncAction(mockDispatch, getState)
@@ -65,7 +66,8 @@ describe('getSalmonInfo', () => {
             destination: 'EMBR',
             numSalmonRoutes: 3,
             isFetchingSalmonRoutes: false,
-            salmonRoutes: []
+            salmonRoutes: [],
+            arrivals: []
         })
 
         await asyncAction(mockDispatch, getState)
@@ -85,7 +87,8 @@ describe('getSalmonInfo', () => {
             destination: '24TH',
             numSalmonRoutes: 7,
             isFetchingSalmonRoutes: false,
-            salmonRoutes: []
+            salmonRoutes: [],
+            arrivals: []
         })
 
         await asyncAction(mockDispatch, getState)

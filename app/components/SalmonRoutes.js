@@ -2,7 +2,7 @@
 import React, {Component, PropTypes} from 'react'
 import {View, Text} from 'react-native'
 import stationsLookup from '../data/stations.json'
-import {getSalmonTimeFromRoute} from '../utils'
+import {getSalmonTimeFromRoute} from '../utils/salmon'
 
 import styles from './SalmonRoutes.styles'
 

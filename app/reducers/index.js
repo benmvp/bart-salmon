@@ -1,12 +1,12 @@
 // @flow
 
 import {combineReducers} from 'redux'
-import {DEFAULT_NUM_SALMON_ROUTES} from '../utils/constants'
-import type {SalmonRoute, StationName} from '../utils/flow'
+import type {SalmonRoute, StationName, Train} from '../utils/flow'
 import type {ReduxAction} from '../actions/flow'
 
 const DEFAULT_ORIGIN_STATION = 'POWL'
 const DEFAULT_DESTINATION_STATION = 'PITT'
+const DEFAULT_NUM_SALMON_ROUTES = 4
 
 
 const origin = (state: StationName = DEFAULT_ORIGIN_STATION, {type, payload}: ReduxAction): StationName => {
@@ -53,6 +53,18 @@ const salmonRoutes = (state: SalmonRoute[] = [], {type, payload}: ReduxAction): 
     return newState
 }
 
+const arrivals = (state: Train[] = [], {type, payload}: ReduxAction): Train[] => {
+    let newState = state
+
+    if (type === 'RECEIVE_SALMON_INFO' && payload) {
+        newState = payload.arrivals
+    } else if (type === 'ERROR_SALMON_INFO') {
+        newState = []
+    }
+
+    return newState
+}
+
 const numSalmonRoutes = (state: number = DEFAULT_NUM_SALMON_ROUTES, {type, payload}: ReduxAction): number => {
     let newState = state
 
@@ -68,6 +80,7 @@ const rootReducer = combineReducers({
     destination,
     isFetchingSalmonRoutes,
     salmonRoutes,
+    arrivals,
     numSalmonRoutes
 })
 

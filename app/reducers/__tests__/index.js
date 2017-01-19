@@ -6,7 +6,8 @@ const INITIAL_STATE = {
     destination: '12TH',
     numSalmonRoutes: 5,
     isFetchingSalmonRoutes: false,
-    salmonRoutes: []
+    salmonRoutes: [],
+    arrivals: []
 }
 const SAMPLE_ROUTES = [
     {
@@ -42,6 +43,68 @@ const SAMPLE_ROUTES = [
         },
         waitTime: 2
     }
+]
+const SAMPLE_ARRIVALS = [
+    {
+        'abbreviation': '24TH',
+        'bikeflag': 1,
+        'color': 'YELLOW',
+        'destination': '24th Street',
+        'direction': 'South',
+        'hexcolor': '#ffff33',
+        'length': 9,
+        'limited': 0,
+        'minutes': 9,
+        'platform': 2,
+    },
+    {
+        'abbreviation': 'SFIA',
+        'bikeflag': 1,
+        'color': 'YELLOW',
+        'destination': 'SF Airport',
+        'direction': 'South',
+        'hexcolor': '#ffff33',
+        'length': 10,
+        'limited': 0,
+        'minutes': 12,
+        'platform': 2,
+    },
+    {
+        'abbreviation': '24TH',
+        'bikeflag': 1,
+        'color': 'YELLOW',
+        'destination': '24th Street',
+        'direction': 'South',
+        'hexcolor': '#ffff33',
+        'length': 9,
+        'limited': 0,
+        'minutes': 20,
+        'platform': 2,
+    },
+    {
+        'abbreviation': 'SFIA',
+        'bikeflag': 1,
+        'color': 'YELLOW',
+        'destination': 'SF Airport',
+        'direction': 'South',
+        'hexcolor': '#ffff33',
+        'length': 10,
+        'limited': 0,
+        'minutes': 25,
+        'platform': 2,
+    },
+    {
+        'abbreviation': 'SFIA',
+        'bikeflag': 1,
+        'color': 'YELLOW',
+        'destination': 'SF Airport',
+        'direction': 'South',
+        'hexcolor': '#ffff33',
+        'length': 10,
+        'limited': 0,
+        'minutes': 40,
+        'platform': 2,
+    },
 ]
 
 it('should handle SET_ORIGIN action', () => {
@@ -98,6 +161,7 @@ it('should handle FETCH_SALMON_INFO action', () => {
 
 it('should handle RECEIVE_SALMON_INFO action', () => {
     let routes = SAMPLE_ROUTES
+    let arrivals = SAMPLE_ARRIVALS
     let actualState = rootReducer(
         {
             ...INITIAL_STATE,
@@ -105,11 +169,12 @@ it('should handle RECEIVE_SALMON_INFO action', () => {
         },
         {
             type: 'RECEIVE_SALMON_INFO',
-            payload: {routes}
+            payload: {routes, arrivals}
         }
     )
     let expectedState = {
         ...INITIAL_STATE,
+        arrivals,
         salmonRoutes: routes,
         isFetchingSalmonRoutes: false
     }
@@ -131,6 +196,7 @@ it('should handle ERROR_SALMON_INFO action', () => {
     let expectedState = {
         ...INITIAL_STATE,
         salmonRoutes: [],
+        arrivals: [],
         isFetchingSalmonRoutes: false
     }
 

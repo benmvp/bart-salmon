@@ -1,6 +1,44 @@
 exports[`getSalmonInfo dispatches RECEIVE_SALMON_INFO action 1`] = `
 Object {
   "payload": Object {
+    "arrivals": Array [
+      Object {
+        "abbreviation": "MLBR",
+        "bikeflag": 1,
+        "color": "RED",
+        "destination": "Millbrae",
+        "direction": "South",
+        "hexcolor": "#ff0000",
+        "length": 9,
+        "limited": 0,
+        "minutes": 12,
+        "platform": 2,
+      },
+      Object {
+        "abbreviation": "MLBR",
+        "bikeflag": 1,
+        "color": "RED",
+        "destination": "Millbrae",
+        "direction": "South",
+        "hexcolor": "#ff0000",
+        "length": 9,
+        "limited": 0,
+        "minutes": 27,
+        "platform": 2,
+      },
+      Object {
+        "abbreviation": "MLBR",
+        "bikeflag": 1,
+        "color": "RED",
+        "destination": "Millbrae",
+        "direction": "South",
+        "hexcolor": "#ff0000",
+        "length": 9,
+        "limited": 0,
+        "minutes": 42,
+        "platform": 2,
+      },
+    ],
     "routes": Array [
       Object {
         "backwardsRideTime": 4,
