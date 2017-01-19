@@ -1,23 +1,11 @@
 // @flow
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from 'react'
 import {View, Text} from 'react-native'
 import stationsLookup from '../data/stations.json'
 import {getSalmonTimeFromRoute} from '../utils/salmon'
+import {SALMON_ROUTES_PROP_TYPE} from '../containers/constants'
 
 import styles from './SalmonRoutes.styles'
-
-const TRAIN_PROP_TYPE = PropTypes.shape({
-    destination: PropTypes.string,
-    abbreviation: PropTypes.string,
-    limited: PropTypes.number,
-    minutes: PropTypes.number,
-    platform: PropTypes.number,
-    direction: PropTypes.string,
-    length: PropTypes.number,
-    color: PropTypes.string,
-    hexcolor: PropTypes.string,
-    bikeflag: PropTypes.number
-})
 
 const SalmonRoute = ({route}) => {
     let {waitTime, backwardsTrain, backwardsStation, backwardsWaitTime, returnTrain} = route
@@ -42,22 +30,7 @@ const SalmonRoute = ({route}) => {
 
 export default class SalmonRoutes extends Component {
     static propTypes = {
-        routes: PropTypes.arrayOf(
-            PropTypes.shape({
-                waitTime: PropTypes.number,
-
-                backwardsTrain: TRAIN_PROP_TYPE,
-                backwardsRouteId: PropTypes.string,
-                backwardsStation: PropTypes.string,
-                backwardsRideTime: PropTypes.number,
-                backwardsRideNumStations: PropTypes.number,
-                backwardsWaitTime: PropTypes.number,
-
-                returnTrain: TRAIN_PROP_TYPE,
-                returnRouteId: PropTypes.string,
-                returnRideTime: PropTypes.number
-            })
-        ).isRequired
+        routes: SALMON_ROUTES_PROP_TYPE.isRequired
     }
 
     render = () => {

@@ -1,24 +1,37 @@
-import React, {Component} from 'react'
-import {View, Text} from 'react-native'
+import React, {Component, PropTypes} from 'react'
+import {View} from 'react-native'
 import {connect} from 'react-redux'
 import {getSalmonInfo} from '../actions'
+import Arrivals from '../components/Arrivals'
 import SalmonRoutes from '../components/SalmonRoutes'
+import {SALMON_ROUTES_PROP_TYPE, TRAINS_PROP_TYPE} from './constants'
 
 import styles from './RoutesPage.styles'
 
 class Salmon extends Component {
+    static propTypes = {
+        destination: PropTypes.string.isRequired,
+        salmonRoutes: SALMON_ROUTES_PROP_TYPE.isRequired,
+        arrivals: TRAINS_PROP_TYPE.isRequired,
+        dispatchGetSalmonInfo: PropTypes.func.isRequired,
+        isDisabled: PropTypes.bool
+    }
+
+    static defaultProps = {
+        isDisabled: false
+    }
+
     componentDidMount = () => {
         this.props.dispatchGetSalmonInfo()
     }
 
     render = () => {
-        let {origin, destination, salmonRoutes} = this.props
+        let {destination, salmonRoutes, arrivals} = this.props
 
         return (
             <View style={styles.root}>
-                <View style={styles.nextTrain}>
-                    <Text>From: {origin}</Text>
-                    <Text>To: {destination}</Text>
+                <View style={styles.arrivals}>
+                    <Arrivals destination={destination} arrivals={arrivals} />
                 </View>
                 <View style={styles.salmonRoutes}>
                     <SalmonRoutes routes={salmonRoutes} />
@@ -29,10 +42,10 @@ class Salmon extends Component {
     }
 }
 
-const _mapStateToProps = ({origin, destination, salmonRoutes, isFetchingSalmonRoutes}) => ({
-    origin,
+const _mapStateToProps = ({destination, salmonRoutes, arrivals, isFetchingSalmonRoutes}) => ({
     destination,
     salmonRoutes,
+    arrivals,
     isDisabled: isFetchingSalmonRoutes
 })
 

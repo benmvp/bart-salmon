@@ -4,10 +4,11 @@ import {StyleSheet} from 'react-native'
 export default StyleSheet.create({
     root: {
         flexDirection: 'column',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        alignItems: 'center'
     },
-    nextTrain: {
-        height: 150
+    arrivals: {
+        width: '90%'
     },
     salmonRoutes: {
         flex: 1

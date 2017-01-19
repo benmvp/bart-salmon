@@ -7,13 +7,13 @@
 - [x] Add more ETDs mock data for other time periods (morning rush, evening rush, etc)
 - [x] Implement Redux layer
 - [x] Test Redux layer
+- [ ] Clean train info so that `minutes` is always a number
 - [ ] Build React Native app (w/ [`react-native-web`](https://github.com/necolas/react-native-web/))
 - [ ] Build responsive React web app
 - [ ] Add JavaScript error logging ([Sentry](https://sentry.io/) or [Bugsnag](https://bugsnag.com/))
 
 ## Beta
 
-- [ ] Add ability to see next available train
 - [ ] Switch to `lodash/fp`
 - [ ] Pick station based on location
 - [ ] Add button to swap stations/direction
