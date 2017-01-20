@@ -27,6 +27,7 @@ class Salmon extends Component {
 
     render = () => {
         let {destination, salmonRoutes, arrivals} = this.props
+        let [nextTrain] = arrivals
 
         return (
             <View style={styles.root}>
@@ -34,7 +35,7 @@ class Salmon extends Component {
                     <Arrivals destination={destination} arrivals={arrivals} />
                 </View>
                 <View style={styles.salmonRoutes}>
-                    <SalmonRoutes routes={salmonRoutes} />
+                    <SalmonRoutes routes={salmonRoutes} nextTrain={nextTrain} />
                 </View>
             </View>
 
