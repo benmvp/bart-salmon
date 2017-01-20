@@ -1,7 +1,35 @@
 // @flow
 import {StyleSheet} from 'react-native'
 
+const STATION_WIDTH = '35%'
+const ROUTE_WIDTH = '40%'
+const TIME_WIDTH = '20%'
+
+const HEADER_CELL_STYLES = {
+    textAlign: 'center',
+    color: '#fff',
+    padding: 4
+}
+
 export default StyleSheet.create({
+    header: {
+        backgroundColor: '#222',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    headerStation: {
+        ...HEADER_CELL_STYLES,
+        width: STATION_WIDTH
+    },
+    headerRoute: {
+        ...HEADER_CELL_STYLES,
+        width: ROUTE_WIDTH
+    },
+    headerTime: {
+        ...HEADER_CELL_STYLES,
+        width: TIME_WIDTH
+    },
     salmonRoute: {
         backgroundColor: '#eee',
         marginBottom: 1,
@@ -12,17 +40,14 @@ export default StyleSheet.create({
         borderRadius: 5
     },
     station: {
-        width: '35%',
+        width: STATION_WIDTH,
         fontSize: 30,
         textTransform: 'uppercase',
         textAlign: 'center',
         letterSpacing: -2
     },
     route: {
-        width: '40%',
-        borderWidth: 1,
-        borderStyle: 'solid',
-        borderColor: '#fff',
+        width: ROUTE_WIDTH,
         padding: 4
     },
     routeDir: {
@@ -30,8 +55,15 @@ export default StyleSheet.create({
         whiteSpace: 'nowrap',
         textAlign: 'center'
     },
+    routeDivider: {
+        borderWidth: 1,
+        borderStyle: 'solid',
+        borderColor: '#fff',
+        marginTop: 4,
+        marginBottom: 4
+    },
     time: {
-        width: '20%'
+        width: TIME_WIDTH
     },
     timeValue: {
         fontSize: 60,

@@ -18,6 +18,7 @@ const SalmonRoute = ({route}) => {
             <Text style={styles.station}>{backwardsStationName}</Text>
             <View style={styles.route}>
                 <Text style={styles.routeDir}>{backwardsTrain.abbreviation} in {waitTime}</Text>
+                <View style={styles.routeDivider} />
                 <Text style={styles.routeDir}>{backwardsWaitTime} for {returnTrain.abbreviation}</Text>
             </View>
             <View style={styles.time}>
@@ -27,6 +28,14 @@ const SalmonRoute = ({route}) => {
         </View>
     )
 }
+
+const Header = () => (
+    <View accessibilityRole="header" style={styles.header}>
+        <Text style={styles.headerStation}>Swim To</Text>
+        <Text style={styles.headerRoute}>Route</Text>
+        <Text style={styles.headerTime}>Add</Text>
+    </View>
+)
 
 export default class SalmonRoutes extends Component {
     static propTypes = {
@@ -43,6 +52,7 @@ export default class SalmonRoutes extends Component {
 
         return (
             <View accessibilityRole="main">
+                <Header />
                 {salmonRoutes}
             </View>
         )

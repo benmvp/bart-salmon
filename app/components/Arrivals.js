@@ -7,7 +7,7 @@ import {TRAINS_PROP_TYPE} from '../containers/constants'
 import styles from './Arrivals.styles'
 
 const _displayMinutes = (minutes: number): string => (
-    minutes + (minutes === 1 ? 'min' : 'mins')
+    `${minutes} ${(minutes === 1 ? 'min' : 'mins')}`
 )
 
 const NextTrain = ({train}) => {
