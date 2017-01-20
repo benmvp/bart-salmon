@@ -1,30 +1,39 @@
 // @flow
 import {StyleSheet} from 'react-native'
+import {gridSize} from '../styling'
 
 export default StyleSheet.create({
     root: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+
+        // empty column on the left & right
+        paddingLeft: gridSize(1),
+        paddingRight: gridSize(1)
     },
     headingSection: {
-        width: '30%'
+        width: gridSize(4)
     },
-    heading: {
+    headingNextTrain: {
         textAlign: 'right'
     },
+    headingDestination: {
+        textAlign: 'right',
+        textOverflow: 'ellipsis',
+        overflow: 'hidden',
+        whiteSpace: 'nowrap'
+    },
     nextTrain: {
-        width: '30%',
+        width: gridSize(3),
         flex: 1,
-        margin: 12
     },
     nextTrainTime: {
         fontSize: 84,
-        letterSpacing: -2,
         textAlign: 'center'
     },
     followingTrains: {
-        width: '30%'
+        width: gridSize(3)
     },
     followingTrainTime: {
     }

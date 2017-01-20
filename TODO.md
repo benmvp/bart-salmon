@@ -7,11 +7,11 @@
 - [x] Add more ETDs mock data for other time periods (morning rush, evening rush, etc)
 - [x] Implement Redux layer
 - [x] Test Redux layer
+- [ ] Build responsive React web app (w/ [`react-native-web`](https://github.com/necolas/react-native-web/))
+- [ ] Add [`redux-persist`](https://github.com/rt2zz/redux-persist)
 - [ ] Send GA track page when switching routes
 - [ ] Clean train info so that `minutes` is always a number
-- [ ] Add `redux-persist`
-- [ ] Build React Native app (w/ [`react-native-web`](https://github.com/necolas/react-native-web/))
-- [ ] Build responsive React web app
+- [ ] Build React Native app
 - [ ] Add JavaScript error logging ([Sentry](https://sentry.io/) or [Bugsnag](https://bugsnag.com/))
 
 ## Beta

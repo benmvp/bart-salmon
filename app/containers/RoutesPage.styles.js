@@ -1,5 +1,6 @@
 // @flow
 import {StyleSheet} from 'react-native'
+import {gridSize} from '../styling'
 
 export default StyleSheet.create({
     root: {
@@ -8,9 +9,10 @@ export default StyleSheet.create({
         alignItems: 'center'
     },
     arrivals: {
-        width: '90%'
+        width: gridSize(12)
     },
     salmonRoutes: {
-        flex: 1
+        flex: 1,
+        width: gridSize(12)
     }
 })

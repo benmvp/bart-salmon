@@ -51,9 +51,8 @@ export default class Arrivals extends Component {
         return (
             <View style={styles.root}>
                 <View style={styles.headingSection}>
-                    <Text style={styles.heading}>Next train to</Text>
-                    <Text style={styles.heading}>{destinationDisplay}</Text>
-                    <Text style={styles.heading}>in</Text>
+                    <Text style={styles.headingNextTrain}>Next train to</Text>
+                    <Text style={styles.headingDestination}>{destinationDisplay}</Text>
                 </View>
                 <NextTrain train={firstTrain} />
                 <FollowingTrains trains={followingTrains} />

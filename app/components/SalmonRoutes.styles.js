@@ -1,14 +1,21 @@
 // @flow
 import {StyleSheet} from 'react-native'
+import {gridSize, gutterSize} from '../styling'
 
-const STATION_WIDTH = '35%'
-const ROUTE_WIDTH = '40%'
-const TIME_WIDTH = '20%'
+const STATION_COLUMN_STYLES = {
+    width: gridSize(4)
+}
+const ROUTE_COLUMN_STYLES = {
+    width: gridSize(5)
+}
+const TIME_COLUMN_STYLES = {
+    width: gridSize(3)
+}
 
 const HEADER_CELL_STYLES = {
     textAlign: 'center',
     color: '#fff',
-    padding: 4
+    padding: gutterSize(1)
 }
 
 export default StyleSheet.create({
@@ -20,35 +27,33 @@ export default StyleSheet.create({
     },
     headerStation: {
         ...HEADER_CELL_STYLES,
-        width: STATION_WIDTH
+        ...STATION_COLUMN_STYLES,
     },
     headerRoute: {
         ...HEADER_CELL_STYLES,
-        width: ROUTE_WIDTH
+        ...ROUTE_COLUMN_STYLES,
     },
     headerTime: {
         ...HEADER_CELL_STYLES,
-        width: TIME_WIDTH
+        ...TIME_COLUMN_STYLES,
     },
     salmonRoute: {
         backgroundColor: '#eee',
         marginBottom: 1,
-        padding: 4,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
         borderRadius: 5
     },
     station: {
-        width: STATION_WIDTH,
+        ...STATION_COLUMN_STYLES,
         fontSize: 30,
         textTransform: 'uppercase',
         textAlign: 'center',
         letterSpacing: -2
     },
     route: {
-        width: ROUTE_WIDTH,
-        padding: 4
+        ...ROUTE_COLUMN_STYLES,
     },
     routeDir: {
         overflow: 'hidden',
@@ -59,16 +64,17 @@ export default StyleSheet.create({
         borderWidth: 1,
         borderStyle: 'solid',
         borderColor: '#fff',
-        marginTop: 4,
-        marginBottom: 4
+        marginTop: gutterSize(1),
+        marginBottom: gutterSize(1)
     },
     time: {
-        width: TIME_WIDTH
+        ...TIME_COLUMN_STYLES,
+        padding: gutterSize(1)
     },
     timeValue: {
         fontSize: 60,
         textAlign: 'center',
-        letterSpacing: -10
+        // letterSpacing: -10
     },
     timeLabel: {
         textAlign: 'center'
