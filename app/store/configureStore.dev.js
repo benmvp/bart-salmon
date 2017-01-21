@@ -3,7 +3,7 @@
 import {createStore, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
 import {autoRehydrate, persistStore} from 'redux-persist'
-import {AsyncStorage} from 'react-native'
+// import {AsyncStorage} from 'react-native'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import createLogger from 'redux-logger'
 import rootReducer from '../reducers'
@@ -34,7 +34,7 @@ const configureStore = (preloadedState: ReduxState): ReduxStore => {
     persistStore(
         store,
         {
-            storage: AsyncStorage,
+            // storage: AsyncStorage,
             blacklist: REDUCERS_TO_IGNORE
         },
         () => {

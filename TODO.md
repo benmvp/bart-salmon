@@ -13,6 +13,7 @@
 - [ ] Send GA track page when switching routes
 - [x] Clean train info so that `minutes` is always a number
 - [ ] Build React Native app
+- [ ] Investigate issue with `AsyncStorage` from `react-native-web` & `redux-persist`
 - [ ] Add JavaScript error logging ([Sentry](https://sentry.io/) or [Bugsnag](https://bugsnag.com/))
 
 ## Beta

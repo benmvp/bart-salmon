@@ -3,7 +3,7 @@
 import {createStore, applyMiddleware, compose} from 'redux'
 import thunk from 'redux-thunk'
 import {autoRehydrate, persistStore} from 'redux-persist'
-import {AsyncStorage} from 'react-native'
+// import {AsyncStorage} from 'react-native'
 import rootReducer from '../reducers'
 import {REDUCERS_TO_IGNORE} from './constants'
 import {getSalmonInfo} from '../actions'
@@ -22,7 +22,7 @@ const configureStore = (preloadedState: ReduxState) => {
     persistStore(
         store,
         {
-            storage: AsyncStorage,
+            // storage: AsyncStorage,
             blacklist: REDUCERS_TO_IGNORE
         },
         () => {
