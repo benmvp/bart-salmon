@@ -47,7 +47,7 @@ describe('getSalmonInfo', () => {
             origin: '24TH',
             destination: 'RICH',
             numSalmonRoutes: 7,
-            isFetchingSalmonRoutes: false,
+            isFetching: false,
             salmonRoutes: [],
             arrivals: []
         })
@@ -65,7 +65,7 @@ describe('getSalmonInfo', () => {
             origin: 'DELN',
             destination: 'EMBR',
             numSalmonRoutes: 3,
-            isFetchingSalmonRoutes: false,
+            isFetching: false,
             salmonRoutes: [],
             arrivals: []
         })
@@ -86,7 +86,7 @@ describe('getSalmonInfo', () => {
             origin: '24TH',
             destination: '24TH',
             numSalmonRoutes: 7,
-            isFetchingSalmonRoutes: false,
+            isFetching: false,
             salmonRoutes: [],
             arrivals: []
         })

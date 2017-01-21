@@ -46,7 +46,7 @@ export default class Arrivals extends Component {
     render = () => {
         let {destination, arrivals} = this.props
         let [firstTrain, ...followingTrains] = arrivals
-        let destinationDisplay = stationsLookup[destination].name
+        let destinationDisplay = destination && stationsLookup[destination].name
 
         return (
             <View style={styles.root}>

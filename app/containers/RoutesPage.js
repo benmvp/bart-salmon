@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react'
+import isEmpty from 'lodash/isEmpty'
 import {View} from 'react-native'
 import {connect} from 'react-redux'
 import {getSalmonInfo} from '../actions'
@@ -8,12 +9,12 @@ import {SALMON_ROUTES_PROP_TYPE, TRAINS_PROP_TYPE} from './constants'
 
 import styles from './RoutesPage.styles'
 
-class Salmon extends Component {
+class RoutesPage extends Component {
     static propTypes = {
-        destination: PropTypes.string.isRequired,
         salmonRoutes: SALMON_ROUTES_PROP_TYPE.isRequired,
         arrivals: TRAINS_PROP_TYPE.isRequired,
         dispatchGetSalmonInfo: PropTypes.func.isRequired,
+        destination: PropTypes.string,
         isDisabled: PropTypes.bool
     }
 
@@ -27,6 +28,11 @@ class Salmon extends Component {
 
     render = () => {
         let {destination, salmonRoutes, arrivals} = this.props
+
+        if (isEmpty(salmonRoutes) || isEmpty(arrivals)) {
+            return null
+        }
+
         let [nextTrain] = arrivals
 
         return (
@@ -43,15 +49,15 @@ class Salmon extends Component {
     }
 }
 
-const _mapStateToProps = ({destination, salmonRoutes, arrivals, isFetchingSalmonRoutes}) => ({
+const _mapStateToProps = ({destination, salmonRoutes, arrivals, isFetching}) => ({
     destination,
     salmonRoutes,
     arrivals,
-    isDisabled: isFetchingSalmonRoutes
+    isDisabled: isFetching
 })
 
 const _mapDispatchToProps = {
     dispatchGetSalmonInfo: getSalmonInfo
 }
 
-export default connect(_mapStateToProps, _mapDispatchToProps)(Salmon)
+export default connect(_mapStateToProps, _mapDispatchToProps)(RoutesPage)

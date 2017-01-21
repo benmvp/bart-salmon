@@ -30,7 +30,6 @@
 		"gen:mock:etd": "babel-node _scripts/gen-mock-etd-data.js"
 	},
 	"dependencies": {
-		"babel-plugin-react-css-modules": "^1.1.0",
 		"humps": "^2.0.0",
 		"lodash": "^4.17.3",
 		"react": "^15.4.1",
@@ -41,6 +40,7 @@
 		"react-redux": "^5.0.1",
 		"react-router": "^3.0.0",
 		"redux": "^3.6.0",
+		"redux-persist": "^4.0.1",
 		"redux-thunk": "^2.1.0",
 		"url-lib": "^2.0.2",
 		"xml2js": "^0.4.17"

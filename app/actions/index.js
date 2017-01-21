@@ -46,20 +46,22 @@ const errorSalmonInfo = (error: Error): ReduxAction => ({
 
 export const getSalmonInfo = (): ReduxAsyncAction => (
     async (dispatch: ReduxDispatch, getState: ReduxGetState) => {
-        dispatch(fetchSalmonInfo())
-
         let {origin, destination, numSalmonRoutes} = getState()
 
-        try {
-            let etdsLookup = await getEstimatedTimesOfDeparture()
-            let salmonRoutes = getSuggestedSalmonRoutesFromEtds(etdsLookup, origin, destination, numSalmonRoutes)
-            let arrivals = getNextArrivalsFromEtds(etdsLookup, origin, destination, NUM_ARRIVALS)
+        if (origin && destination) {
+            dispatch(fetchSalmonInfo())
 
-            dispatch(receiveSalmonInfo(salmonRoutes, arrivals))
-        } catch (error) {
-            // TODO: Create a custom Error that wraps this native error message
-            // to be more friendly
-            dispatch(errorSalmonInfo(error))
+            try {
+                let etdsLookup = await getEstimatedTimesOfDeparture()
+                let salmonRoutes = getSuggestedSalmonRoutesFromEtds(etdsLookup, origin, destination, numSalmonRoutes)
+                let arrivals = getNextArrivalsFromEtds(etdsLookup, origin, destination, NUM_ARRIVALS)
+
+                dispatch(receiveSalmonInfo(salmonRoutes, arrivals))
+            } catch (error) {
+                // TODO: Create a custom Error that wraps this native error message
+                // to be more friendly
+                dispatch(errorSalmonInfo(error))
+            }
         }
     }
 )

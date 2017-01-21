@@ -140,10 +140,15 @@ const _genFlattenedDestinationEtdsForStation = (
         .flatten()
 }
 
+const _normalizeTrainInfo = (trainInfo: Train): Train => ({
+    ...trainInfo,
+    minutes: _normalizeMinutes(trainInfo.minutes)
+})
+
 const _getBackwardsTrains = (origin: StationName, etdsLookup: {[id:string]: Object}, targetRouteIds: RouteId[]) => (
     _genFlattenedDestinationEtdsForStation(origin, etdsLookup, targetRouteIds, true)
         .map((trainInfo) => ({
-            backwardsTrain: trainInfo,
+            backwardsTrain: _normalizeTrainInfo(trainInfo),
             waitTime: _normalizeMinutes(trainInfo.minutes),
             backwardsRouteId: _getRouteIdsWithStartAndEnd(origin, trainInfo.abbreviation, trainInfo.hexcolor)[0]
         }))
@@ -218,7 +223,7 @@ const _getWaitTimesForBackwardsTimeRoutePaths = (
                 // mean that there isn't enough time to make it)
                 .map((returnTrainInfo) => ({
                     ...trainInfo,
-                    returnTrain: returnTrainInfo,
+                    returnTrain: _normalizeTrainInfo(returnTrainInfo),
                     backwardsWaitTime: _normalizeMinutes(returnTrainInfo.minutes) - timeToBackwardsStation,
                     returnRouteId: _getRouteIdsWithStartAndEnd(backwardsStation, returnTrainInfo.abbreviation, returnTrainInfo.hexcolor)[0]
                 }))

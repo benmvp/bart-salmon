@@ -4,12 +4,9 @@ import {combineReducers} from 'redux'
 import type {SalmonRoute, StationName, Train} from '../utils/flow'
 import type {ReduxAction} from '../actions/flow'
 
-const DEFAULT_ORIGIN_STATION = 'POWL'
-const DEFAULT_DESTINATION_STATION = 'PITT'
 const DEFAULT_NUM_SALMON_ROUTES = 4
 
-
-const origin = (state: StationName = DEFAULT_ORIGIN_STATION, {type, payload}: ReduxAction): StationName => {
+const origin = (state: ?StationName = null, {type, payload}: ReduxAction): ?StationName => {
     let newState = state
 
     if (type === 'SET_ORIGIN' && payload) {
@@ -19,7 +16,7 @@ const origin = (state: StationName = DEFAULT_ORIGIN_STATION, {type, payload}: Re
     return newState
 }
 
-const destination = (state: StationName = DEFAULT_DESTINATION_STATION, {type, payload}: ReduxAction): StationName => {
+const destination = (state: ?StationName = null, {type, payload}: ReduxAction): ?StationName => {
     let newState = state
 
     if (type === 'SET_DESTINATION' && payload) {
@@ -29,7 +26,7 @@ const destination = (state: StationName = DEFAULT_DESTINATION_STATION, {type, pa
     return newState
 }
 
-const isFetchingSalmonRoutes = (state: boolean = false, {type}: ReduxAction): boolean => {
+const isFetching = (state: boolean = false, {type}: ReduxAction): boolean => {
     let newState = state
 
     if (type === 'FETCH_SALMON_INFO') {
@@ -78,7 +75,7 @@ const numSalmonRoutes = (state: number = DEFAULT_NUM_SALMON_ROUTES, {type, paylo
 const rootReducer = combineReducers({
     origin,
     destination,
-    isFetchingSalmonRoutes,
+    isFetching,
     salmonRoutes,
     arrivals,
     numSalmonRoutes

@@ -10,9 +10,9 @@ An app aiming to maximize likelihood of getting a [Bart](http://www.bart.gov/) s
 Bart Salmon is both a web and native app, aiming to provide a useful service as well as an opportunity to learn new technologies:
 
 - **UI:** [React](https://facebook.github.io/react/) & [React Native](https://facebook.github.io/react-native/) sharing code (via [React Native for Web](https://github.com/necolas/react-native-web))
-- **Styling:** [React CSS Modules](https://github.com/gajus/babel-plugin-react-css-modules), [SASS](http://sass-lang.com/), [Autoprefixer](https://github.com/postcss/autoprefixer) & [Sass Lint](https://github.com/sasstools/sass-lint)
+- **Styling:** Inline via CSS in JS
 - **Data Flow:** [Lodash](https://lodash.com/) & [Redux](http://redux.js.org/) (w/ [Redux Thunk](https://github.com/gaearon/redux-thunk) & [Async Functions](https://github.com/tc39/ecmascript-asyncawait))
-- **Routing:** [React Router](https://github.com/ReactTraining/react-router) (React) & _TBD_ (React Native)
+- **Routing:** [React Router](https://github.com/ReactTraining/react-router) & [React Native Router](https://github.com/aksonov/react-native-router-flux)
 - **API:** [Bart API](http://api.bart.gov/docs/overview/index.aspx)
 - **Bundling:** [Webpack](https://webpack.github.io/) (with hot module reloading) & [Babel](http://babeljs.io/)
 - **Static Checking:** [Flow](https://flowtype.org/) & [ESLint](http://eslint.org/)

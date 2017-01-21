@@ -12,37 +12,53 @@ import styles from './HomePage.styles'
 const STATIONS_SELECTOR_VALUES = Object.values(stationsLookup)
     .map(({name, abbr}) => ({value: abbr, display: name}))
 
-const StationSelector = ({station, onChange}) => (
-    <Selector
-        values={STATIONS_SELECTOR_VALUES}
-        value={station}
-        onChange={onChange}
-    />
-)
+const StationSelector = ({label, station, onChange}) => {
+    let selectorValues = [
+        {value: '', display: label},
+        ...STATIONS_SELECTOR_VALUES
+    ]
+
+    return (
+        <Selector
+            values={selectorValues}
+            value={station}
+            onChange={onChange}
+        />
+    )
+}
 
 class HomePage extends Component {
     static propTypes = {
-        origin: PropTypes.string.isRequired,
-        destination: PropTypes.string.isRequired,
         dispatchSetOrigin: PropTypes.func.isRequired,
-        dispatchSetDestination: PropTypes.func.isRequired
+        dispatchSetDestination: PropTypes.func.isRequired,
+        origin: PropTypes.string,
+        destination: PropTypes.string,
     }
 
     render = () => {
         let {origin, destination, dispatchSetOrigin, dispatchSetDestination} = this.props
+        let swimButton
+
+        if (origin && destination) {
+            swimButton = (
+                <TouchableHighlight
+                    style={styles.swimButton}
+                    underlayColor="#ddd"
+                    onPress={gotoRoute.bind(null, 'routes')}
+                >
+                    <Text style={styles.swimButtonText}>SWIM</Text>
+                </TouchableHighlight>
+            )
+        }
 
         return (
             <View style={styles.root}>
                 <View accessibilityRole="section" style={styles.selectorsShell}>
-                    <Text accessibilityRole="label" style={styles.label}>Origin</Text>
-                    <StationSelector station={origin} onChange={dispatchSetOrigin} />
-                    <Text accessibilityRole="label" style={[styles.label, styles.labelWithMargin]}>Destination</Text>
-                    <StationSelector station={destination} onChange={dispatchSetDestination} />
+                    <StationSelector label="ORIGIN" station={origin} onChange={dispatchSetOrigin} />
+                    <StationSelector label="DESTINATION" station={destination} onChange={dispatchSetDestination} />
                 </View>
 
-                <TouchableHighlight style={styles.swimButton} underlayColor="#ddd" onPress={gotoRoute.bind(null, 'routes')}>
-                    <Text style={styles.swimButtonText}>SWIM</Text>
-                </TouchableHighlight>
+                {swimButton}
             </View>
         )
     }

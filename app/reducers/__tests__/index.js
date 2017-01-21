@@ -5,7 +5,7 @@ const INITIAL_STATE = {
     origin: 'BALB',
     destination: '12TH',
     numSalmonRoutes: 5,
-    isFetchingSalmonRoutes: false,
+    isFetching: false,
     salmonRoutes: [],
     arrivals: []
 }
@@ -153,7 +153,7 @@ it('should handle FETCH_SALMON_INFO action', () => {
     let actualState = rootReducer(INITIAL_STATE, {type: 'FETCH_SALMON_INFO'})
     let expectedState = {
         ...INITIAL_STATE,
-        isFetchingSalmonRoutes: true
+        isFetching: true
     }
 
     expect(actualState).toEqual(expectedState)
@@ -165,7 +165,7 @@ it('should handle RECEIVE_SALMON_INFO action', () => {
     let actualState = rootReducer(
         {
             ...INITIAL_STATE,
-            isFetchingSalmonRoutes: true
+            isFetching: true
         },
         {
             type: 'RECEIVE_SALMON_INFO',
@@ -176,7 +176,7 @@ it('should handle RECEIVE_SALMON_INFO action', () => {
         ...INITIAL_STATE,
         arrivals,
         salmonRoutes: routes,
-        isFetchingSalmonRoutes: false
+        isFetching: false
     }
 
     expect(actualState).toEqual(expectedState)
@@ -186,7 +186,7 @@ it('should handle ERROR_SALMON_INFO action', () => {
     let actualState = rootReducer(
         {
             ...INITIAL_STATE,
-            isFetchingSalmonRoutes: true
+            isFetching: true
         },
         {
             type: 'ERROR_SALMON_INFO',
@@ -197,7 +197,7 @@ it('should handle ERROR_SALMON_INFO action', () => {
         ...INITIAL_STATE,
         salmonRoutes: [],
         arrivals: [],
-        isFetchingSalmonRoutes: false
+        isFetching: false
     }
 
     expect(actualState).toEqual(expectedState)
