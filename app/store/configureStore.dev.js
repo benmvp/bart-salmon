@@ -3,7 +3,7 @@
 import {createStore, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
 import {autoRehydrate, persistStore} from 'redux-persist'
-// import {AsyncStorage} from 'react-native'
+import {AsyncStorage, Platform} from 'react-native'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import createLogger from 'redux-logger'
 import rootReducer from '../reducers'
@@ -21,6 +21,7 @@ const configureStore = (preloadedState: ReduxState): ReduxStore => {
             applyMiddleware(thunk, createLogger())
         )
     )
+    let storage
 
     if (module.hot) {
         // Enable Webpack hot module replacement for reducers
@@ -31,10 +32,14 @@ const configureStore = (preloadedState: ReduxState): ReduxStore => {
         })
     }
 
+    if (Platform.OS !== 'web') {
+        storage = AsyncStorage
+    }
+
     persistStore(
         store,
         {
-            // storage: AsyncStorage,
+            storage,
             blacklist: REDUCERS_TO_IGNORE
         },
         () => {
