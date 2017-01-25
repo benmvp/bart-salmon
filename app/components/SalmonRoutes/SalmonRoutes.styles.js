@@ -1,6 +1,6 @@
 // @flow
 import {StyleSheet} from 'react-native'
-import {gridSize, gutterSize} from '../styling'
+import {gridSize, gutterSize} from '../../styling'
 
 const STATION_COLUMN_STYLES = {
     width: gridSize(4)
@@ -48,7 +48,7 @@ export default StyleSheet.create({
     station: {
         ...STATION_COLUMN_STYLES,
         fontSize: 30,
-        textTransform: 'uppercase',
+        // textTransform: 'uppercase',
         textAlign: 'center',
         letterSpacing: -2
     },
@@ -57,7 +57,7 @@ export default StyleSheet.create({
     },
     routeDir: {
         overflow: 'hidden',
-        whiteSpace: 'nowrap',
+        // whiteSpace: 'nowrap',
         textAlign: 'center'
     },
     routeDivider: {

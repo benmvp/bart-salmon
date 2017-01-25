@@ -4,7 +4,7 @@ import {View, Text, TouchableHighlight} from 'react-native'
 import {connect} from 'react-redux'
 import {setOrigin, setDestination} from '../actions'
 import {gotoRoute} from '../utils/routing'
-import Selector from '../components/Selector'
+import Selector from '../components/Selector/Selector'
 import stationsLookup from '../data/stations.json'
 
 import styles from './HomePage.styles'

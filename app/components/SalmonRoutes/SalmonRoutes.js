@@ -1,9 +1,9 @@
 // @flow
 import React, {Component} from 'react'
 import {View, Text} from 'react-native'
-import stationsLookup from '../data/stations.json'
-import {getSalmonTimeFromRoute} from '../utils/salmon'
-import {SALMON_ROUTES_PROP_TYPE, TRAIN_PROP_TYPE} from '../containers/constants'
+import stationsLookup from '../../data/stations.json'
+import {getSalmonTimeFromRoute} from '../../utils/salmon'
+import {SALMON_ROUTES_PROP_TYPE, TRAIN_PROP_TYPE} from '../../containers/constants'
 
 import styles from './SalmonRoutes.styles'
 

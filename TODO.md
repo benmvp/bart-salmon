@@ -7,7 +7,7 @@
 - [x] Add more ETDs mock data for other time periods (morning rush, evening rush, etc)
 - [x] Implement Redux layer
 - [x] Test Redux layer
-- [ ] Build responsive React web app (w/ [`react-native-web`](https://github.com/necolas/react-native-web/))
+- [x] Build responsive React web app (w/ [`react-native-web`](https://github.com/necolas/react-native-web/))
 - [x] Add [`redux-persist`](https://github.com/rt2zz/redux-persist) to keep origin & destination selections across app loads
 - [ ] Decrease "riskiness" factor to 0
 - [ ] Send GA track page when switching routes

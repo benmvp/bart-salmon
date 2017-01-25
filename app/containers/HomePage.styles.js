@@ -1,5 +1,8 @@
 // @flow
 import {StyleSheet} from 'react-native'
+import {gridSize, gutterSize} from '../styling'
+
+const SELECTOR_SHELL_HEIGHT = 150
 
 export default StyleSheet.create({
     root: {
@@ -10,16 +13,16 @@ export default StyleSheet.create({
         justifyContent: 'center'
     },
     selectorsShell: {
-        width: '75%',
-        height: 150,
+        width: gridSize(8),
+        minHeight: SELECTOR_SHELL_HEIGHT,
         flexDirection: 'column',
         justifyContent: 'space-between'
     },
     swimButton: {
-        padding: 10,
+        padding: gutterSize(2),
         position: 'absolute',
-        bottom: 15,
-        right: 15
+        bottom: gutterSize(3),
+        right: gutterSize(3)
     },
     swimButtonText: {
         fontSize: 50,

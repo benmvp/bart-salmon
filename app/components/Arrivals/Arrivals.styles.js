@@ -1,6 +1,6 @@
 // @flow
 import {StyleSheet} from 'react-native'
-import {gridSize} from '../styling'
+import {gridSize} from '../../styling'
 
 export default StyleSheet.create({
     root: {
@@ -20,9 +20,9 @@ export default StyleSheet.create({
     },
     headingDestination: {
         textAlign: 'right',
-        textOverflow: 'ellipsis',
+        // textOverflow: 'ellipsis',
         overflow: 'hidden',
-        whiteSpace: 'nowrap'
+        // whiteSpace: 'nowrap'
     },
     nextTrain: {
         width: gridSize(3),

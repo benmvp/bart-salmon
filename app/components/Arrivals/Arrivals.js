@@ -1,8 +1,8 @@
 // @flow
 import React, {Component, PropTypes} from 'react'
 import {View, Text} from 'react-native'
-import stationsLookup from '../data/stations.json'
-import {TRAINS_PROP_TYPE} from '../containers/constants'
+import stationsLookup from '../../data/stations.json'
+import {TRAINS_PROP_TYPE} from '../../containers/constants'
 
 import styles from './Arrivals.styles'
 

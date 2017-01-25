@@ -1,6 +1,8 @@
 import React, {Component, PropTypes} from 'react'
+import {findValueInfo, validateValue} from './utils'
+import {VALUES_PROP_TYPE} from './constants'
 
-import styles from './Selector.styles'
+import styles from './Selector.styles.web'
 
 const _getOptions = (values) => (
     values.map(({value, display}) => (
@@ -8,30 +10,9 @@ const _getOptions = (values) => (
     ))
 )
 
-const _findValueInfo = (valueToFind, values) => (
-    values.find(({value}) => value === valueToFind)
-)
-
-const _validateValue = (valueToValidate, values) => {
-    let validatedValue = valueToValidate
-
-    let valueExists = _findValueInfo(validatedValue, values)
-
-    if (!valueExists && values.length) {
-        validatedValue = values[0].value
-    }
-
-    return validatedValue
-}
-
 export default class Selector extends Component {
     static propTypes = {
-        values: PropTypes.arrayOf(
-            PropTypes.shape({
-                value: PropTypes.string.isRequired,
-                display: PropTypes.string
-            })
-        ).isRequired,
+        values: VALUES_PROP_TYPE.isRequired,
         value: PropTypes.string,
         onChange: PropTypes.func
     }
@@ -47,9 +28,9 @@ export default class Selector extends Component {
     render = () => {
         let {values, value} = this.props
 
-        value = _validateValue(value, values)
+        value = validateValue(value, values)
 
-        let {display} = _findValueInfo(value, values)
+        let {display} = findValueInfo(value, values)
 
         return (
             <div style={styles.root}>
