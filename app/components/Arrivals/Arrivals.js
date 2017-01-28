@@ -16,11 +16,10 @@ const NextTrain = ({train}) => {
     }
 
     let {minutes} = train
-    let displayTime = minutes ? minutes : 'NOW'
 
     return (
         <View style={styles.nextTrain}>
-            <Text style={styles.nextTrainTime}>{displayTime}</Text>
+            <Text style={styles.nextTrainTime}>{minutes}</Text>
         </View>
     )
 }
@@ -52,7 +51,13 @@ export default class Arrivals extends Component {
             <View style={styles.root}>
                 <View style={styles.headingSection}>
                     <Text style={styles.headingNextTrain}>Next train to</Text>
-                    <Text style={styles.headingDestination}>{destinationDisplay}</Text>
+                    <Text
+                        style={styles.headingDestination}
+                        numberOfLines={1}
+                        ellipsizeMode="middle"
+                    >
+                        {destinationDisplay}
+                    </Text>
                 </View>
                 <NextTrain train={firstTrain} />
                 <FollowingTrains trains={followingTrains} />

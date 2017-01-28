@@ -1,13 +1,16 @@
 // @flow
-import {StyleSheet} from 'react-native'
 
-export default StyleSheet.create({
+export default {
     root: {
-        height: '100vh',
+        flex: 1,
+
+        display: 'flex',
         flexDirection: 'column'
     },
     main: {
         flex: 1,
+
+        display: 'flex',
         flexDirection: 'column'
     }
-})
+}

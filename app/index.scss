@@ -3,5 +3,13 @@ body {
     -webkit-font-smoothing: antialiased;
     color: #212121;
     font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+    height: 100vh;
     letter-spacing: 0.02em;
+    width: 100vw;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }

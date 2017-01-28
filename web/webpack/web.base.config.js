@@ -20,10 +20,10 @@ module.exports = {
             {
                 test: /\.scss$/,
                 loaders: [
-                    'style?sourceMap',
+                    'style',
                     'css',
                     'postcss',
-                    'sass?sourceMap'
+                    'sass'
                 ],
                 include: APP_PATH
             },

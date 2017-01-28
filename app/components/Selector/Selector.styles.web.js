@@ -1,11 +1,13 @@
+import {gutterSize} from '../../styling'
+
 export default {
     root: {
-        display: 'inline-flex',
+        display: 'flex',
         position: 'relative',
         border: '1px solid #ddd',
         borderRadius: '5px',
         height: '44px',
-        padding: '8px',
+        padding: gutterSize(2),
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center'
@@ -13,8 +15,8 @@ export default {
     display: {
         fontSize: '20px',
         flex: '1',
-        // textOverflow: 'ellipsis',
-        // whiteSpace: 'nowrap'
+        textOverflow: 'ellipsis',
+        whiteSpace: 'nowrap'
     },
     arrow: {
 

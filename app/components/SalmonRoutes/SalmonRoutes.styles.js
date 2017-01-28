@@ -48,7 +48,6 @@ export default StyleSheet.create({
     station: {
         ...STATION_COLUMN_STYLES,
         fontSize: 30,
-        // textTransform: 'uppercase',
         textAlign: 'center',
         letterSpacing: -2
     },
@@ -56,8 +55,6 @@ export default StyleSheet.create({
         ...ROUTE_COLUMN_STYLES,
     },
     routeDir: {
-        overflow: 'hidden',
-        // whiteSpace: 'nowrap',
         textAlign: 'center'
     },
     routeDivider: {

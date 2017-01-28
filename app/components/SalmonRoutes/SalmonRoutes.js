@@ -12,24 +12,32 @@ const SalmonRoute = ({route, nextTrain}) => {
     let salmonTime = getSalmonTimeFromRoute(route)
     let salmonTimeAdditionalTime = salmonTime
     let backwardsStationInfo = stationsLookup[backwardsStation]
-    let backwardsStationName = backwardsStationInfo.name
+    let backwardsStationName = backwardsStationInfo.name.toUpperCase()
 
     if (nextTrain) {
-        salmonTimeAdditionalTime -= nextTrain.minutes
+        // Make sure the minimal time is 0
+        // It shouldn't be less than 0 but there are some slight discrepancies between
+        // forward and backward route times
+        salmonTimeAdditionalTime = Math.max(0, salmonTimeAdditionalTime - nextTrain.minutes)
     }
 
     let minutesLabel = salmonTimeAdditionalTime === 1 ? 'minute' : 'minutes'
+    let additiveDisplay
+
+    if (salmonTimeAdditionalTime > 0) {
+        additiveDisplay = '⁺'
+    }
 
     return (
         <View style={styles.salmonRoute}>
-            <Text style={styles.station}>{backwardsStationName}</Text>
+            <Text style={styles.station} numberOfLines={2}>{backwardsStationName}</Text>
             <View style={styles.route}>
-                <Text style={styles.routeDir}>{backwardsTrain.abbreviation} in {waitTime}</Text>
+                <Text style={styles.routeDir} numberOfLines={1} ellipsizeMode="middle">{backwardsTrain.destination} in {waitTime}</Text>
                 <View style={styles.routeDivider} />
-                <Text style={styles.routeDir}>{backwardsWaitTime} for {returnTrain.abbreviation}</Text>
+                <Text style={styles.routeDir} numberOfLines={1} ellipsizeMode="middle">{backwardsWaitTime} for {returnTrain.destination}</Text>
             </View>
             <View style={styles.time}>
-                <Text style={styles.timeValue}>⁺{salmonTimeAdditionalTime}</Text>
+                <Text style={styles.timeValue}>{additiveDisplay}{salmonTimeAdditionalTime}</Text>
                 <Text style={styles.timeLabel}>{minutesLabel}</Text>
             </View>
         </View>
