@@ -19,6 +19,7 @@
 ## Beta
 
 - [ ] Improve layout of Routes page
+- [ ] Replace routing (web + native) with [`react-navigation`](https://reactnavigation.org)
 - [ ] Add configuration page: number of salmon routes, backwards wait time riskiness, max salmon time
 - [ ] More info page (include links to native app)
 - [ ] Tap for more train info: number of cars, train color
