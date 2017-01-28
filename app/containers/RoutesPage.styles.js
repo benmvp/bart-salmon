@@ -4,6 +4,8 @@ import {gridSize} from '../styling'
 
 export default StyleSheet.create({
     root: {
+        flex: 1,
+        
         flexDirection: 'column',
         justifyContent: 'space-between',
         alignItems: 'center'

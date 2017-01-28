@@ -12,12 +12,13 @@
 - [ ] Decrease "riskiness" factor to 0
 - [ ] Send GA track page when switching routes
 - [x] Clean train info so that `minutes` is always a number
-- [ ] Build React Native app
+- [x] Build React Native app
 - [x] Investigate issue with `AsyncStorage` from `react-native-web` & `redux-persist`
 - [x] Add JavaScript error logging ([Sentry](https://sentry.io/) or [Bugsnag](https://bugsnag.com/))
 
 ## Beta
 
+- [ ] Improve layout of Routes page
 - [ ] Add configuration page: number of salmon routes, backwards wait time riskiness, max salmon time
 - [ ] More info page (include links to native app)
 - [ ] Tap for more train info: number of cars, train color
