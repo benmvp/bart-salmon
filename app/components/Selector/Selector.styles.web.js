@@ -16,7 +16,8 @@ export default {
         fontSize: '20px',
         flex: '1',
         textOverflow: 'ellipsis',
-        whiteSpace: 'nowrap'
+        whiteSpace: 'nowrap',
+        overflow: 'hidden'
     },
     arrow: {
 
