@@ -310,6 +310,13 @@ describe('getNextArrivalsFromEtds', () => {
                 expect(actualArrivals).not.toHaveLength(0)
                 expect(actualArrivals).toMatchSnapshot()
             })
+
+            it('does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train)', () => {
+                let actualArrivals = getNextArrivalsFromEtds(etdsLookup, 'ROCK', 'PITT', 5)
+
+                expect(actualArrivals).not.toHaveLength(0)
+                expect(actualArrivals).toMatchSnapshot()
+            })
         })
     })
 })

@@ -63,6 +63,47 @@ Array [
 ]
 `;
 
+exports[`getNextArrivalsFromEtds for "Evening Rush" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 12,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 14,
+    "platform": 1,
+  },
+]
+`;
+
 exports[`getNextArrivalsFromEtds for "Evening Rush" includes an arrival for a train that is leaving 1`] = `
 Array [
   Object {
@@ -148,18 +189,6 @@ Array [
 exports[`getNextArrivalsFromEtds for "Evening Rush" returns arrivals when many lines are available 1`] = `
 Array [
   Object {
-    "abbreviation": "24TH",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "24th Street",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 9,
-    "limited": 0,
-    "minutes": 0,
-    "platform": 1,
-  },
-  Object {
     "abbreviation": "DALY",
     "bikeflag": 1,
     "color": "BLUE",
@@ -193,18 +222,6 @@ Array [
     "length": 9,
     "limited": 0,
     "minutes": 8,
-    "platform": 1,
-  },
-  Object {
-    "abbreviation": "24TH",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "24th Street",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 9,
-    "limited": 0,
-    "minutes": 11,
     "platform": 1,
   },
   Object {
@@ -256,15 +273,27 @@ Array [
     "platform": 1,
   },
   Object {
-    "abbreviation": "24TH",
+    "abbreviation": "SFIA",
     "bikeflag": 1,
     "color": "YELLOW",
-    "destination": "24th Street",
+    "destination": "SF Airport",
     "direction": "South",
     "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 29,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
     "length": 9,
     "limited": 0,
-    "minutes": 25,
+    "minutes": 36,
     "platform": 1,
   },
 ]
@@ -436,6 +465,47 @@ Array [
 ]
 `;
 
+exports[`getNextArrivalsFromEtds for "Holidays" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 2,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 6,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 17,
+    "platform": 1,
+  },
+]
+`;
+
 exports[`getNextArrivalsFromEtds for "Holidays" includes an arrival for a train that is leaving 1`] = `
 Array [
   Object {
@@ -520,18 +590,6 @@ Array [
 
 exports[`getNextArrivalsFromEtds for "Holidays" returns arrivals when many lines are available 1`] = `
 Array [
-  Object {
-    "abbreviation": "24TH",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "24th Street",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 8,
-    "limited": 0,
-    "minutes": 3,
-    "platform": 1,
-  },
   Object {
     "abbreviation": "MLBR",
     "bikeflag": 1,
@@ -781,6 +839,47 @@ Array [
     "limited": 0,
     "minutes": 52,
     "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Late Night" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 19,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 26,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 46,
+    "platform": 1,
   },
 ]
 `;
@@ -1122,6 +1221,47 @@ Array [
 ]
 `;
 
+exports[`getNextArrivalsFromEtds for "Major Delays" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 5,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 13,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 24,
+    "platform": 1,
+  },
+]
+`;
+
 exports[`getNextArrivalsFromEtds for "Major Delays" includes an arrival for a train that is leaving 1`] = `
 Array [
   Object {
@@ -1207,18 +1347,6 @@ Array [
 exports[`getNextArrivalsFromEtds for "Major Delays" returns arrivals when many lines are available 1`] = `
 Array [
   Object {
-    "abbreviation": "MONT",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "Montgomery",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 9,
-    "limited": 0,
-    "minutes": 5,
-    "platform": 1,
-  },
-  Object {
     "abbreviation": "DALY",
     "bikeflag": 1,
     "color": "BLUE",
@@ -1262,18 +1390,6 @@ Array [
     "direction": "South",
     "hexcolor": "#339933",
     "length": 10,
-    "limited": 0,
-    "minutes": 11,
-    "platform": 1,
-  },
-  Object {
-    "abbreviation": "MONT",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "Montgomery",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 9,
     "limited": 0,
     "minutes": 11,
     "platform": 1,
@@ -1326,6 +1442,18 @@ Array [
     "minutes": 28,
     "platform": 1,
   },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 30,
+    "platform": 1,
+  },
 ]
 `;
 
@@ -1341,18 +1469,6 @@ Array [
     "length": 6,
     "limited": 0,
     "minutes": 1,
-    "platform": 1,
-  },
-  Object {
-    "abbreviation": "MCAR",
-    "bikeflag": 1,
-    "color": "WHITE",
-    "destination": "MacArthur",
-    "direction": "North",
-    "hexcolor": "#ffffff",
-    "length": 10,
-    "limited": 0,
-    "minutes": 4,
     "platform": 1,
   },
   Object {
@@ -1543,6 +1659,47 @@ Array [
 ]
 `;
 
+exports[`getNextArrivalsFromEtds for "Morning Rush" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 14,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 29,
+    "platform": 1,
+  },
+]
+`;
+
 exports[`getNextArrivalsFromEtds for "Morning Rush" includes an arrival for a train that is leaving 1`] = `
 Array [
   Object {
@@ -1649,18 +1806,6 @@ Array [
     "length": 10,
     "limited": 0,
     "minutes": 2,
-    "platform": 1,
-  },
-  Object {
-    "abbreviation": "MONT",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "Montgomery",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 9,
-    "limited": 0,
-    "minutes": 4,
     "platform": 1,
   },
   Object {
@@ -1912,6 +2057,47 @@ Array [
     "limited": 0,
     "minutes": 33,
     "platform": 2,
+  },
+]
+`;
+
+exports[`getNextArrivalsFromEtds for "Weekday Noonday" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 18,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 33,
+    "platform": 1,
   },
 ]
 `;

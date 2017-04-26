@@ -4,6 +4,11 @@ export type StationName = '12TH' | '16TH' | '19TH' | '24TH' | 'ASHB' | 'BALB' | 
 
 export type RouteId = 'ROUTE 1' | 'ROUTE 2' | 'ROUTE 3' | 'ROUTE 4' | 'ROUTE 5' | 'ROUTE 6' | 'ROUTE 7' | 'ROUTE 8' | 'ROUTE 11' | 'ROUTE 12' | 'ROUTE 19' | 'ROUTE 20'
 
+export type RouteStation = {
+    name: StationName,
+    timeFromOrigin: number,
+}
+
 export type Train = {
     destination: string,
     abbreviation: StationName,
