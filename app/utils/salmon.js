@@ -4,7 +4,8 @@ import type {StationName, RouteId, SalmonRoute, Train} from './flow'
 import {forceArray, normalizeMinutes} from './general'
 import {
     getTargetRouteIds,
-    getPossibleRouteDestinations,
+    getAllDestinationsFromRoutes,
+    getOppositeRouteIds,
     getRouteIdsWithStartAndEnd,
     isStationARouteStation,
     areStationsOnRouteStations,
@@ -16,14 +17,52 @@ import routesLookup from '../data/routes.json'
 // the higher this number is the more likely to make the train
 const MINIMUM_BACKWARDS_STATION_WAIT_TIME = 1
 
-const _genDestinationEtdsForStation = (
-    stationName: StationName,
-    etdsLookup: {[id: string]: Object},
+/**
+ * A filter that will include a train that will actually go all the way to the
+ * destination if we want direct routes (!allowTransfers). For instance
+ * the NCON/PHIL trains have the same route ID as the PITT train, so
+ * they'll be returned. However, they don't make it all the way to PITT
+ * so they shouldn't be included
+ */
+const _filterForTrainsThatGoAllTheWay = (
+    destination?: StationName,
     targetRouteIds: RouteId[],
-    isOpposite: boolean = false,
+    allowTransfers: boolean,
+    {
+        abbreviation: trainDestination,
+        hexcolor: trainColor
+    }
 ) => {
-    let possibleRouteDestinations = getPossibleRouteDestinations(stationName, targetRouteIds, isOpposite)
-    let etdsForStation = forceArray(etdsLookup[stationName].etd)
+    // If we're allowing transfers or the train ends in the destination
+    // then this arrival train is good to include.
+    if (allowTransfers || !destination || trainDestination === destination) {
+        return true
+    }
+
+    // Otherwise we determine if the train will "go all the way" by seeing
+    // if we can get from our destination to the train's destination.
+    // We get back a list of routes, which we intersect with the targetRouteIds
+    // to doubly ensure that this arrival train is ok. If the intersection
+    // is empty we know the train "goes all the way".
+    let routesFromDestinationToTrainEnd = getRouteIdsWithStartAndEnd(
+        destination,
+        trainDestination,
+        trainColor
+    )
+    let matchingTargetRoutes = _.intersection(routesFromDestinationToTrainEnd, targetRouteIds)
+
+    return !_.isEmpty(matchingTargetRoutes)
+}
+
+const _genDestinationEtdsForStation = (
+    etdsLookup: {[id: string]: Object},
+    origin: StationName,
+    destination?: StationName,
+    targetRouteIds: RouteId[],
+    allowTransfers?: boolean = false,
+) => {
+    let possibleRouteDestinations = getAllDestinationsFromRoutes(origin, targetRouteIds)
+    let etdsForStation = forceArray(etdsLookup[origin].etd)
 
     // console.log({stationName, targetRouteIds, possibleRouteDestinations, isOpposite, etdsForStation})
 
@@ -45,6 +84,9 @@ const _genDestinationEtdsForStation = (
 
         // flatten out the groupings (now that each one has the destination info)
         .flatten()
+
+        // filter down to the trains that will go all the way to the destination
+        .filter(_filterForTrainsThatGoAllTheWay.bind(null, destination, targetRouteIds, allowTransfers))
 }
 
 const _normalizeTrainInfo = (trainInfo: Train): Train => ({
@@ -52,8 +94,15 @@ const _normalizeTrainInfo = (trainInfo: Train): Train => ({
     minutes: normalizeMinutes(trainInfo.minutes)
 })
 
-const _getBackwardsTrains = (origin: StationName, etdsLookup: {[id:string]: Object}, targetRouteIds: RouteId[]) => (
-    _genDestinationEtdsForStation(origin, etdsLookup, targetRouteIds, true)
+const _getBackwardsTrains = (
+    etdsLookup: {[id:string]: Object},
+    origin: StationName,
+    destination: StationName,
+    targetRouteIds: RouteId[],
+) => {
+    let oppositeRouteIds = getOppositeRouteIds(origin, targetRouteIds)
+
+    return _genDestinationEtdsForStation(etdsLookup, origin, undefined, oppositeRouteIds)
         .map((trainInfo) => ({
             backwardsTrain: _normalizeTrainInfo(trainInfo),
             waitTime: normalizeMinutes(trainInfo.minutes),
@@ -62,7 +111,7 @@ const _getBackwardsTrains = (origin: StationName, etdsLookup: {[id:string]: Obje
 
         // filter down to only the routes where a route ID was found
         .filter(({backwardsRouteId}) => !!backwardsRouteId)
-)
+}
 
 const _minutesBetweenStation = (start: StationName, end: StationName, routeId: RouteId): number => {
     let routeStations = routesLookup[routeId].stations
@@ -110,8 +159,10 @@ const _getBackwardsTimeRoutePaths = (_backwardsTrains, origin: StationName) => (
 const _getWaitTimesForBackwardsTimeRoutePaths = (
     _backwardsTimeRoutePaths,
     etdsLookup:{[id:string]: Object},
+    origin: StationName,
+    destination: StationName,
     targetRouteIds: RouteId[],
-    origin: StationName
+    allowTransfers: boolean,
 ) => (
     // for each backwards train, calculate how long it'll take to get to the
     // backwards station (waitTime + backwardsRideTime), then find all of the
@@ -124,7 +175,7 @@ const _getWaitTimesForBackwardsTimeRoutePaths = (
             let {waitTime, backwardsRideTime, backwardsStation} = trainInfo
             let timeToBackwardsStation = waitTime + backwardsRideTime
 
-            return _genDestinationEtdsForStation(backwardsStation, etdsLookup, targetRouteIds)
+            return _genDestinationEtdsForStation(etdsLookup, backwardsStation, destination, targetRouteIds, allowTransfers)
                 // after getting all the returning trains on the target routes,
                 // include the wait time at the backwards station (negative values
                 // mean that there isn't enough time to make it)
@@ -174,38 +225,11 @@ const _getAllNextArrivalsFromEtds = (
 
     // console.log('targetRouteIds', targetRouteIds)
 
-    return _genDestinationEtdsForStation(origin, etdsLookup, targetRouteIds)
+    return _genDestinationEtdsForStation(etdsLookup, origin, destination, targetRouteIds, allowTransfers)
         .map((trainInfo) => ({
             ...trainInfo,
             minutes: normalizeMinutes(trainInfo.minutes)
         }))
-
-        // Filter down to the arrival train that will actually go all the way to the
-        // destination if we want direct routes (!allowTransfers). For instance
-        // the NCON/PHIL trains have the same route ID as the PITT train, so
-        // they'll be returned. However, they don't make it all the way to PITT
-        // so they shouldn't be included
-        .filter((trainInfo: Train) => {
-            // If we're allowing transfers or the train ends in the destination
-            // then this arrival train is good to include.
-            if (allowTransfers || trainInfo.abbreviation === destination) {
-                return true
-            }
-
-            // Otherwise we determine if the train will "go all the way" by seeing
-            // if we can get from our destination to the train's destination.
-            // We get back a list of routes, which we intersect with the targetRouteIds
-            // to doubly ensure that this arrival train is ok. If the intersection
-            // is empty we know the train "goes all the way".
-            let routesFromDestinationToTrainEnd = getRouteIdsWithStartAndEnd(
-                destination,
-                trainInfo.abbreviation,
-                trainInfo.hexcolor
-            )
-            let matchingTargetRoutes = _.intersection(routesFromDestinationToTrainEnd, targetRouteIds)
-
-            return !_.isEmpty(matchingTargetRoutes)
-        })
 }
 
 const _getAllSalmonRoutesFromEtds = (
@@ -222,7 +246,7 @@ const _getAllSalmonRoutesFromEtds = (
 
     // 2. Generate a list of the trains heading in the OPPOSITE direction w/
     // their arrival times (waitTime)
-    let _backwardsTrains = _getBackwardsTrains(origin, etdsLookup, targetRouteIds)
+    let _backwardsTrains = _getBackwardsTrains(etdsLookup, origin, destination, targetRouteIds)
 
     // console.log(_backwardsTrains.value())
     // console.log('backwardsTrainsSize', _backwardsTrains.size())
@@ -239,8 +263,10 @@ const _getAllSalmonRoutesFromEtds = (
     let _backwardsTimeRoutePathsWithWaits = _getWaitTimesForBackwardsTimeRoutePaths(
         _backwardsTimeRoutePaths,
         etdsLookup,
+        origin,
+        destination,
         targetRouteIds,
-        origin
+        allowTransfers
     )
 
     // console.log(_backwardsTimeRoutePathsWithWaits.value())
@@ -277,7 +303,6 @@ export const getNextArrivalsFromEtds = (
 ): Train[] => {
     // First try to get arrivals using only direct lines
     let _allArrivals = _getAllNextArrivalsFromEtds(etdsLookup, origin, destination)
-
 
     // If no results, then get arrivals with routes that require a transfer
     if (_allArrivals.isEmpty()) {

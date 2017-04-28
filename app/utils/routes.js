@@ -53,37 +53,17 @@ export const getAllDestinationsFromRoutes = (sourceStation: StationName, routeId
         .flatten()
 )
 
-const _getBackwardsRoutesDestinations = (sourceStation: StationName, targetRouteIds: RouteId[]): Set<StationName> => {
+export const getOppositeRouteIds = (sourceStation: StationName, targetRouteIds: RouteId[]): RouteId[] => {
     let stationInfo = stationsLookup[sourceStation]
-    let backwardsRouteIds = _STATION_ROUTE_DIRECTIONS
+
+    return _STATION_ROUTE_DIRECTIONS
         // get the list of route IDs in either direction
         .map((routeDirection) => stationInfo[routeDirection])
 
         // find the route IDs in that are in the opposite direction by seeing
         // if the targetRouteIds are NOT in the routes for the direction
         .find((routesInDirection) => _(routesInDirection).intersection(targetRouteIds).isEmpty())
-
-    return getAllDestinationsFromRoutes(sourceStation, backwardsRouteIds)
 }
-
-const _getReturnRouteDestinations = (sourceStation: StationName, targetRouteIds: RouteId[]): Set<StationName> => (
-    getAllDestinationsFromRoutes(sourceStation, targetRouteIds)
-)
-
-/**
- * Given a current station and a set of target routes, returns a list of possible
- * train destinations either in the direction of each of the target routes or the
- * opposite
- */
-export const getPossibleRouteDestinations = (
-    stationName: StationName,
-    targetRouteIds: RouteId[],
-    isOpposite: boolean
-): Set<StationName> => (
-    isOpposite
-        ? _getBackwardsRoutesDestinations(stationName, targetRouteIds)
-        : _getReturnRouteDestinations(stationName, targetRouteIds)
-)
 
 /**
  * Given an origin and destination station, returns the routes that contain both,

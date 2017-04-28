@@ -219,11 +219,12 @@ describe('getSuggestedSalmonRoutesFromEtds', () => {
                 expect(actualSalmonSuggestions).toMatchSnapshot()
             })
 
-            xit('does not include a NCON train when going to PITT', () => {
+            it('does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train)', () => {
                 let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, 'ROCK', 'PITT', 5)
                 let foundNCONTrain = actualSalmonSuggestions.find(({returnTrain}) => returnTrain.abbreviation === 'NCON')
 
-                expect(foundNCONTrain).toBeNull()
+                expect(foundNCONTrain).toBeUndefined()
+                expect(actualSalmonSuggestions).not.toHaveLength(0)
             })
         })
     })
