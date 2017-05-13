@@ -1,0 +1,115 @@
+exports[`routes utils getAllDestinationsFromRoutes provides destinations for station when multiple routes are specified 1`] = `
+Array [
+  "19TH",
+  "12TH",
+  "WOAK",
+  "EMBR",
+  "MONT",
+  "POWL",
+  "CIVC",
+  "16TH",
+  "24TH",
+  "GLEN",
+  "BALB",
+  "DALY",
+  "COLM",
+  "SSAN",
+  "SBRN",
+  "MLBR",
+  "SFIA",
+]
+`;
+
+exports[`routes utils getAllDestinationsFromRoutes provides destinations for station when single route is specified 1`] = `
+Array [
+  "19TH",
+  "12TH",
+  "WOAK",
+  "EMBR",
+  "MONT",
+  "POWL",
+  "CIVC",
+  "16TH",
+  "24TH",
+  "GLEN",
+  "BALB",
+  "DALY",
+  "COLM",
+  "SSAN",
+  "SBRN",
+  "MLBR",
+]
+`;
+
+exports[`routes utils getOppositeRouteIds provides north route(s) for station when multiple south routes are specified 1`] = `
+Array [
+  "ROUTE 2",
+  "ROUTE 3",
+  "ROUTE 8",
+]
+`;
+
+exports[`routes utils getOppositeRouteIds provides north route(s) for station when single south route is specified 1`] = `
+Array [
+  "ROUTE 2",
+  "ROUTE 3",
+  "ROUTE 8",
+]
+`;
+
+exports[`routes utils getOppositeRouteIds provides north routes when station is not on route 1`] = `
+Array [
+  "ROUTE 3",
+  "ROUTE 5",
+  "ROUTE 11",
+]
+`;
+
+exports[`routes utils getOppositeRouteIds provides north routes when target routes is empty 1`] = `
+Array [
+  "ROUTE 2",
+  "ROUTE 6",
+  "ROUTE 8",
+  "ROUTE 12",
+]
+`;
+
+exports[`routes utils getOppositeRouteIds provides south route(s) for station when multiple north routes are specified 1`] = `
+Array [
+  "ROUTE 1",
+  "ROUTE 4",
+  "ROUTE 7",
+]
+`;
+
+exports[`routes utils getOppositeRouteIds provides south route(s) for station when single north route is specified 1`] = `
+Array [
+  "ROUTE 1",
+]
+`;
+
+exports[`routes utils getTargetRouteIds returns multiple routes when stations are both directly & indirectly connected (w/ transfers) 1`] = `
+Array [
+  "ROUTE 5",
+  "ROUTE 3",
+]
+`;
+
+exports[`routes utils getTargetRouteIds returns multiple routes when stations are multiply directly connected (w/o transfers) 1`] = `
+Array [
+  "ROUTE 3",
+  "ROUTE 5",
+]
+`;
+
+exports[`routes utils getTargetRouteIds returns single route when stations are singly directly connected (w/o transfers) 1`] = `
+Array [
+  "ROUTE 1",
+]
+`;
+
+exports[`routes utils getTargetRouteIds returns single route when stations are singly indirectly connected (w/ transfers) 1`] = `
+Array [
+  "ROUTE 1",
+]
+`;

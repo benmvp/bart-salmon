@@ -242,7 +242,7 @@ const _getAllSalmonRoutesFromEtds = (
     // (w/o making a "trip" API request)
     let targetRouteIds = getTargetRouteIds(origin, destination, allowTransfers)
 
-    // console.log(targetRouteIds)
+    // console.log(targetRouteIds, allowTransfers)
 
     // 2. Generate a list of the trains heading in the OPPOSITE direction w/
     // their arrival times (waitTime)
