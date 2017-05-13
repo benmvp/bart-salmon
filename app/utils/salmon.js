@@ -62,7 +62,12 @@ const _genDestinationEtdsForStation = (
     allowTransfers?: boolean = false,
 ) => {
     let possibleRouteDestinations = getAllDestinationsFromRoutes(origin, targetRouteIds)
-    let etdsForStation = forceArray(etdsLookup[origin].etd)
+    let originETDInfo = etdsLookup[origin]
+    let etdsForStation = []
+
+    if (originETDInfo) {
+        etdsForStation = forceArray(originETDInfo.etd)
+    }
 
     // console.log({stationName, targetRouteIds, possibleRouteDestinations, isOpposite, etdsForStation})
 
