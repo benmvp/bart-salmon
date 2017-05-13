@@ -1,4 +1,4 @@
-exports[`getNextArrivalsFromEtds for "Evening Rush" does not blow up when requesting high number of arrivals 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Evening Rush" does not blow up when requesting high number of arrivals 1`] = `
 Array [
   Object {
     "abbreviation": "24TH",
@@ -63,7 +63,48 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Evening Rush" includes an arrival for a train that is leaving 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Evening Rush" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 12,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 14,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`salmon utils getNextArrivalsFromEtds for "Evening Rush" includes an arrival for a train that is leaving 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -104,7 +145,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Evening Rush" returns arrivals when at origin station 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Evening Rush" returns arrivals when at origin station 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -145,20 +186,8 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Evening Rush" returns arrivals when many lines are available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Evening Rush" returns arrivals when many lines are available 1`] = `
 Array [
-  Object {
-    "abbreviation": "24TH",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "24th Street",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 9,
-    "limited": 0,
-    "minutes": 0,
-    "platform": 1,
-  },
   Object {
     "abbreviation": "DALY",
     "bikeflag": 1,
@@ -193,18 +222,6 @@ Array [
     "length": 9,
     "limited": 0,
     "minutes": 8,
-    "platform": 1,
-  },
-  Object {
-    "abbreviation": "24TH",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "24th Street",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 9,
-    "limited": 0,
-    "minutes": 11,
     "platform": 1,
   },
   Object {
@@ -256,21 +273,33 @@ Array [
     "platform": 1,
   },
   Object {
-    "abbreviation": "24TH",
+    "abbreviation": "SFIA",
     "bikeflag": 1,
     "color": "YELLOW",
-    "destination": "24th Street",
+    "destination": "SF Airport",
     "direction": "South",
     "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 29,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "MLBR",
+    "bikeflag": 1,
+    "color": "RED",
+    "destination": "Millbrae",
+    "direction": "South",
+    "hexcolor": "#ff0000",
     "length": 9,
     "limited": 0,
-    "minutes": 25,
+    "minutes": 36,
     "platform": 1,
   },
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Evening Rush" returns arrivals when more than one line is available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Evening Rush" returns arrivals when more than one line is available 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -311,9 +340,9 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Evening Rush" returns no arrivals when 0 are requested 1`] = `Array []`;
+exports[`salmon utils getNextArrivalsFromEtds for "Evening Rush" returns no arrivals when 0 are requested 1`] = `Array []`;
 
-exports[`getNextArrivalsFromEtds for "Evening Rush" returns single arrival when 1 is requested 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Evening Rush" returns single arrival when 1 is requested 1`] = `
 Array [
   Object {
     "abbreviation": "DALY",
@@ -330,7 +359,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Evening Rush" returns suggestions when changing trains is needed 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Evening Rush" returns suggestions when changing trains is needed 1`] = `
 Array [
   Object {
     "abbreviation": "24TH",
@@ -395,7 +424,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Holidays" does not blow up when requesting high number of arrivals 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Holidays" does not blow up when requesting high number of arrivals 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -436,7 +465,48 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Holidays" includes an arrival for a train that is leaving 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Holidays" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 2,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 6,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 8,
+    "limited": 0,
+    "minutes": 17,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`salmon utils getNextArrivalsFromEtds for "Holidays" includes an arrival for a train that is leaving 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -477,7 +547,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Holidays" returns arrivals when at origin station 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Holidays" returns arrivals when at origin station 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -518,20 +588,8 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Holidays" returns arrivals when many lines are available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Holidays" returns arrivals when many lines are available 1`] = `
 Array [
-  Object {
-    "abbreviation": "24TH",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "24th Street",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 8,
-    "limited": 0,
-    "minutes": 3,
-    "platform": 1,
-  },
   Object {
     "abbreviation": "MLBR",
     "bikeflag": 1,
@@ -643,7 +701,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Holidays" returns arrivals when more than one line is available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Holidays" returns arrivals when more than one line is available 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -684,9 +742,9 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Holidays" returns no arrivals when 0 are requested 1`] = `Array []`;
+exports[`salmon utils getNextArrivalsFromEtds for "Holidays" returns no arrivals when 0 are requested 1`] = `Array []`;
 
-exports[`getNextArrivalsFromEtds for "Holidays" returns single arrival when 1 is requested 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Holidays" returns single arrival when 1 is requested 1`] = `
 Array [
   Object {
     "abbreviation": "DALY",
@@ -703,7 +761,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Holidays" returns suggestions when changing trains is needed 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Holidays" returns suggestions when changing trains is needed 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -744,7 +802,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Late Night" does not blow up when requesting high number of arrivals 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Late Night" does not blow up when requesting high number of arrivals 1`] = `
 Array [
   Object {
     "abbreviation": "MLBR",
@@ -785,7 +843,48 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Late Night" includes an arrival for a train that is leaving 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Late Night" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 19,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 26,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 46,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`salmon utils getNextArrivalsFromEtds for "Late Night" includes an arrival for a train that is leaving 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -826,7 +925,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Late Night" returns arrivals when at origin station 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Late Night" returns arrivals when at origin station 1`] = `
 Array [
   Object {
     "abbreviation": "MLBR",
@@ -867,7 +966,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Late Night" returns arrivals when many lines are available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Late Night" returns arrivals when many lines are available 1`] = `
 Array [
   Object {
     "abbreviation": "DALY",
@@ -944,7 +1043,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Late Night" returns arrivals when more than one line is available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Late Night" returns arrivals when more than one line is available 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -985,9 +1084,9 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Late Night" returns no arrivals when 0 are requested 1`] = `Array []`;
+exports[`salmon utils getNextArrivalsFromEtds for "Late Night" returns no arrivals when 0 are requested 1`] = `Array []`;
 
-exports[`getNextArrivalsFromEtds for "Late Night" returns single arrival when 1 is requested 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Late Night" returns single arrival when 1 is requested 1`] = `
 Array [
   Object {
     "abbreviation": "DALY",
@@ -1004,7 +1103,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Late Night" returns suggestions when changing trains is needed 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Late Night" returns suggestions when changing trains is needed 1`] = `
 Array [
   Object {
     "abbreviation": "MLBR",
@@ -1045,7 +1144,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Major Delays" does not blow up when requesting high number of arrivals 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Major Delays" does not blow up when requesting high number of arrivals 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -1122,7 +1221,48 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Major Delays" includes an arrival for a train that is leaving 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Major Delays" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 9,
+    "limited": 0,
+    "minutes": 5,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 13,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 24,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`salmon utils getNextArrivalsFromEtds for "Major Delays" includes an arrival for a train that is leaving 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -1163,7 +1303,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Major Delays" returns arrivals when at origin station 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Major Delays" returns arrivals when at origin station 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -1204,20 +1344,8 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Major Delays" returns arrivals when many lines are available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Major Delays" returns arrivals when many lines are available 1`] = `
 Array [
-  Object {
-    "abbreviation": "MONT",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "Montgomery",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 9,
-    "limited": 0,
-    "minutes": 5,
-    "platform": 1,
-  },
   Object {
     "abbreviation": "DALY",
     "bikeflag": 1,
@@ -1262,18 +1390,6 @@ Array [
     "direction": "South",
     "hexcolor": "#339933",
     "length": 10,
-    "limited": 0,
-    "minutes": 11,
-    "platform": 1,
-  },
-  Object {
-    "abbreviation": "MONT",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "Montgomery",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 9,
     "limited": 0,
     "minutes": 11,
     "platform": 1,
@@ -1326,10 +1442,22 @@ Array [
     "minutes": 28,
     "platform": 1,
   },
+  Object {
+    "abbreviation": "SFIA",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "SF Airport",
+    "direction": "South",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 30,
+    "platform": 1,
+  },
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Major Delays" returns arrivals when more than one line is available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Major Delays" returns arrivals when more than one line is available 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -1341,18 +1469,6 @@ Array [
     "length": 6,
     "limited": 0,
     "minutes": 1,
-    "platform": 1,
-  },
-  Object {
-    "abbreviation": "MCAR",
-    "bikeflag": 1,
-    "color": "WHITE",
-    "destination": "MacArthur",
-    "direction": "North",
-    "hexcolor": "#ffffff",
-    "length": 10,
-    "limited": 0,
-    "minutes": 4,
     "platform": 1,
   },
   Object {
@@ -1382,9 +1498,9 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Major Delays" returns no arrivals when 0 are requested 1`] = `Array []`;
+exports[`salmon utils getNextArrivalsFromEtds for "Major Delays" returns no arrivals when 0 are requested 1`] = `Array []`;
 
-exports[`getNextArrivalsFromEtds for "Major Delays" returns single arrival when 1 is requested 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Major Delays" returns single arrival when 1 is requested 1`] = `
 Array [
   Object {
     "abbreviation": "DALY",
@@ -1401,7 +1517,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Major Delays" returns suggestions when changing trains is needed 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Major Delays" returns suggestions when changing trains is needed 1`] = `
 Array [
   Object {
     "abbreviation": "DALY",
@@ -1466,7 +1582,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Morning Rush" does not blow up when requesting high number of arrivals 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Morning Rush" does not blow up when requesting high number of arrivals 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -1543,7 +1659,48 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Morning Rush" includes an arrival for a train that is leaving 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Morning Rush" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 14,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 29,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`salmon utils getNextArrivalsFromEtds for "Morning Rush" includes an arrival for a train that is leaving 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -1584,7 +1741,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Morning Rush" returns arrivals when at origin station 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Morning Rush" returns arrivals when at origin station 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -1625,7 +1782,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Morning Rush" returns arrivals when many lines are available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Morning Rush" returns arrivals when many lines are available 1`] = `
 Array [
   Object {
     "abbreviation": "MLBR",
@@ -1649,18 +1806,6 @@ Array [
     "length": 10,
     "limited": 0,
     "minutes": 2,
-    "platform": 1,
-  },
-  Object {
-    "abbreviation": "MONT",
-    "bikeflag": 1,
-    "color": "YELLOW",
-    "destination": "Montgomery",
-    "direction": "South",
-    "hexcolor": "#ffff33",
-    "length": 9,
-    "limited": 0,
-    "minutes": 4,
     "platform": 1,
   },
   Object {
@@ -1750,7 +1895,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Morning Rush" returns arrivals when more than one line is available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Morning Rush" returns arrivals when more than one line is available 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -1791,9 +1936,9 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Morning Rush" returns no arrivals when 0 are requested 1`] = `Array []`;
+exports[`salmon utils getNextArrivalsFromEtds for "Morning Rush" returns no arrivals when 0 are requested 1`] = `Array []`;
 
-exports[`getNextArrivalsFromEtds for "Morning Rush" returns single arrival when 1 is requested 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Morning Rush" returns single arrival when 1 is requested 1`] = `
 Array [
   Object {
     "abbreviation": "DALY",
@@ -1810,7 +1955,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Morning Rush" returns suggestions when changing trains is needed 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Morning Rush" returns suggestions when changing trains is needed 1`] = `
 Array [
   Object {
     "abbreviation": "DALY",
@@ -1875,7 +2020,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Weekday Noonday" does not blow up when requesting high number of arrivals 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Weekday Noonday" does not blow up when requesting high number of arrivals 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -1916,7 +2061,48 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Weekday Noonday" includes an arrival for a train that is leaving 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Weekday Noonday" does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train) 1`] = `
+Array [
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 4,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 18,
+    "platform": 1,
+  },
+  Object {
+    "abbreviation": "PITT",
+    "bikeflag": 1,
+    "color": "YELLOW",
+    "destination": "Pittsburg/Bay Point",
+    "direction": "North",
+    "hexcolor": "#ffff33",
+    "length": 10,
+    "limited": 0,
+    "minutes": 33,
+    "platform": 1,
+  },
+]
+`;
+
+exports[`salmon utils getNextArrivalsFromEtds for "Weekday Noonday" includes an arrival for a train that is leaving 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -1957,7 +2143,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns arrivals when at origin station 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Weekday Noonday" returns arrivals when at origin station 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -1998,7 +2184,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns arrivals when many lines are available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Weekday Noonday" returns arrivals when many lines are available 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -2111,7 +2297,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns arrivals when more than one line is available 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Weekday Noonday" returns arrivals when more than one line is available 1`] = `
 Array [
   Object {
     "abbreviation": "RICH",
@@ -2152,9 +2338,9 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns no arrivals when 0 are requested 1`] = `Array []`;
+exports[`salmon utils getNextArrivalsFromEtds for "Weekday Noonday" returns no arrivals when 0 are requested 1`] = `Array []`;
 
-exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns single arrival when 1 is requested 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Weekday Noonday" returns single arrival when 1 is requested 1`] = `
 Array [
   Object {
     "abbreviation": "DALY",
@@ -2171,7 +2357,7 @@ Array [
 ]
 `;
 
-exports[`getNextArrivalsFromEtds for "Weekday Noonday" returns suggestions when changing trains is needed 1`] = `
+exports[`salmon utils getNextArrivalsFromEtds for "Weekday Noonday" returns suggestions when changing trains is needed 1`] = `
 Array [
   Object {
     "abbreviation": "SFIA",
@@ -2212,7 +2398,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" does not blow up when requesting high number of suggestions 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -2943,7 +3129,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" includes a suggestion for a train that is leaving 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -3113,9 +3299,9 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -3153,7 +3339,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for DUBL line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -3323,7 +3509,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for PITT line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 6,
@@ -3493,7 +3679,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for RICH line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -3663,7 +3849,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for WARM line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 6,
@@ -3833,7 +4019,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for Westbound line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -4003,7 +4189,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -4173,7 +4359,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -4343,41 +4529,8 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when many Westbound lines are available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when many Westbound lines are available 1`] = `
 Array [
-  Object {
-    "backwardsRideTime": 4,
-    "backwardsRouteId": "ROUTE 2",
-    "backwardsStation": "12TH",
-    "backwardsTrain": Object {
-      "abbreviation": "PITT",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "Pittsburg/Bay Point",
-      "direction": "North",
-      "hexcolor": "#ffff33",
-      "length": 10,
-      "limited": 0,
-      "minutes": 2,
-      "platform": 2,
-    },
-    "backwardsWaitTime": 1,
-    "returnRideTime": 5,
-    "returnRouteId": "ROUTE 1",
-    "returnTrain": Object {
-      "abbreviation": "24TH",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "24th Street",
-      "direction": "South",
-      "hexcolor": "#ffff33",
-      "length": 9,
-      "limited": 0,
-      "minutes": 7,
-      "platform": 2,
-    },
-    "waitTime": 2,
-  },
   Object {
     "backwardsRideTime": 4,
     "backwardsRouteId": "ROUTE 2",
@@ -4675,10 +4828,43 @@ Array [
     },
     "waitTime": 4,
   },
+  Object {
+    "backwardsRideTime": 7,
+    "backwardsRouteId": "ROUTE 2",
+    "backwardsStation": "19TH",
+    "backwardsTrain": Object {
+      "abbreviation": "NCON",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "North Concord",
+      "direction": "North",
+      "hexcolor": "#ffff33",
+      "length": 9,
+      "limited": 0,
+      "minutes": 8,
+      "platform": 2,
+    },
+    "backwardsWaitTime": 2,
+    "returnRideTime": 6,
+    "returnRouteId": "ROUTE 7",
+    "returnTrain": Object {
+      "abbreviation": "MLBR",
+      "bikeflag": 1,
+      "color": "RED",
+      "destination": "Millbrae",
+      "direction": "South",
+      "hexcolor": "#ff0000",
+      "length": 9,
+      "limited": 0,
+      "minutes": 17,
+      "platform": 2,
+    },
+    "waitTime": 8,
+  },
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -5013,7 +5199,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -5183,7 +5369,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -5353,7 +5539,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" does not blow up when requesting high number of suggestions 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -5787,7 +5973,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" includes a suggestion for a train that is leaving 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -5957,9 +6143,9 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -5997,7 +6183,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for DUBL line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -6167,7 +6353,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for PITT line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -6337,7 +6523,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for RICH line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -6507,7 +6693,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for WARM line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -6677,7 +6863,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for Westbound line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -6847,7 +7033,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -7017,7 +7203,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -7187,7 +7373,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when many Westbound lines are available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when many Westbound lines are available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -7522,7 +7708,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -7857,7 +8043,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -8027,7 +8213,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -8197,7 +8383,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" does not blow up when requesting high number of suggestions 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -8697,7 +8883,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" includes a suggestion for a train that is leaving 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 11,
@@ -8867,9 +9053,9 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -8907,7 +9093,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for DUBL line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -9077,7 +9263,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for PITT line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -9247,7 +9433,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for RICH line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -9417,7 +9603,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for WARM line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -9587,7 +9773,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for Westbound line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -9757,7 +9943,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -9927,7 +10113,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -10097,7 +10283,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when many Westbound lines are available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when many Westbound lines are available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -10432,7 +10618,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -10767,7 +10953,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -10937,7 +11123,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -11107,7 +11293,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" does not blow up when requesting high number of suggestions 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -11277,7 +11463,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" includes a suggestion for a train that is leaving 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -11447,9 +11633,9 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -11487,7 +11673,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for DUBL line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -11657,7 +11843,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for PITT line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -11827,7 +12013,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for RICH line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -11997,7 +12183,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for WARM line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -12167,7 +12353,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for Westbound line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -12304,7 +12490,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -12474,7 +12660,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -12611,41 +12797,8 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when many Westbound lines are available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when many Westbound lines are available 1`] = `
 Array [
-  Object {
-    "backwardsRideTime": 4,
-    "backwardsRouteId": "ROUTE 2",
-    "backwardsStation": "12TH",
-    "backwardsTrain": Object {
-      "abbreviation": "PITT",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "Pittsburg/Bay Point",
-      "direction": "North",
-      "hexcolor": "#ffff33",
-      "length": 10,
-      "limited": 0,
-      "minutes": 2,
-      "platform": 2,
-    },
-    "backwardsWaitTime": 1,
-    "returnRideTime": 5,
-    "returnRouteId": "ROUTE 1",
-    "returnTrain": Object {
-      "abbreviation": "MONT",
-      "bikeflag": 1,
-      "color": "YELLOW",
-      "destination": "Montgomery",
-      "direction": "South",
-      "hexcolor": "#ffff33",
-      "length": 9,
-      "limited": 0,
-      "minutes": 7,
-      "platform": 2,
-    },
-    "waitTime": 2,
-  },
   Object {
     "backwardsRideTime": 7,
     "backwardsRouteId": "ROUTE 2",
@@ -12943,10 +13096,43 @@ Array [
     },
     "waitTime": 2,
   },
+  Object {
+    "backwardsRideTime": 5,
+    "backwardsRouteId": "ROUTE 8",
+    "backwardsStation": "19TH",
+    "backwardsTrain": Object {
+      "abbreviation": "RICH",
+      "bikeflag": 1,
+      "color": "RED",
+      "destination": "Richmond",
+      "direction": "North",
+      "hexcolor": "#ff0000",
+      "length": 9,
+      "limited": 0,
+      "minutes": 9,
+      "platform": 2,
+    },
+    "backwardsWaitTime": 4,
+    "returnRideTime": 6,
+    "returnRouteId": "ROUTE 1",
+    "returnTrain": Object {
+      "abbreviation": "DALY",
+      "bikeflag": 1,
+      "color": "YELLOW",
+      "destination": "Daly City",
+      "direction": "South",
+      "hexcolor": "#ffff33",
+      "length": 9,
+      "limited": 0,
+      "minutes": 18,
+      "platform": 2,
+    },
+    "waitTime": 9,
+  },
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -13281,7 +13467,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -13451,7 +13637,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -13621,7 +13807,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" does not blow up when requesting high number of suggestions 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -14154,7 +14340,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" includes a suggestion for a train that is leaving 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -14324,9 +14510,9 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -14364,7 +14550,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for DUBL line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -14534,7 +14720,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for PITT line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -14704,7 +14890,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for RICH line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -14874,7 +15060,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for WARM line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -15044,7 +15230,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for Westbound line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -15214,7 +15400,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 8,
@@ -15384,7 +15570,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -15554,7 +15740,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when many Westbound lines are available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when many Westbound lines are available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -15889,7 +16075,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -16224,7 +16410,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -16394,7 +16580,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -16564,7 +16750,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" does not blow up when requesting high number of suggestions 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" does not blow up when requesting high number of suggestions 1`] = `
 Array [
   Object {
     "backwardsRideTime": 9,
@@ -16866,7 +17052,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" includes a suggestion for a train that is leaving 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" includes a suggestion for a train that is leaving 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -17036,9 +17222,9 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns no suggestions when 0 suggestions are requested 1`] = `Array []`;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns single suggestion when 1 suggestion is requested 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns single suggestion when 1 suggestion is requested 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -17076,7 +17262,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for DUBL line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for DUBL line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 3,
@@ -17246,7 +17432,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for PITT line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for PITT line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -17416,7 +17602,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for RICH line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for RICH line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 7,
@@ -17586,7 +17772,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for WARM line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for WARM line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 6,
@@ -17756,7 +17942,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for Westbound line 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for Westbound line 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -17926,7 +18112,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when changing trains is needed (Eastbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when changing trains is needed (Eastbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -18096,7 +18282,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when changing trains is needed (Westbound) 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when changing trains is needed (Westbound) 1`] = `
 Array [
   Object {
     "backwardsRideTime": 4,
@@ -18266,7 +18452,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when many Westbound lines are available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when many Westbound lines are available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 5,
@@ -18601,7 +18787,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when more than one Eastbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when more than one Eastbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 2,
@@ -18936,7 +19122,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when more than one Northbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
@@ -19106,7 +19292,7 @@ Array [
 ]
 `;
 
-exports[`getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when more than one Southbound line is available 1`] = `
+exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions when more than one Southbound line is available 1`] = `
 Array [
   Object {
     "backwardsRideTime": 1,
