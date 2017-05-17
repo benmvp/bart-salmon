@@ -29,7 +29,8 @@ class RoutesPage extends Component {
     render = () => {
         let {destination, salmonRoutes, arrivals} = this.props
 
-        if (isEmpty(salmonRoutes) || isEmpty(arrivals)) {
+        // TODO: Need a better fallback for when there's nothing to display
+        if (isEmpty(arrivals)) {
             return null
         }
 

@@ -69,10 +69,10 @@ const _genDestinationEtdsForStation = (
         etdsForStation = forceArray(originETDInfo.etd)
     }
 
-    // console.log({stationName, targetRouteIds, possibleRouteDestinations, isOpposite, etdsForStation})
+    // console.log({origin, destination, targetRouteIds, possibleRouteDestinations, etdsForStation, allowTransfers})
 
     return _(etdsForStation)
-        // take ETDs grouped by destination & filter down trains to the ones
+        // take ETDs grouped by final destination & filter down trains to the ones
         // going in specified route direction by looking to see if the train's
         // destination is in the possibleRouteDestinations
         .filter((destinationEtdInfo) => possibleRouteDestinations.has(destinationEtdInfo.abbreviation))

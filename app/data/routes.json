@@ -287,6 +287,10 @@
       {
         "name": "FRMT",
         "timeFromOrigin": 64
+      },
+      {
+        "name": "WARM",
+        "timeFromOrigin": 70
       }
     ]
   },
@@ -387,80 +391,84 @@
     "holidays": 0,
     "stations": [
       {
-        "name": "FRMT",
+        "name": "WARM",
         "timeFromOrigin": 0
       },
       {
+        "name": "FRMT",
+        "timeFromOrigin": 6
+      },
+      {
         "name": "UCTY",
-        "timeFromOrigin": 5
+        "timeFromOrigin": 11
       },
       {
         "name": "SHAY",
-        "timeFromOrigin": 10
+        "timeFromOrigin": 16
       },
       {
         "name": "HAYW",
-        "timeFromOrigin": 14
+        "timeFromOrigin": 20
       },
       {
         "name": "BAYF",
-        "timeFromOrigin": 18
+        "timeFromOrigin": 24
       },
       {
         "name": "SANL",
-        "timeFromOrigin": 22
+        "timeFromOrigin": 28
       },
       {
         "name": "COLS",
-        "timeFromOrigin": 26
+        "timeFromOrigin": 32
       },
       {
         "name": "FTVL",
-        "timeFromOrigin": 29
+        "timeFromOrigin": 35
       },
       {
         "name": "LAKE",
-        "timeFromOrigin": 33
+        "timeFromOrigin": 39
       },
       {
         "name": "WOAK",
-        "timeFromOrigin": 38
+        "timeFromOrigin": 44
       },
       {
         "name": "EMBR",
-        "timeFromOrigin": 45
+        "timeFromOrigin": 51
       },
       {
         "name": "MONT",
-        "timeFromOrigin": 46
-      },
-      {
-        "name": "POWL",
-        "timeFromOrigin": 48
-      },
-      {
-        "name": "CIVC",
-        "timeFromOrigin": 50
-      },
-      {
-        "name": "16TH",
         "timeFromOrigin": 52
       },
       {
-        "name": "24TH",
+        "name": "POWL",
         "timeFromOrigin": 54
       },
       {
+        "name": "CIVC",
+        "timeFromOrigin": 56
+      },
+      {
+        "name": "16TH",
+        "timeFromOrigin": 58
+      },
+      {
+        "name": "24TH",
+        "timeFromOrigin": 60
+      },
+      {
         "name": "GLEN",
-        "timeFromOrigin": 57
+        "timeFromOrigin": 63
       },
       {
         "name": "BALB",
-        "timeFromOrigin": 59
+        "timeFromOrigin": 65
       },
       {
         "name": "DALY",
-        "timeFromOrigin": 63
+        "timeFromOrigin": 69
       }
     ]
   },
@@ -476,76 +484,80 @@
     "holidays": 1,
     "stations": [
       {
-        "name": "FRMT",
+        "name": "WARM",
         "timeFromOrigin": 0
       },
       {
+        "name": "FRMT",
+        "timeFromOrigin": 6
+      },
+      {
         "name": "UCTY",
-        "timeFromOrigin": 5
+        "timeFromOrigin": 11
       },
       {
         "name": "SHAY",
-        "timeFromOrigin": 10
+        "timeFromOrigin": 16
       },
       {
         "name": "HAYW",
-        "timeFromOrigin": 14
+        "timeFromOrigin": 20
       },
       {
         "name": "BAYF",
-        "timeFromOrigin": 18
+        "timeFromOrigin": 24
       },
       {
         "name": "SANL",
-        "timeFromOrigin": 22
+        "timeFromOrigin": 28
       },
       {
         "name": "COLS",
-        "timeFromOrigin": 26
+        "timeFromOrigin": 32
       },
       {
         "name": "FTVL",
-        "timeFromOrigin": 29
+        "timeFromOrigin": 35
       },
       {
         "name": "LAKE",
-        "timeFromOrigin": 33
+        "timeFromOrigin": 39
       },
       {
         "name": "12TH",
-        "timeFromOrigin": 37
-      },
-      {
-        "name": "19TH",
-        "timeFromOrigin": 40
-      },
-      {
-        "name": "MCAR",
         "timeFromOrigin": 43
       },
       {
-        "name": "ASHB",
+        "name": "19TH",
         "timeFromOrigin": 46
       },
       {
-        "name": "DBRK",
+        "name": "MCAR",
         "timeFromOrigin": 49
       },
       {
+        "name": "ASHB",
+        "timeFromOrigin": 52
+      },
+      {
+        "name": "DBRK",
+        "timeFromOrigin": 55
+      },
+      {
         "name": "NBRK",
-        "timeFromOrigin": 51
-      },
-      {
-        "name": "PLZA",
-        "timeFromOrigin": 54
-      },
-      {
-        "name": "DELN",
         "timeFromOrigin": 57
       },
       {
+        "name": "PLZA",
+        "timeFromOrigin": 60
+      },
+      {
+        "name": "DELN",
+        "timeFromOrigin": 63
+      },
+      {
         "name": "RICH",
-        "timeFromOrigin": 62
+        "timeFromOrigin": 68
       }
     ]
   },
@@ -736,6 +748,10 @@
       {
         "name": "FRMT",
         "timeFromOrigin": 63
+      },
+      {
+        "name": "WARM",
+        "timeFromOrigin": 69
       }
     ]
   },
