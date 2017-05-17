@@ -70,6 +70,10 @@ export const getAllDestinationsFromRoutes = (sourceStation: StationName, routeId
  * specified targetRouteIds
  */
 export const getOppositeRouteIds = (sourceStation: StationName, targetRouteIds: RouteId[]): RouteId[] => {
+    if (_.isEmpty(targetRouteIds)) {
+        return []
+    }
+
     let stationInfo = stationsLookup[sourceStation]
 
     return _STATION_ROUTE_DIRECTIONS

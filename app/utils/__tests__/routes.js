@@ -16,8 +16,8 @@ describe('routes utils', () => {
             expect(isStationARouteStation('ROCK', routesLookup['ROUTE 2'].stations[0])).toBe(false)
         })
 
-        it('returns false when station is not a route station', () => {
-            expect(isStationARouteStation('FRMT', routesLookup['ROUTE 5'].stations[0])).toBe(true)
+        it('returns true when station is a route station', () => {
+            expect(isStationARouteStation('WARM', routesLookup['ROUTE 5'].stations[0])).toBe(true)
         })
     })
 
@@ -88,8 +88,8 @@ describe('routes utils', () => {
     })
 
     describe('getOppositeRouteIds', () => {
-        it('provides north routes when target routes is empty', () => {
-            expect(getOppositeRouteIds('BALB', [])).toMatchSnapshot()
+        it('returns empty when target routes is empty', () => {
+            expect(getOppositeRouteIds('BALB', [])).toHaveLength(0)
         })
 
         it('provides north routes when station is not on route', () => {

@@ -227,6 +227,20 @@ describe('salmon utils', () => {
                     expect(foundNCONTrain).toBeUndefined()
                     expect(actualSalmonSuggestions).not.toHaveLength(0)
                 })
+
+                it('returns suggestions when changing trains in opposite direction (Southside)', () => {
+                    let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, 'UCTY', 'CAST', 5)
+
+                    expect(actualSalmonSuggestions).not.toHaveLength(0)
+                    expect(actualSalmonSuggestions).toMatchSnapshot()
+                })
+
+                it('returns suggestions when changing trains in opposite direction (Northside)', () => {
+                    let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(etdsLookup, 'ASHB', 'PHIL', 5)
+
+                    expect(actualSalmonSuggestions).not.toHaveLength(0)
+                    expect(actualSalmonSuggestions).toMatchSnapshot()
+                })
             })
         })
     })
@@ -315,6 +329,20 @@ describe('salmon utils', () => {
 
                 it('does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train)', () => {
                     let actualArrivals = getNextArrivalsFromEtds(etdsLookup, 'ROCK', 'PITT', 5)
+
+                    expect(actualArrivals).not.toHaveLength(0)
+                    expect(actualArrivals).toMatchSnapshot()
+                })
+
+                it('returns suggestions when changing trains in opposite direction (Southside)', () => {
+                    let actualArrivals = getNextArrivalsFromEtds(etdsLookup, 'UCTY', 'CAST', 5)
+
+                    expect(actualArrivals).not.toHaveLength(0)
+                    expect(actualArrivals).toMatchSnapshot()
+                })
+
+                it('returns suggestions when changing trains in opposite direction (Northside)', () => {
+                    let actualArrivals = getNextArrivalsFromEtds(etdsLookup, 'ASHB', 'PHIL', 5)
 
                     expect(actualArrivals).not.toHaveLength(0)
                     expect(actualArrivals).toMatchSnapshot()

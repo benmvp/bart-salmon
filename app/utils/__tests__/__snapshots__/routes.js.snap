@@ -65,15 +65,6 @@ Array [
 ]
 `;
 
-exports[`routes utils getOppositeRouteIds provides north routes when target routes is empty 1`] = `
-Array [
-  "ROUTE 2",
-  "ROUTE 6",
-  "ROUTE 8",
-  "ROUTE 12",
-]
-`;
-
 exports[`routes utils getOppositeRouteIds provides south route(s) for station when multiple north routes are specified 1`] = `
 Array [
   "ROUTE 1",

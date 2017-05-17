@@ -10,18 +10,23 @@ type StationRoute = {
     multiRoutes: ?string[]
 }
 
+const NUM_FETCH_TRIES = 5
+
 const _fetchDepartSchedules = (orig: string, dest: string, time: string): Promise<Object> => (
-    fetchBartInfo('sched', 'depart', {orig, dest, time, date: '1/11/2017'})
+    fetchBartInfo('sched', 'depart', {orig, dest, time, date: '5/17/2017'})
 )
 
 const _getDepartSchedules = async (origin: string, destination: string, time: string): Promise<Object> => {
     let departSchedules
+    let numTries = 0
 
-    try {
-        departSchedules = await _fetchDepartSchedules(origin, destination, time)
-    } catch(ex) {
-        // try again just in case there was some transient issue
-        departSchedules = await _fetchDepartSchedules(origin, destination, time)
+    while (!departSchedules && numTries < NUM_FETCH_TRIES) {
+        try {
+            departSchedules = await _fetchDepartSchedules(origin, destination, time)
+        } catch(ex) {
+            // try again just in case there was some transient issue
+            numTries++
+        }
     }
 
     return departSchedules
