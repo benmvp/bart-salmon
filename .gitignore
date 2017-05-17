@@ -42,8 +42,9 @@ android/app/libs
 *.keystore
 
 # Web
-bundle.js
-bundle.js.map
+bundle.js*
+shims.js*
+
 
 # Code coverage
 coverage
