@@ -7,9 +7,10 @@ const NODE_ENV = process.env.NODE_ENV || 'development'
 
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
-    entry: [
-        path.join(__dirname, '../../app/index.web.js'),
-    ],
+    entry: {
+        app: path.join(APP_PATH, 'index.web.js'),
+        shims: ['airbnb-js-shims/target/es2015']
+    },
     output: {
         path: path.join(__dirname, '../public'),
         filename: 'bundle.js',
@@ -58,6 +59,8 @@ module.exports = {
                 NODE_ENV: JSON.stringify(NODE_ENV),
                 PLATFORM_ENV: JSON.stringify('web'),
             },
-        })
+        }),
+        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.optimize.CommonsChunkPlugin('shims', 'shims.js')
     ],
 }

@@ -9,10 +9,16 @@ module.exports = Object.assign(
     {},
     baseConfig,
     {
-        entry: [
-            'webpack-dev-server/client?http://localhost:8080',
-            ...baseConfig.entry
-        ],
+        entry: Object.assign(
+            {},
+            baseConfig.entry,
+            {
+                app: [
+                    'webpack-dev-server/client?http://localhost:8080',
+                    baseConfig.entry.app
+                ]
+            }
+        ),
         module: Object.assign(
             {},
             baseConfig.module,
@@ -38,7 +44,6 @@ module.exports = Object.assign(
         },
         plugins: [
             ...baseConfig.plugins,
-            new webpack.optimize.OccurenceOrderPlugin(),
             new webpack.NoErrorsPlugin(),
         ]
     }
