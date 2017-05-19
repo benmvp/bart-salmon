@@ -13,9 +13,11 @@ import {
 
 import routesLookup from '../data/routes.json'
 
+const DEFAULT_NUM_SALMON_SUGGESTIONS = 5
+
 // minimum number of minutes to wait at the backwards station
 // the higher this number is the more likely to make the train
-const MINIMUM_BACKWARDS_STATION_WAIT_TIME = 1
+const DEFAULT_MINIMUM_BACKWARDS_STATION_WAIT_TIME = 1
 
 /**
  * A filter that will include a train that will actually go all the way to the
@@ -332,7 +334,8 @@ export const getSuggestedSalmonRoutesFromEtds = (
     etdsLookup: {[id:string]: Object},
     origin: StationName,
     destination: StationName,
-    numSuggestions: number
+    numSuggestions: number = DEFAULT_NUM_SALMON_SUGGESTIONS,
+    riskinessFactor: number = DEFAULT_MINIMUM_BACKWARDS_STATION_WAIT_TIME
 ): SalmonRoute[] => {
     // First try to get salmon routes using only direct lines
     let _allSalmonRoutes = _getAllSalmonRoutesFromEtds(etdsLookup, origin, destination)
@@ -346,7 +349,7 @@ export const getSuggestedSalmonRoutesFromEtds = (
         // 6. Only include the trains where the wait time at the backwards
         // station is greater that the minimum allowable to increase the
         // likelihood of making the train
-        .filter(({backwardsWaitTime}) => backwardsWaitTime >= MINIMUM_BACKWARDS_STATION_WAIT_TIME)
+        .filter(({backwardsWaitTime}) => backwardsWaitTime >= riskinessFactor)
 
         // 7. Add up waitTime + backwardsRideTime + backwardsWaitTime + returnRideTime
         // (salmonTime) for each salmon route path and sort by ascending total time
