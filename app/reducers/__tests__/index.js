@@ -5,6 +5,7 @@ const INITIAL_STATE = {
     origin: 'BALB',
     destination: '12TH',
     numSalmonRoutes: 5,
+    riskinessFactor: 0,
     isFetching: false,
     salmonRoutes: [],
     arrivals: []
@@ -144,6 +145,20 @@ it('should handle SET_NUM_SALMON_ROUTES action', () => {
     let expectedState = {
         ...INITIAL_STATE,
         numSalmonRoutes: numRoutes
+    }
+
+    expect(actualState).toEqual(expectedState)
+})
+
+it('should handle SET_RISKINESS_FACTOR action', () => {
+    let riskinessFactor = 2
+    let actualState = rootReducer(INITIAL_STATE, {
+        type: 'SET_RISKINESS_FACTOR',
+        payload: {riskinessFactor}
+    })
+    let expectedState = {
+        ...INITIAL_STATE,
+        riskinessFactor
     }
 
     expect(actualState).toEqual(expectedState)

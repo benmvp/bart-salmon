@@ -27,6 +27,13 @@ export const setNumSalmonRoutes = (numRoutes: number): ReduxAction => ({
     }
 })
 
+export const setRiskinessFactor = (riskinessFactor: number): ReduxAction => ({
+    type: 'SET_RISKINESS_FACTOR',
+    payload: {
+        riskinessFactor
+    }
+})
+
 const fetchSalmonInfo = (): ReduxAction => ({
     type: 'FETCH_SALMON_INFO'
 })
@@ -46,14 +53,14 @@ const errorSalmonInfo = (error: Error): ReduxAction => ({
 
 export const getSalmonInfo = (): ReduxAsyncAction => (
     async (dispatch: ReduxDispatch, getState: ReduxGetState) => {
-        let {origin, destination, numSalmonRoutes} = getState()
+        let {origin, destination, numSalmonRoutes, riskinessFactor} = getState()
 
         if (origin && destination) {
             dispatch(fetchSalmonInfo())
 
             try {
                 let etdsLookup = await getEstimatedTimesOfDeparture()
-                let salmonRoutes = getSuggestedSalmonRoutesFromEtds(etdsLookup, origin, destination, numSalmonRoutes)
+                let salmonRoutes = getSuggestedSalmonRoutesFromEtds(etdsLookup, origin, destination, numSalmonRoutes, riskinessFactor)
                 let arrivals = getNextArrivalsFromEtds(etdsLookup, origin, destination, NUM_ARRIVALS)
 
                 dispatch(receiveSalmonInfo(salmonRoutes, arrivals))
