@@ -9,7 +9,7 @@ module.exports = {
     devtool: 'cheap-module-eval-source-map',
     entry: {
         app: path.join(APP_PATH, 'index.web.js'),
-        shims: ['airbnb-js-shims/target/es2015']
+        shims: ['airbnb-js-shims/target/es2015', 'whatwg-fetch']
     },
     output: {
         path: path.join(__dirname, '../public'),
