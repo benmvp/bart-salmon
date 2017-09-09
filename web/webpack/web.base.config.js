@@ -14,18 +14,13 @@ module.exports = {
     output: {
         path: path.join(__dirname, '../public'),
         filename: 'bundle.js',
-        publicPath: '/',
+        publicPath: '/'
     },
     module: {
         loaders: [
             {
-                test: /\.scss$/,
-                loaders: [
-                    'style',
-                    'css',
-                    'postcss',
-                    'sass'
-                ],
+                test: /\.css$/,
+                loaders: ['style', 'css', 'postcss'],
                 include: APP_PATH
             },
             {
@@ -40,7 +35,7 @@ module.exports = {
                     name: '[name].[hash:16].[ext]'
                 }
             }
-        ],
+        ]
     },
     postcss: [
         autoprefixer({
@@ -57,10 +52,10 @@ module.exports = {
             'process.env': {
                 // Useful to reduce the size of client-side libraries, e.g. react
                 NODE_ENV: JSON.stringify(NODE_ENV),
-                PLATFORM_ENV: JSON.stringify('web'),
-            },
+                PLATFORM_ENV: JSON.stringify('web')
+            }
         }),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.CommonsChunkPlugin('shims', 'shims.js')
-    ],
+    ]
 }

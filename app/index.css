@@ -1,0 +1,15 @@
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #212121;
+  font-family: 'Helvetica Neue', 'Calibri Light', Roboto, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
