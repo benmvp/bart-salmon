@@ -1,16 +1,19 @@
 // @flow
 import _ from 'lodash'
-import fetchBartInfo from '../app/api/bart'
+import fetchBartInfo from '../src/api/bart'
 import {genDataFile} from './utils'
-import {forceArray} from '../app/utils/general'
+import {forceArray} from '../src/utils/general'
 
-const _normalizeArrayResponse = (arrayResponse:Object, itemName:string):mixed => (
-    arrayResponse ? forceArray(arrayResponse[itemName]) : []
-)
+const _normalizeArrayResponse = (
+    arrayResponse: Object,
+    itemName: string
+): mixed => (arrayResponse ? forceArray(arrayResponse[itemName]) : [])
 
-const _normalizeRoutes = (routesJson) => _normalizeArrayResponse(routesJson, 'route')
+const _normalizeRoutes = (routesJson) =>
+    _normalizeArrayResponse(routesJson, 'route')
 
-const _normalizePlatforms = (platformsJson) => _normalizeArrayResponse(platformsJson, 'platform')
+const _normalizePlatforms = (platformsJson) =>
+    _normalizeArrayResponse(platformsJson, 'platform')
 
 const _normalizeStation = (stationInfo) => ({
     ...stationInfo,
@@ -20,21 +23,20 @@ const _normalizeStation = (stationInfo) => ({
     southPlatforms: _normalizePlatforms(stationInfo.southPlatforms)
 })
 
-const _getStations = (): Promise<Object> => (
+const _getStations = (): Promise<Object> =>
     fetchBartInfo('stn', 'stns')
-        .then((respJson) => (
+        .then((respJson) =>
             Promise.all(
-                respJson.stations.station.map(({abbr}) => (
+                respJson.stations.station.map(({abbr}) =>
                     fetchBartInfo('stn', 'stninfo', {orig: abbr})
-                ))
+                )
             )
-        ))
-        .then((respStations) => (
-            respStations.map((respStation) => (
+        )
+        .then((respStations) =>
+            respStations.map((respStation) =>
                 _normalizeStation(respStation.stations.station)
-            ))
-        ))
+            )
+        )
         .then((stations) => _.keyBy(stations, 'abbr'))
-)
 
-genDataFile(_getStations, '../app/data/stations.json', 'stations')
+genDataFile(_getStations, '../src/data/stations.json', 'stations')

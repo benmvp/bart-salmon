@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const autoprefixer = require('autoprefixer')
 
-const APP_PATH = path.join(__dirname, '../../app')
+const APP_PATH = path.join(__dirname, '../../src')
 const NODE_ENV = process.env.NODE_ENV || 'development'
 
 module.exports = {
