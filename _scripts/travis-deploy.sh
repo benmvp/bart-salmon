@@ -20,5 +20,5 @@ git config --global user.name "Travis CI Auto-Deployer"
 # GITHUB_TOKEN is an env variable set in Travis CI
 ./node_modules/.bin/gh-pages \
   --repo https://$GITHUB_TOKEN@github.com/benmvp/bart-salmon.git \
-  --dist web/public \
+  --dist build \
   --message 'Auto deploy from Travis CI'

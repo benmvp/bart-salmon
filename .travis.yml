@@ -9,10 +9,15 @@ node_js:
 cache: yarn
 
 # Run the the validate script
-script: yarn run validate:coverage
+script: yarn run validate -- -- --ci --coverage --verbose
 
 # Send coverage data to Coveralls
-after_success: yarn run coveralls
+after_success:
+  # Install coveralls globally
+  - yarn global add coveralls
+
+  # Retrieve the coverage information and send it to Coveralls
+  - cat ./coverage/lcov.info | coveralls
 
 # Build dist files
 before_deploy: yarn run bundle:web

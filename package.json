@@ -7,36 +7,27 @@
   "scripts": {
     "flow": "flow",
     "lint": "yarn run lint:js && yarn run lint:css",
-    "lint:js": "eslint app",
+    "lint:js": "eslint src",
     "lint:css": "sass-lint --verbose --no-exit",
-    "check:static": "yarn run lint",
-    "test": "jest --verbose",
-    "test:coverage": "yarn test -- --coverage",
-    "validate": "yarn run check:static && yarn test",
-    "validate:coverage": "yarn run check:static && yarn test:coverage",
-    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "check": "yarn run lint",
+    "test": "yarn run test:web && yarn run test:rn",
+    "test:web": "react-scripts test --env=jsdom",
+    "test:rn": "jest --verbose",
+    "validate": "yarn run check && yarn test",
     "start": "yarn run start:web",
-    "start:rn": "react-native start",
-    "start:android": "react-native run-android",
-    "start:ios": "react-native run-ios",
-    "start:web":
-      "webpack-dev-server --config web/webpack/web.dev.config.js --inline --hot --colors",
-    "bundle:ios":
-      "react-native bundle --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
-    "bundle:ios:dev":
-      "react-native bundle --dev false --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
-    "bundle:android":
-      "react-native bundle --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
-    "bundle:android:dev":
-      "react-native bundle --dev false --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
-    "bundle:web":
-      "NODE_ENV=production webpack --config web/webpack/web.prod.config.js --progress --colors",
+    "start:web": "react-scripts start",
+    "start:rn": "react-native-scripts start",
+    "start:android": "react-native-scripts android",
+    "start:ios": "react-native-scripts ios",
+    "build:web": "react-scripts build",
     "deploy:web":
-      "yarn run bundle:web && gh-pages --dist web/public --message 'Manual deploy'",
+      "yarn run bundle:web && gh-pages --dist build --message 'Manual deploy'",
     "gen:routes": "babel-node _scripts/gen-routes-data.js",
     "gen:stations": "babel-node _scripts/gen-stations-data.js",
     "gen:station-routes": "babel-node _scripts/gen-station-routes-data.js",
-    "gen:mock:etd": "babel-node _scripts/gen-mock-etd-data.js"
+    "gen:mock:etd": "babel-node _scripts/gen-mock-etd-data.js",
+    "eject:web": "react-scripts eject",
+    "eject:rn": "react-native-scripts eject"
   },
   "jest": {
     "preset": "jest-expo",
@@ -88,7 +79,6 @@
     "babel-preset-env": "^1.0.2",
     "babel-preset-react": "^6.16.0",
     "babel-preset-react-native": "1.9.0",
-    "coveralls": "^2.11.15",
     "css-loader": "^0.26.1",
     "enzyme": "^2.6.0",
     "eslint": "^3.12.1",
