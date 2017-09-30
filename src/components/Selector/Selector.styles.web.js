@@ -6,11 +6,15 @@ export default {
         position: 'relative',
         border: '1px solid #ddd',
         borderRadius: '5px',
-        height: '44px',
+        height: '24px',
         padding: gutterSize(2),
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+
+        // this really shouldn't be part of the component,
+        // but in a wrapper handling the spacing
+        marginBottom: gutterSize(3)
     },
     display: {
         fontSize: '20px',
@@ -19,9 +23,7 @@ export default {
         whiteSpace: 'nowrap',
         overflow: 'hidden'
     },
-    arrow: {
-
-    },
+    arrow: {},
     select: {
         opacity: 0,
         position: 'absolute',
