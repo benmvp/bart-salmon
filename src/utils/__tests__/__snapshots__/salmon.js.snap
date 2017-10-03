@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`salmon utils getNextArrivalsFromEtds for "Evening Rush" does not blow up when requesting high number of arrivals 1`] = `
 Array [
   Object {

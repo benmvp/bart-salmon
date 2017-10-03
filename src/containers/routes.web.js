@@ -9,8 +9,8 @@ import RoutesPage from './RoutesPage'
 const BASE_PATH = getBasePath()
 
 export default (
-    <Route path={BASE_PATH} component={PageStructure}>
-        <IndexRoute component={HomePage} />
-        <Route path="routes" component={RoutesPage} />
-    </Route>
+  <Route path={BASE_PATH} component={PageStructure}>
+    <IndexRoute component={HomePage} />
+    <Route path="routes" component={RoutesPage} />
+  </Route>
 )

@@ -1,14 +1,14 @@
 // @flow
-import React, {Component} from 'react';
-import {View, Text} from 'react-native';
-import stationsLookup from '../../data/stations.json';
-import {getSalmonTimeFromRoute} from '../../utils/salmon';
+import React, {Component} from 'react'
+import {View, Text} from 'react-native'
+import stationsLookup from '../../data/stations.json'
+import {getSalmonTimeFromRoute} from '../../utils/salmon'
 import {
   SALMON_ROUTES_PROP_TYPE,
-  TRAIN_PROP_TYPE
-} from '../../containers/constants';
+  TRAIN_PROP_TYPE,
+} from '../../containers/constants'
 
-import styles from './SalmonRoutes.styles';
+import styles from './SalmonRoutes.styles'
 
 const SalmonRoute = ({route, nextTrain}) => {
   let {
@@ -16,12 +16,12 @@ const SalmonRoute = ({route, nextTrain}) => {
     backwardsTrain,
     backwardsStation,
     backwardsWaitTime,
-    returnTrain
-  } = route;
-  let salmonTime = getSalmonTimeFromRoute(route);
-  let salmonTimeAdditionalTime = salmonTime;
-  let backwardsStationInfo = stationsLookup[backwardsStation];
-  let backwardsStationName = backwardsStationInfo.name.toUpperCase();
+    returnTrain,
+  } = route
+  let salmonTime = getSalmonTimeFromRoute(route)
+  let salmonTimeAdditionalTime = salmonTime
+  let backwardsStationInfo = stationsLookup[backwardsStation]
+  let backwardsStationName = backwardsStationInfo.name.toUpperCase()
 
   if (nextTrain) {
     // Make sure the minimal time is 0
@@ -29,15 +29,15 @@ const SalmonRoute = ({route, nextTrain}) => {
     // forward and backward route times
     salmonTimeAdditionalTime = Math.max(
       0,
-      salmonTimeAdditionalTime - nextTrain.minutes
-    );
+      salmonTimeAdditionalTime - nextTrain.minutes,
+    )
   }
 
-  let minutesLabel = salmonTimeAdditionalTime === 1 ? 'minute' : 'minutes';
-  let additiveDisplay;
+  let minutesLabel = salmonTimeAdditionalTime === 1 ? 'minute' : 'minutes'
+  let additiveDisplay
 
   if (salmonTimeAdditionalTime > 0) {
-    additiveDisplay = '⁺';
+    additiveDisplay = '⁺'
   }
 
   return (
@@ -62,8 +62,8 @@ const SalmonRoute = ({route, nextTrain}) => {
         <Text style={styles.timeLabel}>{minutesLabel}</Text>
       </View>
     </View>
-  );
-};
+  )
+}
 
 const Header = () => (
   <View accessibilityRole="header" style={styles.header}>
@@ -71,27 +71,27 @@ const Header = () => (
     <Text style={styles.headerRoute}>Route</Text>
     <Text style={styles.headerTime}>Add</Text>
   </View>
-);
+)
 
 export default class SalmonRoutes extends Component {
   static propTypes = {
     routes: SALMON_ROUTES_PROP_TYPE.isRequired,
-    nextTrain: TRAIN_PROP_TYPE
-  };
+    nextTrain: TRAIN_PROP_TYPE,
+  }
 
   render = () => {
-    let {routes, nextTrain} = this.props;
+    let {routes, nextTrain} = this.props
 
     // TODO: Salmon routes need some sort of unique identifier
     let salmonRoutes = routes.map((route, index) => (
       <SalmonRoute key={index} route={route} nextTrain={nextTrain} />
-    ));
+    ))
 
     return (
       <View accessibilityRole="main">
         <Header />
         {salmonRoutes}
       </View>
-    );
-  };
+    )
+  }
 }

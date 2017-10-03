@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
-  "homepage": "/bart-salmon",
+  "engines": {
+    "node": ">=6"
+  },
   "scripts": {
     "flow": "flow",
-    "lint": "yarn run lint:js && yarn run lint:css",
-    "lint:js": "eslint src",
-    "lint:css": "sass-lint --verbose --no-exit",
+    "lint": "yarn run lint:css",
+    "lint:css": "sass-lint 'src' --verbose --no-exit",
     "check": "yarn run lint",
+    "format": "prettier --write 'src/**/*.{js,jsx,json,css}'",
+    "precommit": "lint-staged",
     "test": "yarn run test:web && yarn run test:rn",
     "test:web": "react-scripts test --env=jsdom",
     "test:rn": "jest --verbose",
@@ -20,30 +23,27 @@
     "start:android": "react-native-scripts android",
     "start:ios": "react-native-scripts ios",
     "build:web": "react-scripts build",
-    "deploy:web":
-      "yarn run build:web && gh-pages --dist build --message 'Manual deploy'",
+    "deploy:web": "yarn run build:web && gh-pages --dist build --message 'Manual deploy'",
     "gen:routes": "babel-node _scripts/gen-routes-data.js",
     "gen:stations": "babel-node _scripts/gen-stations-data.js",
     "gen:station-routes": "babel-node _scripts/gen-station-routes-data.js",
     "gen:mock:etd": "babel-node _scripts/gen-mock-etd-data.js"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": ["yarn run format", "git add"]
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "semi": false
   },
   "jest": {
     "preset": "jest-expo",
     "coveragePathIgnorePatterns": ["/node-modules/", "<rootDir>/src/store/"]
   },
   "eslintConfig": {
-    "extends": "eventbrite-react",
-    "rules": {
-      "import/named": "off",
-      "no-invalid-this": "off",
-      "semi": ["error", "never"]
-    },
-    "env": {
-      "jest": true
-    }
-  },
-  "engines": {
-    "node": ">=6"
+    "extends": "react-app"
   },
   "dependencies": {
     "expo": "^20.0.0",
@@ -67,15 +67,12 @@
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.12.1",
-    "eslint-config-eventbrite-react": "^2.0.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^3.0.1",
-    "eslint-plugin-react": "^6.8.0",
     "flow-bin": "^0.49.1",
     "gh-pages": "^1.0.0",
+    "husky": "^0.14.3",
     "jest-expo": "~20.0.0",
+    "lint-staged": "^4.2.3",
+    "prettier": "^1.7.3",
     "react-native-scripts": "1.3.1",
     "react-scripts": "^1.0.13",
     "react-test-renderer": "^16.0.0",

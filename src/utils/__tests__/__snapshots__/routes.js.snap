@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`routes utils getAllDestinationsFromRoutes provides destinations for station when multiple routes are specified 1`] = `
 Array [
   "19TH",

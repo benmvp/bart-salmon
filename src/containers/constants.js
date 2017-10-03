@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 export const TRAIN_PROP_TYPE = PropTypes.shape({
   destination: PropTypes.string,
@@ -10,10 +10,10 @@ export const TRAIN_PROP_TYPE = PropTypes.shape({
   length: PropTypes.number,
   color: PropTypes.string,
   hexcolor: PropTypes.string,
-  bikeflag: PropTypes.number
-});
+  bikeflag: PropTypes.number,
+})
 
-export const TRAINS_PROP_TYPE = PropTypes.arrayOf(TRAIN_PROP_TYPE);
+export const TRAINS_PROP_TYPE = PropTypes.arrayOf(TRAIN_PROP_TYPE)
 
 export const SALMON_ROUTE_PROP_TYPE = PropTypes.shape({
   waitTime: PropTypes.number,
@@ -27,9 +27,7 @@ export const SALMON_ROUTE_PROP_TYPE = PropTypes.shape({
 
   returnTrain: TRAIN_PROP_TYPE,
   returnRouteId: PropTypes.string,
-  returnRideTime: PropTypes.number
-});
+  returnRideTime: PropTypes.number,
+})
 
-export const SALMON_ROUTES_PROP_TYPE = PropTypes.arrayOf(
-  SALMON_ROUTE_PROP_TYPE
-);
+export const SALMON_ROUTES_PROP_TYPE = PropTypes.arrayOf(SALMON_ROUTE_PROP_TYPE)

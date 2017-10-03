@@ -8,9 +8,9 @@ import RoutesPage from './RoutesPage'
 const store = configureStore()
 
 export default class App extends Component {
-    render = () => (
-        <Provider store={store}>
-            <RoutesPage />
-        </Provider>
-    )
+  render = () => (
+    <Provider store={store}>
+      <RoutesPage />
+    </Provider>
+  )
 }
