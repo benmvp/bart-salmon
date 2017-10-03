@@ -20,7 +20,8 @@
     "start:android": "react-native-scripts android",
     "start:ios": "react-native-scripts ios",
     "build:web": "react-scripts build",
-    "deploy:web": "yarn run build:web && gh-pages --dist build --message 'Manual deploy'",
+    "deploy:web":
+      "yarn run build:web && gh-pages --dist build --message 'Manual deploy'",
     "gen:routes": "babel-node _scripts/gen-routes-data.js",
     "gen:stations": "babel-node _scripts/gen-stations-data.js",
     "gen:station-routes": "babel-node _scripts/gen-station-routes-data.js",
@@ -28,20 +29,14 @@
   },
   "jest": {
     "preset": "jest-expo",
-    "coveragePathIgnorePatterns": [
-      "/node-modules/",
-      "<rootDir>/src/store/"
-    ]
+    "coveragePathIgnorePatterns": ["/node-modules/", "<rootDir>/src/store/"]
   },
   "eslintConfig": {
     "extends": "eventbrite-react",
     "rules": {
       "import/named": "off",
       "no-invalid-this": "off",
-      "semi": [
-        "error",
-        "never"
-      ]
+      "semi": ["error", "never"]
     },
     "env": {
       "jest": true
