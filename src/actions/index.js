@@ -82,7 +82,7 @@ export const getSalmonInfo = (): ReduxAsyncAction => async (
   }
 }
 
-export const setOrigin = (name: StationName): ReduxAction => async (
+export const setOrigin = (name: StationName): ReduxAction => (
   dispatch: ReduxDispatch,
 ) => {
   dispatch({
@@ -94,7 +94,7 @@ export const setOrigin = (name: StationName): ReduxAction => async (
   dispatch(getSalmonInfo())
 }
 
-export const setDestination = (name: StationName): ReduxAction => async (
+export const setDestination = (name: StationName): ReduxAction => (
   dispatch: ReduxDispatch,
 ) => {
   dispatch({

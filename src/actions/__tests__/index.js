@@ -4,26 +4,42 @@ import {setOrigin, setDestination, setNumSalmonRoutes, getSalmonInfo} from '../'
 jest.mock('../../api')
 
 describe('setOrigin', () => {
-  it('returns SET_ORIGIN action w/ specified station', () => {
+  it('dispatches SET_ORIGIN action w/ specified station', async () => {
+    let mockDispatch = jest.fn()
     let name = 'WDUB'
-    let action = setOrigin(name)
+    let asyncAction = setOrigin(name)
 
-    expect(action).toEqual({
+    await asyncAction(mockDispatch)
+
+    expect(mockDispatch).toHaveBeenCalledTimes(2)
+    expect(mockDispatch).toHaveBeenCalledWith({
       type: 'SET_ORIGIN',
       payload: {name},
     })
   })
+
+  it('dispatches getSalmonInfo action', () => {
+    // TODO
+  })
 })
 
 describe('setDestination', () => {
-  it('returns SET_DESTINATION action w/ specified station', () => {
+  it('returns SET_DESTINATION action w/ specified station', async () => {
+    let mockDispatch = jest.fn()
     let name = 'NCON'
-    let action = setDestination(name)
+    let asyncAction = setDestination(name)
 
-    expect(action).toEqual({
+    await asyncAction(mockDispatch)
+
+    expect(mockDispatch).toHaveBeenCalledTimes(2)
+    expect(mockDispatch).toHaveBeenCalledWith({
       type: 'SET_DESTINATION',
       payload: {name},
     })
+  })
+
+  it('dispatches getSalmonInfo action', () => {
+    // TODO
   })
 })
 
