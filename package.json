@@ -15,7 +15,7 @@
     "precommit": "lint-staged",
     "test": "yarn run test:web && yarn run test:rn",
     "test:web": "react-scripts test --env=jsdom",
-    "test:rn": "jest --verbose",
+    "test:rn": "jest --verbose --config=jest.rn.json",
     "validate": "yarn run check && yarn test",
     "start": "yarn run start:web",
     "start:web": "react-scripts start",
@@ -37,10 +37,6 @@
     "trailingComma": "all",
     "singleQuote": true,
     "semi": false
-  },
-  "jest": {
-    "preset": "jest-expo",
-    "coveragePathIgnorePatterns": ["/node-modules/", "<rootDir>/src/store/"]
   },
   "eslintConfig": {
     "extends": "react-app"
