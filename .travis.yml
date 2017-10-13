@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - "node"
+  - "8"
   - "7"
   - "6"
 
@@ -8,13 +9,18 @@ node_js:
 cache: yarn
 
 # Run the the validate script
-script: yarn run validate:coverage
+script: yarn validate
 
 # Send coverage data to Coveralls
-after_success: yarn run coveralls
+after_success:
+  # Install coveralls globally
+  - yarn global add coveralls
 
-# Build dist files
-before_deploy: yarn run bundle:web
+  # Retrieve the coverage information and send it to Coveralls
+  - cat ./coverage/lcov.info | coveralls
+
+# Create production build
+before_deploy: yarn build:web
 
 # Deploy to gh-pages branch on Github
 deploy:
