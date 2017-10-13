@@ -8,30 +8,30 @@
   },
   "scripts": {
     "flow": "flow",
-    "lint": "yarn run lint:css",
+    "lint": "yarn lint:css",
     "lint:css": "sass-lint 'src' --verbose --no-exit",
-    "check": "yarn run lint",
+    "check": "yarn lint",
     "format": "prettier --write 'src/**/*.{js,jsx,json,css}'",
     "precommit": "lint-staged",
-    "test": "yarn run test:web && yarn run test:rn",
+    "test": "yarn test:web && yarn test:rn",
     "test:web": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "test:rn": "jest --verbose --config=jest.rn.json",
-    "test:rn:watch": "yarn run test:rn --watch",
-    "validate": "yarn run check && yarn test",
-    "start": "yarn run start:web",
+    "test:rn:watch": "yarn test:rn --watch",
+    "validate": "yarn check && yarn test",
+    "start": "yarn start:web",
     "start:web": "react-scripts start",
     "start:rn": "react-native-scripts start",
     "start:android": "react-native-scripts android",
     "start:ios": "react-native-scripts ios",
     "build:web": "react-scripts build",
-    "deploy:web": "yarn run build:web && gh-pages --dist build --message 'Manual deploy'",
+    "deploy:web": "yarn build:web && gh-pages --dist build --message 'Manual deploy'",
     "gen:routes": "babel-node _scripts/gen-routes-data.js",
     "gen:stations": "babel-node _scripts/gen-stations-data.js",
     "gen:station-routes": "babel-node _scripts/gen-station-routes-data.js",
     "gen:mock:etd": "babel-node _scripts/gen-mock-etd-data.js"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": ["yarn run format", "git add"]
+    "src/**/*.{js,jsx,json,css}": ["yarn format", "git add"]
   },
   "prettier": {
     "bracketSpacing": false,

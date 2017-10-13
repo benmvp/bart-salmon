@@ -9,7 +9,7 @@ node_js:
 cache: yarn
 
 # Run the the validate script
-script: yarn run validate -- -- --ci --coverage --verbose
+script: yarn validate -- -- --ci --coverage --verbose
 
 # Send coverage data to Coveralls
 after_success:
@@ -19,8 +19,8 @@ after_success:
   # Retrieve the coverage information and send it to Coveralls
   - cat ./coverage/lcov.info | coveralls
 
-# Build dist files
-before_deploy: yarn run bundle:web
+# Create production build
+before_deploy: yarn build:web
 
 # Deploy to gh-pages branch on Github
 deploy:
