@@ -6,7 +6,7 @@ export const gutterSize = (multiplier: number): number =>
   multiplier * GUTTER_UNIT
 
 const gridSizeWeb = (numColumns: number): string =>
-  `${numColumns * GRID_COLUMN_WIDTH * 100}%`
+  `${(numColumns * GRID_COLUMN_WIDTH * 100).toFixed(2)}%`
 
 const gridSizeNative = (numColumns: number): number => {
   let {width: windowWidth} = Dimensions.get('window')
