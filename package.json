@@ -15,7 +15,7 @@
     "precommit": "lint-staged",
     "test": "yarn test:web && yarn test:rn",
     "test:web": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
-    "test:rn": "jest --verbose --config=jest.rn.json --coverage",
+    "test:rn": "jest --config=jest.rn.json --coverage",
     "test:rn:watch": "yarn test:rn --watch",
     "validate": "yarn check:static && yarn test",
     "start": "yarn start:web",
