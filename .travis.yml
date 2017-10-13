@@ -9,7 +9,7 @@ node_js:
 cache: yarn
 
 # Run the the validate script
-script: yarn validate -- -- --ci --coverage --verbose
+script: yarn validate
 
 # Send coverage data to Coveralls
 after_success:
