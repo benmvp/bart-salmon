@@ -47,7 +47,7 @@ export default StyleSheet.create({
   },
   station: {
     ...STATION_COLUMN_STYLES,
-    fontSize: 30,
+    fontSize: 25,
     textAlign: 'center',
     letterSpacing: -2,
   },
@@ -69,7 +69,7 @@ export default StyleSheet.create({
     padding: gutterSize(1),
   },
   timeValue: {
-    fontSize: 60,
+    fontSize: 45,
     textAlign: 'center',
     // letterSpacing: -10
   },

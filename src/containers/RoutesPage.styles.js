@@ -14,7 +14,6 @@ export default StyleSheet.create({
     width: gridSize(12),
     paddingTop: gutterSize(3),
     paddingRight: gutterSize(3),
-    paddingBottom: gutterSize(3),
     paddingLeft: gutterSize(3),
   },
   arrivals: {
