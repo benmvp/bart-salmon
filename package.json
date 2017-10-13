@@ -30,6 +30,7 @@
     "gen:station-routes": "babel-node _scripts/gen-station-routes-data.js",
     "gen:mock:etd": "babel-node _scripts/gen-mock-etd-data.js"
   },
+  "homepage": "/bart-salmon",
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": ["yarn format", "git add"]
   },
