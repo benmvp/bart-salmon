@@ -13,7 +13,7 @@
     "check:static": "yarn lint",
     "format": "prettier --write 'src/**/*.{js,jsx,json,css}'",
     "precommit": "lint-staged",
-    "test": "yarn test:web && yarn test:rn",
+    "test": "yarn test:web",
     "test:web":
       "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
     "test:rn": "jest --config=jest.rn.json --coverage",
