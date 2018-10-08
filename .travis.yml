@@ -1,9 +1,11 @@
 language: node_js
 node_js:
-  - "node"
-  - "8"
-  - "7"
-  - "6"
+  - 'node'
+  - '10'
+  - '9'
+  - '8'
+  - '7'
+  - '6'
 
 # Cache dependencies in $HOME/.yarn-cache across builds
 cache: yarn
@@ -20,13 +22,13 @@ after_success:
   - cat ./coverage/lcov.info | coveralls
 
 # Create production build
-before_deploy: yarn build:web
+# before_deploy: yarn build:web
 
 # Deploy to gh-pages branch on Github
-deploy:
-  skip_cleanup: true
-  provider: script
-  script:  ./_scripts/travis-deploy.sh
-  on:
-    branch: master
-    node: "node"
+# deploy:
+#   skip_cleanup: true
+#   provider: script
+#   script:  ./_scripts/travis-deploy.sh
+#   on:
+#     branch: master
+#     node: "node"
