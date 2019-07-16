@@ -2,81 +2,55 @@
   "name": "bart-salmon",
   "version": "0.1.0",
   "private": true,
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
-  "engines": {
-    "node": ">=6"
-  },
   "scripts": {
-    "flow": "flow",
-    "lint": "yarn lint:css",
-    "lint:css": "sass-lint 'src' --verbose --no-exit",
-    "check:static": "yarn lint",
-    "format": "prettier --write 'src/**/*.{js,jsx,json,css}'",
-    "precommit": "lint-staged",
-    "test": "yarn test:web && yarn test:rn",
-    "test:web": "react-scripts test --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill",
-    "test:rn": "jest --config=jest.rn.json --coverage",
-    "test:rn:watch": "yarn test:rn --watch",
-    "validate": "yarn check:static && yarn test",
-    "start": "yarn start:web",
-    "start:web": "react-scripts start",
-    "start:rn": "react-native-scripts start",
-    "start:android": "react-native-scripts android",
-    "start:ios": "react-native-scripts ios",
-    "build:web": "react-scripts build",
-    "deploy:web": "yarn build:web && gh-pages --dist build --message 'Manual deploy'",
-    "gen:routes": "babel-node _scripts/gen-routes-data.js",
-    "gen:stations": "babel-node _scripts/gen-stations-data.js",
-    "gen:station-routes": "babel-node _scripts/gen-station-routes-data.js",
-    "gen:mock:etd": "babel-node _scripts/gen-mock-etd-data.js"
-  },
-  "homepage": "/bart-salmon",
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": ["yarn format", "git add"]
-  },
-  "prettier": {
-    "bracketSpacing": false,
-    "trailingComma": "all",
-    "singleQuote": true,
-    "semi": false
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
-    "expo": "^20.0.0",
     "humps": "^2.0.1",
-    "lodash": "^4.17.4",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-native": "^0.47.0",
-    "react-native-router-flux": "^3.37.0",
-    "react-native-web": "^0.1.1",
-    "react-redux": "^5.0.6",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-router-native": "^4.2.0",
+    "lodash": "^4.17.13",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
     "react-router-redux": "^4.0.8",
-    "redux": "^3.7.2",
-    "redux-persist": "^4.9.1",
-    "redux-thunk": "^2.2.0",
-    "url-lib": "^2.0.2",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.3",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0",
+    "typescript": "3.5.3",
+    "url-lib": "^3.0.2",
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
-    "flow-bin": "^0.49.1",
-    "gh-pages": "^1.0.0",
-    "husky": "^0.14.3",
-    "jest-expo": "~20.0.0",
-    "lint-staged": "^4.2.3",
-    "prettier": "^1.7.3",
-    "raf": "^3.4.0",
-    "react-native-scripts": "1.3.1",
-    "react-scripts": "^1.0.13",
-    "react-test-renderer": "^16.0.0",
-    "redux-devtools-extension": "^2.13.2",
-    "redux-logger": "^3.0.6",
-    "sass-lint": "^1.10.2"
+    "@types/humps": "^1.1.2",
+    "@types/jest": "24.0.15",
+    "@types/lodash": "^4.14.136",
+    "@types/node": "12.6.2",
+    "@types/react": "16.8.23",
+    "@types/react-dom": "16.8.4",
+    "@types/react-router": "^5.0.3",
+    "raf": "^3.4.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6"
   }
 }

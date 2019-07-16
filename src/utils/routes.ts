@@ -1,9 +1,21 @@
-// @flow
 import _ from 'lodash'
-import type {StationName, RouteId, RouteStation} from './flow'
+import {
+  StationName, 
+  RouteId, 
+  RouteStation, 
+  StationRoutesLookup, 
+  RoutesLookup,
+  StationLookup,
+} from './types'
 import routesLookup from '../data/routes.json'
 import stationsLookup from '../data/stations.json'
 import stationRoutesLookup from '../data/station-routes.json'
+
+
+const STATION_ROUTES_LOOKUP = (<unknown>stationRoutesLookup) as StationRoutesLookup
+const ROUTES_LOOKUP = (<unknown>routesLookup) as RoutesLookup
+const STATIONS_LOOKUP = (<unknown>stationsLookup) as StationLookup
+
 
 const _STATION_ROUTE_DIRECTIONS = _(['northRoutes', 'southRoutes'])
 
@@ -33,10 +45,10 @@ export const areStationsOnRouteStations = (
 export const getRouteIdsWithStartAndEnd = (
   start: StationName,
   end: StationName,
-  trainColor: ?string = undefined,
+  trainColor?: string,
 ): RouteId[] => {
-  let routesInfo = stationRoutesLookup[start][end] || {}
-  let {directRoutes = []} = routesInfo
+  const routesInfo = STATION_ROUTES_LOOKUP[start][end] || {}
+  const {directRoutes = []} = routesInfo
 
   return (
     // get all of the routes that directly connect the two stations
@@ -44,7 +56,7 @@ export const getRouteIdsWithStartAndEnd = (
       // optionally filter down to routes that match the optional trainColor
       .filter(
         (routeId: RouteId): boolean =>
-          !trainColor || routesLookup[routeId].color === trainColor,
+          !trainColor || ROUTES_LOOKUP[routeId].color === trainColor,
       )
   )
 }
@@ -60,14 +72,14 @@ export const getAllDestinationsFromRoutes = (
   new Set(
     _(routeIds)
       // filter the route IDs to the ones that actually contain the sourceStation
-      .filter((routeId: RouteId) =>
-        routesLookup[routeId].stations.find(
-          (routeStation: RouteStation) => routeStation.name === sourceStation,
+      .filter((routeId) =>
+        !!ROUTES_LOOKUP[routeId].stations.find(
+          (routeStation) => routeStation.name === sourceStation,
         ),
       )
       // transform each routeId into a nested list of potential train destinations
       .map(routeId =>
-        _(routesLookup[routeId].stations)
+        _(ROUTES_LOOKUP[routeId].stations)
           // For all the stations for the given route, filter down to just
           // the stations *after* the source station. These are the possible
           // train destinations
@@ -77,7 +89,8 @@ export const getAllDestinationsFromRoutes = (
           .value(),
       )
       // flatten out the list
-      .flatten(),
+      .flatten()
+      .value(),
   )
 
 /**
@@ -92,20 +105,19 @@ export const getOppositeRouteIds = (
     return []
   }
 
-  let stationInfo = stationsLookup[sourceStation]
+  const stationInfo = STATIONS_LOOKUP[sourceStation]
 
-  return (
-    _STATION_ROUTE_DIRECTIONS
-      // get the list of route IDs in either direction
-      .map(routeDirection => stationInfo[routeDirection])
-      // find the route IDs that are in the opposite direction by seeing
-      // if the targetRouteIds are NOT in the routes for the direction
-      .find(routesInDirection =>
-        _(routesInDirection)
-          .intersection(targetRouteIds)
-          .isEmpty(),
-      )
-  )
+  // get the list of route IDs in either direction
+  const oppositeRouteIds = [stationInfo.northRoutes, stationInfo.southRoutes]
+    // find the route IDs that are in the opposite direction by seeing
+    // if the targetRouteIds are NOT in the routes for the direction
+    .find(routesInDirection =>
+      _(routesInDirection)
+        .intersection(targetRouteIds)
+        .isEmpty()
+    )
+
+  return oppositeRouteIds || []
 }
 
 /**
@@ -115,15 +127,14 @@ export const getOppositeRouteIds = (
 export const getTargetRouteIds = (
   origin: StationName,
   destination: StationName,
-  allowTransfers: ?boolean = false,
+  allowTransfers: boolean = false,
 ): RouteId[] => {
-  let stationRoutesInfo = stationRoutesLookup[origin][destination]
+  let stationRoutesInfo = STATION_ROUTES_LOOKUP[origin][destination]
   let targetRouteIds = stationRoutesInfo.directRoutes || []
-  let useMultiRoutes = allowTransfers && stationRoutesInfo.multiRoutes
 
   // If targetRouteIds is empty, there is no direct route that connects the two
   // stations so we need to find *start* route trains for multi-train routes
-  if (useMultiRoutes) {
+  if (allowTransfers && stationRoutesInfo.multiRoutes) {
     let targetRouteIdsSet = new Set([
       ...targetRouteIds,
       ...stationRoutesInfo.multiRoutes.map(([startRouteId]) => startRouteId),

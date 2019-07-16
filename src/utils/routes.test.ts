@@ -1,5 +1,3 @@
-// @flow
-
 import {
   isStationARouteStation,
   areStationsOnRouteStations,
@@ -7,20 +5,25 @@ import {
   getAllDestinationsFromRoutes,
   getOppositeRouteIds,
   getTargetRouteIds,
-} from '../routes'
-import routesLookup from '../../data/routes.json'
+} from './routes'
+import {
+  RoutesLookup,
+} from './types'
+import routesLookup from '../data/routes.json'
+
+const ROUTES_LOOKUP = (<unknown>routesLookup) as RoutesLookup
 
 describe('routes utils', () => {
   describe('isStationARouteStation', () => {
     it('returns false when station is not a route station', () => {
       expect(
-        isStationARouteStation('ROCK', routesLookup['ROUTE 2'].stations[0]),
+        isStationARouteStation('ROCK', ROUTES_LOOKUP['ROUTE 2'].stations[0]),
       ).toBe(false)
     })
 
     it('returns true when station is a route station', () => {
       expect(
-        isStationARouteStation('WARM', routesLookup['ROUTE 5'].stations[0]),
+        isStationARouteStation('WARM', ROUTES_LOOKUP['ROUTE 5'].stations[0]),
       ).toBe(true)
     })
   })
@@ -31,7 +34,7 @@ describe('routes utils', () => {
         areStationsOnRouteStations(
           'PITT',
           'DBRK',
-          routesLookup['ROUTE 4'].stations,
+          ROUTES_LOOKUP['ROUTE 4'].stations,
         ),
       )
     })
@@ -41,7 +44,7 @@ describe('routes utils', () => {
         areStationsOnRouteStations(
           'BALB',
           'ASHB',
-          routesLookup['ROUTE 7'].stations,
+          ROUTES_LOOKUP['ROUTE 7'].stations,
         ),
       )
     })
@@ -51,7 +54,7 @@ describe('routes utils', () => {
         areStationsOnRouteStations(
           'SSAN',
           'EMBR',
-          routesLookup['ROUTE 2'].stations,
+          ROUTES_LOOKUP['ROUTE 2'].stations,
         ),
       )
     })
@@ -151,7 +154,7 @@ describe('routes utils', () => {
     it('provides no routes when north and south routes are specified', () => {
       expect(
         getOppositeRouteIds('COLM', ['ROUTE 2', 'ROUTE 7']),
-      ).toBeUndefined()
+      ).toHaveLength(0)
     })
   })
 

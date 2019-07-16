@@ -1,5 +1,4 @@
-// @flow
-import {forceArray} from '../general'
+import {forceArray} from './general'
 
 describe('forceArray', () => {
   it('wraps a non-array in an array', () => {

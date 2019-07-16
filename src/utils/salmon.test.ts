@@ -1,40 +1,43 @@
-// @flow
-
 import {
   getSalmonTimeFromRoute,
   getSuggestedSalmonRoutesFromEtds,
   getNextArrivalsFromEtds,
-} from '../salmon'
-import etdsMorningRushLookup from '../../api/__mocks__/etds-rush-am.json'
-import etdsEveningRushLookup from '../../api/__mocks__/etds-rush-pm.json'
-import etdsNoondayLookup from '../../api/__mocks__/etds-noonday.json'
-import etdsHolidayLookup from '../../api/__mocks__/etds-holiday.json'
-import etdsMajorDelaysLookup from '../../api/__mocks__/etds-major-delays.json'
-import etdsLateNightLookup from '../../api/__mocks__/etds-late-night.json'
+} from './salmon'
+import {
+  StationName,
+  EtdsLookup,
+} from './types'
+
+import etdsMorningRushLookup from '../api/__mocks__/etds-rush-am.json'
+import etdsEveningRushLookup from '../api/__mocks__/etds-rush-pm.json'
+import etdsNoondayLookup from '../api/__mocks__/etds-noonday.json'
+import etdsHolidayLookup from '../api/__mocks__/etds-holiday.json'
+import etdsMajorDelaysLookup from '../api/__mocks__/etds-major-delays.json'
+import etdsLateNightLookup from '../api/__mocks__/etds-late-night.json'
 
 const EXAMPLE_ETDS_LOOKUPS = [
   {
-    etdsLookup: etdsMorningRushLookup,
+    etdsLookup: (<unknown>etdsMorningRushLookup) as EtdsLookup,
     title: 'Morning Rush',
   },
   {
-    etdsLookup: etdsEveningRushLookup,
+    etdsLookup: (<unknown>etdsEveningRushLookup) as EtdsLookup,
     title: 'Evening Rush',
   },
   {
-    etdsLookup: etdsNoondayLookup,
+    etdsLookup: (<unknown>etdsNoondayLookup as EtdsLookup),
     title: 'Weekday Noonday',
   },
   {
-    etdsLookup: etdsHolidayLookup,
+    etdsLookup: (<unknown>etdsHolidayLookup as EtdsLookup),
     title: 'Holidays',
   },
   {
-    etdsLookup: etdsMajorDelaysLookup,
+    etdsLookup: (<unknown>etdsMajorDelaysLookup as EtdsLookup),
     title: 'Major Delays',
   },
   {
-    etdsLookup: etdsLateNightLookup,
+    etdsLookup: (<unknown>etdsLateNightLookup as EtdsLookup),
     title: 'Late Night',
   },
 ]
@@ -42,8 +45,8 @@ const EXAMPLE_ETDS_LOOKUPS = [
 describe('salmon utils', () => {
   describe('getSalmonTimeFromRoute', () => {
     it('returns the salmon time for a given route', () => {
-      let expectedSalmonTime = 18
-      let actualSalmonTime = getSalmonTimeFromRoute({
+      const expectedSalmonTime = 18
+      const actualSalmonTime = getSalmonTimeFromRoute({
         backwardsRideTime: 5,
         backwardsRouteId: 'ROUTE 3',
         backwardsStation: 'RICH',
@@ -86,15 +89,13 @@ describe('salmon utils', () => {
       describe(`for "${title}"`, () => {
         it('throws an error when an invalid origin is used', () => {
           expect(
-            // $FlowIgnoreTest
-            () => getSuggestedSalmonRoutesFromEtds(etdsLookup, 'FOO', 'COLM'),
+            () => getSuggestedSalmonRoutesFromEtds(etdsLookup, 'FOO' as StationName, 'COLM'),
           ).toThrow()
         })
 
         it('throws an error when an invalid destination is used', () => {
           expect(
-            // $FlowIgnoreTest
-            () => getSuggestedSalmonRoutesFromEtds(etdsLookup, 'PLZA', 'BAR'),
+            () => getSuggestedSalmonRoutesFromEtds(etdsLookup, 'PLZA', 'BAR' as StationName),
           ).toThrow()
         })
 
@@ -363,15 +364,13 @@ describe('salmon utils', () => {
       describe(`for "${title}"`, () => {
         it('throws an error when an invalid origin is used', () => {
           expect(
-            // $FlowIgnoreTest
-            () => getNextArrivalsFromEtds(etdsLookup, 'FOO', 'COLM', 5),
+            () => getNextArrivalsFromEtds(etdsLookup, 'FOO' as StationName, 'COLM', 5),
           ).toThrow()
         })
 
         it('throws an error when an invalid destination is used', () => {
           expect(
-            // $FlowIgnoreTest
-            () => getNextArrivalsFromEtds(etdsLookup, 'PLZA', 'BAR', 5),
+            () => getNextArrivalsFromEtds(etdsLookup, 'PLZA', 'BAR' as StationName, 5),
           ).toThrow()
         })
 
@@ -382,7 +381,7 @@ describe('salmon utils', () => {
         })
 
         it('returns no arrivals when 0 are requested', () => {
-          let actualArrivals = getNextArrivalsFromEtds(
+          const actualArrivals = getNextArrivalsFromEtds(
             etdsLookup,
             'SSAN',
             'WDUB',
