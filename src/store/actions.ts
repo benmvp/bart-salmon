@@ -1,41 +1,34 @@
-// @flow
+import {Action} from 'redux'
+import {ThunkAction} from 'redux-thunk'
 import {
   getSuggestedSalmonRoutesFromEtds,
   getNextArrivalsFromEtds,
 } from '../utils/salmon'
 import {getEstimatedTimesOfDeparture} from '../api'
-import type {StationName, SalmonRoute, Train} from '../utils/flow'
-import type {
-  ReduxDispatch,
-  ReduxAction,
-  ReduxAsyncAction,
-  ReduxGetState,
-} from '../actions/flow'
+import {StationName, SalmonRoute, Train} from '../utils/types'
+import {AppAction} from './types'
+import {AppState} from './reducers'
 
 const NUM_ARRIVALS = 4
 
-export const setNumSalmonRoutes = (numRoutes: number): ReduxAction => ({
+export const setNumSalmonRoutes = (numRoutes: number): AppAction => ({
   type: 'SET_NUM_SALMON_ROUTES',
-  payload: {
-    numRoutes,
-  },
+  payload: numRoutes,
 })
 
-export const setRiskinessFactor = (riskinessFactor: number): ReduxAction => ({
+export const setRiskinessFactor = (riskinessFactor: number): AppAction => ({
   type: 'SET_RISKINESS_FACTOR',
-  payload: {
-    riskinessFactor,
-  },
+  payload: riskinessFactor,
 })
 
-const fetchSalmonInfo = (): ReduxAction => ({
+const fetchSalmonInfo = (): AppAction => ({
   type: 'FETCH_SALMON_INFO',
 })
 
 const receiveSalmonInfo = (
   routes: SalmonRoute[],
   arrivals: Train[],
-): ReduxAction => ({
+): AppAction => ({
   type: 'RECEIVE_SALMON_INFO',
   payload: {
     routes,
@@ -43,14 +36,14 @@ const receiveSalmonInfo = (
   },
 })
 
-const errorSalmonInfo = (error: Error): ReduxAction => ({
+const errorSalmonInfo = (error: Error): AppAction => ({
   type: 'ERROR_SALMON_INFO',
   error,
 })
 
-export const getSalmonInfo = (): ReduxAsyncAction => async (
-  dispatch: ReduxDispatch,
-  getState: ReduxGetState,
+export const getSalmonInfo = (): ThunkAction<void, AppState, null, Action<string>> => async (
+  dispatch,
+  getState,
 ) => {
   let {origin, destination, numSalmonRoutes, riskinessFactor} = getState()
 
@@ -82,26 +75,22 @@ export const getSalmonInfo = (): ReduxAsyncAction => async (
   }
 }
 
-export const setOrigin = (name: StationName): ReduxAction => (
-  dispatch: ReduxDispatch,
+export const setOrigin = (name: StationName): ThunkAction<void, AppState, null, AppAction> => (
+  dispatch,
 ) => {
   dispatch({
     type: 'SET_ORIGIN',
-    payload: {
-      name,
-    },
+    payload: name,
   })
   dispatch(getSalmonInfo())
 }
 
-export const setDestination = (name: StationName): ReduxAction => (
-  dispatch: ReduxDispatch,
+export const setDestination = (name: StationName): ThunkAction<void, AppState, null, AppAction> => (
+  dispatch,
 ) => {
   dispatch({
     type: 'SET_DESTINATION',
-    payload: {
-      name,
-    },
+    payload: name,
   })
   dispatch(getSalmonInfo())
 }

@@ -1,3 +1,5 @@
+import {Dictionary} from 'lodash'
+
 export type StationName = '12TH'
   | '16TH'
   | '19TH'
@@ -146,10 +148,8 @@ export interface Etd {
   limited: number;
   estimate: Train[]
 }
-export type EtdsLookup = {
-  [Name in StationName]: {
-    name: string;
-    abbr: StationName;
-    etd: Etd[];
-  }
-}
+export type EtdsLookup = Dictionary<{
+  name: string;
+  abbr: StationName;
+  etd: Etd[];
+}>

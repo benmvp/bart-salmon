@@ -1,5 +1,5 @@
-// @flow
-import rootReducer from '../index'
+import rootReducer, {AppState} from './reducers'
+import {StationName, SalmonRoute, Train} from '../utils/types'
 
 const INITIAL_STATE = {
   origin: 'BALB',
@@ -9,7 +9,7 @@ const INITIAL_STATE = {
   isFetching: false,
   salmonRoutes: [],
   arrivals: [],
-}
+} as AppState
 const SAMPLE_ROUTES = [
   {
     backwardsRideTime: 5,
@@ -44,7 +44,7 @@ const SAMPLE_ROUTES = [
     },
     waitTime: 2,
   },
-]
+] as SalmonRoute[]
 const SAMPLE_ARRIVALS = [
   {
     abbreviation: '24TH',
@@ -106,13 +106,13 @@ const SAMPLE_ARRIVALS = [
     minutes: 40,
     platform: 2,
   },
-]
+] as Train[]
 
 it('should handle SET_ORIGIN action', () => {
   let name = 'SFIA'
   let actualState = rootReducer(INITIAL_STATE, {
     type: 'SET_ORIGIN',
-    payload: {name},
+    payload: name,
   })
   let expectedState = {
     ...INITIAL_STATE,
@@ -123,10 +123,10 @@ it('should handle SET_ORIGIN action', () => {
 })
 
 it('should handle SET_DESTINATION action', () => {
-  let name = 'PITT'
+  let name = 'PITT' as StationName
   let actualState = rootReducer(INITIAL_STATE, {
     type: 'SET_DESTINATION',
-    payload: {name},
+    payload: name,
   })
   let expectedState = {
     ...INITIAL_STATE,
@@ -140,7 +140,7 @@ it('should handle SET_NUM_SALMON_ROUTES action', () => {
   let numRoutes = 10
   let actualState = rootReducer(INITIAL_STATE, {
     type: 'SET_NUM_SALMON_ROUTES',
-    payload: {numRoutes},
+    payload: numRoutes,
   })
   let expectedState = {
     ...INITIAL_STATE,
@@ -154,7 +154,7 @@ it('should handle SET_RISKINESS_FACTOR action', () => {
   let riskinessFactor = 2
   let actualState = rootReducer(INITIAL_STATE, {
     type: 'SET_RISKINESS_FACTOR',
-    payload: {riskinessFactor},
+    payload: riskinessFactor,
   })
   let expectedState = {
     ...INITIAL_STATE,

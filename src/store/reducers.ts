@@ -1,39 +1,38 @@
-// @flow
-
 import {combineReducers} from 'redux'
-import type {SalmonRoute, StationName, Train} from '../utils/flow'
-import type {ReduxAction} from '../actions/flow'
+import {SalmonRoute, StationName, Train} from '../utils/types'
+import {AppAction} from './types'
 
 const DEFAULT_NUM_SALMON_ROUTES = 4
 const DEFAULT_RISKINESS_FACTOR = 0
 
 const origin = (
-  state: ?StationName = null,
-  {type, payload}: ReduxAction,
-): ?StationName => {
+  state: StationName = 'POWL',
+  action: AppAction,
+): StationName => {
   let newState = state
 
-  if (type === 'SET_ORIGIN' && payload) {
-    newState = payload.name
+  if (action.type === 'SET_ORIGIN') {
+    newState = action.payload
   }
 
   return newState
 }
 
 const destination = (
-  state: ?StationName = null,
-  {type, payload}: ReduxAction,
-): ?StationName => {
+  state: StationName = 'PITT',
+  action: AppAction,
+): StationName => {
   let newState = state
 
-  if (type === 'SET_DESTINATION' && payload) {
-    newState = payload.name
+  if (action.type === 'SET_DESTINATION') {
+    newState = action.payload
   }
 
   return newState
 }
 
-const isFetching = (state: boolean = false, {type}: ReduxAction): boolean => {
+const isFetching = (state: boolean = false, action: AppAction): boolean => {
+  const {type} = action
   let newState = state
 
   if (type === 'FETCH_SALMON_INFO') {
@@ -47,13 +46,13 @@ const isFetching = (state: boolean = false, {type}: ReduxAction): boolean => {
 
 const salmonRoutes = (
   state: SalmonRoute[] = [],
-  {type, payload}: ReduxAction,
+  action: AppAction,
 ): SalmonRoute[] => {
   let newState = state
 
-  if (type === 'RECEIVE_SALMON_INFO' && payload) {
-    newState = payload.routes
-  } else if (type === 'ERROR_SALMON_INFO') {
+  if (action.type === 'RECEIVE_SALMON_INFO') {
+    newState = action.payload.routes
+  } else if (action.type === 'ERROR_SALMON_INFO') {
     newState = []
   }
 
@@ -62,13 +61,13 @@ const salmonRoutes = (
 
 const arrivals = (
   state: Train[] = [],
-  {type, payload}: ReduxAction,
+  action: AppAction,
 ): Train[] => {
   let newState = state
 
-  if (type === 'RECEIVE_SALMON_INFO' && payload) {
-    newState = payload.arrivals
-  } else if (type === 'ERROR_SALMON_INFO') {
+  if (action.type === 'RECEIVE_SALMON_INFO') {
+    newState = action.payload.arrivals
+  } else if (action.type === 'ERROR_SALMON_INFO') {
     newState = []
   }
 
@@ -77,12 +76,12 @@ const arrivals = (
 
 const numSalmonRoutes = (
   state: number = DEFAULT_NUM_SALMON_ROUTES,
-  {type, payload}: ReduxAction,
+  action: AppAction,
 ): number => {
   let newState = state
 
-  if (type === 'SET_NUM_SALMON_ROUTES' && payload) {
-    newState = payload.numRoutes
+  if (action.type === 'SET_NUM_SALMON_ROUTES') {
+    newState = action.payload
   }
 
   return newState
@@ -93,12 +92,12 @@ const numSalmonRoutes = (
 // you get there
 const riskinessFactor = (
   state: number = DEFAULT_RISKINESS_FACTOR,
-  {type, payload}: ReduxAction,
+  action: AppAction,
 ): number => {
   let newState = state
 
-  if (type === 'SET_RISKINESS_FACTOR' && payload) {
-    newState = payload.riskinessFactor
+  if (action.type === 'SET_RISKINESS_FACTOR') {
+    newState = action.payload
   }
 
   return newState
@@ -113,5 +112,7 @@ const rootReducer = combineReducers({
   numSalmonRoutes,
   riskinessFactor,
 })
+
+export type AppState = ReturnType<typeof rootReducer>
 
 export default rootReducer
