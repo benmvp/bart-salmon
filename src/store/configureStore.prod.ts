@@ -1,19 +1,20 @@
 import {createStore, applyMiddleware} from 'redux'
-import thunk from 'redux-thunk'
+import thunk, {ThunkMiddleware} from 'redux-thunk'
 import {persistStore, persistReducer} from 'redux-persist'
 
 import rootReducer, {AppState} from './reducers'
-import {PERSIST_CONFIG, AppStore} from './constants'
+import {PERSIST_CONFIG} from './constants'
+import {AppAction} from './types'
 import {getSalmonInfo} from './actions'
 
 
 const persistedReducer = persistReducer(PERSIST_CONFIG, rootReducer)
 
-const configureStore = (preloadedState: AppState): AppStore => {
+const configureStore = (preloadedState: AppState) => {
   const store = createStore(
     persistedReducer,
     preloadedState,
-    applyMiddleware(thunk),
+    applyMiddleware(thunk as ThunkMiddleware<AppState, AppAction>),
   )
   const persistor = persistStore(
     store,

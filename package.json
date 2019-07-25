@@ -50,6 +50,7 @@
     "@types/react-dom": "16.8.4",
     "@types/react-router": "^5.0.3",
     "@types/redux-logger": "^3.0.7",
+    "@types/webpack-env": "^1.14.0",
     "@types/xml2js": "^0.4.4",
     "raf": "^3.4.1",
     "redux-devtools-extension": "^2.13.8",

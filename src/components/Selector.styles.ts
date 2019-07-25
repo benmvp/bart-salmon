@@ -1,4 +1,5 @@
-import {gutterSize} from '../../styling'
+import {CSSProperties} from 'react'
+import {gutterSize} from '../styling'
 
 export default {
   root: {
@@ -15,15 +16,15 @@ export default {
     // this really shouldn't be part of the component,
     // but in a wrapper handling the spacing
     marginBottom: gutterSize(3),
-  },
+  } as CSSProperties,
   display: {
     fontSize: '20px',
     flex: '1',
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
-  },
-  arrow: {},
+  } as CSSProperties,
+  arrow: {} as CSSProperties,
   select: {
     opacity: 0,
     position: 'absolute',
@@ -34,5 +35,5 @@ export default {
 
     // #6 - allows for adjusting height of <select> in iOS
     webkitAppearance: 'menulist-button',
-  },
+  } as CSSProperties,
 }

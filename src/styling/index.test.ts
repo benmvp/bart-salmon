@@ -1,7 +1,5 @@
-// @flow
-import {Platform} from 'react-native'
-import {gutterSize, gridSize} from '../'
-import {GUTTER_UNIT} from '../constants'
+import {gutterSize, gridSize} from './'
+import {GUTTER_UNIT} from './constants'
 
 describe('gutterSize', () => {
   it('returns 0 for 0 multiplier', () => {
@@ -30,38 +28,23 @@ describe('gutterSize', () => {
 })
 
 const GRID_SIZES = [
-  [1, 62.5],
-  [2, 125],
-  [3, 187.5],
-  [4, 250],
-  [5, 312.5],
-  [6, 375],
-  [7, 437.5],
-  [8, 500],
-  [9, 562.5],
-  [10, 625],
-  [11, 687.5],
-  [12, 750],
-]
-const GRID_SIZES_WEB = [
-  [1, '8.33%'],
-  [2, '16.67%'],
-  [3, '25.00%'],
-  [4, '33.33%'],
-  [5, '41.67%'],
-  [6, '50.00%'],
-  [7, '58.33%'],
-  [8, '66.67%'],
-  [9, '75.00%'],
-  [10, '83.33%'],
-  [11, '91.67%'],
-  [12, '100.00%'],
+  '0.00%',
+  '8.33%',
+  '16.67%',
+  '25.00%',
+  '33.33%',
+  '41.67%',
+  '50.00%',
+  '58.33%',
+  '66.67%',
+  '75.00%',
+  '83.33%',
+  '91.67%',
+  '100.00%',
 ]
 
 describe('gridSize', () => {
-  let gridSizes = Platform.OS === 'web' ? GRID_SIZES_WEB : GRID_SIZES
-
-  gridSizes.forEach(([numColumns, expectedWidth]) => {
+  GRID_SIZES.forEach((expectedWidth, numColumns) => {
     it(`returns ${expectedWidth} for ${numColumns} columns`, () => {
       let actualWidth = gridSize(numColumns)
 

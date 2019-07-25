@@ -11,6 +11,8 @@ import {AppState} from './reducers'
 
 const NUM_ARRIVALS = 4
 
+type ThunkResult<Result> = ThunkAction<Result, AppState, undefined, AppAction>
+
 export const setNumSalmonRoutes = (numRoutes: number): AppAction => ({
   type: 'SET_NUM_SALMON_ROUTES',
   payload: numRoutes,
@@ -41,7 +43,7 @@ const errorSalmonInfo = (error: Error): AppAction => ({
   error,
 })
 
-export const getSalmonInfo = (): ThunkAction<void, AppState, null, Action<string>> => async (
+export const getSalmonInfo = (): ThunkResult<void> => async (
   dispatch,
   getState,
 ) => {
@@ -75,7 +77,7 @@ export const getSalmonInfo = (): ThunkAction<void, AppState, null, Action<string
   }
 }
 
-export const setOrigin = (name: StationName): ThunkAction<void, AppState, null, AppAction> => (
+export const setOrigin = (name: StationName): ThunkResult<void> => (
   dispatch,
 ) => {
   dispatch({
@@ -85,7 +87,7 @@ export const setOrigin = (name: StationName): ThunkAction<void, AppState, null, 
   dispatch(getSalmonInfo())
 }
 
-export const setDestination = (name: StationName): ThunkAction<void, AppState, null, AppAction> => (
+export const setDestination = (name: StationName): ThunkResult<void> => (
   dispatch,
 ) => {
   dispatch({
