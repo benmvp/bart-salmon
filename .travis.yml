@@ -1,23 +1,19 @@
 language: node_js
 node_js:
   - "node"
+  - "10"
   - "8"
-  - "7"
-  - "6"
 
 # Cache dependencies in $HOME/.yarn-cache across builds
-cache: yarn
+cache: npm
 
 # Run the the validate script
-script: yarn validate
+script: npm test --coverage
 
 # Send coverage data to Coveralls
 after_success:
-  # Install coveralls globally
-  - yarn global add coveralls
-
   # Retrieve the coverage information and send it to Coveralls
-  - cat ./coverage/lcov.info | coveralls
+  - cat ./coverage/lcov.info | npx coveralls
 
 # Create production build
 before_deploy: yarn build:web

@@ -1,5 +1,5 @@
 import React, {
-  FC,
+  FunctionComponent,
   ChangeEventHandler,
 } from 'react'
 import {findValueInfo, validateValue} from './utils'
@@ -20,7 +20,7 @@ const _getOptions = (values: SelectorValue[]) =>
     </option>
   ))
 
-const Selector: FC<Props> = ({
+const Selector: FunctionComponent<Props> = ({
   values,
   value,
   onChange,
