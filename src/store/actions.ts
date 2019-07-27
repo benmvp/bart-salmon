@@ -1,12 +1,11 @@
-import {Action} from 'redux'
 import {ThunkAction} from 'redux-thunk'
 import {
   getSuggestedSalmonRoutesFromEtds,
   getNextArrivalsFromEtds,
 } from '../utils/salmon'
 import {getEstimatedTimesOfDeparture} from '../api'
-import {StationName, SalmonRoute, Train} from '../utils/types'
-import {AppAction} from './types'
+import {SalmonRoute, Train} from '../utils/types'
+import {AppAction, OptionalStationName} from './types'
 import {AppState} from './reducers'
 
 const NUM_ARRIVALS = 4
@@ -77,7 +76,7 @@ export const getSalmonInfo = (): ThunkResult<void> => async (
   }
 }
 
-export const setOrigin = (name: StationName): ThunkResult<void> => (
+export const setOrigin = (name: OptionalStationName): ThunkResult<void> => (
   dispatch,
 ) => {
   dispatch({
@@ -87,7 +86,7 @@ export const setOrigin = (name: StationName): ThunkResult<void> => (
   dispatch(getSalmonInfo())
 }
 
-export const setDestination = (name: StationName): ThunkResult<void> => (
+export const setDestination = (name: OptionalStationName): ThunkResult<void> => (
   dispatch,
 ) => {
   dispatch({

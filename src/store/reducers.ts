@@ -1,14 +1,14 @@
 import {combineReducers} from 'redux'
-import {SalmonRoute, StationName, Train} from '../utils/types'
-import {AppAction} from './types'
+import {SalmonRoute, Train} from '../utils/types'
+import {AppAction, OptionalStationName} from './types'
 
 const DEFAULT_NUM_SALMON_ROUTES = 4
 const DEFAULT_RISKINESS_FACTOR = 0
 
 const origin = (
-  state: StationName = 'POWL',
+  state: OptionalStationName = '',
   action: AppAction,
-): StationName => {
+): OptionalStationName => {
   let newState = state
 
   if (action.type === 'SET_ORIGIN') {
@@ -19,9 +19,9 @@ const origin = (
 }
 
 const destination = (
-  state: StationName = 'PITT',
+  state: OptionalStationName = '',
   action: AppAction,
-): StationName => {
+): OptionalStationName => {
   let newState = state
 
   if (action.type === 'SET_DESTINATION') {

@@ -1,7 +1,7 @@
 import React, {FunctionComponent} from 'react'
 import stationsLookup from '../data/stations.json'
 import {getSalmonTimeFromRoute} from '../utils/salmon'
-import {Train, SalmonRoute as SalmonRouteData, SalmonRoute} from '../utils/types'
+import {Train, SalmonRoute as SalmonRouteData} from '../utils/types'
 
 import styles from './SalmonRoutes.styles'
 
@@ -87,10 +87,10 @@ const SalmonRoutes: FunctionComponent<Props> = ({
   ))
 
   return (
-    <section>
+    <div>
       <Header />
       {salmonRoutes}
-    </section>
+    </div>
   )
 }
 

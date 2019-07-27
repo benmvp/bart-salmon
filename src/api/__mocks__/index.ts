@@ -3,5 +3,5 @@ import etds from './etds-rush-pm.json'
 
 export const getEstimatedTimesOfDeparture = (): Promise<EtdsLookup> =>
   new Promise(resolve => {
-    setTimeout(resolve.bind(null, (<unknown>etds) as EtdsLookup), 0)
+    setTimeout(resolve.bind(null, (etds as unknown) as EtdsLookup), 0)
   })

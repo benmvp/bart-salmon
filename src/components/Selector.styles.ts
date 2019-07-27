@@ -34,6 +34,6 @@ export default {
     left: 0,
 
     // #6 - allows for adjusting height of <select> in iOS
-    webkitAppearance: 'menulist-button',
+    WebkitAppearance: 'menulist-button',
   } as CSSProperties,
 }

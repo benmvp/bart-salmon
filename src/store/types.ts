@@ -1,18 +1,18 @@
-import {Store} from 'redux'
 import {
   StationName, 
   SalmonRoute, 
   Train,
 } from '../utils/types'
 
+export type OptionalStationName = '' | StationName
 
 interface SetOriginAction {
   type: 'SET_ORIGIN';
-  payload: StationName;
+  payload: OptionalStationName;
 }
 interface SetDestination {
   type: 'SET_DESTINATION';
-  payload: StationName;
+  payload: OptionalStationName;
 }
 interface SetNumSalmonRoutes {
   type: 'SET_NUM_SALMON_ROUTES';

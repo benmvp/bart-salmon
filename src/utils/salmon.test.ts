@@ -17,27 +17,27 @@ import etdsLateNightLookup from '../api/__mocks__/etds-late-night.json'
 
 const EXAMPLE_ETDS_LOOKUPS = [
   {
-    etdsLookup: (<unknown>etdsMorningRushLookup) as EtdsLookup,
+    etdsLookup: (etdsMorningRushLookup as unknown) as EtdsLookup,
     title: 'Morning Rush',
   },
   {
-    etdsLookup: (<unknown>etdsEveningRushLookup) as EtdsLookup,
+    etdsLookup: (etdsEveningRushLookup as unknown) as EtdsLookup,
     title: 'Evening Rush',
   },
   {
-    etdsLookup: (<unknown>etdsNoondayLookup as EtdsLookup),
+    etdsLookup: (etdsNoondayLookup as unknown) as EtdsLookup,
     title: 'Weekday Noonday',
   },
   {
-    etdsLookup: (<unknown>etdsHolidayLookup as EtdsLookup),
+    etdsLookup: (etdsHolidayLookup as unknown) as EtdsLookup,
     title: 'Holidays',
   },
   {
-    etdsLookup: (<unknown>etdsMajorDelaysLookup as EtdsLookup),
+    etdsLookup: (etdsMajorDelaysLookup as unknown) as EtdsLookup,
     title: 'Major Delays',
   },
   {
-    etdsLookup: (<unknown>etdsLateNightLookup as EtdsLookup),
+    etdsLookup: (etdsLateNightLookup as unknown) as EtdsLookup,
     title: 'Late Night',
   },
 ]

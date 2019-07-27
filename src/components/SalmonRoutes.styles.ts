@@ -71,13 +71,13 @@ export default {
   time: {
     ...TIME_COLUMN_STYLES,
     padding: gutterSize(1),
+    textAlign: 'center',
   } as CSSProperties,
   timeValue: {
     fontSize: 45,
-    textAlign: 'center',
     // letterSpacing: -10
   } as CSSProperties,
   timeLabel: {
-    textAlign: 'center',
+    paddingLeft: gutterSize(1),
   } as CSSProperties,
 }

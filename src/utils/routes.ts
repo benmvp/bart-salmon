@@ -12,12 +12,10 @@ import stationsLookup from '../data/stations.json'
 import stationRoutesLookup from '../data/station-routes.json'
 
 
-const STATION_ROUTES_LOOKUP = (<unknown>stationRoutesLookup) as StationRoutesLookup
-const ROUTES_LOOKUP = (<unknown>routesLookup) as RoutesLookup
-const STATIONS_LOOKUP = (<unknown>stationsLookup) as StationLookup
+const STATION_ROUTES_LOOKUP = (stationRoutesLookup as unknown) as StationRoutesLookup
+const ROUTES_LOOKUP = (routesLookup as unknown) as RoutesLookup
+const STATIONS_LOOKUP = (stationsLookup as unknown) as StationLookup
 
-
-const _STATION_ROUTE_DIRECTIONS = _(['northRoutes', 'southRoutes'])
 
 export const isStationARouteStation = (
   target: StationName,

@@ -31,6 +31,8 @@ export default {
     textAlign: 'center',
   } as CSSProperties,
   followingTrains: {
+    display: 'flex',
+    flexDirection: 'column',
     paddingRight: gutterSize(3),
     width: gridSize(3),
   } as CSSProperties,

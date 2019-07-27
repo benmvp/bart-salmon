@@ -1,5 +1,6 @@
-import React, {FunctionComponent, Component} from 'react'
-import {Train, StationName} from '../utils/types'
+import React, {FunctionComponent} from 'react'
+import {Train} from '../utils/types'
+import {OptionalStationName} from '../store/types'
 import stationsLookup from '../data/stations.json'
 
 import styles from './Arrivals.styles'
@@ -17,7 +18,7 @@ const NextTrain: FunctionComponent<{train?: Train}> = ({train}) => {
 
   return (
     <div style={styles.nextTrain}>
-      <span style={styles.nextTrainTime}>{minutes}</span>
+      <div style={styles.nextTrainTime}>{minutes}</div>
     </div>
   )
 }
@@ -32,7 +33,7 @@ const FollowingTrains: FunctionComponent<{trains: Train[]}> = ({trains}) => {
   return <div style={styles.followingTrains}>{trainComponents}</div>
 }
 
-const Arrivals: FunctionComponent<{destination: StationName, arrivals: Train[]}> = ({
+const Arrivals: FunctionComponent<{destination: OptionalStationName, arrivals: Train[]}> = ({
   destination, 
   arrivals,
 }) => {
@@ -40,7 +41,7 @@ const Arrivals: FunctionComponent<{destination: StationName, arrivals: Train[]}>
   const destinationDisplay = destination && stationsLookup[destination].name
 
   return (
-    <section style={styles.root}>
+    <div style={styles.root}>
       <div style={styles.headingSection}>
         <span style={styles.headingNextTrain}>Next train to</span>
         <span style={styles.headingDestination}>
@@ -49,6 +50,8 @@ const Arrivals: FunctionComponent<{destination: StationName, arrivals: Train[]}>
       </div>
       <NextTrain train={firstTrain} />
       <FollowingTrains trains={followingTrains} />
-    </section>
+    </div>
   )
 }
+
+export default Arrivals

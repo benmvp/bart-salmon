@@ -19,7 +19,7 @@ import {
 } from './routes'
 import routesLookup from '../data/routes.json'
 
-const ROUTES_LOOKUP = (<unknown>routesLookup) as RoutesLookup
+const ROUTES_LOOKUP = (routesLookup as unknown) as RoutesLookup
 
 const DEFAULT_NUM_SALMON_SUGGESTIONS = 5
 

@@ -117,7 +117,7 @@ export type RoutesLookup = {
 
 export interface StationInfo {
   name: string;
-  abbr: string;
+  abbr: StationName;
   gtfsLatitude: number;
   gtfsLongitude: number;
   address: string;
