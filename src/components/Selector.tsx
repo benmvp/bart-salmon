@@ -1,38 +1,40 @@
-import React, {
-  FunctionComponent,
-  ChangeEventHandler,
-} from 'react'
+import React, {ChangeEventHandler} from 'react'
 import {findValueInfo, validateValue} from './utils'
 import {SelectorValue} from './types'
 
 import styles from './Selector.styles'
 
-interface Props {
-  values: SelectorValue[];
-  value?: string;
-  onChange?: (newValue: string) => void;
+interface Props<SelectorValueType> {
+  values: SelectorValue<SelectorValueType>[];
+  value?: SelectorValueType;
+  onChange?: (newValue: SelectorValueType) => void;
 }
+  
 
-const _getOptions = (values: SelectorValue[]) =>
-  values.map(({value, display}) => (
-    <option key={value} value={value}>
-      {display || value}
-    </option>
-  ))
-
-const Selector: FunctionComponent<Props> = ({
+// NOTE: It's important for ValueType to extend string as it ultimately
+// will be rendered out in <option>s
+const Selector = <ValueType extends string = string>({
   values,
   value,
   onChange,
-}) => {
-  const handleChange: ChangeEventHandler<HTMLSelectElement> = (e) => {
-    if (onChange) {
-      onChange(e.target.value)
+}: Props<ValueType>) => {
+  let handleChange: ChangeEventHandler<HTMLSelectElement> | undefined
+  
+  if (onChange) {
+    handleChange = (e) => {
+      // NOTE: because all of the values are SelectorValue objects
+      // it should be safe to coerce the selected value to ValueType
+      onChange(e.target.value as ValueType)
     }
   }
 
   const validatedValue = validateValue(values, value)
-  const {display} = findValueInfo(values, validatedValue) || ({} as SelectorValue)
+  const {display} = findValueInfo(values, validatedValue) || ({} as SelectorValue<ValueType>)
+  const options = values.map(({value, display}) => (
+    <option key={value} value={value}>
+      {display || value}
+    </option>
+  ))
 
   return (
     <div style={styles.root}>
@@ -43,7 +45,7 @@ const Selector: FunctionComponent<Props> = ({
         value={validatedValue}
         onChange={handleChange}
       >
-        {_getOptions(values)}
+        {options}
       </select>
     </div>
   )

@@ -1,4 +1,4 @@
-export interface SelectorValue {
-  value: string;
+export interface SelectorValue<ValueType> {
+  value: ValueType;
   display?: string;
 }

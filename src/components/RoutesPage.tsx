@@ -12,29 +12,26 @@ import styles from './RoutesPage.styles'
 
 const STATIONS_LOOKUP = (stationsLookup as unknown) as StationLookup
 
-const STATIONS_SELECTOR_VALUES = Object.values(
-  STATIONS_LOOKUP,
-).map(({name, abbr}) => ({value: abbr, display: name}))
+const STATIONS_SELECTOR_VALUES = Object.values(STATIONS_LOOKUP)
+  .map(({name, abbr}) => ({value: abbr as OptionalStationName, display: name}))
 
-const StationSelector = (
-  {label, station, onChange}: {
-    label: string, 
-    station: OptionalStationName, 
-    onChange: (stationName: OptionalStationName) => void,
-  }
-) => {
-  const selectorValues = [
-    {value: '', display: label},
+const StationSelector: FunctionComponent<{
+  label: string,
+  station: OptionalStationName,
+  onChange: (stationName: OptionalStationName) => void,
+}> = ({label, station, onChange}) => {
+  const values = [
+    {value: '' as OptionalStationName, display: label},
     ...STATIONS_SELECTOR_VALUES,
   ]
-  const handleOnChange = (newValue: string) => {
-    onChange(newValue as OptionalStationName)
-  }
 
-  return (
-    <Selector values={selectorValues} value={station} onChange={handleOnChange} />
-  )
+  return Selector<OptionalStationName>({
+    value: station,
+    values,
+    onChange,
+  })
 }
+
 
 interface Props {
   salmonRoutes: SalmonRoute[];

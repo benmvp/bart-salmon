@@ -8,7 +8,7 @@ node_js:
 cache: npm
 
 # Run the the validate script
-script: npm test --coverage
+script: npm test -- --coverage
 
 # Send coverage data to Coveralls
 after_success:
