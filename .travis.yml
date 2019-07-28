@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - "node"
+  - "12"
   - "10"
   - "8"
 
@@ -14,15 +15,3 @@ script: npm test -- --coverage
 after_success:
   # Retrieve the coverage information and send it to Coveralls
   - cat ./coverage/lcov.info | npx coveralls
-
-# Create production build
-before_deploy: yarn build:web
-
-# Deploy to gh-pages branch on Github
-deploy:
-  skip_cleanup: true
-  provider: script
-  script:  ./_scripts/travis-deploy.sh
-  on:
-    branch: master
-    node: "node"
