@@ -1,4 +1,4 @@
-export const fetchText = (
+export const fetchJson = (
   url: string,
   options?: RequestInit,
-): Promise<string> => fetch(url, options).then(resp => resp.text())
+) => fetch(url, options).then(resp => resp.json())

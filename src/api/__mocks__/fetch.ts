@@ -1,10 +1,10 @@
-let MOCK_RESP_TEXT: string
+let MOCK_RESP_JSON: {}
 
-export const __setMockText = (mockRespText: string): void => {
-  MOCK_RESP_TEXT = mockRespText
+export const __setMockJson = (mockRespJson: {}): void => {
+  MOCK_RESP_JSON = mockRespJson
 }
 
-export const fetchText = (): Promise<string> =>
+export const fetchJson = (): Promise<{}> =>
   new Promise((resolve) => {
-    setTimeout(resolve.bind(null, MOCK_RESP_TEXT), 0)
+    setTimeout(resolve.bind(null, MOCK_RESP_JSON), 0)
   })

@@ -1,4 +1,4 @@
-import {Dictionary} from 'lodash'
+import { Dictionary } from 'lodash'
 
 export type StationName = '12TH'
   | '16TH'
@@ -65,17 +65,34 @@ export interface RouteStation {
   timeFromOrigin: number;
 }
 
-export interface Train {
-  destination: string;
-  abbreviation: StationName;
-  limited: number;
+export interface Route {
+  name: string;
+  abbr: string;
+  routeID: RouteId;
+  number: number;
+  origin: StationName;
+  destination: StationName;
+  direction: string;
+  color: string;
+  holidays: number;
+  stations: RouteStation[];
+}
+
+interface Estimate {
   minutes: number;
   platform: number;
-  direction: string;
+  direction: 'South' | 'North';
   length: number;
   color: string;
   hexcolor: string;
   bikeflag: number;
+  delay: number;
+}
+
+export interface Train extends Estimate {
+  destination: string;
+  abbreviation: StationName;
+  limited: number;
 }
 
 export interface SalmonRoute {
@@ -101,21 +118,11 @@ export type StationRoutesLookup = {
   }
 }
 export type RoutesLookup = {
-  [Route in RouteId]: {
-    name: string;
-    abbr: string;
-    routeID: RouteId;
-    number: number;
-    origin: StationName;
-    destination: StationName;
-    direction: string;
-    color: string;
-    holidays: number;
-    stations: RouteStation[];
-  }
+  [Id in RouteId]: Route
 }
 
-export interface StationInfo {
+
+export interface Station {
   name: string;
   abbr: StationName;
   gtfsLatitude: number;
@@ -128,17 +135,11 @@ export interface StationInfo {
   northRoutes: RouteId[];
   southRoutes: RouteId[];
   northPlatforms: number[],
-  southPlatform: number[];
+  southPlatforms: number[];
   platformInfo: string;
-  intro: string;
-  crossStreet: string;
-  food: string;
-  shopping: string;
-  attraction: string;
-  link: string;
 }
 export type StationLookup = {
-  [Name in StationName]: StationInfo;
+  [Name in StationName]: Station;
 }
 
 
@@ -146,7 +147,7 @@ export interface Etd {
   destination: string;
   abbreviation: StationName;
   limited: number;
-  estimate: Train[]
+  estimate: Estimate[]
 }
 export type EtdsLookup = Dictionary<{
   name: string;

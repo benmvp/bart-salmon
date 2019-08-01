@@ -1,6 +1,5 @@
-// @flow
-import {genDataFile} from './utils'
-import {getEstimatedTimesOfDeparture} from '../src/api'
+import { genDataFile } from './utils'
+import { getEstimatedTimesOfDeparture } from '../src/api'
 
 genDataFile(
     getEstimatedTimesOfDeparture,

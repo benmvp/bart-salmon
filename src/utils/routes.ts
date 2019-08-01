@@ -1,9 +1,9 @@
 import _ from 'lodash'
 import {
-  StationName, 
-  RouteId, 
-  RouteStation, 
-  StationRoutesLookup, 
+  StationName,
+  RouteId,
+  RouteStation,
+  StationRoutesLookup,
   RoutesLookup,
   StationLookup,
 } from './types'
@@ -19,7 +19,7 @@ const STATIONS_LOOKUP = (stationsLookup as unknown) as StationLookup
 
 export const isStationARouteStation = (
   target: StationName,
-  {name}: RouteStation,
+  { name }: RouteStation,
 ): boolean => name === target
 
 /*
@@ -46,7 +46,7 @@ export const getRouteIdsWithStartAndEnd = (
   trainColor?: string,
 ): RouteId[] => {
   const routesInfo = STATION_ROUTES_LOOKUP[start][end] || {}
-  const {directRoutes = []} = routesInfo
+  const { directRoutes = [] } = routesInfo
 
   return (
     // get all of the routes that directly connect the two stations
@@ -81,9 +81,9 @@ export const getAllDestinationsFromRoutes = (
           // For all the stations for the given route, filter down to just
           // the stations *after* the source station. These are the possible
           // train destinations
-          .takeRightWhile(({name}) => name !== sourceStation)
+          .takeRightWhile(({ name }) => name !== sourceStation)
           // just give back the station names
-          .map(({name}) => name)
+          .map(({ name }) => name)
           .value(),
       )
       // flatten out the list

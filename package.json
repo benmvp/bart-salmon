@@ -6,7 +6,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "gen:routes": "npx ts-node _scripts/gen-routes-data.ts",
+    "gen:stations": "npx ts-node _scripts/gen-stations-data.ts",
+    "gen:station-routes": "npx ts-node _scripts/gen-station-routes-data.ts",
+    "gen:mock:etd": "npx ts-node _scripts/gen-mock-etd-data.ts"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,8 +39,7 @@
     "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0",
     "typescript": "3.5.3",
-    "url-lib": "^3.0.3",
-    "xml2js": "^0.4.19"
+    "url-lib": "^3.0.3"
   },
   "devDependencies": {
     "@types/humps": "^1.1.2",
@@ -49,7 +52,6 @@
     "@types/redux-logger": "^3.0.7",
     "@types/webpack-env": "^1.14.0",
     "@types/xml2js": "^0.4.4",
-    "raf": "^3.4.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6"
   }
