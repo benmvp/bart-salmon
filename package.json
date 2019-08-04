@@ -11,6 +11,7 @@
     "gen:routes": "ts-node -P tsconfig.scripts.json _scripts/gen-routes-data.ts",
     "gen:stations": "ts-node -P tsconfig.scripts.json _scripts/gen-stations-data.ts",
     "gen:station-routes": "ts-node -P tsconfig.scripts.json _scripts/gen-station-routes-data.ts",
+    "pregen:all": "mkdir -p src/data",
     "gen:all": "npx npm-run-all gen:stations gen:routes gen:station-routes",
     "gen:mock:etd": "ts-node -P tsconfig.scripts.json _scripts/gen-mock-etd-data.ts"
   },
