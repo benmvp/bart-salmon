@@ -82,19 +82,17 @@ const _genDestinationEtdsForStation = (
     etdsForStation = forceArray(originETDInfo.etd)
   }
 
-  // console.log({origin, destination, targetRouteIds, possibleRouteDestinations, etdsForStation, allowTransfers})
-
   return (
     _(etdsForStation)
       // take ETDs grouped by final destination & filter down trains to the ones
       // going in specified route direction by looking to see if the train's
       // destination is in the possibleRouteDestinations
-      .filter(destinationEtdInfo =>
+      .filter((destinationEtdInfo) =>
         possibleRouteDestinations.has(destinationEtdInfo.abbreviation),
       )
       // for each set of ETDs for the destinations going in the route direction
       // add the destination info to the ETD info
-      .map(destinationEtdInfo =>
+      .map((destinationEtdInfo) =>
         destinationEtdInfo.estimate.map(estimateInfo => ({
           ..._.omit(destinationEtdInfo, ['estimate']),
           ...estimateInfo,
@@ -103,16 +101,14 @@ const _genDestinationEtdsForStation = (
       // flatten out the groupings (now that each one has the destination info)
       .flatten()
       // filter down to the trains that will go all the way to the destination
-      .filter(
-        (train: Train) => (
-          _filterForTrainsThatGoAllTheWay(
-            targetRouteIds,
-            allowTransfers,
-            train,
-            destination,
-          )
+      .filter((train: Train) => (
+        _filterForTrainsThatGoAllTheWay(
+          targetRouteIds,
+          allowTransfers,
+          train,
+          destination,
         )
-      )
+      ))
   )
 }
 
@@ -140,7 +136,7 @@ const _getBackwardsTrains = (
       origin,
       oppositeRouteIds,
     )
-      .map(trainInfo => ({
+      .map((trainInfo) => ({
         backwardsTrain: _normalizeTrainInfo(trainInfo),
         waitTime: normalizeMinutes(trainInfo.minutes),
         backwardsRouteId: getRouteIdsWithStartAndEnd(
@@ -226,7 +222,8 @@ type WaitTimesForBackwardsTimeRoutePathsCollection = _.Collection<{
   backwardsWaitTime: number;
   returnRouteId: RouteId;
 }>
-/*
+
+/**
  * Given a list of backward route paths (with times), multiply that by the
  * possible return trains those route paths could wait for.
  */

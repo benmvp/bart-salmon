@@ -97,7 +97,7 @@ export interface ApiRouteScheduleResponse {
   schedNum: number;
   date: string;
   route: {
-    train: ApiRouteSchedule[]
+    train?: ApiRouteSchedule[]
   }
 }
 

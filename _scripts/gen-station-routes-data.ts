@@ -2,8 +2,8 @@ import zipObject from 'lodash/zipObject'
 import mapValues from 'lodash/mapValues'
 import keyBy from 'lodash/keyBy'
 import { fetchBartInfo } from '../src/api/bart'
-import { DepartureApiRequest, ApiDepartureResponse } from '../src/api/types'
-import { genDataFile } from './utils'
+import { DepartureApiRequest } from '../src/api/types'
+import { genDataFile, processSequentially } from './utils'
 import { StationName, StationLookup, RouteId } from '../src/utils/types'
 import stationsLookup from '../src/data/stations.json'
 
@@ -11,8 +11,6 @@ import stationsLookup from '../src/data/stations.json'
 const STATION_NAMES = Object.keys(
   (stationsLookup as unknown) as StationLookup
 ) as StationName[]
-
-const NUM_FETCH_TRIES = 5
 
 const _fetchDepartSchedules = (
   orig: StationName,
@@ -22,33 +20,8 @@ const _fetchDepartSchedules = (
   fetchBartInfo<DepartureApiRequest>({
     type: 'sched',
     command: 'depart',
-    params: { orig, dest, time, date: '08/01/2019' }
+    params: { orig, dest, time, date: '09/10/2019' }
   })
-
-const _getDepartSchedules = async (
-  origin: StationName,
-  destination: StationName,
-  time: string
-): Promise<ApiDepartureResponse> => {
-  let numTries = 0
-  let lastError = null
-
-  while (numTries < NUM_FETCH_TRIES) {
-    try {
-      return await _fetchDepartSchedules(
-        origin,
-        destination,
-        time
-      )
-    } catch (err) {
-      lastError = err
-      // try again just in case there was some transient issue
-      numTries++
-    }
-  }
-
-  throw lastError
-}
 
 const _itemsOrNull = <T>(items: T[]) => (
   items.length > 0 ? items : undefined
@@ -58,21 +31,21 @@ const _getRoutesForOriginDestination = async (
   origin: StationName,
   destination: StationName,
 ) => {
-  const departSchedulesEvening = await _getDepartSchedules(
-    origin,
-    destination,
-    '5:00pm'
-  )
-  const departSchedulesLateNight = await _getDepartSchedules(
-    origin,
-    destination,
-    '11:00pm'
-  )
+  // Get the departure schedule at evening rush & late night to ensure
+  // we get the normal routes plus the off-peak routes
+  const [departSchedulesEvening, departSchedulesLateNight] = await Promise.all([
+    _fetchDepartSchedules(origin, destination, '5:00pm'),
+    _fetchDepartSchedules(origin, destination, '11:00pm'),
+  ])
 
+  // Merge the trip information from both times
   const trips = [
     ...departSchedulesEvening.schedule.request.trip,
     ...departSchedulesLateNight.schedule.request.trip,
   ]
+
+  // Get the unique route IDs for trips that only needed one leg
+  // (i.e. direct routes)
   const directRoutes = [
     ...new Set(
       trips
@@ -80,7 +53,9 @@ const _getRoutesForOriginDestination = async (
         .map((tripInfo) => tripInfo.leg[0]['@line'])
     ),
   ]
-  let multiRoutes = [
+
+  // Get the unique tuples of route IDs that are needed for multi-leg trips
+  const multiRoutes = [
     ...new Set(
       trips
         .filter((tripInfo) => tripInfo.leg.length > 1)
@@ -97,38 +72,42 @@ const _getRoutesForOriginDestination = async (
   }
 }
 
-/*
+/**
  * For the given origin station, returns a promise that when fulfilled returns a
  * lookup of destination stations to direct and multi routes
  */
 const _getAllDestinationRoutesForStation = async (origin: StationName) => {
-  const getAllDestinationRoutesForStation = STATION_NAMES
-    // exclude the same station since there's no where to travel
-    .filter((station) => station !== origin)
-    // build a sequence of promises that'll get direct and multi routes info
-    // for each origin-destination combination
-    .map((destination) => _getRoutesForOriginDestination(origin, destination))
-  const allDestinationRoutesForStationList = await Promise.all(
-    getAllDestinationRoutesForStation
-  )
-  const allDestinationRoutesForStationLookup = keyBy(
-    allDestinationRoutesForStationList,
-    'destination',
+  // Build up a list of destination stations by removing the
+  // origin station
+  const destinationStations = STATION_NAMES.filter((station) => station !== origin)
+
+  // Get the destination routes for all the destination stations.
+  const destinationRoutes = await processSequentially(
+    destinationStations,
+    (destination) => _getRoutesForOriginDestination(origin, destination),
+    10,
   )
 
+  // Convert the routes list into a look up by the destination
+  const destinationRoutesLookup = keyBy(destinationRoutes, 'destination')
+
+  // Only keep `directRoutes` & `multiRoutes` in the look up (removing `destination`
+  // that was used to create the lookup)
   return mapValues(
-    allDestinationRoutesForStationLookup,
+    destinationRoutesLookup,
     ({ directRoutes, multiRoutes }) => ({ directRoutes, multiRoutes })
   )
 }
 
-/*
+/**
  * Return a promise that when fulfilled contains a lookup of origin stations to
  * destination stations to direct and multi routes
  */
 const _getStationRoutes = async () => {
-  const getStationRoutes = STATION_NAMES.map(_getAllDestinationRoutesForStation)
-  const stationRoutesList = await Promise.all(getStationRoutes)
+  const stationRoutesList = await processSequentially(
+    STATION_NAMES,
+    _getAllDestinationRoutesForStation,
+  )
 
   return zipObject(STATION_NAMES, stationRoutesList)
 }

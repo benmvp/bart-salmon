@@ -16,7 +16,10 @@ const configureStore = (preloadedState?: AppState) => {
   ]
 
   if (process.env.NODE_ENV === 'development') {
-    const { logger } = require('redux-logger')
+    const { createLogger } = require('redux-logger')
+    const logger = createLogger({
+      collapsed: true,
+    })
 
     middleware.push(logger)
   }

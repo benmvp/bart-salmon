@@ -11,12 +11,12 @@ import {
   ApiRouteSchedule,
   ApiRoutesResponse,
 } from '../src/api/types'
-import { genDataFile } from './utils'
-import { Route } from '../src/utils/types'
+import { genDataFile, processSequentially } from './utils'
+import { Route, RouteStation } from '../src/utils/types'
 
 
 const _getSampleSchedule = (schedules: ApiRouteSchedule[]): ApiRouteSchedule =>
-  schedules[schedules.length - 3]
+  schedules[Math.max(0, schedules.length - 3)]
 
 const _toMinutes = (stopInfo: ApiRouteStop): number => {
   const time = stopInfo['@origTime']
@@ -25,49 +25,60 @@ const _toMinutes = (stopInfo: ApiRouteStop): number => {
   return +hours * 60 + +minutes
 }
 
-const _normalizeRoute = (routeInfo: ApiRouteWithStations, schedules: ApiRouteSchedule[]): Route => {
-  const sampleSchedule = _getSampleSchedule(schedules)
-  const stationsInSampleSchedule = sampleSchedule.stop.filter(
-    (stopInfo) => !!stopInfo['@origTime']
-  )
-  const firstStopTime = _toMinutes(stationsInSampleSchedule[0])
+const _normalizeRoute = (routeInfo: ApiRouteWithStations, schedules?: ApiRouteSchedule[]): Route => {
+  let stations: RouteStation[] = []
 
-  return {
-    ...omit(routeInfo, ['config', 'numStns']),
-    stations: stationsInSampleSchedule.map((stopInfo) => ({
+  if (schedules) {
+    const sampleSchedule = _getSampleSchedule(schedules)
+    const stationsInSampleSchedule = sampleSchedule.stop.filter(
+      (stopInfo) => !!stopInfo['@origTime']
+    )
+    const firstStopTime = _toMinutes(stationsInSampleSchedule[0])
+
+    stations = stationsInSampleSchedule.map((stopInfo) => ({
       name: stopInfo['@station'],
       timeFromOrigin: _toMinutes(stopInfo) - firstStopTime
     }))
   }
+
+  return {
+    ...omit(routeInfo, ['config', 'numStns']),
+    stations,
+  }
 }
 
-const _fetchPerRoute = <Request extends ApiRequest>(
+const _fetchForEachRoute = <Request extends ApiRequest>(
   respJson: ApiRoutesResponse,
   apiRequest: Request,
 ) =>
-  Promise.all(
-    respJson.routes.route.map(({ number }) =>
-      fetchBartInfo<Request>({ ...apiRequest, params: { route: number } })
-    )
+  processSequentially(
+    respJson.routes.route,
+    ({ number }) => fetchBartInfo<Request>({ ...apiRequest, params: { route: number } }),
+    10,
   )
 
 const _getRoutes = async () => {
   const respJson = await fetchBartInfo<RoutesApiRequest>({ type: 'route', command: 'routes' })
-  const [respRoutes, respSchedules] = await Promise.all([
-    // fetches for routes info
-    _fetchPerRoute<RouteInfoApiRequest>(respJson, { type: 'route', command: 'routeinfo' }),
-
-    // fetches for route schedules
-    _fetchPerRoute<RouteScheduleApiRequest>(respJson, { type: 'sched', command: 'routesched' })
-  ])
-  const routes = respRoutes.map((respRoute, index) =>
+  const respRoutes = await _fetchForEachRoute<RouteInfoApiRequest>(
+    respJson,
+    { type: 'route', command: 'routeinfo' },
+  )
+  const respSchedules = await _fetchForEachRoute<RouteScheduleApiRequest>(
+    respJson,
+    { type: 'sched', command: 'routesched' },
+  )
+  const routes = respRoutes.map((respRoute, index) => (
     _normalizeRoute(
       respRoute.routes.route,
-      respSchedules[index].route.train
+      respSchedules[index].route.train,
     )
-  )
+  ))
 
   return keyBy(routes, 'routeID')
 }
 
-genDataFile(_getRoutes, '../src/data/routes.json', 'routes')
+try {
+  genDataFile(_getRoutes, '../src/data/routes.json', 'routes')
+} catch (err) {
+  console.error(err)
+}

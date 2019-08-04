@@ -50,11 +50,11 @@ export const getRouteIdsWithStartAndEnd = (
 
   return (
     // get all of the routes that directly connect the two stations
-    (directRoutes || [])
+    directRoutes
       // optionally filter down to routes that match the optional trainColor
       .filter(
         (routeId: RouteId): boolean =>
-          !trainColor || ROUTES_LOOKUP[routeId].color === trainColor,
+          !trainColor || ROUTES_LOOKUP[routeId].hexcolor === trainColor,
       )
   )
 }

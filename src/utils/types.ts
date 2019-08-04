@@ -74,6 +74,7 @@ export interface Route {
   destination: StationName;
   direction: string;
   color: string;
+  hexcolor: string;
   holidays: number;
   stations: RouteStation[];
 }

@@ -8,6 +8,8 @@ const API_BASE = 'http://api.bart.gov/api/'
 
 export const fetchBartInfo = async <Request extends ApiRequest>(
   apiRequest: Request,
+  numRetries = 10,
+  retryDelay = 100,
 ): Promise<ApiResponse<Request>> => {
   const url = formatUrl(`${API_BASE}${apiRequest.type}.aspx`, [
     {
@@ -17,7 +19,26 @@ export const fetchBartInfo = async <Request extends ApiRequest>(
     },
     apiRequest.params,
   ])
-  const resp = await fetchJson(url)
+  let tryNo = 0;
+  let lastError;
 
-  return camelizeKeys(resp.root) as ApiResponse<Request>
+  while (tryNo < numRetries) {
+    try {
+      const resp = await fetchJson(url)
+
+      return camelizeKeys(resp.root) as ApiResponse<Request>
+    } catch (err) {
+      lastError = err
+      // console.error(err)
+      tryNo++
+
+      if (retryDelay) {
+        await new Promise((resolve) => {
+          setTimeout(resolve, retryDelay);
+        })
+      }
+    }
+  }
+
+  throw lastError
 }

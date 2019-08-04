@@ -8,6 +8,9 @@ node_js:
 # Cache dependencies in $HOME/.yarn-cache across builds
 cache: npm
 
+# Generate all of the static data needed for salmon algorithms
+before_script: npm run gen:all
+
 # Run the the validate script
 script: npm test -- --coverage
 

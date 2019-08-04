@@ -5,7 +5,7 @@ import {
   StationsApiRequest,
   StationInfoApiRequest,
 } from '../src/api/types'
-import { genDataFile } from './utils'
+import { genDataFile, processSequentially } from './utils'
 import { forceArray } from '../src/utils/general'
 import { Station, RouteId } from '../src/utils/types'
 
@@ -27,12 +27,16 @@ const _normalizeStation = (stationInfo: ApiStationWithRoute): Station => ({
 
 const _getStations = async () => {
   const respStations = await fetchBartInfo<StationsApiRequest>({ type: 'stn', command: 'stns' })
-  const stationInfos = await Promise.all(
-    respStations.stations.station.map(({ abbr }) => fetchBartInfo<StationInfoApiRequest>({
-      type: 'stn',
-      command: 'stninfo',
-      params: { orig: abbr },
-    }))
+  const stationInfos = await processSequentially(
+    respStations.stations.station,
+    ({ abbr }) => (
+      fetchBartInfo<StationInfoApiRequest>({
+        type: 'stn',
+        command: 'stninfo',
+        params: { orig: abbr },
+      })
+    ),
+    10,
   )
   const stations = stationInfos.map((respStation) =>
     _normalizeStation(respStation.stations.station)
@@ -41,4 +45,8 @@ const _getStations = async () => {
   return keyBy(stations, 'abbr')
 }
 
-genDataFile(_getStations, '../src/data/stations.json', 'stations')
+try {
+  genDataFile(_getStations, '../src/data/stations.json', 'stations')
+} catch (err) {
+  console.error(err)
+}

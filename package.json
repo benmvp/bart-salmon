@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "npm run gen:all",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "gen:routes": "npx ts-node _scripts/gen-routes-data.ts",
-    "gen:stations": "npx ts-node _scripts/gen-stations-data.ts",
-    "gen:station-routes": "npx ts-node _scripts/gen-station-routes-data.ts",
-    "gen:mock:etd": "npx ts-node _scripts/gen-mock-etd-data.ts"
+    "gen:routes": "ts-node -P tsconfig.scripts.json _scripts/gen-routes-data.ts",
+    "gen:stations": "ts-node -P tsconfig.scripts.json _scripts/gen-stations-data.ts",
+    "gen:station-routes": "ts-node -P tsconfig.scripts.json _scripts/gen-station-routes-data.ts",
+    "gen:all": "npx npm-run-all gen:stations gen:routes gen:station-routes",
+    "gen:mock:etd": "ts-node -P tsconfig.scripts.json _scripts/gen-mock-etd-data.ts"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,7 +54,9 @@
     "@types/redux-logger": "^3.0.7",
     "@types/webpack-env": "^1.14.0",
     "@types/xml2js": "^0.4.4",
+    "isomorphic-fetch": "^2.2.1",
     "redux-devtools-extension": "^2.13.8",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "ts-node": "^8.3.0"
   }
 }
