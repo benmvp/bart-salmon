@@ -1,12 +1,12 @@
-import {ThunkAction} from 'redux-thunk'
+import { ThunkAction } from 'redux-thunk'
 import {
   getSuggestedSalmonRoutesFromEtds,
   getNextArrivalsFromEtds,
 } from '../utils/salmon'
-import {getEstimatedTimesOfDeparture} from '../api'
-import {SalmonRoute, Train} from '../utils/types'
-import {AppAction, OptionalStationName} from './types'
-import {AppState} from './reducers'
+import { getEstimatedTimesOfDeparture } from '../api'
+import { SalmonRoute, Train } from '../utils/types'
+import { AppAction, OptionalStationName } from './types'
+import { AppState } from './reducers'
 
 const NUM_ARRIVALS = 4
 
@@ -46,9 +46,9 @@ export const getSalmonInfo = (): ThunkResult<void> => async (
   dispatch,
   getState,
 ) => {
-  let {origin, destination, numSalmonRoutes, riskinessFactor} = getState()
+  let { origin, destination, numSalmonRoutes, riskinessFactor } = getState()
 
-  if (origin && destination) {
+  if (origin && destination && origin !== destination) {
     dispatch(fetchSalmonInfo())
 
     try {
