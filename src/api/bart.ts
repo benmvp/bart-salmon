@@ -4,7 +4,7 @@ import { fetchJson } from './fetch'
 import { ApiRequest, ApiResponse } from './types'
 
 
-const API_BASE = 'http://api.bart.gov/api/'
+const API_BASE = 'https://api.bart.gov/api/'
 
 export const fetchBartInfo = async <Request extends ApiRequest>(
   apiRequest: Request,
