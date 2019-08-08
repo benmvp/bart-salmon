@@ -36,7 +36,7 @@ const SalmonRoute: FunctionComponent<{route: SalmonRouteData, nextTrain: Train}>
     )
   }
 
-  const minutesLabel = salmonTimeAdditionalTime === 1 ? 'minute' : 'minutes'
+  const minutesLabel = salmonTimeAdditionalTime === 1 ? 'min' : 'mins'
   const additiveDisplay = salmonTimeAdditionalTime > 0 ? '⁺' : undefined
 
   return (
