@@ -14,6 +14,8 @@ import {
   getOppositeRouteIds,
   getRouteIdsWithStartAndEnd,
   areStationsOnRouteStations,
+  minutesBetweenStation,
+  filterForTrainsThatGoAllTheWay,
 } from './routes'
 import routesLookup from '../data/routes.json'
 import stationRoutesLookup from '../data/station-routes.json'
@@ -27,38 +29,6 @@ const DEFAULT_NUM_SALMON_SUGGESTIONS = 5
 // the higher this number is the more likely to make the train
 const DEFAULT_MINIMUM_BACKWARDS_STATION_WAIT_TIME = 1
 
-/**
- * A filter that will include a train that will actually go all the way to the
- * destination if we want direct routes (!allowTransfers). For instance
- * the NCON/PHIL trains have the same route ID as the PITT train, so
- * they'll be returned. However, they don't make it all the way to PITT
- * so they shouldn't be included
- */
-const _filterForTrainsThatGoAllTheWay = (
-  targetRouteIds: Set<RouteId>,
-  allowTransfers: boolean,
-  { abbreviation: trainDestination, hexcolor: trainColor }: Train,
-  destination?: StationName,
-): boolean => {
-  // If we're allowing transfers or the train ends in the destination
-  // then this arrival train is good to include.
-  if (allowTransfers || !destination || trainDestination === destination) {
-    return true
-  }
-
-  // Otherwise we determine if the train will "go all the way" by seeing
-  // if we can get from our destination to the train's destination.
-  // We get back a list of routes, which we intersect with the targetRouteIds
-  // to doubly ensure that this arrival train is ok. If the intersection
-  // is non empty we know the train "goes all the way".
-  const routesFromDestinationToTrainEnd = getRouteIdsWithStartAndEnd(
-    destination,
-    trainDestination,
-    trainColor,
-  )
-
-  return routesFromDestinationToTrainEnd.some((routeId) => targetRouteIds.has(routeId))
-}
 
 /**
  * Given the origin and the target route IDs, determines which trains
@@ -103,7 +73,7 @@ const _genDestinationEtdsForStation = (
       .flatten()
       // filter down to the trains that will go all the way to the destination
       .filter((train: Train) => (
-        _filterForTrainsThatGoAllTheWay(
+        filterForTrainsThatGoAllTheWay(
           targetRouteIds,
           allowTransfers,
           train,
@@ -146,19 +116,7 @@ const _getBackwardsTrains = (
   )
 }
 
-const _minutesBetweenStation = (
-  start: StationName,
-  end: StationName,
-  routeId: RouteId,
-): number => {
-  const { directRoutes, time } = STATION_ROUTES_LOOKUP[start][end]
 
-  if (!directRoutes.includes(routeId)) {
-    return 1000;
-  }
-
-  return time
-}
 
 type BackwardsTimeRoutePathsCollection = _.Collection<{
   backwardsTrain: Train;
@@ -190,7 +148,7 @@ const _getBackwardsTimeRoutePaths = (
           .map((backwardsStation) => ({
             ...trainInfo,
             backwardsStation,
-            backwardsRideTime: _minutesBetweenStation(origin, backwardsStation, routeId),
+            backwardsRideTime: minutesBetweenStation(origin, backwardsStation, routeId),
           }))
           // TODO: Remove for potential optimization?
           .value()
@@ -281,7 +239,7 @@ const _getSalmonTimeRoutePaths = (
     // for every route path
     .map(trainInfo => ({
       ...trainInfo,
-      returnRideTime: _minutesBetweenStation(
+      returnRideTime: minutesBetweenStation(
         trainInfo.backwardsStation,
         origin,
         trainInfo.returnRouteId,

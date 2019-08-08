@@ -6,6 +6,7 @@ import {
   StationLookup,
   Direction,
   HexColor,
+  Train,
 } from './types'
 import routesLookup from '../data/routes.json'
 import stationsLookup from '../data/stations.json'
@@ -15,6 +16,9 @@ import stationRoutesLookup from '../data/station-routes.json'
 const STATION_ROUTES_LOOKUP = (stationRoutesLookup as unknown) as StationRoutesLookup
 const ROUTES_LOOKUP = (routesLookup as unknown) as RoutesLookup
 const STATIONS_LOOKUP = (stationsLookup as unknown) as StationLookup
+
+
+const DEFAULT_MINUTES_BETWEEN_STATIONS = 1000
 
 
 /**
@@ -126,4 +130,58 @@ export const getTargetDirections = (
         .filter((direction) => !!direction) as Direction[]
     )
   )
+}
+
+/**
+ * Calculates the minutes between two stations on a given route.
+ * Returns 1000 if stations are not connected by the route
+ */
+export const minutesBetweenStation = (
+  start: StationName,
+  end: StationName,
+  routeId: RouteId,
+): number => {
+  const {
+    directRoutes = [],
+    time = DEFAULT_MINUTES_BETWEEN_STATIONS,
+  } = STATION_ROUTES_LOOKUP[start][end] || {}
+
+  if (!directRoutes.includes(routeId)) {
+    return DEFAULT_MINUTES_BETWEEN_STATIONS;
+  }
+
+  return time
+}
+
+/**
+ * A filter that will include a train that will actually go all the way to the
+ * destination if we want direct routes (!allowTransfers). For instance
+ * the NCON/PHIL trains have the same route ID as the PITT train, so
+ * they'll be returned. However, they don't make it all the way to PITT
+ * so they shouldn't be included
+ */
+export const filterForTrainsThatGoAllTheWay = (
+  targetRouteIds: Set<RouteId>,
+  allowTransfers: boolean,
+  { abbreviation: trainDestination, hexcolor: trainColor }: Train,
+  destination?: StationName,
+): boolean => {
+  // If we're allowing transfers or the train ends in the destination
+  // then this arrival train is good to include.
+  if (allowTransfers || !destination || trainDestination === destination) {
+    return true
+  }
+
+  // Otherwise we determine if the train will "go all the way" by seeing
+  // if we can get from our destination to the train's destination.
+  // We get back a list of routes, which we intersect with the targetRouteIds
+  // to doubly ensure that this arrival train is ok. If the intersection
+  // is non empty we know the train "goes all the way".
+  const routesFromDestinationToTrainEnd = getRouteIdsWithStartAndEnd(
+    destination,
+    trainDestination,
+    trainColor,
+  )
+
+  return routesFromDestinationToTrainEnd.some((routeId) => targetRouteIds.has(routeId))
 }

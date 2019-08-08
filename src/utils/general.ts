@@ -1,2 +1,2 @@
-export const normalizeMinutes = (minutes: string | number): number =>
+export const normalizeMinutes = (minutes: number | string): number =>
   Number.isNaN(+minutes) ? 0 : +minutes

@@ -94,7 +94,7 @@ export interface Route {
 }
 
 interface Estimate {
-  minutes: number;
+  minutes: number | string;
   platform: number;
   direction: Direction;
   length: number;
@@ -108,6 +108,7 @@ export interface Train extends Estimate {
   destination: string;
   abbreviation: StationName;
   limited: number;
+  minutes: number;
 }
 
 export interface SalmonRoute {
