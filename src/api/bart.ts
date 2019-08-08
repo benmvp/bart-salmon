@@ -4,12 +4,12 @@ import { fetchJson } from './fetch'
 import { ApiRequest, ApiResponse } from './types'
 
 
-const API_BASE = '//api.bart.gov/api/'
+const API_BASE = 'https://api.bart.gov/api/'
 
 export const fetchBartInfo = async <Request extends ApiRequest>(
   apiRequest: Request,
   numRetries = 10,
-  retryDelay = 100,
+  retryDelay = 500,
 ): Promise<ApiResponse<Request>> => {
   const url = formatUrl(`${API_BASE}${apiRequest.type}.aspx`, [
     {
