@@ -28,6 +28,8 @@ const _getRoutesForOriginDestination = async (
   origin: StationName,
   destination: StationName,
 ) => {
+  console.log(`Fetching ${origin} => ${destination}`)
+
   // Get the departure schedule at evening rush & late night to ensure
   // we get the normal routes plus the off-peak routes
   const [departSchedulesEvening, departSchedulesLateNight] = await Promise.all([
