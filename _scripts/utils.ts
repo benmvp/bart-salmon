@@ -11,21 +11,17 @@ export const genDataFile = async (
   path: string,
   description: string
 ) => {
-  try {
-    console.log(`Retrieving ${description} data...`)
+  console.log(`Retrieving ${description} data...`)
 
-    const data = await getData()
-    const fullPath = join(__dirname, path)
-    const dataJson = JSON.stringify(data, null, 2)
+  const data = await getData()
+  const fullPath = join(__dirname, path)
+  const dataJson = JSON.stringify(data, null, 2)
 
-    console.log(`Writing ${description} data...`)
+  console.log(`Writing ${description} data...`)
 
-    await writeFileAsync(fullPath, dataJson)
+  await writeFileAsync(fullPath, dataJson)
 
-    console.log(`\tDONE! (${fullPath})`)
-  } catch (ex) {
-    console.error(ex)
-  }
+  console.log(`\tDONE! (${fullPath})`)
 }
 
 /**

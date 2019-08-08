@@ -38,8 +38,11 @@ const _getRoutes = async () => {
   return keyBy(routes, 'routeID')
 }
 
-try {
-  genDataFile(_getRoutes, '../src/data/routes.json', 'routes')
-} catch (err) {
-  console.error(err)
-}
+(async () => {
+  try {
+    await genDataFile(_getRoutes, '../src/data/routes.json', 'routes')
+  } catch (err) {
+    console.error(err)
+    process.exit(1)
+  }
+})()

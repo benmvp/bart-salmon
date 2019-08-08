@@ -28,8 +28,6 @@ const _getRoutesForOriginDestination = async (
   origin: StationName,
   destination: StationName,
 ) => {
-  console.log(`Fetching ${origin} => ${destination}`)
-
   // Get the departure schedule at evening rush & late night to ensure
   // we get the normal routes plus the off-peak routes
   const [departSchedulesEvening, departSchedulesLateNight] = await Promise.all([
@@ -82,6 +80,8 @@ const _getRoutesForOriginDestination = async (
  * lookup of destination stations to direct and multi routes
  */
 const _getAllDestinationRoutesForStation = async (origin: StationName) => {
+  console.log(`Fetching destination route info for: ${origin}`)
+
   // Build up a list of destination stations by removing the
   // origin station
   const destinationStations = STATION_NAMES.filter((station) => station !== origin)
@@ -117,8 +117,15 @@ const _getStationRoutes = async () => {
   return zipObject(STATION_NAMES, stationRoutesList)
 }
 
-genDataFile(
-  _getStationRoutes,
-  '../src/data/station-routes.json',
-  'routes between stations'
-)
+(async () => {
+  try {
+    await genDataFile(
+      _getStationRoutes,
+      '../src/data/station-routes.json',
+      'routes between stations'
+    )
+  } catch (err) {
+    console.error(err)
+    process.exit(1)
+  }
+})()

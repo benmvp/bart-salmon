@@ -1,10 +1,17 @@
 import { genDataFile } from './utils'
 import { getEstimatedTimesOfDeparture } from '../src/api'
 
-const [, , mockFileName = 'etds'] = process.argv
+(async () => {
+    try {
+        const [, , mockFileName = 'etds'] = process.argv
 
-genDataFile(
-    getEstimatedTimesOfDeparture,
-    `../src/api/__mocks__/${mockFileName}.json`,
-    'estimated times of departure'
-)
+        await genDataFile(
+            getEstimatedTimesOfDeparture,
+            `../src/api/__mocks__/${mockFileName}.json`,
+            'estimated times of departure'
+        )
+    } catch (err) {
+        console.error(err)
+        process.exit(1)
+    }
+})()

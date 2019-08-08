@@ -44,8 +44,11 @@ const _getStations = async () => {
   return keyBy(stations, 'abbr')
 }
 
-try {
-  genDataFile(_getStations, '../src/data/stations.json', 'stations')
-} catch (err) {
-  console.error(err)
-}
+(async () => {
+  try {
+    await genDataFile(_getStations, '../src/data/stations.json', 'stations')
+  } catch (err) {
+    console.error(err)
+    process.exit(1)
+  }
+})()
