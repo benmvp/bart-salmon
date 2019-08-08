@@ -48,7 +48,7 @@ export const getSalmonInfo = (): ThunkResult<void> => async (
 ) => {
   let { origin, destination, numSalmonRoutes, riskinessFactor } = getState()
 
-  if (origin && destination && origin !== destination) {
+  if (origin && destination) {
     dispatch(fetchSalmonInfo())
 
     try {

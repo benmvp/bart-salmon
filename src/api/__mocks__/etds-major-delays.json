@@ -1798,7 +1798,7 @@
   "PITT": {
     "name": "Pittsburg/Bay Point",
     "abbr": "PITT",
-    "etd": {
+    "etd": [{
       "destination": "SF Airport",
       "abbreviation": "SFIA",
       "limited": 0,
@@ -1831,7 +1831,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "12TH": {
     "name": "12th St. Oakland City Center",
@@ -1909,7 +1909,7 @@
         "destination": "MacArthur",
         "abbreviation": "MCAR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 3,
           "platform": 1,
           "direction": "North",
@@ -1917,7 +1917,7 @@
           "color": "WHITE",
           "hexcolor": "#ffffff",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Millbrae",
@@ -2016,7 +2016,7 @@
         "destination": "Pleasant Hill - Limited",
         "abbreviation": "PHIL",
         "limited": 1,
-        "estimate": {
+        "estimate": [{
           "minutes": 31,
           "platform": 3,
           "direction": "North",
@@ -2024,7 +2024,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -2172,7 +2172,7 @@
         "destination": "MacArthur",
         "abbreviation": "MCAR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 4,
           "platform": 1,
           "direction": "North",
@@ -2180,7 +2180,7 @@
           "color": "WHITE",
           "hexcolor": "#ffffff",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Millbrae",
@@ -2220,7 +2220,7 @@
         "destination": "Montgomery",
         "abbreviation": "MONT",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 5,
           "platform": 2,
           "direction": "South",
@@ -2228,7 +2228,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Pittsburg/Bay Point",
@@ -2268,7 +2268,7 @@
         "destination": "Pleasant Hill - Limited",
         "abbreviation": "PHIL",
         "limited": 1,
-        "estimate": {
+        "estimate": [{
           "minutes": 32,
           "platform": 3,
           "direction": "North",
@@ -2276,7 +2276,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -2458,7 +2458,7 @@
         "destination": "Montgomery",
         "abbreviation": "MONT",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 2,
           "platform": 4,
           "direction": "South",
@@ -2466,7 +2466,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Pittsburg/Bay Point",
@@ -2506,7 +2506,7 @@
         "destination": "Pleasant Hill - Limited",
         "abbreviation": "PHIL",
         "limited": 1,
-        "estimate": {
+        "estimate": [{
           "minutes": 35,
           "platform": 3,
           "direction": "North",
@@ -2514,7 +2514,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -2737,7 +2737,7 @@
   "DUBL": {
     "name": "Dublin/Pleasanton",
     "abbr": "DUBL",
-    "etd": {
+    "etd": [{
       "destination": "Daly City",
       "abbreviation": "DALY",
       "limited": 0,
@@ -2770,7 +2770,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "WOAK": {
     "name": "West Oakland",
@@ -2975,7 +2975,7 @@
         "destination": "Pleasant Hill - Limited",
         "abbreviation": "PHIL",
         "limited": 1,
-        "estimate": {
+        "estimate": [{
           "minutes": 27,
           "platform": 2,
           "direction": "North",
@@ -2983,7 +2983,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -3258,7 +3258,7 @@
         "destination": "Pleasant Hill - Limited",
         "abbreviation": "PHIL",
         "limited": 1,
-        "estimate": {
+        "estimate": [{
           "minutes": 21,
           "platform": 2,
           "direction": "North",
@@ -3266,7 +3266,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -3516,7 +3516,7 @@
         "destination": "Pleasant Hill - Limited",
         "abbreviation": "PHIL",
         "limited": 1,
-        "estimate": {
+        "estimate": [{
           "minutes": 19,
           "platform": 2,
           "direction": "North",
@@ -3524,7 +3524,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -3740,7 +3740,7 @@
         "destination": "Montgomery",
         "abbreviation": "MONT",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 5,
           "platform": 2,
           "direction": "North",
@@ -3748,7 +3748,7 @@
           "color": "WHITE",
           "hexcolor": "#ffffff",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Pittsburg/Bay Point",
@@ -3998,7 +3998,7 @@
         "destination": "Montgomery",
         "abbreviation": "MONT",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 4,
           "platform": 2,
           "direction": "North",
@@ -4006,7 +4006,7 @@
           "color": "WHITE",
           "hexcolor": "#ffffff",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Pittsburg/Bay Point",
@@ -4114,7 +4114,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 1,
           "platform": 1,
           "direction": "South",
@@ -4122,7 +4122,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -4270,7 +4270,7 @@
         "destination": "Montgomery",
         "abbreviation": "MONT",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 2,
           "platform": 2,
           "direction": "North",
@@ -4278,7 +4278,7 @@
           "color": "WHITE",
           "hexcolor": "#ffffff",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Pittsburg/Bay Point",
@@ -4386,7 +4386,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 3,
           "platform": 1,
           "direction": "South",
@@ -4394,7 +4394,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -4542,7 +4542,7 @@
         "destination": "Montgomery",
         "abbreviation": "MONT",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": "Leaving",
           "platform": 2,
           "direction": "North",
@@ -4550,7 +4550,7 @@
           "color": "WHITE",
           "hexcolor": "#ffffff",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Pittsburg/Bay Point",
@@ -4658,7 +4658,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 5,
           "platform": 1,
           "direction": "South",
@@ -4666,7 +4666,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -4916,7 +4916,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 7,
           "platform": 1,
           "direction": "South",
@@ -4924,7 +4924,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -6568,7 +6568,7 @@
   "MLBR": {
     "name": "Millbrae",
     "abbr": "MLBR",
-    "etd": {
+    "etd": [{
       "destination": "Richmond",
       "abbreviation": "RICH",
       "limited": 0,
@@ -6601,12 +6601,12 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "SFIA": {
     "name": "San Francisco Int'l Airport",
     "abbr": "SFIA",
-    "etd": {
+    "etd": [{
       "destination": "Pittsburg/Bay Point",
       "abbreviation": "PITT",
       "limited": 0,
@@ -6639,6 +6639,6 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   }
 }

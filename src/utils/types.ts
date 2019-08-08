@@ -4,6 +4,7 @@ export type StationName = '12TH'
   | '16TH'
   | '19TH'
   | '24TH'
+  | 'ANTC'
   | 'ASHB'
   | 'BALB'
   | 'BAYF'
@@ -32,6 +33,7 @@ export type StationName = '12TH'
   | 'OAKL'
   | 'ORIN'
   | 'PITT'
+  | 'PCTR'
   | 'PHIL'
   | 'POWL'
   | 'RICH'
@@ -46,7 +48,6 @@ export type StationName = '12TH'
   | 'WCRK'
   | 'WDUB'
   | 'WOAK'
-
 export type RouteId = 'ROUTE 1'
   | 'ROUTE 2'
   | 'ROUTE 3'
@@ -55,15 +56,29 @@ export type RouteId = 'ROUTE 1'
   | 'ROUTE 6'
   | 'ROUTE 7'
   | 'ROUTE 8'
+  | 'ROUTE 9'
+  | 'ROUTE 10'
   | 'ROUTE 11'
   | 'ROUTE 12'
+  | 'ROUTE 13'
+  | 'ROUTE 14'
   | 'ROUTE 19'
   | 'ROUTE 20'
-
-export interface RouteStation {
-  name: StationName;
-  timeFromOrigin: number;
-}
+export type Direction = 'North' | 'South'
+export type Color = 'RED'
+  | 'YELLOW'
+  | 'BLUE'
+  | 'GREEN'
+  | 'ORANGE'
+  | 'WHITE'
+  | 'PURPLE'
+export type HexColor = '#ff0000'
+  | '#ffff33'
+  | '#0099cc'
+  | '#339933'
+  | '#ff9933'
+  | '#ffffff'
+  | '#c463c5'
 
 export interface Route {
   name: string;
@@ -72,20 +87,19 @@ export interface Route {
   number: number;
   origin: StationName;
   destination: StationName;
-  direction: string;
-  color: string;
-  hexcolor: string;
+  color: Color;
+  hexcolor: HexColor;
   holidays: number;
-  stations: RouteStation[];
+  stations: StationName[];
 }
 
 interface Estimate {
   minutes: number;
   platform: number;
-  direction: 'South' | 'North';
+  direction: Direction;
   length: number;
-  color: string;
-  hexcolor: string;
+  color: Color;
+  hexcolor: HexColor;
   bikeflag: number;
   delay: number;
 }
@@ -113,8 +127,9 @@ export interface SalmonRoute {
 export type StationRoutesLookup = {
   [Name in StationName]: {
     [Name in StationName]: {
-      directRoutes?: RouteId[];
-      multiRoutes?: RouteId[][];
+      directRoutes: RouteId[];
+      multiRoutes: RouteId[][];
+      time: number;
     }
   }
 }

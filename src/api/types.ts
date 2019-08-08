@@ -1,5 +1,12 @@
 import { UrlParams } from 'url-lib'
-import { StationName, RouteId, Etd } from '../utils/types'
+import {
+  StationName,
+  RouteId,
+  Etd,
+  Direction,
+  Color,
+  HexColor,
+} from '../utils/types'
 
 
 export interface ApiStation {
@@ -49,14 +56,14 @@ export interface ApiRoute {
   abbr: string;
   routeID: RouteId;
   number: number;
-  hexcolor: string;
-  color: string;
+  hexcolor: HexColor;
+  color: Color;
 }
 
 export interface ApiRouteWithStations extends ApiRoute {
   origin: StationName;
   destination: StationName;
-  direction: 'North' | 'South';
+  direction: Direction;
   holidays: number;
   numStns: number;
   config: {

@@ -2104,7 +2104,7 @@
   "PITT": {
     "name": "Pittsburg/Bay Point",
     "abbr": "PITT",
-    "etd": {
+    "etd": [{
       "destination": "SF Airport",
       "abbreviation": "SFIA",
       "limited": 0,
@@ -2137,7 +2137,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "12TH": {
     "name": "12th St. Oakland City Center",
@@ -2283,7 +2283,7 @@
         "destination": "Pleasant Hill - Limited",
         "abbreviation": "PHIL",
         "limited": 1,
-        "estimate": {
+        "estimate": [{
           "minutes": 12,
           "platform": 3,
           "direction": "North",
@@ -2291,7 +2291,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -2507,7 +2507,7 @@
         "destination": "Pleasant Hill - Limited",
         "abbreviation": "PHIL",
         "limited": 1,
-        "estimate": {
+        "estimate": [{
           "minutes": 14,
           "platform": 3,
           "direction": "North",
@@ -2515,7 +2515,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -2973,7 +2973,7 @@
   "DUBL": {
     "name": "Dublin/Pleasanton",
     "abbr": "DUBL",
-    "etd": {
+    "etd": [{
       "destination": "Daly City",
       "abbreviation": "DALY",
       "limited": 0,
@@ -3006,7 +3006,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "WOAK": {
     "name": "West Oakland",
@@ -3152,7 +3152,7 @@
         "destination": "Pleasant Hill - Limited",
         "abbreviation": "PHIL",
         "limited": 1,
-        "estimate": {
+        "estimate": [{
           "minutes": 9,
           "platform": 2,
           "direction": "North",
@@ -3160,7 +3160,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -3410,7 +3410,7 @@
         "destination": "Pleasant Hill - Limited",
         "abbreviation": "PHIL",
         "limited": 1,
-        "estimate": {
+        "estimate": [{
           "minutes": 2,
           "platform": 2,
           "direction": "North",
@@ -3418,7 +3418,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -3668,7 +3668,7 @@
         "destination": "Pleasant Hill - Limited",
         "abbreviation": "PHIL",
         "limited": 1,
-        "estimate": {
+        "estimate": [{
           "minutes": "Leaving",
           "platform": 2,
           "direction": "North",
@@ -3676,7 +3676,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -6073,7 +6073,7 @@
   "WARM": {
     "name": "Warm Springs/South Fremont",
     "abbr": "WARM",
-    "etd": {
+    "etd": [{
       "destination": "Daly City",
       "abbreviation": "DALY",
       "limited": 0,
@@ -6097,7 +6097,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "COLM": {
     "name": "Colma",
@@ -6528,7 +6528,7 @@
   "MLBR": {
     "name": "Millbrae",
     "abbr": "MLBR",
-    "etd": {
+    "etd": [{
       "destination": "Richmond",
       "abbreviation": "RICH",
       "limited": 0,
@@ -6561,12 +6561,12 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "SFIA": {
     "name": "San Francisco Int'l Airport",
     "abbr": "SFIA",
-    "etd": {
+    "etd": [{
       "destination": "Pittsburg/Bay Point",
       "abbreviation": "PITT",
       "limited": 0,
@@ -6599,6 +6599,6 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   }
 }

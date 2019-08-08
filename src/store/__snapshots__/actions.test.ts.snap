@@ -43,7 +43,7 @@ Object {
     ],
     "routes": Array [
       Object {
-        "backwardsRideTime": 5,
+        "backwardsRideTime": 4,
         "backwardsRouteId": "ROUTE 3",
         "backwardsStation": "RICH",
         "backwardsTrain": Object {
@@ -58,7 +58,7 @@ Object {
           "minutes": 1,
           "platform": 1,
         },
-        "backwardsWaitTime": 9,
+        "backwardsWaitTime": 10,
         "returnRideTime": 4,
         "returnRouteId": "ROUTE 7",
         "returnTrain": Object {
@@ -109,7 +109,7 @@ Object {
         "waitTime": 9,
       },
       Object {
-        "backwardsRideTime": 5,
+        "backwardsRideTime": 4,
         "backwardsRouteId": "ROUTE 3",
         "backwardsStation": "RICH",
         "backwardsTrain": Object {
@@ -124,7 +124,7 @@ Object {
           "minutes": 1,
           "platform": 1,
         },
-        "backwardsWaitTime": 23,
+        "backwardsWaitTime": 24,
         "returnRideTime": 4,
         "returnRouteId": "ROUTE 7",
         "returnTrain": Object {

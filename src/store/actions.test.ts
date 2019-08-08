@@ -1,6 +1,6 @@
-import {setOrigin, setDestination, setNumSalmonRoutes, getSalmonInfo} from './actions'
-import {AppState} from './reducers'
-import {StationName} from '../utils/types'
+import { setOrigin, setDestination, setNumSalmonRoutes, getSalmonInfo } from './actions'
+import { AppState } from './reducers'
+import { StationName } from '../utils/types'
 
 jest.mock('../api')
 
@@ -75,7 +75,7 @@ describe('getSalmonInfo', () => {
     await asyncAction(mockDispatch, MOCK_GET_STATE, null)
 
     expect(mockDispatch).toHaveBeenCalledTimes(2)
-    expect(mockDispatch).toHaveBeenCalledWith({type: 'FETCH_SALMON_INFO'})
+    expect(mockDispatch).toHaveBeenCalledWith({ type: 'FETCH_SALMON_INFO' })
   })
 
   it('dispatches RECEIVE_SALMON_INFO action', async () => {
@@ -91,7 +91,7 @@ describe('getSalmonInfo', () => {
       arrivals: [],
     }) as AppState
 
-    await asyncAction(mockDispatch, getState, null)
+    await asyncAction(mockDispatch, getState, undefined)
 
     expect(mockDispatch).toHaveBeenCalledTimes(2)
 

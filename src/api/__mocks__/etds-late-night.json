@@ -1508,7 +1508,7 @@
   "PITT": {
     "name": "Pittsburg/Bay Point",
     "abbr": "PITT",
-    "etd": {
+    "etd": [{
       "destination": "SFO/Millbrae",
       "abbreviation": "MLBR",
       "limited": 0,
@@ -1532,7 +1532,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "12TH": {
     "name": "12th St. Oakland City Center",
@@ -2111,7 +2111,7 @@
   "DUBL": {
     "name": "Dublin/Pleasanton",
     "abbr": "DUBL",
-    "etd": {
+    "etd": [{
       "destination": "Daly City",
       "abbreviation": "DALY",
       "limited": 0,
@@ -2135,7 +2135,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "WOAK": {
     "name": "West Oakland",
@@ -3842,7 +3842,7 @@
   "RICH": {
     "name": "Richmond",
     "abbr": "RICH",
-    "etd": {
+    "etd": [{
       "destination": "Warm Springs",
       "abbreviation": "WARM",
       "limited": 0,
@@ -3866,12 +3866,12 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "WARM": {
     "name": "Warm Springs/South Fremont",
     "abbr": "WARM",
-    "etd": {
+    "etd": [{
       "destination": "Richmond",
       "abbreviation": "RICH",
       "limited": 0,
@@ -3895,7 +3895,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "COLM": {
     "name": "Colma",
@@ -4104,7 +4104,7 @@
   "MLBR": {
     "name": "Millbrae",
     "abbr": "MLBR",
-    "etd": {
+    "etd": [{
       "destination": "Pittsburg/Bay Point",
       "abbreviation": "PITT",
       "limited": 0,
@@ -4128,7 +4128,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "SFIA": {
     "name": "San Francisco Int'l Airport",

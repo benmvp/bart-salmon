@@ -3000,7 +3000,7 @@
   "DUBL": {
     "name": "Dublin/Pleasanton",
     "abbr": "DUBL",
-    "etd": {
+    "etd": [{
       "destination": "Daly City",
       "abbreviation": "DALY",
       "limited": 0,
@@ -3033,7 +3033,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "WOAK": {
     "name": "West Oakland",
@@ -6996,7 +6996,7 @@
   "MLBR": {
     "name": "Millbrae",
     "abbr": "MLBR",
-    "etd": {
+    "etd": [{
       "destination": "Richmond",
       "abbreviation": "RICH",
       "limited": 0,
@@ -7029,12 +7029,12 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "SFIA": {
     "name": "San Francisco Int'l Airport",
     "abbr": "SFIA",
-    "etd": {
+    "etd": [{
       "destination": "Pittsburg/Bay Point",
       "abbreviation": "PITT",
       "limited": 0,
@@ -7067,6 +7067,6 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   }
 }

@@ -1,18 +1,15 @@
-import {forceArray} from './general'
+import { normalizeMinutes } from './general'
 
-describe('forceArray', () => {
-  it('wraps a non-array in an array', () => {
-    let value = {foo: 'bar'}
-    let forcedArray = forceArray(value)
-
-    expect(forcedArray).toEqual([value])
-    expect(forcedArray[0]).toBe(value)
+describe('normalizeMinutes', () => {
+  it('returns back the number', () => {
+    expect(normalizeMinutes(10)).toBe(10)
   })
 
-  it('just returns back the array', () => {
-    let value = ['hello', 'bye']
-    let forcedArray = forceArray(value)
+  it('returns back string versin of a number as the number', () => {
+    expect(normalizeMinutes('15')).toBe(15)
+  })
 
-    expect(forcedArray).toBe(value)
+  it('returns 0 for non-parsable string', () => {
+    expect(normalizeMinutes('Leaving')).toBe(0)
   })
 })

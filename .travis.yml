@@ -5,7 +5,6 @@ node_js:
   - "10"
   - "8"
 
-# Cache dependencies in $HOME/.yarn-cache across builds
 cache: npm
 
 # Generate all of the static data needed for salmon algorithms
@@ -14,7 +13,5 @@ before_script: npm run gen:all
 # Run the the validate script
 script: npm test -- --coverage
 
-# Send coverage data to Coveralls
-after_success:
-  # Retrieve the coverage information and send it to Coveralls
-  - cat ./coverage/lcov.info | npx coveralls
+# Retrieve the coverage information and send it to Coveralls
+after_success: cat ./coverage/lcov.info | npx coveralls

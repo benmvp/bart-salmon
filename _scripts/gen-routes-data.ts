@@ -5,47 +5,17 @@ import {
   ApiRequest,
   RoutesApiRequest,
   RouteInfoApiRequest,
-  RouteScheduleApiRequest,
   ApiRouteWithStations,
-  ApiRouteStop,
-  ApiRouteSchedule,
   ApiRoutesResponse,
 } from '../src/api/types'
 import { genDataFile, processSequentially } from './utils'
-import { Route, RouteStation } from '../src/utils/types'
+import { Route } from '../src/utils/types'
 
 
-const _getSampleSchedule = (schedules: ApiRouteSchedule[]): ApiRouteSchedule =>
-  schedules[Math.max(0, schedules.length - 3)]
-
-const _toMinutes = (stopInfo: ApiRouteStop): number => {
-  const time = stopInfo['@origTime']
-  const [, hours = '0', minutes = '0'] = time.match(/^(\d\d?):(\d\d)/) || []
-
-  return +hours * 60 + +minutes
-}
-
-const _normalizeRoute = (routeInfo: ApiRouteWithStations, schedules?: ApiRouteSchedule[]): Route => {
-  let stations: RouteStation[] = []
-
-  if (schedules) {
-    const sampleSchedule = _getSampleSchedule(schedules)
-    const stationsInSampleSchedule = sampleSchedule.stop.filter(
-      (stopInfo) => !!stopInfo['@origTime']
-    )
-    const firstStopTime = _toMinutes(stationsInSampleSchedule[0])
-
-    stations = stationsInSampleSchedule.map((stopInfo) => ({
-      name: stopInfo['@station'],
-      timeFromOrigin: _toMinutes(stopInfo) - firstStopTime
-    }))
-  }
-
-  return {
-    ...omit(routeInfo, ['config', 'numStns']),
-    stations,
-  }
-}
+const _normalizeRoute = (routeInfo: ApiRouteWithStations): Route => ({
+  ...omit(routeInfo, ['config', 'numStns', 'direction']),
+  stations: routeInfo.config.station,
+})
 
 const _fetchForEachRoute = <Request extends ApiRequest>(
   respJson: ApiRoutesResponse,
@@ -63,16 +33,7 @@ const _getRoutes = async () => {
     respJson,
     { type: 'route', command: 'routeinfo' },
   )
-  const respSchedules = await _fetchForEachRoute<RouteScheduleApiRequest>(
-    respJson,
-    { type: 'sched', command: 'routesched' },
-  )
-  const routes = respRoutes.map((respRoute, index) => (
-    _normalizeRoute(
-      respRoute.routes.route,
-      respSchedules[index].route.train,
-    )
-  ))
+  const routes = respRoutes.map((respRoute) => _normalizeRoute(respRoute.routes.route))
 
   return keyBy(routes, 'routeID')
 }

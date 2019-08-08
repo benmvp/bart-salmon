@@ -6,23 +6,22 @@ import {
   StationInfoApiRequest,
 } from '../src/api/types'
 import { genDataFile, processSequentially } from './utils'
-import { forceArray } from '../src/utils/general'
 import { Station, RouteId } from '../src/utils/types'
 
 
-const _normalizeRoutes = (routesJson?: { route: RouteId[] }): RouteId[] =>
-  routesJson ? forceArray(routesJson.route) : []
+const _getRoutes = (routesJson?: { route: RouteId[] }): RouteId[] =>
+  routesJson ? routesJson.route : []
 
-const _normalizePlatforms = (platformsJson?: { platform: number[] }): number[] =>
-  platformsJson ? forceArray(platformsJson.platform) : []
+const _getPlatforms = (platformsJson?: { platform: number[] }): number[] =>
+  platformsJson ? platformsJson.platform : []
 
 
 const _normalizeStation = (stationInfo: ApiStationWithRoute): Station => ({
   ...stationInfo,
-  northRoutes: _normalizeRoutes(stationInfo.northRoutes),
-  southRoutes: _normalizeRoutes(stationInfo.southRoutes),
-  northPlatforms: _normalizePlatforms(stationInfo.northPlatforms),
-  southPlatforms: _normalizePlatforms(stationInfo.southPlatforms)
+  northRoutes: _getRoutes(stationInfo.northRoutes),
+  southRoutes: _getRoutes(stationInfo.southRoutes),
+  northPlatforms: _getPlatforms(stationInfo.northPlatforms),
+  southPlatforms: _getPlatforms(stationInfo.southPlatforms)
 })
 
 const _getStations = async () => {

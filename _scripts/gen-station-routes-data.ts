@@ -1,6 +1,7 @@
 import zipObject from 'lodash/zipObject'
 import mapValues from 'lodash/mapValues'
 import keyBy from 'lodash/keyBy'
+import sum from 'lodash/sum'
 import { fetchBartInfo } from '../src/api/bart'
 import { DepartureApiRequest } from '../src/api/types'
 import { genDataFile, processSequentially } from './utils'
@@ -22,10 +23,6 @@ const _fetchDepartSchedules = (
     command: 'depart',
     params: { orig, dest, time, date: '09/10/2019' }
   })
-
-const _itemsOrNull = <T>(items: T[]) => (
-  items.length > 0 ? items : undefined
-)
 
 const _getRoutesForOriginDestination = async (
   origin: StationName,
@@ -65,10 +62,16 @@ const _getRoutesForOriginDestination = async (
   ]
     .map((tripRouteString) => tripRouteString.split('|') as RouteId[])
 
+  // get the average time between the two stations
+  const time = Math.ceil(
+    sum(trips.map((tripInfo) => +tripInfo['@tripTime'])) / trips.length
+  )
+
   return {
     destination,
-    directRoutes: _itemsOrNull(directRoutes),
-    multiRoutes: _itemsOrNull(multiRoutes)
+    directRoutes,
+    multiRoutes,
+    time,
   }
 }
 
@@ -95,7 +98,7 @@ const _getAllDestinationRoutesForStation = async (origin: StationName) => {
   // that was used to create the lookup)
   return mapValues(
     destinationRoutesLookup,
-    ({ directRoutes, multiRoutes }) => ({ directRoutes, multiRoutes })
+    ({ directRoutes, multiRoutes, time }) => ({ directRoutes, multiRoutes, time })
   )
 }
 

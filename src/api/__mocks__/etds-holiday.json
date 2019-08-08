@@ -1014,7 +1014,7 @@
         "destination": "Daly City",
         "abbreviation": "DALY",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 13,
           "platform": 2,
           "direction": "North",
@@ -1022,7 +1022,7 @@
           "color": "GREEN",
           "hexcolor": "#339933",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -1581,7 +1581,7 @@
   "PITT": {
     "name": "Pittsburg/Bay Point",
     "abbr": "PITT",
-    "etd": {
+    "etd": [{
       "destination": "SF Airport",
       "abbreviation": "SFIA",
       "limited": 0,
@@ -1614,7 +1614,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "12TH": {
     "name": "12th St. Oakland City Center",
@@ -2295,7 +2295,7 @@
   "DUBL": {
     "name": "Dublin/Pleasanton",
     "abbr": "DUBL",
-    "etd": {
+    "etd": [{
       "destination": "Daly City",
       "abbreviation": "DALY",
       "limited": 0,
@@ -2328,7 +2328,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "WOAK": {
     "name": "West Oakland",
@@ -2338,7 +2338,7 @@
         "destination": "24th Street",
         "abbreviation": "24TH",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 3,
           "platform": 1,
           "direction": "South",
@@ -2346,7 +2346,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Daly City",
@@ -2596,7 +2596,7 @@
         "destination": "24th Street",
         "abbreviation": "24TH",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 10,
           "platform": 1,
           "direction": "South",
@@ -2604,7 +2604,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Daly City",
@@ -2854,7 +2854,7 @@
         "destination": "24th Street",
         "abbreviation": "24TH",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 11,
           "platform": 1,
           "direction": "South",
@@ -2862,7 +2862,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Daly City",
@@ -3112,7 +3112,7 @@
         "destination": "24th Street",
         "abbreviation": "24TH",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 13,
           "platform": 1,
           "direction": "South",
@@ -3120,7 +3120,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Daly City",
@@ -3370,7 +3370,7 @@
         "destination": "24th Street",
         "abbreviation": "24TH",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 14,
           "platform": 1,
           "direction": "South",
@@ -3378,7 +3378,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Daly City",
@@ -5874,7 +5874,7 @@
   "MLBR": {
     "name": "Millbrae",
     "abbr": "MLBR",
-    "etd": {
+    "etd": [{
       "destination": "Richmond",
       "abbreviation": "RICH",
       "limited": 0,
@@ -5907,12 +5907,12 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "SFIA": {
     "name": "San Francisco Int'l Airport",
     "abbr": "SFIA",
-    "etd": {
+    "etd": [{
       "destination": "Pittsburg/Bay Point",
       "abbreviation": "PITT",
       "limited": 0,
@@ -5945,6 +5945,6 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   }
 }

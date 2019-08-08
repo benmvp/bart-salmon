@@ -859,7 +859,7 @@
         "destination": "Fremont",
         "abbreviation": "FRMT",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 1,
           "platform": 1,
           "direction": "South",
@@ -867,7 +867,7 @@
           "color": "ORANGE",
           "hexcolor": "#ff9933",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -981,7 +981,7 @@
         "destination": "Fremont",
         "abbreviation": "FRMT",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 6,
           "platform": 1,
           "direction": "South",
@@ -989,7 +989,7 @@
           "color": "ORANGE",
           "hexcolor": "#ff9933",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Richmond",
@@ -1270,7 +1270,7 @@
         "destination": "Pleasant Hill",
         "abbreviation": "PHIL",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 2,
           "platform": 1,
           "direction": "North",
@@ -1278,7 +1278,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "SF Airport",
@@ -1318,7 +1318,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 69,
           "platform": 2,
           "direction": "South",
@@ -1326,7 +1326,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -1397,7 +1397,7 @@
         "destination": "Pleasant Hill",
         "abbreviation": "PHIL",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 7,
           "platform": 1,
           "direction": "North",
@@ -1405,7 +1405,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "SF Airport",
@@ -1445,7 +1445,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 64,
           "platform": 2,
           "direction": "South",
@@ -1453,7 +1453,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -1524,7 +1524,7 @@
         "destination": "Pleasant Hill",
         "abbreviation": "PHIL",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 11,
           "platform": 1,
           "direction": "North",
@@ -1532,7 +1532,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "SF Airport",
@@ -1572,7 +1572,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 59,
           "platform": 2,
           "direction": "South",
@@ -1580,7 +1580,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -1676,7 +1676,7 @@
         "destination": "Pleasant Hill",
         "abbreviation": "PHIL",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 16,
           "platform": 1,
           "direction": "North",
@@ -1684,7 +1684,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "SF Airport",
@@ -1724,7 +1724,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 55,
           "platform": 2,
           "direction": "South",
@@ -1732,7 +1732,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -1862,7 +1862,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 52,
           "platform": 2,
           "direction": "South",
@@ -1870,7 +1870,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -1966,7 +1966,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 47,
           "platform": 2,
           "direction": "South",
@@ -1974,7 +1974,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -2045,7 +2045,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 44,
           "platform": 2,
           "direction": "South",
@@ -2053,7 +2053,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -2090,7 +2090,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 38,
           "platform": 2,
           "direction": "South",
@@ -2098,7 +2098,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -2305,7 +2305,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 76,
           "platform": 2,
           "direction": "South",
@@ -2313,7 +2313,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -2554,7 +2554,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 75,
           "platform": 2,
           "direction": "South",
@@ -2562,7 +2562,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -2803,7 +2803,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 72,
           "platform": 4,
           "direction": "South",
@@ -2811,7 +2811,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -3000,7 +3000,7 @@
   "DUBL": {
     "name": "Dublin/Pleasanton",
     "abbr": "DUBL",
-    "etd": {
+    "etd": [{
       "destination": "Daly City",
       "abbreviation": "DALY",
       "limited": 0,
@@ -3033,7 +3033,7 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "WOAK": {
     "name": "West Oakland",
@@ -3179,7 +3179,7 @@
         "destination": "North Concord",
         "abbreviation": "NCON",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 11,
           "platform": 2,
           "direction": "North",
@@ -3187,7 +3187,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Pittsburg/Bay Point",
@@ -3295,7 +3295,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 81,
           "platform": 1,
           "direction": "South",
@@ -3303,7 +3303,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -3485,7 +3485,7 @@
         "destination": "North Concord",
         "abbreviation": "NCON",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 5,
           "platform": 2,
           "direction": "North",
@@ -3493,7 +3493,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Pittsburg/Bay Point",
@@ -3601,7 +3601,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 88,
           "platform": 1,
           "direction": "South",
@@ -3609,7 +3609,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -3791,7 +3791,7 @@
         "destination": "North Concord",
         "abbreviation": "NCON",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 3,
           "platform": 2,
           "direction": "North",
@@ -3799,7 +3799,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Pittsburg/Bay Point",
@@ -3907,7 +3907,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 89,
           "platform": 1,
           "direction": "South",
@@ -3915,7 +3915,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -4097,7 +4097,7 @@
         "destination": "North Concord",
         "abbreviation": "NCON",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 1,
           "platform": 2,
           "direction": "North",
@@ -4105,7 +4105,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Pittsburg/Bay Point",
@@ -4213,7 +4213,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 91,
           "platform": 1,
           "direction": "South",
@@ -4221,7 +4221,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -4403,7 +4403,7 @@
         "destination": "North Concord",
         "abbreviation": "NCON",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": "Leaving",
           "platform": 2,
           "direction": "North",
@@ -4411,7 +4411,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Pittsburg/Bay Point",
@@ -4519,7 +4519,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 92,
           "platform": 1,
           "direction": "South",
@@ -4527,7 +4527,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -4811,7 +4811,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 95,
           "platform": 1,
           "direction": "South",
@@ -4819,7 +4819,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -5069,7 +5069,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 97,
           "platform": 1,
           "direction": "South",
@@ -5077,7 +5077,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -5327,7 +5327,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 99,
           "platform": 1,
           "direction": "South",
@@ -5335,7 +5335,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -5585,7 +5585,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 102,
           "platform": 1,
           "direction": "South",
@@ -5593,7 +5593,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -5809,7 +5809,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 105,
           "platform": 3,
           "direction": "South",
@@ -5817,7 +5817,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       },
       {
         "destination": "Warm Springs",
@@ -6669,7 +6669,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 109,
           "platform": 1,
           "direction": "South",
@@ -6677,7 +6677,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -6825,7 +6825,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 112,
           "platform": 1,
           "direction": "South",
@@ -6833,7 +6833,7 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
@@ -6981,7 +6981,7 @@
         "destination": "SFO/Millbrae",
         "abbreviation": "MLBR",
         "limited": 0,
-        "estimate": {
+        "estimate": [{
           "minutes": 116,
           "platform": 1,
           "direction": "South",
@@ -6989,14 +6989,14 @@
           "color": "YELLOW",
           "hexcolor": "#ffff33",
           "bikeflag": 1
-        }
+        }]
       }
     ]
   },
   "MLBR": {
     "name": "Millbrae",
     "abbr": "MLBR",
-    "etd": {
+    "etd": [{
       "destination": "Richmond",
       "abbreviation": "RICH",
       "limited": 0,
@@ -7029,12 +7029,12 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   },
   "SFIA": {
     "name": "San Francisco Int'l Airport",
     "abbr": "SFIA",
-    "etd": {
+    "etd": [{
       "destination": "Pittsburg/Bay Point",
       "abbreviation": "PITT",
       "limited": 0,
@@ -7067,6 +7067,6 @@
           "bikeflag": 1
         }
       ]
-    }
+    }]
   }
 }

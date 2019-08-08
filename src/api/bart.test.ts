@@ -4,9 +4,9 @@ import { fetchBartInfo } from './bart'
 
 jest.mock('./fetch')
 
-it('correctly converts ETDs XML to JS', async () => {
+it('correctly transforms ETDs JSON response', async () => {
   require('./fetch').__setMockJson(
-    fs.readFileSync(path.join(__dirname, './__mocks__/etd-etd.xml')).toJSON(),
+    fs.readFileSync(path.join(__dirname, './__mocks__/etd-raw.json')).toString(),
   )
 
   const etdResponse = await fetchBartInfo({ type: 'etd', command: 'etd' })

@@ -1,7 +1,7 @@
 import keyBy from 'lodash/keyBy'
 import { fetchBartInfo } from './bart'
-import { EtdsLookup } from '../utils/types'
 import { EtdsApiRequest } from './types'
+import { EtdsLookup } from '../utils/types'
 // import etds from './__mocks__/etds-rush-pm.json'
 
 

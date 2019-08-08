@@ -14,6 +14,7 @@ import etdsNoondayLookup from '../api/__mocks__/etds-noonday.json'
 import etdsHolidayLookup from '../api/__mocks__/etds-holiday.json'
 import etdsMajorDelaysLookup from '../api/__mocks__/etds-major-delays.json'
 import etdsLateNightLookup from '../api/__mocks__/etds-late-night.json'
+// import etdsSundayLookup from '../api/__mocks__/etds-sunday.json'
 
 const EXAMPLE_ETDS_LOOKUPS = [
   {
@@ -40,6 +41,10 @@ const EXAMPLE_ETDS_LOOKUPS = [
     etdsLookup: (etdsLateNightLookup as unknown) as EtdsLookup,
     title: 'Late Night',
   },
+  // {
+  //   etdsLookup: (etdsSundayLookup as unknown) as EtdsLookup,
+  //   title: 'Sunday',
+  // },
 ]
 
 describe('salmon utils', () => {
@@ -85,7 +90,7 @@ describe('salmon utils', () => {
   })
 
   describe('getSuggestedSalmonRoutesFromEtds', () => {
-    EXAMPLE_ETDS_LOOKUPS.forEach(({etdsLookup, title}) => {
+    EXAMPLE_ETDS_LOOKUPS.forEach(({ etdsLookup, title }) => {
       describe(`for "${title}"`, () => {
         it('throws an error when an invalid origin is used', () => {
           expect(
@@ -301,7 +306,7 @@ describe('salmon utils', () => {
             'PITT',
           )
           let foundNCONTrain = actualSalmonSuggestions.find(
-            ({returnTrain}) => returnTrain.abbreviation === 'NCON',
+            ({ returnTrain }) => returnTrain.abbreviation === 'NCON',
           )
 
           expect(foundNCONTrain).toBeUndefined()
@@ -360,7 +365,7 @@ describe('salmon utils', () => {
   })
 
   describe('getNextArrivalsFromEtds', () => {
-    EXAMPLE_ETDS_LOOKUPS.forEach(({etdsLookup, title}) => {
+    EXAMPLE_ETDS_LOOKUPS.forEach(({ etdsLookup, title }) => {
       describe(`for "${title}"`, () => {
         it('throws an error when an invalid origin is used', () => {
           expect(
