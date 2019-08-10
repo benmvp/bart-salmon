@@ -44,7 +44,6 @@ const _genDestinationEtdsForStation = (
   const originETDInfo = etdsLookup[origin]
   const etdsForStation = originETDInfo ? originETDInfo.etd : []
 
-
   return (
     _(etdsForStation)
       // take ETDs (grouped by final destination) & filter down trains to the ones
@@ -56,6 +55,11 @@ const _genDestinationEtdsForStation = (
       // do all of this reverse looking up. Also the direction returned for each train
       // estimate appears to not always be correct so we cannot rely on it.
       .filter((destinationEtdInfo) => {
+        // Sometimes ETD information for an endpoint station, still has estimates for
+        // trains going to itself, so we need to exclude those
+        if (origin === destinationEtdInfo.abbreviation) {
+          return false
+        }
         const { directRoutes: directRoutesForTrainDestination } = STATION_ROUTES_LOOKUP[origin][destinationEtdInfo.abbreviation]
 
         return directRoutesForTrainDestination.some((routeId) => targetRouteIds.has(routeId))
@@ -203,16 +207,20 @@ const _getWaitTimesForBackwardsTimeRoutePaths = (
           // after getting all the returning trains on the target routes,
           // include the wait time at the backwards station (negative values
           // mean that there isn't enough time to make it)
-          .map((returnTrain) => ({
-            ...trainInfo,
-            returnTrain,
-            backwardsWaitTime: returnTrain.minutes - timeToBackwardsStation,
-            returnRouteId: getRouteIdsWithStartAndEnd(
+          .map((returnTrain) => {
+            const returnRouteIds = getRouteIdsWithStartAndEnd(
               backwardsStation,
               returnTrain.abbreviation,
               returnTrain.hexcolor,
-            )[0],
-          }))
+            )
+
+            return {
+              ...trainInfo,
+              returnTrain,
+              backwardsWaitTime: returnTrain.minutes - timeToBackwardsStation,
+              returnRouteId: returnRouteIds[0],
+            }
+          })
           // filter down to the route paths where both the backwardsStation and origin
           // are on the return route
           .filter(
@@ -277,7 +285,7 @@ const _getAllSalmonRoutesFromEtds = (
   // (w/o making a "trip" API request)
   const targetRouteIds = getTargetRouteIds(origin, destination, allowTransfers)
 
-  // console.log(targetRouteIds, allowTransfers)
+  // console.log({ targetRouteIds, allowTransfers })
 
   // 2. Generate a list of the trains heading in the OPPOSITE direction w/
   // their arrival times (waitTime)
@@ -287,7 +295,7 @@ const _getAllSalmonRoutesFromEtds = (
     targetRouteIds,
   )
 
-  // console.log(_backwardsTrains.value())
+  // console.log('backwardsTrains', _backwardsTrains.value())
   // console.log('backwardsTrainsSize', _backwardsTrains.size())
 
   // 3. For each train, determine the estimated time it would take to get to
@@ -297,7 +305,7 @@ const _getAllSalmonRoutesFromEtds = (
     origin,
   )
 
-  // console.log(_backwardsTimeRoutePaths.value())
+  // console.log('backwardsTimeRoutePaths', _backwardsTimeRoutePaths.value())
   // console.log('backwardsTimeRoutePathsSize', _backwardsTimeRoutePaths.size())
 
   // 4. For each train at each station, determine the estimated wait time until
@@ -311,8 +319,8 @@ const _getAllSalmonRoutesFromEtds = (
     allowTransfers,
   )
 
-  // console.log(_backwardsTimeRoutePathsWithWaits.value())
-  // console.log('backwardsTimeRoutePathsSize', _backwardsTimeRoutePathsWithWaits.size())
+  // console.log('backwardsTimeRoutePathsWithWaits', _backwardsTimeRoutePathsWithWaits.value())
+  // console.log('backwardsTimeRoutePathsWithWaitsSize', _backwardsTimeRoutePathsWithWaits.size())
 
   // 5. For each train at each station after waiting, determine estimated time
   // it would take to return to the origin on target route (returnRideTime)

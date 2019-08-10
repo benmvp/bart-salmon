@@ -2,6 +2,10 @@ import zipObject from 'lodash/zipObject'
 import mapValues from 'lodash/mapValues'
 import keyBy from 'lodash/keyBy'
 import sum from 'lodash/sum'
+import startOfWeek from 'date-fns/start_of_week'
+import endOfWeek from 'date-fns/end_of_week'
+import addDays from 'date-fns/add_days'
+import formatDate from 'date-fns/format'
 import { fetchBartInfo } from '../src/api/bart'
 import { DepartureApiRequest } from '../src/api/types'
 import { genDataFile, processSequentially } from './utils'
@@ -16,30 +20,40 @@ const STATION_NAMES = Object.keys(
 const _fetchDepartSchedules = (
   orig: StationName,
   dest: StationName,
-  time: string
+  date: Date,
 ) =>
   fetchBartInfo<DepartureApiRequest>({
     type: 'sched',
     command: 'depart',
-    params: { orig, dest, time, date: '09/10/2019' }
+    params: {
+      orig,
+      dest,
+      date: formatDate(date, 'MM/DD/YYYY'),
+      time: '5:00pm',
+    }
   })
 
 const _getRoutesForOriginDestination = async (
   origin: StationName,
   destination: StationName,
 ) => {
-  // Get the departure schedule at evening rush & late night to ensure
+  const nextWeek = addDays(Date.now(), 7)
+  const sunday = startOfWeek(nextWeek)
+  const saturday = endOfWeek(nextWeek)
+  const wednesday = addDays(sunday, 3)
+
+  // Get the departure schedule on different days to ensure
   // we get the normal routes plus the off-peak routes
-  const [departSchedulesEvening, departSchedulesLateNight] = await Promise.all([
-    _fetchDepartSchedules(origin, destination, '5:00pm'),
-    _fetchDepartSchedules(origin, destination, '11:00pm'),
+  const allDepartureSchedules = await Promise.all([
+    _fetchDepartSchedules(origin, destination, wednesday),
+    _fetchDepartSchedules(origin, destination, saturday),
+    _fetchDepartSchedules(origin, destination, sunday),
   ])
 
-  // Merge the trip information from both times
-  const trips = [
-    ...departSchedulesEvening.schedule.request.trip,
-    ...departSchedulesLateNight.schedule.request.trip,
-  ]
+  // Merge the trip information from all schedules
+  const trips = allDepartureSchedules
+    .map((schedules) => schedules.schedule.request.trip)
+    .flat()
 
   // Get the unique route IDs for trips that only needed one leg
   // (i.e. direct routes)

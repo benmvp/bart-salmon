@@ -14,7 +14,8 @@ import etdsNoondayLookup from '../api/__mocks__/etds-noonday.json'
 import etdsHolidayLookup from '../api/__mocks__/etds-holiday.json'
 import etdsMajorDelaysLookup from '../api/__mocks__/etds-major-delays.json'
 import etdsLateNightLookup from '../api/__mocks__/etds-late-night.json'
-// import etdsSundayLookup from '../api/__mocks__/etds-sunday.json'
+import etdsSaturdayLookup from '../api/__mocks__/etds-saturday.json'
+import etdsSundayLookup from '../api/__mocks__/etds-sunday.json'
 
 const EXAMPLE_ETDS_LOOKUPS = [
   {
@@ -41,10 +42,14 @@ const EXAMPLE_ETDS_LOOKUPS = [
     etdsLookup: (etdsLateNightLookup as unknown) as EtdsLookup,
     title: 'Late Night',
   },
-  // {
-  //   etdsLookup: (etdsSundayLookup as unknown) as EtdsLookup,
-  //   title: 'Sunday',
-  // },
+  {
+    etdsLookup: (etdsSaturdayLookup as unknown) as EtdsLookup,
+    title: 'Saturday',
+  },
+  {
+    etdsLookup: (etdsSundayLookup as unknown) as EtdsLookup,
+    title: 'Sunday',
+  },
 ]
 
 describe('salmon utils', () => {
@@ -122,7 +127,7 @@ describe('salmon utils', () => {
           expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
-        it('returns single suggestion when 1 suggestion is requested', () => {
+        it('returns a single suggestion when 1 suggestion is requested', () => {
           let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
             'SANL',
@@ -148,7 +153,7 @@ describe('salmon utils', () => {
         it('returns no suggestions when at origin station (Westbound)', () => {
           let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'PITT',
+            'ANTC',
             'SFIA',
           )
 
@@ -165,7 +170,7 @@ describe('salmon utils', () => {
           expect(actualSalmonSuggestions).toHaveLength(0)
         })
 
-        it('returns suggestions for PITT line', () => {
+        it('returns suggestions for ANTC line', () => {
           let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
             'POWL',

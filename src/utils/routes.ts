@@ -37,7 +37,8 @@ export const areStationsOnRouteStations = (
 }
 
 /**
- * Given start and ends stations, returns the routes that directly connect the two stations
+ * Given start and ends stations, returns the routes that directly connect the two stations.
+ * Routes that match the optional trainColor are prioritized first
  */
 export const getRouteIdsWithStartAndEnd = (
   start: StationName,
@@ -49,12 +50,21 @@ export const getRouteIdsWithStartAndEnd = (
 
   return (
     // get all of the routes that directly connect the two stations
-    directRoutes
-      // optionally filter down to routes that match the optional trainColor
-      .filter(
-        (routeId: RouteId): boolean =>
-          !trainColor || ROUTES_LOOKUP[routeId].hexcolor === trainColor,
-      )
+    [...directRoutes]
+      // We want to prioritize the routes that match the specified trainColor so they
+      // should go in the front. If the sort compare function finds that both routes
+      // match the train color, then they're "equal" (1 - 1 = 0). If trainA matches
+      // and trainB doesn't trainA should go first (0 - 1 < 0). If trainA doesn't
+      // match and trainB does, trainA should go after (1 - 0 > 0). 
+      // This is needed because there are "WHITE" trains that come back in ETDs
+      // for routes that are shorter than usual. And since there are no official
+      // routes that match, those trains would be ignored.
+      .sort((routeIdA, routeIdB) => {
+        const routeIdAScore = +(ROUTES_LOOKUP[routeIdA].hexcolor === trainColor)
+        const routeIdBScore = +(ROUTES_LOOKUP[routeIdB].hexcolor === trainColor)
+
+        return routeIdBScore - routeIdAScore
+      })
   )
 }
 

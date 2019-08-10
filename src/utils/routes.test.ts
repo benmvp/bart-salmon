@@ -66,19 +66,19 @@ describe('getRouteIdsWithStartAndEnd', () => {
   it('returns multiple route IDs for stations connected by multiple routes', () => {
     expect(
       getRouteIdsWithStartAndEnd('EMBR', '16TH')
-    ).toEqual(['ROUTE 1', 'ROUTE 11', 'ROUTE 7'])
+    ).toEqual(['ROUTE 1', 'ROUTE 11', 'ROUTE 7', 'ROUTE 5'])
   })
 
-  it('returns empty when stations are connected by single route but looking for different train color', () => {
+  it('returns matching color route IDs first for stations connected by multiple routes when filtered by train color', () => {
+    expect(
+      getRouteIdsWithStartAndEnd('EMBR', '16TH', '#ff0000')
+    ).toEqual(['ROUTE 7', 'ROUTE 1', 'ROUTE 11', 'ROUTE 5'])
+  })
+
+  it('returns route ID when stations are connected by single route even when looking for different train color', () => {
     expect(
       getRouteIdsWithStartAndEnd('FTVL', 'NBRK', '#ffff33'),
-    ).toEqual([])
-  })
-
-  it('returns fewer routeIDs for stations connected by multiple routes when filtered by train color', () => {
-    expect(
-      getRouteIdsWithStartAndEnd('EMBR', '16TH', '#ffff33')
-    ).toEqual(['ROUTE 1'])
+    ).toEqual(['ROUTE 3'])
   })
 })
 
