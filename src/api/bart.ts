@@ -13,8 +13,8 @@ export const fetchBartInfo = async <Request extends ApiRequest>(
 ): Promise<ApiResponse<Request>> => {
   const protocol = typeof window === 'object'
     ? window.location.protocol
-    : 'http'
-  const url = formatUrl(`${protocol}://${API_BASE}${apiRequest.type}.aspx`, [
+    : 'http:'
+  const url = formatUrl(`${protocol}//${API_BASE}${apiRequest.type}.aspx`, [
     {
       cmd: apiRequest.command,
       key: 'MW9S-E7SL-26DU-VV8V',
