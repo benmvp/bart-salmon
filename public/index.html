@@ -30,33 +30,14 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65375615-2"></script>
     <script>
-        (function () {
-            // pull out the stored routing redirect (if it exists)
-            var routingRedirect = sessionStorage.getItem('routingRedirect');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-            // remove it now that we have a reference
-            sessionStorage.removeItem('routingRedirect');
-
-            // if we have a routing redirect for the 404 page, we need to
-            // replace the URL to look like it was when we had the 404 so that
-            // the react routing can kick-in and do the right thing!
-            if (routingRedirect && routingRedirect !== location.href) {
-                history.replaceState(null, null, routingRedirect);
-            }
-        })();
-    </script>
-
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-65375615-1', 'auto');
-        ga('send', 'pageview');
+        gtag('config', 'UA-65375615-2');
     </script>
 </head>
 
