@@ -1,4 +1,0 @@
-{
-  "preset": "jest-expo",
-  "coveragePathIgnorePatterns": ["/node-modules/", "<rootDir>/src/store/"]
-}

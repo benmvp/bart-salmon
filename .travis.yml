@@ -1,32 +1,14 @@
 language: node_js
 node_js:
-  - "node"
-  - "8"
-  - "7"
-  - "6"
+  - "12"
 
-# Cache dependencies in $HOME/.yarn-cache across builds
-cache: yarn
+cache: npm
+
+# Generate all of the static data needed for salmon algorithms
+before_script: npm run gen:all
 
 # Run the the validate script
-script: yarn validate
+script: npm test -- --coverage
 
-# Send coverage data to Coveralls
-after_success:
-  # Install coveralls globally
-  - yarn global add coveralls
-
-  # Retrieve the coverage information and send it to Coveralls
-  - cat ./coverage/lcov.info | coveralls
-
-# Create production build
-before_deploy: yarn build:web
-
-# Deploy to gh-pages branch on Github
-deploy:
-  skip_cleanup: true
-  provider: script
-  script:  ./_scripts/travis-deploy.sh
-  on:
-    branch: master
-    node: "node"
+# Retrieve the coverage information and send it to Coveralls
+after_success: cat ./coverage/lcov.info | npx coveralls
