@@ -5,6 +5,8 @@
 
 An app aiming to maximize likelihood of getting a [Bart](http://www.bart.gov/) seat by suggesting backwards routes (like salmon). It's sort of like Waze for Bart.
 
+> The rationale is that generally the earlier someone gets on a train, the less likely it'll be full. So If someone get son a train 2 stops before their normal station, it won't yet have the passengers from the station before nor those trying to get on at their actual stop. With less passengers aboard, there is a greater likelihood for a seat.
+
 ## Technologies used
 
 Bart Salmon is both a web and native app, aiming to provide a useful service as well as an opportunity to learn new technologies:

@@ -1,6 +1,6 @@
 import {
-  StationName, 
-  SalmonRoute, 
+  StationName,
+  SalmonRoute,
   Train,
 } from '../utils/types'
 
@@ -36,6 +36,10 @@ interface SetRiskinessFactor {
   type: 'SET_RISKINESS_FACTOR';
   payload: number;
 }
+interface SetNumArrivals {
+  type: 'SET_NUM_ARRIVALS';
+  payload: number;
+}
 
 export type AppAction = SetOriginAction
   | SetDestination
@@ -44,3 +48,4 @@ export type AppAction = SetOriginAction
   | ReceiveSalmonInfo
   | ErrorSalmonInfo
   | SetRiskinessFactor
+  | SetNumArrivals

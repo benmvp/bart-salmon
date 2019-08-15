@@ -6,6 +6,8 @@ import {
 import {
   StationName,
   EtdsLookup,
+  SalmonRoute,
+  Train,
 } from './types'
 
 import etdsMorningRushLookup from '../api/__mocks__/etds-rush-am.json'
@@ -52,6 +54,8 @@ const EXAMPLE_ETDS_LOOKUPS = [
   },
 ]
 
+const numericSort = <T>(items: T[]): T[] => [...items].sort((a, b) => a - b)
+
 describe('salmon utils', () => {
   describe('getSalmonTimeFromRoute', () => {
     it('returns the salmon time for a given route', () => {
@@ -95,6 +99,65 @@ describe('salmon utils', () => {
   })
 
   describe('getSuggestedSalmonRoutesFromEtds', () => {
+    const expectValidSalmonTimes = (
+      salmonSuggestions: SalmonRoute[],
+      etdsLookup: EtdsLookup,
+      origin: StationName,
+      destination: StationName,
+    ): void => {
+      const salmonTimes = salmonSuggestions.map(getSalmonTimeFromRoute)
+
+      // there should be no duplicate salmon times
+      expect(salmonTimes).toEqual([...new Set(salmonTimes)])
+
+      // the salmon times should already be in order
+      expect(salmonTimes).toEqual(numericSort(salmonTimes))
+
+
+      // const nextArrivals = getNextArrivalsFromEtds(etdsLookup, origin, destination)
+
+      salmonSuggestions.forEach((salmonRoute) => {
+        const salmonTime = getSalmonTimeFromRoute(salmonRoute)
+
+        // salmon time should be a valid number
+        // (can be NaN when time between stations couldn't be determined)
+        expect(salmonTime).not.toBe(Number.NaN)
+
+        // const arrivalTimesForReturnRoute = nextArrivals
+        //   .filter(({ routeId }) => routeId === salmonRoute.returnRouteId)
+        //   .map(({ minutes }) => minutes)
+        // const highestArrivalTime = arrivalTimesForReturnRoute[arrivalTimesForReturnRoute.length - 1] || 0
+        // const arrivalTimesLookup = new Set(arrivalTimesForReturnRoute)
+
+        // // the salmon time should align with corresponding arrival time
+        // // (one may not exist if the salmon time is high enough)
+        // expect(
+        //   arrivalTimesLookup.has(salmonTime) || salmonTime > highestArrivalTime
+        // ).toBe(true)
+      })
+
+    }
+
+    const expectValidBackwardStations = (salmonSuggestions: SalmonRoute[]): void => {
+      const backwardsStations = salmonSuggestions.map(({ backwardsStation }) => backwardsStation)
+
+      // there should be no duplicate backwards stations
+      expect(backwardsStations).toEqual([...new Set(backwardsStations)])
+    }
+
+    const streamlineSalmonRoutes = (salmonSuggestions: SalmonRoute[]) => (
+      salmonSuggestions.map((salmonRoute: SalmonRoute) => ({
+        salmonTime: getSalmonTimeFromRoute(salmonRoute),
+        waitTime: salmonRoute.waitTime,
+        backwardsStation: salmonRoute.backwardsStation,
+        backwardsRideTime: salmonRoute.backwardsRideTime,
+        backwardsRouteId: salmonRoute.backwardsRouteId,
+        backwardsWaitTime: salmonRoute.backwardsWaitTime,
+        returnRideTime: salmonRoute.returnRideTime,
+        returnRouteId: salmonRoute.returnRouteId,
+      }))
+    )
+
     EXAMPLE_ETDS_LOOKUPS.forEach(({ etdsLookup, title }) => {
       describe(`for "${title}"`, () => {
         it('throws an error when an invalid origin is used', () => {
@@ -116,42 +179,48 @@ describe('salmon utils', () => {
         })
 
         it('returns no suggestions when 0 suggestions are requested', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
             'SSAN',
             'WDUB',
+            1,
             0,
           )
 
           expect(actualSalmonSuggestions).toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
         })
 
         it('returns a single suggestion when 1 suggestion is requested', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
             'SANL',
             'BALB',
             1,
+            1,
           )
 
           expect(actualSalmonSuggestions).toHaveLength(1)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('does not blow up when requesting high number of suggestions', () => {
-          let getSalmonSuggestions = () =>
-            getSuggestedSalmonRoutesFromEtds(etdsLookup, 'ORIN', 'MONT', 1000)
+          const origin = 'ORIN'
+          const destination = 'MONT'
+          const getSalmonSuggestions = () =>
+            getSuggestedSalmonRoutesFromEtds(etdsLookup, origin, destination, 1, 1000)
 
           expect(getSalmonSuggestions).not.toThrow()
 
-          let actualSalmonSuggestions = getSalmonSuggestions()
+          const actualSalmonSuggestions = getSalmonSuggestions()
 
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expect(actualSalmonSuggestions).not.toHaveLength(0)
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns no suggestions when at origin station (Westbound)', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
             'ANTC',
             'SFIA',
@@ -161,7 +230,7 @@ describe('salmon utils', () => {
         })
 
         it('returns no suggestions when at origin station (Eastbound)', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
             'MLBR',
             'RICH',
@@ -171,144 +240,175 @@ describe('salmon utils', () => {
         })
 
         it('returns suggestions for ANTC line', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'POWL'
+          const destination = 'PITT'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'POWL',
-            'PITT',
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions for DUBL line', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'EMBR'
+          const destination = 'CAST'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'EMBR',
-            'CAST',
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions for RICH line', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = '16TH'
+          const destination = 'NBRK'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            '16TH',
-            'NBRK',
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions for WARM line', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'MONT'
+          const destination = 'WARM'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'MONT',
-            'FRMT',
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions for Westbound line', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'PHIL'
+          const destination = 'EMBR'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'PHIL',
-            'EMBR',
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions when more than one Northbound line is available', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = '19TH'
+          const destination = 'PLZA'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            '19TH',
-            'PLZA',
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions when more than one Southbound line is available', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = '12TH'
+          const destination = 'BAYF'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            '12TH',
-            'BAYF',
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions when more than one Eastbound line is available', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = '16TH'
+          const destination = 'MCAR'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            '16TH',
-            'MCAR',
-            10,
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions when many Westbound lines are available', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'WOAK'
+          const destination = 'DALY'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'WOAK',
-            'DALY',
-            10,
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions when changing trains is needed (Eastbound)', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'COLS'
+          const destination = 'NCON'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'COLS',
-            'NCON',
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions when changing trains is needed (Westbound)', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'LAFY'
+          const destination = 'HAYW'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'LAFY',
-            'HAYW',
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
-        })
-
-        it('includes a suggestion for a train that is leaving', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
-            etdsLookup,
-            'LAKE',
-            'PITT',
-          )
-
-          expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train)', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'ROCK'
+          const destination = 'ANTC'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'ROCK',
-            'PITT',
+            origin,
+            destination,
           )
           let foundNCONTrain = actualSalmonSuggestions.find(
             ({ returnTrain }) => returnTrain.abbreviation === 'NCON',
@@ -316,77 +416,116 @@ describe('salmon utils', () => {
 
           expect(foundNCONTrain).toBeUndefined()
           expect(actualSalmonSuggestions).not.toHaveLength(0)
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions when changing trains in opposite direction (Southside)', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'UCTY'
+          const destination = 'CAST'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'UCTY',
-            'CAST',
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions when changing trains in opposite direction (Northside)', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'ASHB'
+          const destination = 'PHIL'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'ASHB',
-            'PHIL',
+            origin,
+            destination,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
+        })
+
+        it('returns suggestions when origin is transfer station', () => {
+          const origin = 'LAKE'
+          const destination = 'HAYW'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+            etdsLookup,
+            origin,
+            destination,
+          )
+
+          expect(actualSalmonSuggestions).not.toHaveLength(0)
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions when riskiness factor is 0', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'CIVC'
+          const destination = '19TH'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'CIVC',
-            '19TH',
-            5,
+            origin,
+            destination,
             0,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
 
         it('returns suggestions when riskiness factor is negative', () => {
-          let actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
+          const origin = 'EMBR'
+          const destination = 'WDUB'
+          const actualSalmonSuggestions = getSuggestedSalmonRoutesFromEtds(
             etdsLookup,
-            'EMBR',
-            'WDUB',
-            5,
+            origin,
+            destination,
             -1,
           )
 
           expect(actualSalmonSuggestions).not.toHaveLength(0)
-          expect(actualSalmonSuggestions).toMatchSnapshot()
+          expectValidSalmonTimes(actualSalmonSuggestions, etdsLookup, origin, destination)
+          expectValidBackwardStations(actualSalmonSuggestions)
+          expect(streamlineSalmonRoutes(actualSalmonSuggestions)).toMatchSnapshot()
         })
       })
     })
   })
 
   describe('getNextArrivalsFromEtds', () => {
+    const expectArrivalTimes = (nextArrivals: Train[]): void => {
+      const arrivalTimes = nextArrivals.map(({ minutes }) => minutes)
+
+      // times should be in order
+      expect(arrivalTimes).toEqual(numericSort(arrivalTimes))
+    }
+
     EXAMPLE_ETDS_LOOKUPS.forEach(({ etdsLookup, title }) => {
       describe(`for "${title}"`, () => {
         it('throws an error when an invalid origin is used', () => {
           expect(
-            () => getNextArrivalsFromEtds(etdsLookup, 'FOO' as StationName, 'COLM', 5),
+            () => getNextArrivalsFromEtds(etdsLookup, 'FOO' as StationName, 'COLM'),
           ).toThrow()
         })
 
         it('throws an error when an invalid destination is used', () => {
           expect(
-            () => getNextArrivalsFromEtds(etdsLookup, 'PLZA', 'BAR' as StationName, 5),
+            () => getNextArrivalsFromEtds(etdsLookup, 'PLZA', 'BAR' as StationName),
           ).toThrow()
         })
 
         it('throws an error when origin === destination', () => {
           expect(() =>
-            getNextArrivalsFromEtds(etdsLookup, 'BALB', 'BALB', 5),
+            getNextArrivalsFromEtds(etdsLookup, 'BALB', 'BALB'),
           ).toThrow()
         })
 
@@ -403,7 +542,7 @@ describe('salmon utils', () => {
         })
 
         it('returns single arrival when 1 is requested', () => {
-          let actualArrivals = getNextArrivalsFromEtds(
+          const actualArrivals = getNextArrivalsFromEtds(
             etdsLookup,
             'SANL',
             'BALB',
@@ -415,18 +554,31 @@ describe('salmon utils', () => {
         })
 
         it('does not blow up when requesting high number of arrivals', () => {
-          let getArrivals = () =>
+          const getArrivals = () =>
             getNextArrivalsFromEtds(etdsLookup, 'ORIN', 'MONT', 1000)
 
           expect(getArrivals).not.toThrow()
 
-          let actualArrivals = getArrivals()
+          const actualArrivals = getArrivals()
 
+          expectArrivalTimes(actualArrivals)
+          expect(actualArrivals).toMatchSnapshot()
+        })
+
+        it('returns all the arrivals when `numArrivals` is omitted', () => {
+          const actualArrivals = getNextArrivalsFromEtds(
+            etdsLookup,
+            'SANL',
+            'BALB',
+          )
+
+          expect(actualArrivals).not.toHaveLength(0)
+          expectArrivalTimes(actualArrivals)
           expect(actualArrivals).toMatchSnapshot()
         })
 
         it('returns arrivals when at origin station', () => {
-          let actualArrivals = getNextArrivalsFromEtds(
+          const actualArrivals = getNextArrivalsFromEtds(
             etdsLookup,
             'PITT',
             'SFIA',
@@ -434,11 +586,12 @@ describe('salmon utils', () => {
           )
 
           expect(actualArrivals).not.toHaveLength(0)
+          expectArrivalTimes(actualArrivals)
           expect(actualArrivals).toMatchSnapshot()
         })
 
         it('returns arrivals when more than one line is available', () => {
-          let actualArrivals = getNextArrivalsFromEtds(
+          const actualArrivals = getNextArrivalsFromEtds(
             etdsLookup,
             '19TH',
             'PLZA',
@@ -446,11 +599,12 @@ describe('salmon utils', () => {
           )
 
           expect(actualArrivals).not.toHaveLength(0)
+          expectArrivalTimes(actualArrivals)
           expect(actualArrivals).toMatchSnapshot()
         })
 
         it('returns arrivals when many lines are available', () => {
-          let actualArrivals = getNextArrivalsFromEtds(
+          const actualArrivals = getNextArrivalsFromEtds(
             etdsLookup,
             'WOAK',
             'DALY',
@@ -458,11 +612,12 @@ describe('salmon utils', () => {
           )
 
           expect(actualArrivals).not.toHaveLength(0)
+          expectArrivalTimes(actualArrivals)
           expect(actualArrivals).toMatchSnapshot()
         })
 
         it('returns suggestions when changing trains is needed', () => {
-          let actualArrivals = getNextArrivalsFromEtds(
+          const actualArrivals = getNextArrivalsFromEtds(
             etdsLookup,
             'LAFY',
             'HAYW',
@@ -470,11 +625,12 @@ describe('salmon utils', () => {
           )
 
           expect(actualArrivals).not.toHaveLength(0)
+          expectArrivalTimes(actualArrivals)
           expect(actualArrivals).toMatchSnapshot()
         })
 
         it('includes an arrival for a train that is leaving', () => {
-          let actualArrivals = getNextArrivalsFromEtds(
+          const actualArrivals = getNextArrivalsFromEtds(
             etdsLookup,
             'LAKE',
             'PITT',
@@ -482,11 +638,12 @@ describe('salmon utils', () => {
           )
 
           expect(actualArrivals).not.toHaveLength(0)
+          expectArrivalTimes(actualArrivals)
           expect(actualArrivals).toMatchSnapshot()
         })
 
         it('does not include "quick turnaround" trains that do not make it to destination when route typically does (such as NCON train)', () => {
-          let actualArrivals = getNextArrivalsFromEtds(
+          const actualArrivals = getNextArrivalsFromEtds(
             etdsLookup,
             'ROCK',
             'PITT',
@@ -494,11 +651,12 @@ describe('salmon utils', () => {
           )
 
           expect(actualArrivals).not.toHaveLength(0)
+          expectArrivalTimes(actualArrivals)
           expect(actualArrivals).toMatchSnapshot()
         })
 
         it('returns suggestions when changing trains in opposite direction (Southside)', () => {
-          let actualArrivals = getNextArrivalsFromEtds(
+          const actualArrivals = getNextArrivalsFromEtds(
             etdsLookup,
             'UCTY',
             'CAST',
@@ -506,11 +664,12 @@ describe('salmon utils', () => {
           )
 
           expect(actualArrivals).not.toHaveLength(0)
+          expectArrivalTimes(actualArrivals)
           expect(actualArrivals).toMatchSnapshot()
         })
 
         it('returns suggestions when changing trains in opposite direction (Northside)', () => {
-          let actualArrivals = getNextArrivalsFromEtds(
+          const actualArrivals = getNextArrivalsFromEtds(
             etdsLookup,
             'ASHB',
             'PHIL',
@@ -518,6 +677,7 @@ describe('salmon utils', () => {
           )
 
           expect(actualArrivals).not.toHaveLength(0)
+          expectArrivalTimes(actualArrivals)
           expect(actualArrivals).toMatchSnapshot()
         })
       })

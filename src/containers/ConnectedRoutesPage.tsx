@@ -10,14 +10,18 @@ import RoutesPage from '../components/RoutesPage'
 const _mapStateToProps = ({
   origin,
   destination,
+  numSalmonRoutes,
   salmonRoutes,
   arrivals,
+  numArrivals,
   isFetching,
 }: AppState) => ({
   origin,
   destination,
+  numSalmonRoutes,
   salmonRoutes,
   arrivals,
+  numArrivals,
   isDisabled: isFetching,
 })
 

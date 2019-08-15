@@ -1,10 +1,11 @@
-import storage from 'redux-persist/lib/storage' 
+import storage from 'redux-persist/lib/storage'
 
-
-const REDUCERS_NOT_TO_PERSIST = ['salmonRoutes', 'arrivals', 'isFetching']
+// NOTE: When we add UI elements for riskinessFactor & numSalmonRoutes
+// we can add them to the list of state to persist
+const REDUCERS_TO_PERSIST = ['origin', 'destination']
 
 export const PERSIST_CONFIG = {
   key: 'root',
   storage,
-  blacklist: REDUCERS_NOT_TO_PERSIST,
+  whitelist: REDUCERS_TO_PERSIST,
 }

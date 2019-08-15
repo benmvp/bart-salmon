@@ -18,7 +18,8 @@ const ROUTES_LOOKUP = (routesLookup as unknown) as RoutesLookup
 const STATIONS_LOOKUP = (stationsLookup as unknown) as StationLookup
 
 
-const DEFAULT_MINUTES_BETWEEN_STATIONS = 1000
+const NOT_FOUND_MINUTES_BETWEEN_STATIONS = Number.NaN
+const TRAIN_SAMENESS_FUDGE_FACTOR = 6
 
 
 /**
@@ -146,18 +147,18 @@ export const getTargetDirections = (
  * Calculates the minutes between two stations on a given route.
  * Returns 1000 if stations are not connected by the route
  */
-export const minutesBetweenStation = (
+export const getMinutesBetweenStation = (
   start: StationName,
   end: StationName,
   routeId: RouteId,
 ): number => {
   const {
     directRoutes = [],
-    time = DEFAULT_MINUTES_BETWEEN_STATIONS,
+    time = NOT_FOUND_MINUTES_BETWEEN_STATIONS,
   } = STATION_ROUTES_LOOKUP[start][end] || {}
 
   if (!directRoutes.includes(routeId)) {
-    return DEFAULT_MINUTES_BETWEEN_STATIONS;
+    return NOT_FOUND_MINUTES_BETWEEN_STATIONS;
   }
 
   return time
@@ -170,7 +171,7 @@ export const minutesBetweenStation = (
  * they'll be returned. However, they don't make it all the way to PITT
  * so they shouldn't be included
  */
-export const filterForTrainsThatGoAllTheWay = (
+export const trainsThatGoAllTheWayFilter = (
   targetRouteIds: Set<RouteId>,
   allowTransfers: boolean,
   { abbreviation: trainDestination, hexcolor: trainColor }: Train,
@@ -195,3 +196,14 @@ export const filterForTrainsThatGoAllTheWay = (
 
   return routesFromDestinationToTrainEnd.some((routeId) => targetRouteIds.has(routeId))
 }
+
+/**
+ * Returns whether or not the specified arrival and salmon trains are "similar" given the
+ * salmon time.
+ */
+export const areTrainsSimilar = (arrivalTrain: Train, salmonTrain: Train, salmonTime: number) => (
+  salmonTrain.routeId === arrivalTrain.routeId
+  && salmonTrain.length === arrivalTrain.length
+  && salmonTrain.abbreviation === arrivalTrain.abbreviation
+  && Math.abs(salmonTime - arrivalTrain.minutes) <= TRAIN_SAMENESS_FUDGE_FACTOR
+)
