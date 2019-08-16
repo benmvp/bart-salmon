@@ -8,7 +8,6 @@ import { SalmonRoute, Train } from '../utils/types'
 import { AppAction, OptionalStationName } from './types'
 import { AppState } from './reducers'
 
-const NUM_ARRIVALS = 4
 
 type ThunkResult<Result> = ThunkAction<Result, AppState, undefined, AppAction>
 
@@ -46,25 +45,24 @@ export const getSalmonInfo = (): ThunkResult<void> => async (
   dispatch,
   getState,
 ) => {
-  let { origin, destination, numSalmonRoutes, riskinessFactor } = getState()
+  const { origin, destination, numSalmonRoutes, riskinessFactor } = getState()
 
   if (origin && destination) {
     dispatch(fetchSalmonInfo())
 
     try {
-      let etdsLookup = await getEstimatedTimesOfDeparture()
-      let salmonRoutes = getSuggestedSalmonRoutesFromEtds(
+      const etdsLookup = await getEstimatedTimesOfDeparture()
+      const salmonRoutes = getSuggestedSalmonRoutesFromEtds(
         etdsLookup,
         origin,
         destination,
-        numSalmonRoutes,
         riskinessFactor,
+        numSalmonRoutes,
       )
-      let arrivals = getNextArrivalsFromEtds(
+      const arrivals = getNextArrivalsFromEtds(
         etdsLookup,
         origin,
         destination,
-        NUM_ARRIVALS,
       )
 
       dispatch(receiveSalmonInfo(salmonRoutes, arrivals))
@@ -95,3 +93,8 @@ export const setDestination = (name: OptionalStationName): ThunkResult<void> => 
   })
   dispatch(getSalmonInfo())
 }
+
+export const setNumArrivals = (numRoutes: number): AppAction => ({
+  type: 'SET_NUM_ARRIVALS',
+  payload: numRoutes,
+})

@@ -4,8 +4,9 @@ import {
   getOppositeRouteIds,
   getTargetRouteIds,
   getTargetDirections,
-  minutesBetweenStation,
-  filterForTrainsThatGoAllTheWay,
+  getMinutesBetweenStation,
+  trainsThatGoAllTheWayFilter,
+  // areTrainsSimilar,
 } from './routes'
 import {
   RoutesLookup,
@@ -180,19 +181,19 @@ describe('getTargetDirections', () => {
   })
 })
 
-describe('minutesBetweenStation', () => {
+describe('getMinutesBetweenStation', () => {
   it('returns the time between two stations connected on the same route', () => {
-    expect(minutesBetweenStation('SBRN', 'POWL', 'ROUTE 8')).toEqual(
+    expect(getMinutesBetweenStation('SBRN', 'POWL', 'ROUTE 8')).toEqual(
       STATION_ROUTES_LOOKUP.SBRN.POWL.time
     )
   })
 
-  it('returns 1000 if the stations are not on the same route', () => {
-    expect(minutesBetweenStation('ANTC', 'DUBL', 'ROUTE 2')).toEqual(1000)
+  it('returns NaN if the stations are not on the same route', () => {
+    expect(getMinutesBetweenStation('ANTC', 'DUBL', 'ROUTE 2')).toEqual(Number.NaN)
   })
 
-  it('returns 1000 if the stations are the same', () => {
-    expect(minutesBetweenStation('WARM', 'WARM', 'ROUTE 4')).toEqual(1000)
+  it('returns NaN if the stations are the same', () => {
+    expect(getMinutesBetweenStation('WARM', 'WARM', 'ROUTE 4')).toEqual(Number.NaN)
   })
 })
 
@@ -213,7 +214,7 @@ describe('filterForTrainsThatGoAllTheWay', () => {
 
   it('returns true if transfers are allowed', () => {
     expect(
-      filterForTrainsThatGoAllTheWay(
+      trainsThatGoAllTheWayFilter(
         new Set(['ROUTE 2']),
         true,
         MOCK_TRAIN,
@@ -224,7 +225,7 @@ describe('filterForTrainsThatGoAllTheWay', () => {
 
   it('returns true if no destination is specified', () => {
     expect(
-      filterForTrainsThatGoAllTheWay(
+      trainsThatGoAllTheWayFilter(
         new Set(['ROUTE 2']),
         false,
         MOCK_TRAIN,
@@ -234,7 +235,7 @@ describe('filterForTrainsThatGoAllTheWay', () => {
 
   it('returns true if the train terminates at desired destination are the same', () => {
     expect(
-      filterForTrainsThatGoAllTheWay(
+      trainsThatGoAllTheWayFilter(
         new Set(['ROUTE 2']),
         false,
         MOCK_TRAIN,
@@ -245,7 +246,7 @@ describe('filterForTrainsThatGoAllTheWay', () => {
 
   it('returns true if the train goes past the desired destination', () => {
     expect(
-      filterForTrainsThatGoAllTheWay(
+      trainsThatGoAllTheWayFilter(
         new Set(['ROUTE 2']),
         false,
         MOCK_TRAIN,
@@ -256,7 +257,7 @@ describe('filterForTrainsThatGoAllTheWay', () => {
 
   it('returns false if the train stops short of the desired destination', () => {
     expect(
-      filterForTrainsThatGoAllTheWay(
+      trainsThatGoAllTheWayFilter(
         new Set(['ROUTE 2']),
         false,
         MOCK_TRAIN,
@@ -267,7 +268,7 @@ describe('filterForTrainsThatGoAllTheWay', () => {
 
   it('returns false if the train goes nowhere near the desired destination', () => {
     expect(
-      filterForTrainsThatGoAllTheWay(
+      trainsThatGoAllTheWayFilter(
         new Set(['ROUTE 2']),
         false,
         MOCK_TRAIN,
@@ -275,4 +276,8 @@ describe('filterForTrainsThatGoAllTheWay', () => {
       )
     ).toBe(false)
   })
+})
+
+describe('areTrainsSimilar', () => {
+
 })

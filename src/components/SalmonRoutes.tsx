@@ -74,17 +74,21 @@ const Header: FunctionComponent<{}> = () => (
 
 interface Props {
   routes: SalmonRouteData[];
+  numRoutes: number;
   nextTrain: Train;
 }
 
 const SalmonRoutes: FunctionComponent<Props> = ({
   routes,
+  numRoutes,
   nextTrain,
 }) => {
   // TODO: Salmon routes need some sort of unique identifier
-  const salmonRoutes = routes.map((route, index) => (
-    <SalmonRoute key={index} route={route} nextTrain={nextTrain} />
-  ))
+  const salmonRoutes = routes
+    .map((route, index) => (
+      <SalmonRoute key={index} route={route} nextTrain={nextTrain} />
+    ))
+    .slice(0, numRoutes)
 
   return (
     <div>

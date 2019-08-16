@@ -34,24 +34,28 @@ const StationSelector: FunctionComponent<{
 
 
 interface Props {
+  origin: OptionalStationName;
+  destination: OptionalStationName;
+  numSalmonRoutes: number;
   salmonRoutes: SalmonRoute[];
   arrivals: Train[];
+  numArrivals: number;
   setOrigin: (name: OptionalStationName) => void;
   setDestination: (name: OptionalStationName) => void;
   getSalmonInfo: () => void;
-  origin: OptionalStationName;
-  destination: OptionalStationName;
   isDisabled: boolean;
 }
 
 const RoutesPage: FunctionComponent<Props> = ({
   origin,
   destination,
+  numSalmonRoutes,
   setOrigin,
   setDestination,
   getSalmonInfo,
   salmonRoutes,
   arrivals,
+  numArrivals,
 }) => {
   // load salmon info the first the page loads
   // afterwards, we'll rely on station changes
@@ -67,10 +71,18 @@ const RoutesPage: FunctionComponent<Props> = ({
     arrivalsAndRoutes = (
       <>
         <div style={styles.arrivals}>
-          <Arrivals destination={destination} arrivals={arrivals} />
+          <Arrivals 
+            destination={destination} 
+            arrivals={arrivals}
+            numArrivals={numArrivals}
+          />
         </div>
         <div style={styles.salmonRoutes}>
-          <SalmonRoutes routes={salmonRoutes} nextTrain={nextTrain} />
+          <SalmonRoutes
+            routes={salmonRoutes} 
+            numRoutes={numSalmonRoutes} 
+            nextTrain={nextTrain} 
+          />
         </div>
       </>
     )

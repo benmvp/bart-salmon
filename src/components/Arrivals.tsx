@@ -33,11 +33,18 @@ const FollowingTrains: FunctionComponent<{trains: Train[]}> = ({trains}) => {
   return <div style={styles.followingTrains}>{trainComponents}</div>
 }
 
-const Arrivals: FunctionComponent<{destination: OptionalStationName, arrivals: Train[]}> = ({
+interface Props {
+  destination: OptionalStationName;
+  arrivals: Train[];
+  numArrivals: number;
+}
+
+const Arrivals: FunctionComponent<Props> = ({
   destination, 
   arrivals,
+  numArrivals,
 }) => {
-  const [firstTrain, ...followingTrains] = arrivals
+  const [firstTrain, ...followingTrains] = arrivals.slice(0, numArrivals)
   const destinationDisplay = destination && stationsLookup[destination].name
 
   return (

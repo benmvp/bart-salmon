@@ -1,9 +1,10 @@
-import {combineReducers} from 'redux'
-import {SalmonRoute, Train} from '../utils/types'
-import {AppAction, OptionalStationName} from './types'
+import { combineReducers } from 'redux'
+import { SalmonRoute, Train } from '../utils/types'
+import { AppAction, OptionalStationName } from './types'
 
 const DEFAULT_NUM_SALMON_ROUTES = 4
 const DEFAULT_RISKINESS_FACTOR = 0
+const DEFAULT_NUM_ARRIVALS = 4
 
 const origin = (
   state: OptionalStationName = '',
@@ -32,7 +33,7 @@ const destination = (
 }
 
 const isFetching = (state: boolean = false, action: AppAction): boolean => {
-  const {type} = action
+  const { type } = action
   let newState = state
 
   if (type === 'FETCH_SALMON_INFO') {
@@ -52,21 +53,6 @@ const salmonRoutes = (
 
   if (action.type === 'RECEIVE_SALMON_INFO') {
     newState = action.payload.routes
-  } else if (action.type === 'ERROR_SALMON_INFO') {
-    newState = []
-  }
-
-  return newState
-}
-
-const arrivals = (
-  state: Train[] = [],
-  action: AppAction,
-): Train[] => {
-  let newState = state
-
-  if (action.type === 'RECEIVE_SALMON_INFO') {
-    newState = action.payload.arrivals
   } else if (action.type === 'ERROR_SALMON_INFO') {
     newState = []
   }
@@ -103,14 +89,43 @@ const riskinessFactor = (
   return newState
 }
 
+const arrivals = (
+  state: Train[] = [],
+  action: AppAction,
+): Train[] => {
+  let newState = state
+
+  if (action.type === 'RECEIVE_SALMON_INFO') {
+    newState = action.payload.arrivals
+  } else if (action.type === 'ERROR_SALMON_INFO') {
+    newState = []
+  }
+
+  return newState
+}
+
+const numArrivals = (
+  state: number = DEFAULT_NUM_ARRIVALS,
+  action: AppAction,
+): number => {
+  let newState = state
+
+  if (action.type === 'SET_NUM_ARRIVALS') {
+    newState = action.payload
+  }
+
+  return newState
+}
+
 const rootReducer = combineReducers({
   origin,
   destination,
   isFetching,
   salmonRoutes,
-  arrivals,
   numSalmonRoutes,
   riskinessFactor,
+  arrivals,
+  numArrivals,
 })
 
 export type AppState = ReturnType<typeof rootReducer>

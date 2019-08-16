@@ -41,7 +41,7 @@ describe('setDestination', () => {
     let name = 'NCON' as StationName
     let asyncAction = setDestination(name)
 
-    await asyncAction(mockDispatch, MOCK_GET_STATE, null)
+    await asyncAction(mockDispatch, MOCK_GET_STATE, undefined)
 
     expect(mockDispatch).toHaveBeenCalledTimes(2)
     expect(mockDispatch).toHaveBeenCalledWith({
@@ -72,7 +72,7 @@ describe('getSalmonInfo', () => {
     let mockDispatch = jest.fn()
     let asyncAction = getSalmonInfo()
 
-    await asyncAction(mockDispatch, MOCK_GET_STATE, null)
+    await asyncAction(mockDispatch, MOCK_GET_STATE, undefined)
 
     expect(mockDispatch).toHaveBeenCalledTimes(2)
     expect(mockDispatch).toHaveBeenCalledWith({ type: 'FETCH_SALMON_INFO' })
@@ -89,6 +89,7 @@ describe('getSalmonInfo', () => {
       isFetching: false,
       salmonRoutes: [],
       arrivals: [],
+      numArrivals: 3,
     }) as AppState
 
     await asyncAction(mockDispatch, getState, undefined)
@@ -97,7 +98,13 @@ describe('getSalmonInfo', () => {
 
     const actualReceiveActionType = mockDispatch.mock.calls[1][0]
 
-    expect(actualReceiveActionType).toMatchSnapshot()
+    expect(actualReceiveActionType).toEqual(expect.objectContaining({
+      type: 'RECEIVE_SALMON_INFO',
+      payload: {
+        arrivals: expect.any(Array),
+        routes: expect.any(Array),
+      }
+    }))
   })
 
   it('dispatches ERROR_SALMON_INFO action', async () => {
@@ -111,6 +118,7 @@ describe('getSalmonInfo', () => {
       isFetching: false,
       salmonRoutes: [],
       arrivals: [],
+      numArrivals: 3,
     }) as AppState
 
     await asyncAction(mockDispatch, getState, null)

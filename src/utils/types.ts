@@ -109,6 +109,8 @@ export interface Train extends Estimate {
   abbreviation: StationName;
   limited: number;
   minutes: number;
+
+  routeId: RouteId;
 }
 
 export interface SalmonRoute {
