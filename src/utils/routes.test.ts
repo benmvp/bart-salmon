@@ -188,12 +188,12 @@ describe('getMinutesBetweenStation', () => {
     )
   })
 
-  it('returns 1000 if the stations are not on the same route', () => {
-    expect(getMinutesBetweenStation('ANTC', 'DUBL', 'ROUTE 2')).toEqual(1000)
+  it('returns NaN if the stations are not on the same route', () => {
+    expect(getMinutesBetweenStation('ANTC', 'DUBL', 'ROUTE 2')).toEqual(Number.NaN)
   })
 
-  it('returns 1000 if the stations are the same', () => {
-    expect(getMinutesBetweenStation('WARM', 'WARM', 'ROUTE 4')).toEqual(1000)
+  it('returns NaN if the stations are the same', () => {
+    expect(getMinutesBetweenStation('WARM', 'WARM', 'ROUTE 4')).toEqual(Number.NaN)
   })
 })
 
