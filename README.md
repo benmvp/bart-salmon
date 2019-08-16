@@ -1,7 +1,8 @@
 # Bart Salmon
 
 [![Build Status](https://travis-ci.org/benmvp/bart-salmon.svg?branch=master)](https://travis-ci.org/benmvp/bart-salmon)
-[![Coverage Status](https://coveralls.io/repos/github/benmvp/bart-salmon/badge.svg?branch=master)](https://coveralls.io/github/benmvp/bart-salmon?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/benmvp/bart-salmon.svg)](https://greenkeeper.io/)
+[![Coverage Status](https://coveralls.io/repos/github/benmvp/bart-salmon/badge.svg?branch=master)](https://coveralls.io/github/benmvp/bart-salmon?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/benmvp/bart-salmon.svg)](https://greenkeeper.io/)
 
 An app aiming to maximize likelihood of getting a [Bart](http://www.bart.gov/) seat by suggesting backwards routes (like salmon). It's sort of like Waze for Bart.
 
