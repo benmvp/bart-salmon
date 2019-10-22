@@ -1,5 +1,5 @@
-import {CSSProperties} from 'react'
-import {gridSize, gutterSize} from '../styling'
+import { CSSProperties } from 'react'
+import { gridSize, gutterSize } from '../styling'
 
 export default {
   root: {
@@ -12,9 +12,10 @@ export default {
   } as CSSProperties,
   selectorsShell: {
     width: gridSize(12),
-    paddingTop: gutterSize(3),
-    paddingRight: gutterSize(3),
-    paddingLeft: gutterSize(3),
+    padding: gutterSize(3),
+  } as CSSProperties,
+  origin: {
+    marginBottom: gutterSize(3),
   } as CSSProperties,
   arrivals: {
     width: gridSize(12),

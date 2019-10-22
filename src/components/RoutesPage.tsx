@@ -1,5 +1,6 @@
 import React, {FunctionComponent, useEffect} from 'react'
 import isEmpty from 'lodash/isEmpty'
+import kebabCase from 'lodash/kebabCase'
 import Arrivals from './Arrivals'
 import SalmonRoutes from './SalmonRoutes'
 import Selector from './Selector'
@@ -21,11 +22,13 @@ const StationSelector: FunctionComponent<{
   onChange: (stationName: OptionalStationName) => void,
 }> = ({label, station, onChange}) => {
   const values = [
-    {value: '' as OptionalStationName, display: label},
+    { value: '' as OptionalStationName, display: '' },
     ...STATIONS_SELECTOR_VALUES,
   ]
 
   return Selector<OptionalStationName>({
+    id: kebabCase(`${label}-station-selector`),
+    label,
     value: station,
     values,
     onChange,
@@ -71,17 +74,17 @@ const RoutesPage: FunctionComponent<Props> = ({
     arrivalsAndRoutes = (
       <>
         <div style={styles.arrivals}>
-          <Arrivals 
-            destination={destination} 
+          <Arrivals
+            destination={destination}
             arrivals={arrivals}
             numArrivals={numArrivals}
           />
         </div>
         <div style={styles.salmonRoutes}>
           <SalmonRoutes
-            routes={salmonRoutes} 
-            numRoutes={numSalmonRoutes} 
-            nextTrain={nextTrain} 
+            routes={salmonRoutes}
+            numRoutes={numSalmonRoutes}
+            nextTrain={nextTrain}
           />
         </div>
       </>
@@ -91,13 +94,15 @@ const RoutesPage: FunctionComponent<Props> = ({
   return (
     <div style={styles.root}>
       <section style={styles.selectorsShell}>
+        <div style={styles.origin}>
+          <StationSelector
+            label="Origin"
+            station={origin}
+            onChange={setOrigin}
+          />
+        </div>
         <StationSelector
-          label="ORIGIN"
-          station={origin}
-          onChange={setOrigin}
-        />
-        <StationSelector
-          label="DESTINATION"
+          label="Destination"
           station={destination}
           onChange={setDestination}
         />
