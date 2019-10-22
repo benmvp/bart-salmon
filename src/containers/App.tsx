@@ -1,4 +1,4 @@
-import React, {FunctionComponent} from 'react'
+import React from 'react'
 import {Provider} from 'react-redux'
 import {PersistGate} from 'redux-persist/integration/react'
 // import {Router, browserHistory} from 'react-router'
@@ -10,7 +10,7 @@ import ConnectedRoutesPage from './ConnectedRoutesPage'
 
 const {store, persistor} = configureStore()
 
-const App: FunctionComponent<{}> = () => (
+const App = () => (
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <ConnectedRoutesPage />

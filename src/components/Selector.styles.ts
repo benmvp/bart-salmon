@@ -1,9 +1,7 @@
-import { createStyles, makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 
-export default makeStyles(() => (
-  createStyles({
-    formControl: {
-      width: '100%',
-    },
-  })
-))
+export default makeStyles({
+  formControl: {
+    width: '100%',
+  },
+})

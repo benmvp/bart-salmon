@@ -1,6 +1,8 @@
-import React, {FunctionComponent, useEffect} from 'react'
+import React, {useEffect, ReactNode} from 'react'
 import isEmpty from 'lodash/isEmpty'
 import kebabCase from 'lodash/kebabCase'
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import TripOriginIcon from '@material-ui/icons/TripOrigin';
 import Arrivals from './Arrivals'
 import SalmonRoutes from './SalmonRoutes'
 import Selector from './Selector'
@@ -8,7 +10,7 @@ import {SalmonRoute, Train, StationLookup} from '../utils/types'
 import {OptionalStationName} from '../store/types'
 import stationsLookup from '../data/stations.json'
 
-import styles from './RoutesPage.styles'
+import useStyles from './RoutesPage.styles'
 
 
 const STATIONS_LOOKUP = (stationsLookup as unknown) as StationLookup
@@ -16,23 +18,35 @@ const STATIONS_LOOKUP = (stationsLookup as unknown) as StationLookup
 const STATIONS_SELECTOR_VALUES = Object.values(STATIONS_LOOKUP)
   .map(({name, abbr}) => ({value: abbr as OptionalStationName, display: name}))
 
-const StationSelector: FunctionComponent<{
-  label: string,
-  station: OptionalStationName,
-  onChange: (stationName: OptionalStationName) => void,
-}> = ({label, station, onChange}) => {
+interface StationSelectorProps {
+  label: string;
+  station: OptionalStationName;
+  icon: ReactNode;
+  onChange: (stationName: OptionalStationName) => void;
+}
+const StationSelector = ({label, station, icon, onChange}: StationSelectorProps) => {
+  const classes = useStyles()
   const values = [
     { value: '' as OptionalStationName, display: '' },
     ...STATIONS_SELECTOR_VALUES,
   ]
 
-  return Selector<OptionalStationName>({
+  const selector = Selector<OptionalStationName>({
     id: kebabCase(`${label}-station-selector`),
     label,
     value: station,
     values,
     onChange,
   })
+
+  return (
+    <div className={classes.stationSelector}>
+      <span className={classes.stationSelectorIcon}>
+        {icon}
+      </span>
+      {selector}
+    </div>
+  )
 }
 
 
@@ -49,7 +63,7 @@ interface Props {
   isDisabled: boolean;
 }
 
-const RoutesPage: FunctionComponent<Props> = ({
+const RoutesPage= ({
   origin,
   destination,
   numSalmonRoutes,
@@ -59,7 +73,9 @@ const RoutesPage: FunctionComponent<Props> = ({
   salmonRoutes,
   arrivals,
   numArrivals,
-}) => {
+}: Props) => {
+  const classes = useStyles()
+
   // load salmon info the first the page loads
   // afterwards, we'll rely on station changes
   useEffect(() => {
@@ -73,14 +89,14 @@ const RoutesPage: FunctionComponent<Props> = ({
 
     arrivalsAndRoutes = (
       <>
-        <div style={styles.arrivals}>
+        <div className={classes.arrivals}>
           <Arrivals
             destination={destination}
             arrivals={arrivals}
             numArrivals={numArrivals}
           />
         </div>
-        <div style={styles.salmonRoutes}>
+        <div className={classes.salmonRoutes}>
           <SalmonRoutes
             routes={salmonRoutes}
             numRoutes={numSalmonRoutes}
@@ -92,18 +108,18 @@ const RoutesPage: FunctionComponent<Props> = ({
   }
 
   return (
-    <div style={styles.root}>
-      <section style={styles.selectorsShell}>
-        <div style={styles.origin}>
-          <StationSelector
-            label="Origin"
-            station={origin}
-            onChange={setOrigin}
-          />
-        </div>
+    <div className={classes.root}>
+      <section className={classes.stationSelectors}>
+        <StationSelector
+          label="Origin"
+          station={origin}
+          icon={<TripOriginIcon />}
+          onChange={setOrigin}
+        />
         <StationSelector
           label="Destination"
           station={destination}
+          icon={<LocationOnIcon />}
           onChange={setDestination}
         />
       </section>
