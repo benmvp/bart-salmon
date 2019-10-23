@@ -1,26 +1,37 @@
-import {CSSProperties} from 'react'
-import {gridSize, gutterSize} from '../styling'
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 
-export default {
-  root: {
-    flex: 1,
+export default makeStyles((theme: Theme) => (
+  createStyles({
+    root: {
+      flex: 1,
 
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  } as CSSProperties,
-  selectorsShell: {
-    width: gridSize(12),
-    paddingTop: gutterSize(3),
-    paddingRight: gutterSize(3),
-    paddingLeft: gutterSize(3),
-  } as CSSProperties,
-  arrivals: {
-    width: gridSize(12),
-  } as CSSProperties,
-  salmonRoutes: {
-    flex: 1,
-    width: gridSize(12),
-  } as CSSProperties,
-}
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+    },
+    stationSelectors: {
+      width: '100%',
+      padding: theme.spacing(2),
+    },
+    stationSelector: {
+      marginBottom: theme.spacing(2),
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    },
+    stationSelectorIcon: {
+      marginRight: theme.spacing(1),
+    },
+    stationSelectorFormControl: {
+      flex: 1,
+    },
+    arrivals: {
+      width: '100%',
+    },
+    salmonRoutes: {
+      flex: 1,
+      width: '100%',
+    },
+  })
+))

@@ -8,12 +8,36 @@ An app aiming to maximize likelihood of getting a [Bart](http://www.bart.gov/) s
 
 > The rationale is that generally the earlier someone gets on a train, the less likely it'll be full. So If someone get son a train 2 stops before their normal station, it won't yet have the passengers from the station before nor those trying to get on at their actual stop. With less passengers aboard, there is a greater likelihood for a seat.
 
+## Running the app locally
+
+After [cloning the repo](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository), install the app's dependency using [npm](https://docs.npmjs.com/cli/install):
+
+```sh
+npm install
+```
+
+Generate local stations and route data:
+
+```sh
+npm run gen:all
+```
+
+Lastly, start the app:
+
+```sh
+npm start
+```
+
+```sh
+npm install --save react-composite-events
+```
+
 ## Technologies used
 
-Bart Salmon is both a web and native app, aiming to provide a useful service as well as an opportunity to learn new technologies:
+Bart Salmon is a mobile web, aiming to provide a useful service as well as an opportunity to learn new technologies:
 
 - **UI:** [React](https://facebook.github.io/react/)
-- **Styling:** Inline CSS
+- **Styling:** [Material UI](https://material-ui.com/) + Inline CSS
 - **Data Flow:** [Lodash](https://lodash.com/) & [Redux](http://redux.js.org/) (w/ [Redux Thunk](https://github.com/gaearon/redux-thunk) & [Async Functions](https://github.com/tc39/ecmascript-asyncawait))
 - **API:** [Bart API](http://api.bart.gov/docs/overview/index.aspx)
 - **Build Tooling:** [Create React App](https://github.com/facebookincubator/create-react-app)
