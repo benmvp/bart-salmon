@@ -6,13 +6,12 @@ import {
 
 export type OptionalStationName = '' | StationName
 
-interface SetOriginAction {
-  type: 'SET_ORIGIN';
-  payload: OptionalStationName;
-}
-interface SetDestination {
-  type: 'SET_DESTINATION';
-  payload: OptionalStationName;
+interface SetStations {
+  type: 'SET_STATIONS';
+  payload: {
+    origin: OptionalStationName;
+    destination: OptionalStationName;
+  }
 }
 interface SetNumSalmonRoutes {
   type: 'SET_NUM_SALMON_ROUTES';
@@ -41,8 +40,7 @@ interface SetNumArrivals {
   payload: number;
 }
 
-export type AppAction = SetOriginAction
-  | SetDestination
+export type AppAction = SetStations
   | SetNumSalmonRoutes
   | FetchSalmonInfo
   | ReceiveSalmonInfo

@@ -1,8 +1,7 @@
 import {connect} from 'react-redux'
 import {
-  setOrigin, 
-  setDestination, 
-  getSalmonInfo, 
+  setStations,
+  getSalmonInfo,
 } from '../store/actions'
 import {AppState} from '../store/reducers'
 import RoutesPage from '../components/RoutesPage'
@@ -26,8 +25,7 @@ const _mapStateToProps = ({
 })
 
 const _mapDispatchToProps = {
-  setOrigin,
-  setDestination,
+  setStations,
   getSalmonInfo,
 }
 

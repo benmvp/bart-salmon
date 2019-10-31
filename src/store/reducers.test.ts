@@ -1,7 +1,7 @@
 import rootReducer, { AppState } from './reducers'
 import { StationName, SalmonRoute, Train } from '../utils/types'
 
-const INITIAL_STATE = {
+const INITIAL_STATE: AppState = {
   origin: 'BALB',
   destination: '12TH',
   numSalmonRoutes: 5,
@@ -10,8 +10,8 @@ const INITIAL_STATE = {
   salmonRoutes: [],
   arrivals: [],
   numArrivals: 3,
-} as AppState
-const SAMPLE_ROUTES = [
+}
+const SAMPLE_ROUTES: SalmonRoute[] = [
   {
     backwardsRideTime: 5,
     backwardsRouteId: 'ROUTE 3',
@@ -45,8 +45,8 @@ const SAMPLE_ROUTES = [
     },
     waitTime: 2,
   },
-] as SalmonRoute[]
-const SAMPLE_ARRIVALS = [
+]
+const SAMPLE_ARRIVALS: Train[] = [
   {
     abbreviation: '24TH',
     bikeflag: 1,
@@ -107,43 +107,31 @@ const SAMPLE_ARRIVALS = [
     minutes: 40,
     platform: 2,
   },
-] as Train[]
+]
 
-it('should handle SET_ORIGIN action', () => {
-  let name = 'SFIA'
-  let actualState = rootReducer(INITIAL_STATE, {
-    type: 'SET_ORIGIN',
-    payload: name,
+it('should handle SET_STATIONS action', () => {
+  const origin: StationName = 'MONT'
+  const destination: StationName = 'PITT'
+  const actualState = rootReducer(INITIAL_STATE, {
+    type: 'SET_STATIONS',
+    payload: { origin, destination },
   })
-  let expectedState = {
+  const expectedState = {
     ...INITIAL_STATE,
-    origin: name,
-  }
-
-  expect(actualState).toEqual(expectedState)
-})
-
-it('should handle SET_DESTINATION action', () => {
-  let name = 'PITT' as StationName
-  let actualState = rootReducer(INITIAL_STATE, {
-    type: 'SET_DESTINATION',
-    payload: name,
-  })
-  let expectedState = {
-    ...INITIAL_STATE,
-    destination: name,
+    origin,
+    destination,
   }
 
   expect(actualState).toEqual(expectedState)
 })
 
 it('should handle SET_NUM_SALMON_ROUTES action', () => {
-  let numRoutes = 10
-  let actualState = rootReducer(INITIAL_STATE, {
+  const numRoutes = 10
+  const actualState = rootReducer(INITIAL_STATE, {
     type: 'SET_NUM_SALMON_ROUTES',
     payload: numRoutes,
   })
-  let expectedState = {
+  const expectedState = {
     ...INITIAL_STATE,
     numSalmonRoutes: numRoutes,
   }
@@ -152,12 +140,12 @@ it('should handle SET_NUM_SALMON_ROUTES action', () => {
 })
 
 it('should handle SET_RISKINESS_FACTOR action', () => {
-  let riskinessFactor = 2
-  let actualState = rootReducer(INITIAL_STATE, {
+  const riskinessFactor = 2
+  const actualState = rootReducer(INITIAL_STATE, {
     type: 'SET_RISKINESS_FACTOR',
     payload: riskinessFactor,
   })
-  let expectedState = {
+  const expectedState = {
     ...INITIAL_STATE,
     riskinessFactor,
   }
@@ -166,8 +154,8 @@ it('should handle SET_RISKINESS_FACTOR action', () => {
 })
 
 it('should handle FETCH_SALMON_INFO action', () => {
-  let actualState = rootReducer(INITIAL_STATE, { type: 'FETCH_SALMON_INFO' })
-  let expectedState = {
+  const actualState = rootReducer(INITIAL_STATE, { type: 'FETCH_SALMON_INFO' })
+  const expectedState = {
     ...INITIAL_STATE,
     isFetching: true,
   }
@@ -176,9 +164,9 @@ it('should handle FETCH_SALMON_INFO action', () => {
 })
 
 it('should handle RECEIVE_SALMON_INFO action', () => {
-  let routes = SAMPLE_ROUTES
-  let arrivals = SAMPLE_ARRIVALS
-  let actualState = rootReducer(
+  const routes = SAMPLE_ROUTES
+  const arrivals = SAMPLE_ARRIVALS
+  const actualState = rootReducer(
     {
       ...INITIAL_STATE,
       isFetching: true,
@@ -188,7 +176,7 @@ it('should handle RECEIVE_SALMON_INFO action', () => {
       payload: { routes, arrivals },
     },
   )
-  let expectedState = {
+  const expectedState = {
     ...INITIAL_STATE,
     arrivals,
     salmonRoutes: routes,
@@ -199,7 +187,7 @@ it('should handle RECEIVE_SALMON_INFO action', () => {
 })
 
 it('should handle ERROR_SALMON_INFO action', () => {
-  let actualState = rootReducer(
+  const actualState = rootReducer(
     {
       ...INITIAL_STATE,
       isFetching: true,
@@ -209,7 +197,7 @@ it('should handle ERROR_SALMON_INFO action', () => {
       error: new Error('test error'),
     },
   )
-  let expectedState = {
+  const expectedState = {
     ...INITIAL_STATE,
     salmonRoutes: [],
     arrivals: [],
@@ -220,12 +208,12 @@ it('should handle ERROR_SALMON_INFO action', () => {
 })
 
 it('should handle SET_NUM_ARRIVALS action', () => {
-  let numArrivals = 10
-  let actualState = rootReducer(INITIAL_STATE, {
+  const numArrivals = 10
+  const actualState = rootReducer(INITIAL_STATE, {
     type: 'SET_NUM_ARRIVALS',
     payload: numArrivals,
   })
-  let expectedState = {
+  const expectedState = {
     ...INITIAL_STATE,
     numArrivals,
   }
