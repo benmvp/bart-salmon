@@ -1,7 +1,10 @@
 import React, {ReactNode} from 'react'
 import kebabCase from 'lodash/kebabCase'
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import TripOriginIcon from '@material-ui/icons/TripOrigin';
+
+import IconButton from '@material-ui/core/IconButton';
+import LocationOnIcon from '@material-ui/icons/LocationOn'
+import TripOriginIcon from '@material-ui/icons/TripOrigin'
+import SyncIcon from '@material-ui/icons/Sync'
 
 import Selector from './Selector'
 import {StationLookup} from '../utils/types'
@@ -11,7 +14,7 @@ import stationsLookup from '../data/stations.json'
 import useStyles from './StationSelectors.styles'
 
 
-export type StationChange = (stationName: OptionalStationName) => void
+type StationChange = (stationName: OptionalStationName) => void
 
 
 const STATIONS_LOOKUP = (stationsLookup as unknown) as StationLookup
@@ -50,35 +53,51 @@ const StationSelector = ({label, station, icon, onChange}: StationSelectorProps)
   )
 }
 
+
+export type StationsChange = (
+  {origin, destination}: {origin: OptionalStationName, destination: OptionalStationName}
+) => void
+
 interface Props {
   origin: OptionalStationName;
-  onOriginChange: StationChange;
   destination: OptionalStationName;
-  onDestinationChange: StationChange;
+  onStationsChange: StationsChange
 }
 
 const StationSelectors = ({
   origin,
-  onOriginChange,
   destination,
-  onDestinationChange,
+  onStationsChange,
 }: Props) => {
   const classes = useStyles()
+  const onOriginChange = (newOrigin: OptionalStationName) => onStationsChange({origin: newOrigin, destination})
+  const onDestinationChange = (newDestination: OptionalStationName) => onStationsChange({origin, destination: newDestination})
+  const onStationSwap = () => onStationsChange({origin: destination, destination: origin})
 
   return (
     <section className={classes.root}>
-      <StationSelector
-        label="Origin"
-        station={origin}
-        icon={<TripOriginIcon />}
-        onChange={onOriginChange}
-      />
-      <StationSelector
-        label="Destination"
-        station={destination}
-        icon={<LocationOnIcon />}
-        onChange={onDestinationChange}
-      />
+      <div className={classes.selectors}>
+        <StationSelector
+          label="Origin"
+          station={origin}
+          icon={<TripOriginIcon />}
+          onChange={onOriginChange}
+        />
+        <StationSelector
+          label="Destination"
+          station={destination}
+          icon={<LocationOnIcon />}
+          onChange={onDestinationChange}
+        />
+      </div>
+      <IconButton
+        color="secondary"
+        className={classes.swapButton}
+        aria-label="Swap stations"
+        onClick={onStationSwap}
+      >
+        <SyncIcon />
+      </IconButton>
     </section>
   )
 }

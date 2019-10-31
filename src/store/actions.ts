@@ -74,22 +74,15 @@ export const getSalmonInfo = (): ThunkResult<void> => async (
   }
 }
 
-export const setOrigin = (name: OptionalStationName): ThunkResult<void> => (
-  dispatch,
-) => {
+export const setStations = (
+  { origin, destination }: { origin: OptionalStationName, destination: OptionalStationName },
+): ThunkResult<void> => (dispatch) => {
   dispatch({
-    type: 'SET_ORIGIN',
-    payload: name,
-  })
-  dispatch(getSalmonInfo())
-}
-
-export const setDestination = (name: OptionalStationName): ThunkResult<void> => (
-  dispatch,
-) => {
-  dispatch({
-    type: 'SET_DESTINATION',
-    payload: name,
+    type: 'SET_STATIONS',
+    payload: {
+      origin,
+      destination,
+    },
   })
   dispatch(getSalmonInfo())
 }

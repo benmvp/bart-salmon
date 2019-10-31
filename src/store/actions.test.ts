@@ -1,4 +1,4 @@
-import { setOrigin, setDestination, setNumSalmonRoutes, getSalmonInfo } from './actions'
+import { setStations, setNumSalmonRoutes, getSalmonInfo } from './actions'
 import { AppState } from './reducers'
 import { StationName } from '../utils/types'
 
@@ -15,38 +15,19 @@ const MOCK_APP_STATE: AppState = ({
 })
 const MOCK_GET_STATE = () => MOCK_APP_STATE
 
-describe('setOrigin', () => {
-  it('dispatches SET_ORIGIN action w/ specified station', async () => {
-    let mockDispatch = jest.fn()
-    let name = 'WDUB' as StationName
-    let asyncAction = setOrigin(name)
+describe('setStations', () => {
+  it('dispatches SET_STATIONS action w/ specified origin/destination', async () => {
+    const mockDispatch = jest.fn()
+    const origin: StationName = 'WDUB'
+    const destination: StationName = 'NCON'
+    const asyncAction = setStations({ origin, destination })
 
     await asyncAction(mockDispatch, MOCK_GET_STATE, null)
 
     expect(mockDispatch).toHaveBeenCalledTimes(2)
     expect(mockDispatch).toHaveBeenCalledWith({
-      type: 'SET_ORIGIN',
-      payload: name,
-    })
-  })
-
-  it('dispatches getSalmonInfo action', () => {
-    // TODO
-  })
-})
-
-describe('setDestination', () => {
-  it('returns SET_DESTINATION action w/ specified station', async () => {
-    let mockDispatch = jest.fn()
-    let name = 'NCON' as StationName
-    let asyncAction = setDestination(name)
-
-    await asyncAction(mockDispatch, MOCK_GET_STATE, undefined)
-
-    expect(mockDispatch).toHaveBeenCalledTimes(2)
-    expect(mockDispatch).toHaveBeenCalledWith({
-      type: 'SET_DESTINATION',
-      payload: name,
+      type: 'SET_STATIONS',
+      payload: { origin, destination },
     })
   })
 

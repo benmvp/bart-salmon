@@ -12,8 +12,8 @@ const origin = (
 ): OptionalStationName => {
   let newState = state
 
-  if (action.type === 'SET_ORIGIN') {
-    newState = action.payload
+  if (action.type === 'SET_STATIONS') {
+    newState = action.payload.origin
   }
 
   return newState
@@ -25,8 +25,8 @@ const destination = (
 ): OptionalStationName => {
   let newState = state
 
-  if (action.type === 'SET_DESTINATION') {
-    newState = action.payload
+  if (action.type === 'SET_STATIONS') {
+    newState = action.payload.destination
   }
 
   return newState

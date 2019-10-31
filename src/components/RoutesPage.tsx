@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import isEmpty from 'lodash/isEmpty'
 import Arrivals from './Arrivals'
-import StationSelectors, {StationChange} from './StationSelectors';
+import StationSelectors, {StationsChange} from './StationSelectors';
 import SalmonRoutes from './SalmonRoutes'
 import {SalmonRoute, Train} from '../utils/types'
 import {OptionalStationName} from '../store/types'
@@ -16,8 +16,7 @@ interface Props {
   salmonRoutes: SalmonRoute[];
   arrivals: Train[];
   numArrivals: number;
-  setOrigin: StationChange;
-  setDestination: StationChange;
+  setStations: StationsChange;
   getSalmonInfo: () => void;
   isDisabled: boolean;
 }
@@ -26,8 +25,7 @@ const RoutesPage= ({
   origin,
   destination,
   numSalmonRoutes,
-  setOrigin,
-  setDestination,
+  setStations,
   getSalmonInfo,
   salmonRoutes,
   arrivals,
@@ -70,9 +68,8 @@ const RoutesPage= ({
     <div className={classes.root}>
       <StationSelectors
         origin={origin}
-        onOriginChange={setOrigin}
         destination={destination}
-        onDestinationChange={setDestination}
+        onStationsChange={setStations}
       />
       {arrivalsAndRoutes}
     </div>
