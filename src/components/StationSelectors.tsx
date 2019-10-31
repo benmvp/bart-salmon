@@ -4,7 +4,7 @@ import kebabCase from 'lodash/kebabCase'
 import IconButton from '@material-ui/core/IconButton';
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import TripOriginIcon from '@material-ui/icons/TripOrigin'
-import SyncIcon from '@material-ui/icons/Sync'
+import SwapVertIcon from '@material-ui/icons/SwapVert'
 
 import Selector from './Selector'
 import {StationLookup} from '../utils/types'
@@ -96,7 +96,7 @@ const StationSelectors = ({
         aria-label="Swap stations"
         onClick={onStationSwap}
       >
-        <SyncIcon />
+        <SwapVertIcon />
       </IconButton>
     </section>
   )
