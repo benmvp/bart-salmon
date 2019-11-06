@@ -1,12 +1,11 @@
 import React, {useEffect} from 'react'
 import isEmpty from 'lodash/isEmpty'
-import { format } from 'date-fns';
+import formatDate from 'date-fns/format';
 
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import Divider from '@material-ui/core/Divider';
 import RefreshIcon from '@material-ui/icons/Refresh'
-
 
 import Arrivals from './Arrivals'
 import StationSelectors, {StationsChange} from './StationSelectors';
@@ -37,7 +36,7 @@ const LastUpdatedMessage = (
     <>
       <div className={classes.lastUpdatedShell}>
         <Typography display="inline" variant="body2"  color="textSecondary">
-          Last updated {format(lastUpdated, 'ddd @ h:mma')}
+          Last updated {formatDate(lastUpdated, 'eee @ h:mma')}
         </Typography>
         <IconButton
           color="secondary"
