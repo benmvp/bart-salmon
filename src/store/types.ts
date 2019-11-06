@@ -24,7 +24,8 @@ interface ReceiveSalmonInfo {
   type: 'RECEIVE_SALMON_INFO';
   payload: {
     routes: SalmonRoute[];
-    arrivals: Train[]
+    arrivals: Train[];
+    lastUpdated: Date;
   }
 }
 interface ErrorSalmonInfo {

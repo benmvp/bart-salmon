@@ -12,14 +12,16 @@ const _mapStateToProps = ({
   numSalmonRoutes,
   salmonRoutes,
   arrivals,
-  numArrivals,
   isFetching,
+  lastUpdated,
+  numArrivals,
 }: AppState) => ({
   origin,
   destination,
   numSalmonRoutes,
   salmonRoutes,
   arrivals,
+  lastUpdated,
   numArrivals,
   isDisabled: isFetching,
 })

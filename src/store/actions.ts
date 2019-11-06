@@ -33,6 +33,7 @@ const receiveSalmonInfo = (
   payload: {
     routes,
     arrivals,
+    lastUpdated: new Date(),
   },
 })
 
