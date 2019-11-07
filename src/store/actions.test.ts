@@ -1,19 +1,12 @@
 import { setStations, setNumSalmonRoutes, getSalmonInfo } from './actions'
-import { AppState } from './reducers'
 import { StationName } from '../utils/types'
+import { MOCK_ARRIVALS, MOCK_ROUTES, MOCK_INITIAL_STATE } from './mock-data'
+
 
 jest.mock('../api')
 
-const MOCK_APP_STATE: AppState = ({
-  origin: 'DELN',
-  destination: 'EMBR',
-  numSalmonRoutes: 3,
-  riskinessFactor: 1,
-  isFetching: false,
-  salmonRoutes: [],
-  arrivals: [],
-})
-const MOCK_GET_STATE = () => MOCK_APP_STATE
+
+const MOCK_GET_STATE = () => MOCK_INITIAL_STATE
 
 describe('setStations', () => {
   it('dispatches SET_STATIONS action w/ specified origin/destination', async () => {
@@ -62,18 +55,8 @@ describe('getSalmonInfo', () => {
   it('dispatches RECEIVE_SALMON_INFO action', async () => {
     const mockDispatch = jest.fn()
     const asyncAction = getSalmonInfo()
-    const getState = () => ({
-      origin: 'DELN',
-      destination: 'EMBR',
-      numSalmonRoutes: 3,
-      riskinessFactor: 1,
-      isFetching: false,
-      salmonRoutes: [],
-      arrivals: [],
-      numArrivals: 3,
-    }) as AppState
 
-    await asyncAction(mockDispatch, getState, undefined)
+    await asyncAction(mockDispatch, MOCK_GET_STATE, undefined)
 
     expect(mockDispatch).toHaveBeenCalledTimes(2)
 
@@ -84,6 +67,7 @@ describe('getSalmonInfo', () => {
       payload: {
         arrivals: expect.any(Array),
         routes: expect.any(Array),
+        lastUpdated: expect.any(Date),
       }
     }))
   })
@@ -92,15 +76,10 @@ describe('getSalmonInfo', () => {
     let mockDispatch = jest.fn()
     let asyncAction = getSalmonInfo()
     let getState = () => ({
+      ...MOCK_INITIAL_STATE,
       origin: '24TH',
       destination: '24TH',
-      numSalmonRoutes: 7,
-      riskinessFactor: 2,
-      isFetching: false,
-      salmonRoutes: [],
-      arrivals: [],
-      numArrivals: 3,
-    }) as AppState
+    })
 
     await asyncAction(mockDispatch, getState, null)
 

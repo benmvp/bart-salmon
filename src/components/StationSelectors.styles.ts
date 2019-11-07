@@ -8,7 +8,6 @@ export default makeStyles((theme: Theme) => (
       flexDirection: 'row',
       justifyContent: 'space-between',
       padding: theme.spacing(2),
-      width: '100%',
     },
     selectors: {
       flex: 1,

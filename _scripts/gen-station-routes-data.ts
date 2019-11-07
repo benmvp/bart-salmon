@@ -2,9 +2,9 @@ import zipObject from 'lodash/zipObject'
 import mapValues from 'lodash/mapValues'
 import keyBy from 'lodash/keyBy'
 import sum from 'lodash/sum'
-import startOfWeek from 'date-fns/start_of_week'
-import endOfWeek from 'date-fns/end_of_week'
-import addDays from 'date-fns/add_days'
+import startOfWeek from 'date-fns/startOfWeek'
+import endOfWeek from 'date-fns/endOfWeek'
+import addDays from 'date-fns/addDays'
 import formatDate from 'date-fns/format'
 import { fetchBartInfo } from '../src/api/bart'
 import { DepartureApiRequest } from '../src/api/types'
@@ -28,7 +28,7 @@ const _fetchDepartSchedules = (
     params: {
       orig,
       dest,
-      date: formatDate(date, 'MM/DD/YYYY'),
+      date: formatDate(date, 'MM/dd/yyyy'),
       time: '5:00pm',
     }
   })

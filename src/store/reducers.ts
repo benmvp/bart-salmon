@@ -6,71 +6,88 @@ const DEFAULT_NUM_SALMON_ROUTES = 4
 const DEFAULT_RISKINESS_FACTOR = 0
 const DEFAULT_NUM_ARRIVALS = 4
 
+//////// DATA ////////
+
 const origin = (
   state: OptionalStationName = '',
   action: AppAction,
 ): OptionalStationName => {
-  let newState = state
-
   if (action.type === 'SET_STATIONS') {
-    newState = action.payload.origin
+    return action.payload.origin
   }
 
-  return newState
+  return state
 }
 
 const destination = (
   state: OptionalStationName = '',
   action: AppAction,
 ): OptionalStationName => {
-  let newState = state
-
   if (action.type === 'SET_STATIONS') {
-    newState = action.payload.destination
+    return action.payload.destination
   }
 
-  return newState
+  return state
 }
 
 const isFetching = (state: boolean = false, action: AppAction): boolean => {
   const { type } = action
-  let newState = state
-
   if (type === 'FETCH_SALMON_INFO') {
-    newState = true
+    return true
   } else if (type === 'RECEIVE_SALMON_INFO' || type === 'ERROR_SALMON_INFO') {
-    newState = false
+    return false
   }
 
-  return newState
+  return state
 }
 
 const salmonRoutes = (
   state: SalmonRoute[] = [],
   action: AppAction,
 ): SalmonRoute[] => {
-  let newState = state
-
   if (action.type === 'RECEIVE_SALMON_INFO') {
-    newState = action.payload.routes
+    return action.payload.routes
   } else if (action.type === 'ERROR_SALMON_INFO') {
-    newState = []
+    return []
   }
 
-  return newState
+  return state
 }
+
+const arrivals = (
+  state: Train[] = [],
+  action: AppAction,
+): Train[] => {
+  if (action.type === 'RECEIVE_SALMON_INFO') {
+    return action.payload.arrivals
+  } else if (action.type === 'ERROR_SALMON_INFO') {
+    return []
+  }
+
+  return state
+}
+
+const lastUpdated = (state: Date | null = null, action: AppAction): Date | null => {
+  if (action.type === 'RECEIVE_SALMON_INFO') {
+    return action.payload.lastUpdated
+  } else if (action.type === 'ERROR_SALMON_INFO') {
+    return null
+  }
+
+  return state
+}
+
+//////// UI Configuration ////////
 
 const numSalmonRoutes = (
   state: number = DEFAULT_NUM_SALMON_ROUTES,
   action: AppAction,
 ): number => {
-  let newState = state
-
   if (action.type === 'SET_NUM_SALMON_ROUTES') {
-    newState = action.payload
+    return action.payload
   }
 
-  return newState
+  return state
 }
 
 // the higher the number, the more likely you'll make the returning train after
@@ -80,41 +97,22 @@ const riskinessFactor = (
   state: number = DEFAULT_RISKINESS_FACTOR,
   action: AppAction,
 ): number => {
-  let newState = state
-
   if (action.type === 'SET_RISKINESS_FACTOR') {
-    newState = action.payload
+    return action.payload
   }
 
-  return newState
-}
-
-const arrivals = (
-  state: Train[] = [],
-  action: AppAction,
-): Train[] => {
-  let newState = state
-
-  if (action.type === 'RECEIVE_SALMON_INFO') {
-    newState = action.payload.arrivals
-  } else if (action.type === 'ERROR_SALMON_INFO') {
-    newState = []
-  }
-
-  return newState
+  return state
 }
 
 const numArrivals = (
   state: number = DEFAULT_NUM_ARRIVALS,
   action: AppAction,
 ): number => {
-  let newState = state
-
   if (action.type === 'SET_NUM_ARRIVALS') {
-    newState = action.payload
+    return action.payload
   }
 
-  return newState
+  return state
 }
 
 const rootReducer = combineReducers({
@@ -122,9 +120,10 @@ const rootReducer = combineReducers({
   destination,
   isFetching,
   salmonRoutes,
+  arrivals,
+  lastUpdated,
   numSalmonRoutes,
   riskinessFactor,
-  arrivals,
   numArrivals,
 })
 
