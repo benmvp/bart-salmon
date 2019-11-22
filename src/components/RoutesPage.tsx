@@ -41,6 +41,7 @@ const LastUpdatedMessage = (
         <IconButton
           color="secondary"
           aria-label="Refresh salmon routes"
+          size="small"
           onClick={onRefresh}
         >
           <RefreshIcon />
