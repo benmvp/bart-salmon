@@ -101,13 +101,15 @@ const SalmonRoute = ({
             <Chip
               variant="outlined"
               label={backwardsStationInfo.name}
-              className={classes.train}
             />
           </Box>
           <Box mt={3} display="flex" alignItems="center">
             <WaitBadge waitTime={backwardsWaitTime} lateMessage="<1" />
             <ChevronRightIcon className={classes.arrow} />
-            <Chip icon={<TrainIcon />} label={`${returnTrain.destination} — ${returnTrain.length}-car`} className={classes.train} />
+            <Chip
+              icon={<TrainIcon />}
+              label={`${returnTrain.destination} — ${returnTrain.length}-car`}
+            />
           </Box>
         </Box>
       </ExpansionPanelDetails>
