@@ -28,7 +28,7 @@ jobs:
 
     # Generate all of the static data needed for salmon algorithms
     - name: Generate static data
-      run: npm run gen:stations
+      run: npm run gen:routes
 
     - name: Commit updated files
       run: |
