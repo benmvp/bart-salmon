@@ -15,14 +15,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout repo
+      uses: actions/checkout@v1
 
-    - uses: actions/setup-node@v1
+    - name: Setup Node v12
+      uses: actions/setup-node@v1
       with:
         node-version: 12
 
-    - run: npm install
+    - name: Install NPM dependencies
+      run: npm install
 
     # Generate all of the static data needed for salmon algorithms
-    - name: Generate all of the data
+    - name: Generate static data
       run: npm run gen:all
