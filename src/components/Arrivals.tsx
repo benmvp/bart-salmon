@@ -23,7 +23,7 @@ const ArrivingTrains =  ({trains, numArrivals}: {trains: Train[], numArrivals: n
   )).slice(0, numArrivals)
 
   return (
-    <Box px={3} mb={2}>
+    <Box px={3} mb={2} textAlign="center">
       {trainBubbles}
     </Box>
   )
