@@ -1,36 +1,32 @@
-import React, {FunctionComponent} from 'react'
+import React from 'react'
+import Box from '@material-ui/core/Box'
+import Typography from '@material-ui/core/Typography'
+import Chip from '@material-ui/core/Chip'
+import DepartureBoardIcon from '@material-ui/icons/DepartureBoard'
 import {Train} from '../utils/types'
 import {OptionalStationName} from '../store/types'
 import stationsLookup from '../data/stations.json'
 
-import styles from './Arrivals.styles'
+import useStyles from './Arrivals.styles'
 
 
-const _displayMinutes = (minutes: number): string =>
-  `${minutes} ${minutes === 1 ? 'min' : 'mins'}`
-
-const NextTrain: FunctionComponent<{train?: Train}> = ({train}) => {
-  if (!train) {
-    return null
-  }
-
-  const {minutes} = train
+const ArrivingTrains =  ({trains, numArrivals}: {trains: Train[], numArrivals: number}) => {
+  const classes = useStyles()
+  const trainBubbles = trains.map(({minutes, destination}, index) => (
+    <Chip
+      key={index}
+      label={`${minutes} — ${destination}`}
+      color={index === 0 ? 'primary' : undefined}
+      variant={index === 0 ? undefined : 'outlined'}
+      className={classes.trainBubble}
+    />
+  )).slice(0, numArrivals)
 
   return (
-    <div style={styles.nextTrain}>
-      <div style={styles.nextTrainTime}>{minutes}</div>
-    </div>
+    <Box px={3} mb={2} textAlign="center">
+      {trainBubbles}
+    </Box>
   )
-}
-
-const FollowingTrains: FunctionComponent<{trains: Train[]}> = ({trains}) => {
-  const trainComponents = trains.map(({minutes}, index) => (
-    <span key={index} style={styles.followingTrainTime}>
-      {_displayMinutes(minutes)}
-    </span>
-  ))
-
-  return <div style={styles.followingTrains}>{trainComponents}</div>
 }
 
 interface Props {
@@ -39,25 +35,24 @@ interface Props {
   numArrivals: number;
 }
 
-const Arrivals: FunctionComponent<Props> = ({
-  destination, 
+const Arrivals = ({
+  destination,
   arrivals,
   numArrivals,
-}) => {
-  const [firstTrain, ...followingTrains] = arrivals.slice(0, numArrivals)
+}: Props) => {
+  const classes = useStyles()
   const destinationDisplay = destination && stationsLookup[destination].name
 
   return (
-    <div style={styles.root}>
-      <div style={styles.headingSection}>
-        <span style={styles.headingNextTrain}>Next train to</span>
-        <span style={styles.headingDestination}>
-          {destinationDisplay}
-        </span>
-      </div>
-      <NextTrain train={firstTrain} />
-      <FollowingTrains trains={followingTrains} />
-    </div>
+    <Box>
+      <Box px={2} pb={0.5} mb={1} display="flex">
+        <DepartureBoardIcon />
+        <Typography variant="subtitle1" component="h2" className={classes.heading}>
+          Times for trains to {destinationDisplay}:
+        </Typography>
+      </Box>
+      <ArrivingTrains trains={arrivals} numArrivals={numArrivals} />
+    </Box>
   )
 }
 

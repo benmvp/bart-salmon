@@ -365,7 +365,7 @@ const _getAllSalmonRoutesFromEtds = (
   return _adjustedSalmonRoutes
 }
 
-/*
+/**
  * Given a salmon route, returns the total time it takes to go back and return to
  * the origin
  */
@@ -376,6 +376,16 @@ export const getSalmonTimeFromRoute = ({
   returnRideTime,
 }: SalmonRoute): number =>
   waitTime + backwardsRideTime + backwardsWaitTime + returnRideTime
+
+/**
+ * Given a salmon route and the next upcoming train, figure out how much additional
+ * time the salmon route would add to the trip
+ */
+export const getSalmonAdditionalTime = (salmonRoute: SalmonRoute, nextTrain: Train) =>
+  // Make sure the minimal time is 0
+  // It shouldn't be less than 0 but there are some slight discrepancies between
+  // forward and backward route times
+  Math.max(0, getSalmonTimeFromRoute(salmonRoute) - nextTrain.minutes)
 
 /**
  * Given origin and destination stations, returns a list of available trains,
@@ -461,7 +471,7 @@ export const getSuggestedSalmonRoutesFromEtds = (
         'waitTime',
       ])
       // Filter out duplicate routes with the same salmon time because we basically
-      // always want to leave out on the first backwards train so that we can go as 
+      // always want to leave out on the first backwards train so that we can go as
       // far as possible with waiting as little as possible. A duplicate salmon time
       // means waiting longer for the backwards train and/or waiting longer for the
       // return train

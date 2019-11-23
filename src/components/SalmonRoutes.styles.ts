@@ -3,7 +3,6 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 export default makeStyles((theme: Theme) => (
   createStyles({
     additionalTime: {
-      color: theme.palette.text.secondary,
       paddingLeft: theme.spacing(1),
     },
     arrow: {

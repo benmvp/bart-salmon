@@ -22,16 +22,12 @@ Then, start the app:
 npm start
 ```
 
-```sh
-npm install --save react-composite-events
-```
-
 ## Technologies used
 
 Bart Salmon is a mobile web, aiming to provide a useful service as well as an opportunity to learn new technologies:
 
 - **UI:** [React](https://facebook.github.io/react/)
-- **Styling:** [Material UI](https://material-ui.com/) + Inline CSS
+- **Styling:** [Material UI](https://material-ui.com/)
 - **Data Flow:** [Lodash](https://lodash.com/) & [Redux](http://redux.js.org/) (w/ [Redux Thunk](https://github.com/gaearon/redux-thunk) & [Async Functions](https://github.com/tc39/ecmascript-asyncawait))
 - **API:** [Bart API](http://api.bart.gov/docs/overview/index.aspx)
 - **Build Tooling:** [Create React App](https://github.com/facebookincubator/create-react-app)
