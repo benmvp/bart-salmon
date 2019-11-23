@@ -1,0 +1,28 @@
+name: Auto-generate data
+
+# Auto-generate the data at the end of every day (PST)
+on:
+  schedule:
+    # 7AM UTC is 11PM PST
+    - cron: '* 7 * * *'
+
+  push:
+    branches:
+      - auto-generate-data
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
+
+    - run: npm install
+
+    # Generate all of the static data needed for salmon algorithms
+    - name: Generate all of the data
+      run: npm run gen:all
