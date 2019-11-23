@@ -16,13 +16,7 @@ After [cloning the repo](https://help.github.com/en/github/creating-cloning-and-
 npm install
 ```
 
-Generate local stations and route data:
-
-```sh
-npm run gen:all
-```
-
-Lastly, start the app:
+Then, start the app:
 
 ```sh
 npm start
