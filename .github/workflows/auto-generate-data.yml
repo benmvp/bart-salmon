@@ -1,0 +1,40 @@
+name: Auto-generate data
+
+# Auto-generate the data at the end of every day (PST)
+on:
+  schedule:
+    # 7AM UTC is 11PM PST
+    - cron: '* 7 * * *'
+
+jobs:
+  auto_generate_data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v1
+
+    - name: Setup Node v12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+
+    - name: Install NPM dependencies
+      run: npm install
+
+    # Generate all of the static data needed for salmon algorithms
+    - name: Generate static data
+      run: npm run gen:all
+
+    - name: Commit updated files
+      run: |
+        git config --local user.email "bartsalmon@benmvp.com"
+        git config --local user.name "Bart Salmon GitHub Action"
+        git add -A
+        # Do nothing if there are no changes
+        git diff-index --quiet HEAD || git commit -m "Update data from nightly cron"
+
+    - name: Push data to repo
+      uses: ad-m/github-push-action@v0.5.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
