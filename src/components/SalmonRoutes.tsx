@@ -1,4 +1,4 @@
-import React, {useState, ChangeEvent} from 'react'
+import React, {useState, ChangeEvent, ReactNode} from 'react'
 import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
@@ -13,7 +13,7 @@ import PanToolIcon from '@material-ui/icons/PanTool'
 import TransferWithinAStationIcon from '@material-ui/icons/TransferWithinAStation'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import stationsLookup from '../data/stations.json'
-import {getSalmonTimeFromRoute} from '../utils/salmon'
+import {getSalmonTimeFromRoute, getSalmonAdditionalTime} from '../utils/salmon'
 import {Train, SalmonRoute as SalmonRouteData} from '../utils/types'
 
 import useStyles from './SalmonRoutes.styles'
@@ -59,15 +59,8 @@ const SalmonRoute = ({
   const backwardsStationName = backwardsStationInfo.name
   let salmonTimeAdditionalTime = salmonTime
 
-
   if (nextTrain) {
-    // Make sure the minimal time is 0
-    // It shouldn't be less than 0 but there are some slight discrepancies between
-    // forward and backward route times
-    salmonTimeAdditionalTime = Math.max(
-      0,
-      salmonTimeAdditionalTime - nextTrain.minutes,
-    )
+    salmonTimeAdditionalTime = getSalmonAdditionalTime(route, nextTrain)
   }
 
   const additionalSalmonTimeDisplay = salmonTimeAdditionalTime > 0 ? `+${salmonTimeAdditionalTime}` : '——'
@@ -77,12 +70,12 @@ const SalmonRoute = ({
       <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
         <Grid container justify="space-between" alignItems="center" wrap="nowrap">
           <Grid item xs={9}>
-            <Typography variant="h5" component="span">
+            <Typography variant="h6" component="span">
               {backwardsStationName}
             </Typography>
           </Grid>
           <Grid item xs={3}>
-            <Typography variant="h5" component="span" className={classes.additionalTime}>
+            <Typography variant="h6" component="div" className={classes.additionalTime} align="right">
               {additionalSalmonTimeDisplay}
             </Typography>
           </Grid>
@@ -117,6 +110,16 @@ const SalmonRoute = ({
   )
 }
 
+interface HeadingProps {
+  children: ReactNode;
+}
+
+const Heading = ({children}: HeadingProps) => (
+  <Box bgcolor="grey.200" px={2} py={0.5}>
+    <Typography variant="subtitle1" component="h2">{children}</Typography>
+  </Box>
+)
+
 interface Props {
   routes: SalmonRouteData[];
   numRoutes: number;
@@ -136,8 +139,11 @@ const SalmonRoutes = ({
     }
   )
 
+  const noAdditionalTimeIndex = routes.findIndex((route) => getSalmonAdditionalTime(route, nextTrain) === 0)
+  const firstAdditionalTimeIndex = routes.findIndex((route) => getSalmonAdditionalTime(route, nextTrain) > 0)
+
   // TODO: Salmon routes need some sort of unique identifier
-  const salmonRoutes = routes
+  let salmonRoutes = routes
     .map((route, index) => (
       <SalmonRoute
         key={index}
@@ -148,6 +154,21 @@ const SalmonRoutes = ({
       />
     ))
     .slice(0, numRoutes)
+
+  if (firstAdditionalTimeIndex > -1) {
+    salmonRoutes.splice(
+      firstAdditionalTimeIndex,
+      0,
+      (<Heading key="additional">Swim upstream & add...</Heading>)
+    )
+  }
+  if (noAdditionalTimeIndex > -1) {
+    salmonRoutes.splice(
+      noAdditionalTimeIndex,
+      0,
+      (<Heading key="same-time">Swim upstream & catch the same train!</Heading>)
+    )
+  }
 
   return (
     <Box>

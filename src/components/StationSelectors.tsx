@@ -1,6 +1,7 @@
 import React, {ReactNode} from 'react'
 import kebabCase from 'lodash/kebabCase'
 
+import Box from '@material-ui/core/Box'
 import IconButton from '@material-ui/core/IconButton';
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import TripOriginIcon from '@material-ui/icons/TripOrigin'
@@ -75,7 +76,7 @@ const StationSelectors = ({
   const onStationSwap = () => onStationsChange({origin: destination, destination: origin})
 
   return (
-    <section className={classes.root}>
+    <Box component="section" px={2} display="flex" justifyContent="space-between" alignItems="center">
       <div className={classes.selectors}>
         <StationSelector
           label="Origin"
@@ -98,7 +99,7 @@ const StationSelectors = ({
       >
         <SwapVertIcon />
       </IconButton>
-    </section>
+    </Box>
   )
 }
 

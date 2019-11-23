@@ -2,13 +2,6 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 
 export default makeStyles((theme: Theme) => (
   createStyles({
-    root: {
-      alignItems: 'center',
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      padding: theme.spacing(2),
-    },
     selectors: {
       flex: 1,
     },

@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import isEmpty from 'lodash/isEmpty'
 import formatDate from 'date-fns/format';
 
+import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import Divider from '@material-ui/core/Divider';
@@ -13,8 +14,6 @@ import SalmonRoutes from './SalmonRoutes'
 import {SalmonRoute, Train} from '../utils/types'
 import {OptionalStationName} from '../store/types'
 
-import useStyles from './RoutesPage.styles'
-
 
 const LastUpdatedMessage = (
   {
@@ -25,8 +24,6 @@ const LastUpdatedMessage = (
     onRefresh: () => void,
   }
 ) => {
-  const classes = useStyles()
-
   if (!lastUpdated) {
     return null
   }
@@ -34,7 +31,7 @@ const LastUpdatedMessage = (
 
   return (
     <>
-      <div className={classes.lastUpdatedShell}>
+      <Box textAlign="center">
         <Typography display="inline" variant="body2"  color="textSecondary">
           Last updated {formatDate(lastUpdated, 'eee @ h:mma')}
         </Typography>
@@ -46,7 +43,7 @@ const LastUpdatedMessage = (
         >
           <RefreshIcon />
         </IconButton>
-      </div>
+      </Box>
       <Divider variant="middle" />
     </>
   )
@@ -95,34 +92,37 @@ const RoutesPage= ({
     )
     arrivalsAndRoutes = (
       <>
-        <div>
+        <Box component="section" mt={2}>
           <Arrivals
             destination={destination}
             arrivals={arrivals}
             numArrivals={numArrivals}
           />
-        </div>
-        <div>
+        </Box>
+        <Box component="section">
           <SalmonRoutes
             routes={salmonRoutes}
             numRoutes={numSalmonRoutes}
             nextTrain={nextTrain}
           />
-        </div>
+        </Box>
       </>
     )
   }
 
   return (
-    <div>
+    <Box component="main">
       {lastUpdatedMessage}
-      <StationSelectors
-        origin={origin}
-        destination={destination}
-        onStationsChange={setStations}
-      />
+      <Box my={2}>
+        <StationSelectors
+          origin={origin}
+          destination={destination}
+          onStationsChange={setStations}
+        />
+        <Divider variant="middle" />
+      </Box>
       {arrivalsAndRoutes}
-    </div>
+    </Box>
   )
 }
 
