@@ -29,3 +29,14 @@ jobs:
     # Generate all of the static data needed for salmon algorithms
     - name: Generate static data
       run: npm run gen:all
+
+    - name: Commit updated files
+      run: |
+        git config --local user.email "bartsalmon@benmvp.com"
+        git config --local user.name "Bart Salmon GitHub Action"
+        git commit -am "Update data from nightly cron"
+
+    - name: Push data to repo
+      uses: ad-m/github-push-action@v0.5.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
