@@ -4,6 +4,7 @@ import formatDate from 'date-fns/format';
 
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
 import IconButton from '@material-ui/core/IconButton';
 import Divider from '@material-ui/core/Divider';
 import RefreshIcon from '@material-ui/icons/Refresh'
@@ -122,6 +123,13 @@ const RoutesPage= ({
         <Divider variant="middle" />
       </Box>
       {arrivalsAndRoutes}
+      <Box mt={3}>
+        <Typography align="center" variant="caption" component="p">
+          Brought to you with&nbsp;
+          <span role="img" aria-label="love">❤️</span> by&nbsp;
+          <Link href="http://www.benmvp.com/" target="_blank" rel="noopener noreferrer">Ben Ilegbodu</Link>.
+        </Typography>
+      </Box>
     </Box>
   )
 }
