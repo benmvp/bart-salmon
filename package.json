@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "npm run gen:all",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
