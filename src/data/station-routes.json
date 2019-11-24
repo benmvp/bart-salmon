@@ -5442,15 +5442,11 @@
           "ROUTE 12"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 63
+      "time": 64
     },
     "CIVC": {
       "directRoutes": [
@@ -5466,10 +5462,6 @@
         [
           "ROUTE 2",
           "ROUTE 6"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 12"
         ],
         [
           "ROUTE 2",
@@ -5522,15 +5514,11 @@
           "ROUTE 12"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 76
+      "time": 77
     },
     "DELN": {
       "directRoutes": [
@@ -5710,11 +5698,6 @@
           "ROUTE 20"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12",
-          "ROUTE 20"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 12",
           "ROUTE 20"
@@ -5820,10 +5803,6 @@
           "ROUTE 6"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 12"
         ],
@@ -5904,15 +5883,11 @@
           "ROUTE 12"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 73
+      "time": 74
     },
     "WOAK": {
       "directRoutes": [
@@ -13009,7 +12984,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 84
+      "time": 85
     },
     "CIVC": {
       "directRoutes": [
@@ -13029,10 +13004,6 @@
       "multiRoutes": [
         [
           "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 6"
         ],
         [
@@ -13045,7 +13016,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 63
+      "time": 64
     },
     "COLM": {
       "directRoutes": [
@@ -13128,7 +13099,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 97
+      "time": 98
     },
     "DELN": {
       "directRoutes": [
@@ -13346,11 +13317,6 @@
       "multiRoutes": [
         [
           "ROUTE 8",
-          "ROUTE 12",
-          "ROUTE 20"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 6",
           "ROUTE 20"
         ],
@@ -13366,7 +13332,7 @@
           "ROUTE 20"
         ]
       ],
-      "time": 78
+      "time": 79
     },
     "ORIN": {
       "directRoutes": [
@@ -13509,10 +13475,6 @@
       "multiRoutes": [
         [
           "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 6"
         ],
         [
@@ -13525,7 +13487,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 67
+      "time": 68
     },
     "SHAY": {
       "directRoutes": [],
@@ -13635,7 +13597,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 94
+      "time": 95
     },
     "WOAK": {
       "directRoutes": [
@@ -19151,15 +19113,11 @@
           "ROUTE 12"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 70
+      "time": 71
     },
     "CIVC": {
       "directRoutes": [
@@ -19175,10 +19133,6 @@
         [
           "ROUTE 2",
           "ROUTE 6"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 12"
         ],
         [
           "ROUTE 2",
@@ -19239,15 +19193,11 @@
           "ROUTE 12"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 83
+      "time": 84
     },
     "DELN": {
       "directRoutes": [
@@ -19427,11 +19377,6 @@
           "ROUTE 20"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12",
-          "ROUTE 20"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 12",
           "ROUTE 20"
@@ -19529,10 +19474,6 @@
           "ROUTE 6"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 12"
         ],
@@ -19613,15 +19554,11 @@
           "ROUTE 12"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 80
+      "time": 81
     },
     "WOAK": {
       "directRoutes": [
@@ -21278,15 +21215,11 @@
           "ROUTE 12"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 66
+      "time": 67
     },
     "CIVC": {
       "directRoutes": [
@@ -21302,10 +21235,6 @@
         [
           "ROUTE 2",
           "ROUTE 6"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 12"
         ],
         [
           "ROUTE 2",
@@ -21366,15 +21295,11 @@
           "ROUTE 12"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 79
+      "time": 80
     },
     "DELN": {
       "directRoutes": [
@@ -21554,11 +21479,6 @@
           "ROUTE 20"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12",
-          "ROUTE 20"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 12",
           "ROUTE 20"
@@ -21664,10 +21584,6 @@
           "ROUTE 6"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 12"
         ],
@@ -21740,15 +21656,11 @@
           "ROUTE 12"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 12"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 76
+      "time": 77
     },
     "WOAK": {
       "directRoutes": [
