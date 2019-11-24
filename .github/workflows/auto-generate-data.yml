@@ -4,7 +4,7 @@ name: Auto-generate data
 on:
   schedule:
     # 7AM UTC is 11PM PST
-    - cron: '* 7 * * *'
+    - cron: '0 7 * * *'
 
 jobs:
   auto_generate_data:
