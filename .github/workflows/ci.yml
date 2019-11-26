@@ -1,0 +1,32 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v1
+
+    - name: Use Node v12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+
+    - name: Install NPM dependencies
+      run: npm install
+
+    - name: Run unit tests w/ code coverage
+      run: npm test -- --coverage
+      env:
+        CI: true
+
+    - name: Verify production build
+      run: npm run build
+
+    - name: Send coverage info to Coveralls
+      uses: coverallsapp/github-action@v1.0.1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
