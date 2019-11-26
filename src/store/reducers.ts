@@ -42,26 +42,26 @@ const isFetching = (state: boolean = false, action: AppAction): boolean => {
 }
 
 const salmonRoutes = (
-  state: SalmonRoute[] = [],
+  state: SalmonRoute[] | null = null,
   action: AppAction,
-): SalmonRoute[] => {
+): SalmonRoute[] | null => {
   if (action.type === 'RECEIVE_SALMON_INFO') {
     return action.payload.routes
-  } else if (action.type === 'ERROR_SALMON_INFO') {
-    return []
+  } else if (action.type === 'SET_STATIONS' || action.type === 'ERROR_SALMON_INFO') {
+    return null
   }
 
   return state
 }
 
 const arrivals = (
-  state: Train[] = [],
+  state: Train[] | null = null,
   action: AppAction,
-): Train[] => {
+): Train[] | null => {
   if (action.type === 'RECEIVE_SALMON_INFO') {
     return action.payload.arrivals
-  } else if (action.type === 'ERROR_SALMON_INFO') {
-    return []
+  } else if (action.type === 'SET_STATIONS' || action.type === 'ERROR_SALMON_INFO') {
+    return null
   }
 
   return state

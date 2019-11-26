@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import isEmpty from 'lodash/isEmpty'
 import formatDate from 'date-fns/format';
 
 import Box from '@material-ui/core/Box'
@@ -55,8 +54,8 @@ interface Props {
   origin: OptionalStationName;
   destination: OptionalStationName;
   numSalmonRoutes: number;
-  salmonRoutes: SalmonRoute[];
-  arrivals: Train[];
+  salmonRoutes: SalmonRoute[] | null;
+  arrivals: Train[] | null;
   lastUpdated: Date | null;
   numArrivals: number;
   isDisabled: boolean;
@@ -85,7 +84,7 @@ const RoutesPage= ({
   let arrivalsAndRoutes
   let lastUpdatedMessage
 
-  if (!isEmpty(arrivals)) {
+  if (arrivals !== null && salmonRoutes !== null) {
     const [nextTrain] = arrivals
 
     lastUpdatedMessage = (
