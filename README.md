@@ -1,6 +1,6 @@
 # Bart Salmon
 
-[![Build Status](https://travis-ci.org/benmvp/bart-salmon.svg?branch=master)](https://travis-ci.org/benmvp/bart-salmon)
+![Build Status](https://github.com/benmvp/bart-salmon/workflows/CI/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/benmvp/bart-salmon/badge.svg?branch=master)](https://coveralls.io/github/benmvp/bart-salmon?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/benmvp/bart-salmon.svg)](https://greenkeeper.io/)
 
