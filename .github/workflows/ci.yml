@@ -10,7 +10,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v1
 
-    - name: Setup Node v12
+    - name: Use Node v12
       uses: actions/setup-node@v1
       with:
         node-version: 12
@@ -27,4 +27,6 @@ jobs:
       run: npm run build
 
     - name: Send coverage info to Coveralls
-      run: cat ./coverage/lcov.info | npx coveralls
+      uses: coverallsapp/github-action@v1.0.1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
