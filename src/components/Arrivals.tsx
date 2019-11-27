@@ -6,6 +6,7 @@ import DepartureBoardIcon from '@material-ui/icons/DepartureBoard'
 import {Train} from '../utils/types'
 import {OptionalStationName} from '../store/types'
 import stationsLookup from '../data/stations.json'
+import SleepingEmojiGraphic from './SleepingEmoji'
 
 import useStyles from './Arrivals.styles'
 
@@ -29,6 +30,21 @@ const ArrivingTrains =  ({trains, numArrivals}: {trains: Train[], numArrivals: n
   )
 }
 
+const NoAvailableTrains = () => {
+  const classes = useStyles()
+
+  return (
+    <Box px={2}>
+      <Box width={192} mx="auto">
+        <SleepingEmojiGraphic />
+      </Box>
+      <Typography variant="h5" component="p" align="center" className={classes.emptyMessage}>
+        There are no more trains tonight.
+      </Typography>
+    </Box>
+  )
+}
+
 interface Props {
   destination: OptionalStationName;
   arrivals: Train[];
@@ -42,6 +58,10 @@ const Arrivals = ({
 }: Props) => {
   const classes = useStyles()
   const destinationDisplay = destination && stationsLookup[destination].name
+
+  if (arrivals.length === 0) {
+    return (<NoAvailableTrains />)
+  }
 
   return (
     <Box>

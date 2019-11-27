@@ -9,3 +9,7 @@ export const PERSIST_CONFIG = {
   storage,
   whitelist: REDUCERS_TO_PERSIST,
 }
+
+export const DEFAULT_NUM_SALMON_ROUTES = 4
+export const DEFAULT_RISKINESS_FACTOR = 0
+export const DEFAULT_NUM_ARRIVALS = 4

@@ -1,7 +1,25 @@
 import rootReducer from './reducers'
 import { StationName } from '../utils/types'
+import {
+  DEFAULT_NUM_ARRIVALS,
+  DEFAULT_NUM_SALMON_ROUTES,
+  DEFAULT_RISKINESS_FACTOR,
+} from './constants'
 import { MOCK_ARRIVALS, MOCK_ROUTES, MOCK_INITIAL_STATE } from './mock-data'
 
+it('defaults state appropriately', () => {
+  expect(rootReducer(undefined, { type: '@@INIT' })).toEqual({
+    origin: '',
+    destination: '',
+    isFetching: false,
+    salmonRoutes: null,
+    arrivals: null,
+    lastUpdated: null,
+    numSalmonRoutes: DEFAULT_NUM_SALMON_ROUTES,
+    riskinessFactor: DEFAULT_RISKINESS_FACTOR,
+    numArrivals: DEFAULT_NUM_ARRIVALS,
+  })
+})
 
 it('handles SET_STATIONS action', () => {
   const origin: StationName = 'MONT'
@@ -14,6 +32,8 @@ it('handles SET_STATIONS action', () => {
     ...MOCK_INITIAL_STATE,
     origin,
     destination,
+    arrivals: null,
+    salmonRoutes: null,
   }
 
   expect(actualState).toEqual(expectedState)
@@ -95,8 +115,8 @@ it('handles ERROR_SALMON_INFO action', () => {
   )
   const expectedState = {
     ...MOCK_INITIAL_STATE,
-    salmonRoutes: [],
-    arrivals: [],
+    salmonRoutes: null,
+    arrivals: null,
     isFetching: false,
   }
 
