@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux'
 import { SalmonRoute, Train } from '../utils/types'
 import { AppAction, OptionalStationName } from './types'
+import {
+  DEFAULT_NUM_ARRIVALS,
+  DEFAULT_NUM_SALMON_ROUTES,
+  DEFAULT_RISKINESS_FACTOR,
+} from './constants'
 
-const DEFAULT_NUM_SALMON_ROUTES = 4
-const DEFAULT_RISKINESS_FACTOR = 0
-const DEFAULT_NUM_ARRIVALS = 4
 
 //////// DATA ////////
 
