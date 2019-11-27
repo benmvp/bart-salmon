@@ -9,5 +9,8 @@ export default makeStyles((theme: Theme) => (
       marginRight: theme.spacing(1),
       marginBottom: theme.spacing(1),
     },
+    emptyMessage: {
+      marginTop: theme.spacing(1),
+    }
   })
 ))
