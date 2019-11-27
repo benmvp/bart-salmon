@@ -32,6 +32,6 @@ Bart Salmon is a mobile web, aiming to provide a useful service as well as an op
 - **API:** [Bart API](http://api.bart.gov/docs/overview/index.aspx)
 - **Build Tooling:** [Create React App](https://github.com/facebookincubator/create-react-app)
 - **Static Checking:** [TypeScript](https://www.typescriptlang.org/index.html) & [ESLint](http://eslint.org/)
-- **Testing:** [Jest](https://facebook.github.io/jest/) & [Enzyme](https://github.com/airbnb/enzyme)
+- **Testing:** [Jest](https://facebook.github.io/jest/)
 - **Continuous Integration & Delivery:** [Github Actions](https://github.com/benmvp/bart-salmon/actions) (CI), [Coveralls](https://coveralls.io/github/benmvp/bart-salmon?branch=master) (Code Coverage) & [Netlify](https://www.netlify.com/) (CD)
 - **Environments:** Mobile Chrome, Mobile Firefox & Mobile Safari
