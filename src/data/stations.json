@@ -10,16 +10,16 @@
     "state": "CA",
     "zipcode": "94612",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 3",
+      "ROUTE 10",
       "ROUTE 8",
-      "ROUTE 9"
+      "ROUTE 3",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 4",
+      "ROUTE 9",
       "ROUTE 7",
-      "ROUTE 10"
+      "ROUTE 4",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "1",
@@ -59,16 +59,16 @@
     "state": "CA",
     "zipcode": "94110",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 6",
+      "ROUTE 12",
       "ROUTE 8",
-      "ROUTE 12"
+      "ROUTE 5",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 5",
+      "ROUTE 11",
       "ROUTE 7",
-      "ROUTE 11"
+      "ROUTE 6",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
@@ -107,16 +107,16 @@
     "state": "CA",
     "zipcode": "94612",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 3",
+      "ROUTE 10",
       "ROUTE 8",
-      "ROUTE 9"
+      "ROUTE 3",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 4",
+      "ROUTE 9",
       "ROUTE 7",
-      "ROUTE 10"
+      "ROUTE 4",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "1",
@@ -156,16 +156,16 @@
     "state": "CA",
     "zipcode": "94110",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 6",
+      "ROUTE 12",
       "ROUTE 8",
-      "ROUTE 12"
+      "ROUTE 5",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 5",
+      "ROUTE 11",
       "ROUTE 7",
-      "ROUTE 11"
+      "ROUTE 6",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
@@ -203,7 +203,9 @@
     "county": "Contra Costa",
     "state": "CA",
     "zipcode": "94509",
-    "northRoutes": [],
+    "northRoutes": [
+      "ROUTE 2"
+    ],
     "southRoutes": [
       "ROUTE 1"
     ],
@@ -242,12 +244,12 @@
     "state": "CA",
     "zipcode": "94703",
     "northRoutes": [
-      "ROUTE 3",
-      "ROUTE 8"
+      "ROUTE 8",
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 7"
+      "ROUTE 7",
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "1"
@@ -286,16 +288,16 @@
     "state": "CA",
     "zipcode": "94112",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 6",
+      "ROUTE 12",
       "ROUTE 8",
-      "ROUTE 12"
+      "ROUTE 5",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 5",
+      "ROUTE 11",
       "ROUTE 7",
-      "ROUTE 11"
+      "ROUTE 6",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
@@ -334,16 +336,16 @@
     "state": "CA",
     "zipcode": "94578",
     "northRoutes": [
-      "ROUTE 3",
+      "ROUTE 10",
+      "ROUTE 12",
       "ROUTE 5",
-      "ROUTE 9",
-      "ROUTE 11"
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
+      "ROUTE 11",
+      "ROUTE 9",
       "ROUTE 6",
-      "ROUTE 10",
-      "ROUTE 12"
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "2"
@@ -382,12 +384,12 @@
     "state": "CA",
     "zipcode": "94546",
     "northRoutes": [
-      "ROUTE 9",
+      "ROUTE 10",
       "ROUTE 12"
     ],
     "southRoutes": [
-      "ROUTE 10",
-      "ROUTE 11"
+      "ROUTE 11",
+      "ROUTE 9"
     ],
     "northPlatforms": [
       "1"
@@ -426,16 +428,16 @@
     "state": "CA",
     "zipcode": "94102",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 6",
+      "ROUTE 12",
       "ROUTE 8",
-      "ROUTE 12"
+      "ROUTE 5",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 5",
+      "ROUTE 11",
       "ROUTE 7",
-      "ROUTE 11"
+      "ROUTE 6",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
@@ -474,17 +476,18 @@
     "state": "CA",
     "zipcode": "94621",
     "northRoutes": [
-      "ROUTE 3",
-      "ROUTE 5",
-      "ROUTE 9",
-      "ROUTE 11"
-    ],
-    "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 6",
       "ROUTE 10",
       "ROUTE 12",
-      "ROUTE 20"
+      "ROUTE 19",
+      "ROUTE 5",
+      "ROUTE 3"
+    ],
+    "southRoutes": [
+      "ROUTE 11",
+      "ROUTE 9",
+      "ROUTE 20",
+      "ROUTE 6",
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "2"
@@ -524,12 +527,12 @@
     "state": "CA",
     "zipcode": "94014",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 8"
+      "ROUTE 8",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 7"
+      "ROUTE 7",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
@@ -610,14 +613,16 @@
     "state": "CA",
     "zipcode": "94014",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 6",
+      "ROUTE 12",
       "ROUTE 8",
-      "ROUTE 12"
+      "ROUTE 5",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 7"
+      "ROUTE 11",
+      "ROUTE 7",
+      "ROUTE 6",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "1",
@@ -657,12 +662,12 @@
     "state": "CA",
     "zipcode": "94704",
     "northRoutes": [
-      "ROUTE 3",
-      "ROUTE 8"
+      "ROUTE 8",
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 7"
+      "ROUTE 7",
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "1"
@@ -701,12 +706,12 @@
     "state": "CA",
     "zipcode": "94588",
     "northRoutes": [
-      "ROUTE 9",
+      "ROUTE 10",
       "ROUTE 12"
     ],
     "southRoutes": [
-      "ROUTE 10",
-      "ROUTE 11"
+      "ROUTE 11",
+      "ROUTE 9"
     ],
     "northPlatforms": [],
     "southPlatforms": [
@@ -743,12 +748,12 @@
     "state": "CA",
     "zipcode": "94530",
     "northRoutes": [
-      "ROUTE 3",
-      "ROUTE 8"
+      "ROUTE 8",
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 7"
+      "ROUTE 7",
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "1"
@@ -787,12 +792,12 @@
     "state": "CA",
     "zipcode": "94530",
     "northRoutes": [
-      "ROUTE 3",
-      "ROUTE 8"
+      "ROUTE 8",
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 7"
+      "ROUTE 7",
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "1"
@@ -831,16 +836,16 @@
     "state": "CA",
     "zipcode": "94111",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 6",
+      "ROUTE 12",
       "ROUTE 8",
-      "ROUTE 12"
+      "ROUTE 5",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 5",
+      "ROUTE 11",
       "ROUTE 7",
-      "ROUTE 11"
+      "ROUTE 6",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
@@ -879,12 +884,12 @@
     "state": "CA",
     "zipcode": "94536",
     "northRoutes": [
-      "ROUTE 3",
-      "ROUTE 5"
+      "ROUTE 5",
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 6"
+      "ROUTE 6",
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "1",
@@ -925,16 +930,16 @@
     "state": "CA",
     "zipcode": "94601",
     "northRoutes": [
-      "ROUTE 3",
+      "ROUTE 10",
+      "ROUTE 12",
       "ROUTE 5",
-      "ROUTE 9",
-      "ROUTE 11"
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
+      "ROUTE 11",
+      "ROUTE 9",
       "ROUTE 6",
-      "ROUTE 10",
-      "ROUTE 12"
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "2"
@@ -973,16 +978,16 @@
     "state": "CA",
     "zipcode": "94131",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 6",
+      "ROUTE 12",
       "ROUTE 8",
-      "ROUTE 12"
+      "ROUTE 5",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 5",
+      "ROUTE 11",
       "ROUTE 7",
-      "ROUTE 11"
+      "ROUTE 6",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
@@ -1021,12 +1026,12 @@
     "state": "CA",
     "zipcode": "94541",
     "northRoutes": [
-      "ROUTE 3",
-      "ROUTE 5"
+      "ROUTE 5",
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 6"
+      "ROUTE 6",
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "2"
@@ -1107,16 +1112,16 @@
     "state": "CA",
     "zipcode": "94607",
     "northRoutes": [
-      "ROUTE 3",
+      "ROUTE 10",
+      "ROUTE 12",
       "ROUTE 5",
-      "ROUTE 9",
-      "ROUTE 11"
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
+      "ROUTE 11",
+      "ROUTE 9",
       "ROUTE 6",
-      "ROUTE 10",
-      "ROUTE 12"
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "2"
@@ -1155,15 +1160,16 @@
     "state": "CA",
     "zipcode": "94609",
     "northRoutes": [
-      "ROUTE 2",
+      "ROUTE 10",
+      "ROUTE 8",
       "ROUTE 3",
-      "ROUTE 8"
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 4",
+      "ROUTE 9",
       "ROUTE 7",
-      "ROUTE 10"
+      "ROUTE 4",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "1",
@@ -1204,11 +1210,15 @@
     "state": "CA",
     "zipcode": "94030",
     "northRoutes": [
-      "ROUTE 2",
       "ROUTE 8",
-      "ROUTE 13"
+      "ROUTE 13",
+      "ROUTE 2"
     ],
-    "southRoutes": [],
+    "southRoutes": [
+      "ROUTE 7",
+      "ROUTE 14",
+      "ROUTE 1"
+    ],
     "northPlatforms": [
       "1",
       "2",
@@ -1246,16 +1256,16 @@
     "state": "CA",
     "zipcode": "94104",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 6",
+      "ROUTE 12",
       "ROUTE 8",
-      "ROUTE 12"
+      "ROUTE 5",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 5",
+      "ROUTE 11",
       "ROUTE 7",
-      "ROUTE 11"
+      "ROUTE 6",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
@@ -1294,12 +1304,12 @@
     "state": "CA",
     "zipcode": "94702",
     "northRoutes": [
-      "ROUTE 3",
-      "ROUTE 8"
+      "ROUTE 8",
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 7"
+      "ROUTE 7",
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "1"
@@ -1588,16 +1598,16 @@
     "state": "CA",
     "zipcode": "94102",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 6",
+      "ROUTE 12",
       "ROUTE 8",
-      "ROUTE 12"
+      "ROUTE 5",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 5",
+      "ROUTE 11",
       "ROUTE 7",
-      "ROUTE 11"
+      "ROUTE 6",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
@@ -1635,10 +1645,13 @@
     "county": "contracosta",
     "state": "CA",
     "zipcode": "94801",
-    "northRoutes": [],
+    "northRoutes": [
+      "ROUTE 8",
+      "ROUTE 3"
+    ],
     "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 7"
+      "ROUTE 7",
+      "ROUTE 4"
     ],
     "northPlatforms": [],
     "southPlatforms": [
@@ -1717,12 +1730,12 @@
     "state": "CA",
     "zipcode": "94066",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 8"
+      "ROUTE 8",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 7"
+      "ROUTE 7",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
@@ -1761,11 +1774,12 @@
     "state": "CA",
     "zipcode": "94128",
     "northRoutes": [
+      "ROUTE 13",
       "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 14"
+      "ROUTE 14",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "1",
@@ -1807,16 +1821,16 @@
     "state": "CA",
     "zipcode": "94577",
     "northRoutes": [
-      "ROUTE 3",
+      "ROUTE 10",
+      "ROUTE 12",
       "ROUTE 5",
-      "ROUTE 9",
-      "ROUTE 11"
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
+      "ROUTE 11",
+      "ROUTE 9",
       "ROUTE 6",
-      "ROUTE 10",
-      "ROUTE 12"
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "2"
@@ -1855,12 +1869,12 @@
     "state": "CA",
     "zipcode": "94544",
     "northRoutes": [
-      "ROUTE 3",
-      "ROUTE 5"
+      "ROUTE 5",
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 6"
+      "ROUTE 6",
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "2"
@@ -1899,12 +1913,12 @@
     "state": "CA",
     "zipcode": "94080",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 8"
+      "ROUTE 8",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 7"
+      "ROUTE 7",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
@@ -1943,12 +1957,12 @@
     "state": "CA",
     "zipcode": "94587",
     "northRoutes": [
-      "ROUTE 3",
-      "ROUTE 5"
+      "ROUTE 5",
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 6"
+      "ROUTE 6",
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "2"
@@ -2029,12 +2043,12 @@
     "state": "CA",
     "zipcode": "94539",
     "northRoutes": [
-      "ROUTE 3",
-      "ROUTE 5"
+      "ROUTE 5",
+      "ROUTE 3"
     ],
     "southRoutes": [
-      "ROUTE 4",
-      "ROUTE 6"
+      "ROUTE 6",
+      "ROUTE 4"
     ],
     "northPlatforms": [
       "1",
@@ -2072,12 +2086,12 @@
     "state": "CA",
     "zipcode": "94568",
     "northRoutes": [
-      "ROUTE 9",
+      "ROUTE 10",
       "ROUTE 12"
     ],
     "southRoutes": [
-      "ROUTE 10",
-      "ROUTE 11"
+      "ROUTE 11",
+      "ROUTE 9"
     ],
     "northPlatforms": [
       "1"
@@ -2116,16 +2130,16 @@
     "state": "CA",
     "zipcode": "94607",
     "northRoutes": [
-      "ROUTE 2",
-      "ROUTE 6",
+      "ROUTE 12",
       "ROUTE 8",
-      "ROUTE 12"
+      "ROUTE 5",
+      "ROUTE 2"
     ],
     "southRoutes": [
-      "ROUTE 1",
-      "ROUTE 5",
+      "ROUTE 11",
       "ROUTE 7",
-      "ROUTE 11"
+      "ROUTE 6",
+      "ROUTE 1"
     ],
     "northPlatforms": [
       "2"
