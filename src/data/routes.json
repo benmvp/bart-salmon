@@ -358,14 +358,14 @@
     ]
   },
   "ROUTE 1": {
-    "name": "",
+    "name": "Antioch - SFIA/Millbrae",
     "abbr": "ANTC-MLBR",
     "routeID": "ROUTE 1",
-    "number": "",
+    "number": "1",
     "origin": "ANTC",
     "destination": "MLBR",
-    "hexcolor": "",
-    "color": "",
+    "hexcolor": "#FFEA00",
+    "color": "Yellow",
     "stations": [
       "ANTC",
       "PCTR",
@@ -398,14 +398,14 @@
     ]
   },
   "ROUTE 2": {
-    "name": "",
+    "name": "Millbrae/SFIA - Antioch",
     "abbr": "MLBR-ANTC",
     "routeID": "ROUTE 2",
-    "number": "",
+    "number": "2",
     "origin": "MLBR",
     "destination": "ANTC",
-    "hexcolor": "",
-    "color": "",
+    "hexcolor": "#FFEA00",
+    "color": "Yellow",
     "stations": [
       "MLBR",
       "SFIA",
