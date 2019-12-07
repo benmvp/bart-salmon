@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import {navigate, WindowLocation} from '@reach/router'
+import {navigate, Location} from '@reach/router'
 
 import Box from '@material-ui/core/Box'
 import Divider from '@material-ui/core/Divider'
@@ -15,36 +15,39 @@ interface Props {
   // @reach/router props
   children: ReactNode;
   path: string;
-  location?: WindowLocation;
 }
 
-const Layout = ({children, location}: Props) => {
-  const selectedNav = location && location.pathname === '/settings' ? 'settings' : 'routes'
+const Layout = ({children,}: Props) => (
+  <Location>
+    {({location}) => {
+      const selectedNav = location && location.pathname === '/settings' ? 'settings' : 'routes'
 
-  return (
-    <Box component="main" pb={8}>
-      {children}
+        return (
+          <Box component="main" pb={8}>
+            {children}
 
-      <Box mt={5}>
-        <Footer />
-      </Box>
+            <Box mt={5}>
+              <Footer />
+            </Box>
 
-      <Box position="fixed" bottom={0} left={0} width="100%">
-        <Divider variant="fullWidth" />
+            <Box position="fixed" bottom={0} left={0} width="100%">
+              <Divider variant="fullWidth" />
 
-        <BottomNavigation
-          value={selectedNav}
-          onChange={(e, newValue) => {
-            navigate(newValue === 'settings' ? 'settings' : '/')
-          }}
-          showLabels
-        >
-          <BottomNavigationAction label="Routes" value="routes" icon={<TrainIcon />} />
-          <BottomNavigationAction label="Settings" value="settings" icon={<SettingsIcon />} />
-        </BottomNavigation>
-      </Box>
-    </Box>
-  )
-}
+              <BottomNavigation
+                value={selectedNav}
+                onChange={(e, newValue) => {
+                  navigate(newValue === 'settings' ? 'settings' : '/')
+                }}
+                showLabels
+              >
+                <BottomNavigationAction label="Routes" value="routes" icon={<TrainIcon />} />
+                <BottomNavigationAction label="Settings" value="settings" icon={<SettingsIcon />} />
+              </BottomNavigation>
+            </Box>
+          </Box>
+        )
+    }}
+  </Location>
+)
 
 export default Layout
