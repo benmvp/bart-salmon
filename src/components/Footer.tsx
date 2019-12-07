@@ -11,10 +11,10 @@ const Footer = () => {
   const classes = useStyles()
 
   return (
-    <Box mt={3} component="footer">
-      <Divider />
+    <Box component="footer">
+      <Divider variant="inset" />
 
-      <Typography align="center" variant="caption" component="p" className={classes.message}>
+      <Typography align="right" variant="caption" component="p" className={classes.message}>
         Brought to you with&nbsp;
         <span role="img" aria-label="love">❤️</span> by&nbsp;
         <Link href="http://www.benmvp.com/" target="_blank" rel="noopener noreferrer">Ben Ilegbodu</Link>.

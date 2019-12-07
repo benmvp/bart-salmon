@@ -5,7 +5,6 @@ import NativeSelect from '@material-ui/core/NativeSelect';
 import {validateValue} from './utils'
 import {SelectorValue} from './types'
 
-import useStyles from './Selector.styles'
 
 interface Props<SelectorValueType> {
   id: string;
@@ -25,7 +24,6 @@ const Selector = <ValueType extends string = string>({
   value,
   onChange,
 }: Props<ValueType>) => {
-  const classes = useStyles()
   let handleChange: ChangeEventHandler<HTMLSelectElement> | undefined
 
   if (onChange) {
@@ -44,7 +42,7 @@ const Selector = <ValueType extends string = string>({
   ))
 
   return (
-    <FormControl className={classes.formControl}>
+    <FormControl fullWidth>
       <InputLabel htmlFor={id}>{label}</InputLabel>
       <NativeSelect
         value={validatedValue}

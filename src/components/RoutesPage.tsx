@@ -10,7 +10,6 @@ import RefreshIcon from '@material-ui/icons/Refresh'
 import Arrivals from './Arrivals'
 import StationSelectors, {StationsChange} from './StationSelectors';
 import SalmonRoutes from './SalmonRoutes'
-import Footer from './Footer'
 import {SalmonRoute, Train} from '../utils/types'
 import {OptionalStationName} from '../store/types'
 
@@ -60,6 +59,10 @@ interface Props {
   isDisabled: boolean;
   setStations: StationsChange;
   getSalmonInfo: () => void;
+
+  // @react/router props
+  path: string;
+  default: boolean;
 }
 
 const RoutesPage= ({
@@ -111,7 +114,7 @@ const RoutesPage= ({
   }
 
   return (
-    <Box component="main">
+    <>
       {lastUpdatedMessage}
       <Box my={2}>
         <StationSelectors
@@ -121,8 +124,7 @@ const RoutesPage= ({
         />
       </Box>
       {arrivalsAndRoutes}
-      <Footer />
-    </Box>
+    </>
   )
 }
 
