@@ -46,7 +46,7 @@ export const getRouteIdsWithStartAndEnd = (
   end: StationName,
   trainColor?: HexColor,
 ): RouteId[] => {
-  const routesInfo = STATION_ROUTES_LOOKUP[start][end] || {}
+  const routesInfo = STATION_ROUTES_LOOKUP[start][end] ?? {}
   const { directRoutes = [] } = routesInfo
 
   return (
@@ -56,7 +56,7 @@ export const getRouteIdsWithStartAndEnd = (
       // should go in the front. If the sort compare function finds that both routes
       // match the train color, then they're "equal" (1 - 1 = 0). If trainA matches
       // and trainB doesn't trainA should go first (0 - 1 < 0). If trainA doesn't
-      // match and trainB does, trainA should go after (1 - 0 > 0). 
+      // match and trainB does, trainA should go after (1 - 0 > 0).
       // This is needed because there are "WHITE" trains that come back in ETDs
       // for routes that are shorter than usual. And since there are no official
       // routes that match, those trains would be ignored.
@@ -155,7 +155,7 @@ export const getMinutesBetweenStation = (
   const {
     directRoutes = [],
     time = NOT_FOUND_MINUTES_BETWEEN_STATIONS,
-  } = STATION_ROUTES_LOOKUP[start][end] || {}
+  } = STATION_ROUTES_LOOKUP[start][end] ?? {}
 
   if (!directRoutes.includes(routeId)) {
     return NOT_FOUND_MINUTES_BETWEEN_STATIONS;
