@@ -26,6 +26,12 @@ jobs:
     - name: Generate static data
       run: npm run gen:all
 
+    # Run unit tests to make sure tests on mock data still pass
+    - name: Run unit tests w/ code coverage
+      run: npm test
+      env:
+        CI: true
+
     - name: Commit updated files
       run: |
         git config --local user.email "bartsalmon@benmvp.com"
