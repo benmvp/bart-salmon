@@ -61,7 +61,7 @@ const MARKS = [
 const riskinessFactorBlurb = (value: number) => {
   const foundMark = MARKS.find((mark) => mark.value === value)
 
-  return foundMark ? foundMark.blurb : ''
+  return foundMark?.blurb ?? ''
 }
 
 const RiskinessFactor = ({value, setValue}: SettingProps<number>) => {

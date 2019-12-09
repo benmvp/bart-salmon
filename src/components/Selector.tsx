@@ -37,7 +37,7 @@ const Selector = <ValueType extends string = string>({
   const validatedValue = validateValue(values, value)
   const options = values.map(({value, display}) => (
     <option key={value} value={value}>
-      {display || value}
+      {display ?? value}
     </option>
   ))
 
