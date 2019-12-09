@@ -15,5 +15,5 @@ export const PERSIST_CONFIG = {
 }
 
 export const DEFAULT_NUM_SALMON_ROUTES = 4
-export const DEFAULT_RISKINESS_FACTOR = 0
+export const DEFAULT_RISKINESS_FACTOR = 1
 export const DEFAULT_NUM_ARRIVALS = 4
