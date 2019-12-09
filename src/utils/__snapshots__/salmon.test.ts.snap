@@ -183,7 +183,7 @@ Array [
     "limited": "0",
     "minutes": 1,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "DALY",
@@ -211,7 +211,7 @@ Array [
     "limited": "0",
     "minutes": 17,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
 ]
 `;
@@ -277,7 +277,7 @@ Array [
     "limited": "0",
     "minutes": 4,
     "platform": "1",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "SFIA",
@@ -333,7 +333,7 @@ Array [
     "limited": "0",
     "minutes": 19,
     "platform": "1",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "SFIA",
@@ -408,7 +408,7 @@ Array [
     "limited": "0",
     "minutes": 0,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
   Object {
     "abbreviation": "RICH",
@@ -436,7 +436,7 @@ Array [
     "limited": "0",
     "minutes": 15,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
 ]
 `;
@@ -457,7 +457,7 @@ Array [
     "limited": "0",
     "minutes": 1,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
 ]
 `;
@@ -776,7 +776,7 @@ Array [
     "limited": 0,
     "minutes": 4,
     "platform": 2,
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "DALY",
@@ -802,7 +802,7 @@ Array [
     "limited": 0,
     "minutes": 19,
     "platform": 2,
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
 ]
 `;
@@ -877,7 +877,7 @@ Array [
     "limited": 0,
     "minutes": 7,
     "platform": 1,
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "SFIA",
@@ -929,7 +929,7 @@ Array [
     "limited": 0,
     "minutes": 21,
     "platform": 1,
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "SFIA",
@@ -986,7 +986,7 @@ Array [
     "limited": 0,
     "minutes": 2,
     "platform": 1,
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
   Object {
     "abbreviation": "RICH",
@@ -1012,7 +1012,7 @@ Array [
     "limited": 0,
     "minutes": 15,
     "platform": 1,
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
 ]
 `;
@@ -1032,7 +1032,7 @@ Array [
     "limited": 0,
     "minutes": 4,
     "platform": 2,
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
 ]
 `;
@@ -1430,7 +1430,7 @@ Array [
     "limited": "0",
     "minutes": 4,
     "platform": "1",
-    "routeId": "ROUTE 1",
+    "routeId": "ROUTE 7",
   },
   Object {
     "abbreviation": "DALY",
@@ -1458,7 +1458,7 @@ Array [
     "limited": "0",
     "minutes": 28,
     "platform": "1",
-    "routeId": "ROUTE 1",
+    "routeId": "ROUTE 7",
   },
   Object {
     "abbreviation": "DALY",
@@ -1486,7 +1486,7 @@ Array [
     "limited": "0",
     "minutes": 52,
     "platform": "1",
-    "routeId": "ROUTE 1",
+    "routeId": "ROUTE 7",
   },
   Object {
     "abbreviation": "DALY",
@@ -1519,7 +1519,7 @@ Array [
     "limited": "0",
     "minutes": 21,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
   Object {
     "abbreviation": "RICH",
@@ -1533,7 +1533,7 @@ Array [
     "limited": "0",
     "minutes": 45,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
   Object {
     "abbreviation": "RICH",
@@ -1547,7 +1547,7 @@ Array [
     "limited": "0",
     "minutes": 69,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
 ]
 `;
@@ -2080,7 +2080,7 @@ Array [
     "limited": "0",
     "minutes": 7,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
   Object {
     "abbreviation": "RICH",
@@ -2094,7 +2094,7 @@ Array [
     "limited": "0",
     "minutes": 21,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
 ]
 `;
@@ -2486,7 +2486,7 @@ Array [
     "limited": "0",
     "minutes": 7,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "DALY",
@@ -2514,7 +2514,7 @@ Array [
     "limited": "0",
     "minutes": 22,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
 ]
 `;
@@ -2608,7 +2608,7 @@ Array [
     "limited": "0",
     "minutes": 6,
     "platform": "1",
-    "routeId": "ROUTE 1",
+    "routeId": "ROUTE 7",
   },
   Object {
     "abbreviation": "MLBR",
@@ -2636,7 +2636,7 @@ Array [
     "limited": "0",
     "minutes": 9,
     "platform": "1",
-    "routeId": "ROUTE 1",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "DALY",
@@ -2650,7 +2650,7 @@ Array [
     "limited": "0",
     "minutes": 10,
     "platform": "1",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "SFIA",
@@ -2725,7 +2725,7 @@ Array [
     "limited": "0",
     "minutes": 6,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
   Object {
     "abbreviation": "RICH",
@@ -2760,7 +2760,7 @@ Array [
     "limited": "0",
     "minutes": 7,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
 ]
 `;
@@ -3117,7 +3117,7 @@ Array [
     "limited": "0",
     "minutes": 6,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "DALY",
@@ -3145,7 +3145,7 @@ Array [
     "limited": "0",
     "minutes": 24,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
 ]
 `;
@@ -3197,7 +3197,7 @@ Array [
     "limited": "0",
     "minutes": 2,
     "platform": "1",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "DALY",
@@ -3211,7 +3211,7 @@ Array [
     "limited": "0",
     "minutes": 8,
     "platform": "1",
-    "routeId": "ROUTE 7",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "DALY",
@@ -3239,7 +3239,7 @@ Array [
     "limited": "0",
     "minutes": 17,
     "platform": "1",
-    "routeId": "ROUTE 1",
+    "routeId": "ROUTE 7",
   },
   Object {
     "abbreviation": "MLBR",
@@ -3253,7 +3253,7 @@ Array [
     "limited": "0",
     "minutes": 37,
     "platform": "1",
-    "routeId": "ROUTE 1",
+    "routeId": "ROUTE 7",
   },
   Object {
     "abbreviation": "MLBR",
@@ -3267,7 +3267,7 @@ Array [
     "limited": "0",
     "minutes": 57,
     "platform": "1",
-    "routeId": "ROUTE 1",
+    "routeId": "ROUTE 7",
   },
 ]
 `;
@@ -3286,7 +3286,7 @@ Array [
     "limited": "0",
     "minutes": 6,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
   Object {
     "abbreviation": "RICH",
@@ -3314,7 +3314,7 @@ Array [
     "limited": "0",
     "minutes": 27,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
 ]
 `;
@@ -3335,7 +3335,7 @@ Array [
     "limited": "0",
     "minutes": 6,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
 ]
 `;
@@ -3617,7 +3617,7 @@ Array [
     "limited": "0",
     "minutes": 5,
     "platform": "2",
-    "routeId": "ROUTE 9",
+    "routeId": "ROUTE 3",
   },
   Object {
     "abbreviation": "RICH",
@@ -3645,7 +3645,7 @@ Array [
     "limited": "0",
     "minutes": 25,
     "platform": "2",
-    "routeId": "ROUTE 9",
+    "routeId": "ROUTE 3",
   },
   Object {
     "abbreviation": "RICH",
@@ -3673,7 +3673,7 @@ Array [
     "limited": "0",
     "minutes": 45,
     "platform": "2",
-    "routeId": "ROUTE 9",
+    "routeId": "ROUTE 3",
   },
 ]
 `;
@@ -3772,7 +3772,7 @@ Array [
     "limited": "0",
     "minutes": 14,
     "platform": "1",
-    "routeId": "ROUTE 7",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "SFIA",
@@ -3800,7 +3800,7 @@ Array [
     "limited": "0",
     "minutes": 37,
     "platform": "1",
-    "routeId": "ROUTE 7",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "SFIA",
@@ -3847,7 +3847,7 @@ Array [
     "limited": "0",
     "minutes": 0,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
   Object {
     "abbreviation": "RICH",
@@ -3861,7 +3861,7 @@ Array [
     "limited": "0",
     "minutes": 20,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
   Object {
     "abbreviation": "RICH",
@@ -3875,7 +3875,7 @@ Array [
     "limited": "0",
     "minutes": 40,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
 ]
 `;
@@ -4225,7 +4225,7 @@ Array [
     "limited": "0",
     "minutes": 0,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "DALY",
@@ -4253,7 +4253,7 @@ Array [
     "limited": "0",
     "minutes": 16,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
 ]
 `;
@@ -4319,7 +4319,7 @@ Array [
     "limited": "0",
     "minutes": 4,
     "platform": "1",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "SFIA",
@@ -4375,7 +4375,7 @@ Array [
     "limited": "0",
     "minutes": 18,
     "platform": "1",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
   Object {
     "abbreviation": "SFIA",
@@ -4450,7 +4450,7 @@ Array [
     "limited": "0",
     "minutes": 0,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
   Object {
     "abbreviation": "RICH",
@@ -4478,7 +4478,7 @@ Array [
     "limited": "0",
     "minutes": 15,
     "platform": "1",
-    "routeId": "ROUTE 3",
+    "routeId": "ROUTE 8",
   },
 ]
 `;
@@ -4499,7 +4499,7 @@ Array [
     "limited": "0",
     "minutes": 0,
     "platform": "2",
-    "routeId": "ROUTE 5",
+    "routeId": "ROUTE 11",
   },
 ]
 `;
@@ -4791,7 +4791,7 @@ Array [
     "backwardsStation": "BAYF",
     "backwardsWaitTime": 8,
     "returnRideTime": 4,
-    "returnRouteId": "ROUTE 5",
+    "returnRouteId": "ROUTE 11",
     "salmonTime": 17,
     "waitTime": 0,
   },
@@ -4922,7 +4922,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" return
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 4,
     "returnRideTime": 5,
@@ -4932,7 +4932,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 6,
     "returnRideTime": 11,
@@ -4942,7 +4942,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 28,
     "returnRideTime": 7,
@@ -4951,24 +4951,24 @@ Array [
     "waitTime": 3,
   },
   Object {
-    "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "SSAN",
-    "backwardsWaitTime": 3,
-    "returnRideTime": 18,
-    "returnRouteId": "ROUTE 8",
-    "salmonTime": 47,
-    "waitTime": 7,
-  },
-  Object {
     "backwardsRideTime": 22,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 12,
+    "backwardsWaitTime": 1,
     "returnRideTime": 21,
     "returnRouteId": "ROUTE 8",
-    "salmonTime": 62,
-    "waitTime": 7,
+    "salmonTime": 47,
+    "waitTime": 3,
+  },
+  Object {
+    "backwardsRideTime": 30,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "MLBR",
+    "backwardsWaitTime": 3,
+    "returnRideTime": 29,
+    "returnRouteId": "ROUTE 8",
+    "salmonTime": 65,
+    "waitTime": 3,
   },
 ]
 `;
@@ -4977,33 +4977,33 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" return
 Array [
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "16TH",
-    "backwardsWaitTime": 4,
+    "backwardsWaitTime": 2,
     "returnRideTime": 6,
     "returnRouteId": "ROUTE 6",
     "salmonTime": 18,
-    "waitTime": 2,
+    "waitTime": 4,
   },
   Object {
     "backwardsRideTime": 13,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "BALB",
-    "backwardsWaitTime": 5,
+    "backwardsWaitTime": 3,
     "returnRideTime": 13,
     "returnRouteId": "ROUTE 6",
     "salmonTime": 33,
-    "waitTime": 2,
+    "waitTime": 4,
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "DALY",
-    "backwardsWaitTime": 12,
+    "backwardsWaitTime": 10,
     "returnRideTime": 17,
     "returnRouteId": "ROUTE 6",
     "salmonTime": 48,
-    "waitTime": 2,
+    "waitTime": 4,
   },
 ]
 `;
@@ -5037,7 +5037,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" return
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "NBRK",
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
@@ -5047,7 +5047,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "PLZA",
     "backwardsWaitTime": 2,
     "returnRideTime": 9,
@@ -5057,7 +5057,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 11,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "DELN",
     "backwardsWaitTime": 3,
     "returnRideTime": 12,
@@ -5067,7 +5067,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "RICH",
     "backwardsWaitTime": 3,
     "returnRideTime": 16,
@@ -5082,7 +5082,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" return
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 6",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "FRMT",
     "backwardsWaitTime": 13,
     "returnRideTime": 5,
@@ -5092,7 +5092,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 6",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "WARM",
     "backwardsWaitTime": 15,
     "returnRideTime": 11,
@@ -5107,7 +5107,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" return
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "SANL",
     "backwardsWaitTime": 7,
     "returnRideTime": 5,
@@ -5117,7 +5117,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "HAYW",
     "backwardsWaitTime": 7,
     "returnRideTime": 12,
@@ -5127,7 +5127,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "SHAY",
     "backwardsWaitTime": 12,
     "returnRideTime": 16,
@@ -5137,7 +5137,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 21,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "UCTY",
     "backwardsWaitTime": 4,
     "returnRideTime": 21,
@@ -5147,7 +5147,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 26,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "FRMT",
     "backwardsWaitTime": 9,
     "returnRideTime": 26,
@@ -5322,7 +5322,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" return
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 3,
     "returnRideTime": 2,
@@ -5332,7 +5332,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
@@ -5342,7 +5342,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 6,
     "returnRideTime": 7,
@@ -5352,7 +5352,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 3,
     "returnRideTime": 11,
@@ -5362,33 +5362,43 @@ Array [
   },
   Object {
     "backwardsRideTime": 16,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "COLM",
-    "backwardsWaitTime": 1,
+    "backwardsWaitTime": 5,
     "returnRideTime": 15,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 39,
-    "waitTime": 7,
-  },
-  Object {
-    "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "SSAN",
-    "backwardsWaitTime": 3,
-    "returnRideTime": 18,
-    "returnRouteId": "ROUTE 8",
-    "salmonTime": 47,
-    "waitTime": 7,
+    "waitTime": 3,
   },
   Object {
     "backwardsRideTime": 22,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 4,
+    "backwardsWaitTime": 1,
     "returnRideTime": 21,
+    "returnRouteId": "ROUTE 8",
+    "salmonTime": 47,
+    "waitTime": 3,
+  },
+  Object {
+    "backwardsRideTime": 19,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "SSAN",
+    "backwardsWaitTime": 15,
+    "returnRideTime": 18,
     "returnRouteId": "ROUTE 2",
-    "salmonTime": 54,
-    "waitTime": 7,
+    "salmonTime": 55,
+    "waitTime": 3,
+  },
+  Object {
+    "backwardsRideTime": 30,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "MLBR",
+    "backwardsWaitTime": 3,
+    "returnRideTime": 29,
+    "returnRouteId": "ROUTE 8",
+    "salmonTime": 65,
+    "waitTime": 3,
   },
 ]
 `;
@@ -5404,6 +5414,16 @@ Array [
     "returnRouteId": "ROUTE 8",
     "salmonTime": 8,
     "waitTime": 1,
+  },
+  Object {
+    "backwardsRideTime": 6,
+    "backwardsRouteId": "ROUTE 4",
+    "backwardsStation": "LAKE",
+    "backwardsWaitTime": 1,
+    "returnRideTime": 6,
+    "returnRouteId": "ROUTE 3",
+    "salmonTime": 16,
+    "waitTime": 3,
   },
   Object {
     "backwardsRideTime": 7,
@@ -5702,7 +5722,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Evening Rush" return
 Array [
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "16TH",
     "backwardsWaitTime": 1,
     "returnRideTime": 3,
@@ -5712,7 +5732,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
@@ -5722,7 +5742,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 0,
     "returnRideTime": 8,
@@ -5732,7 +5752,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 6,
     "returnRideTime": 10,
@@ -5742,7 +5762,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 14,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 3,
     "returnRideTime": 14,
@@ -5751,34 +5771,34 @@ Array [
     "waitTime": 1,
   },
   Object {
-    "backwardsRideTime": 18,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "COLM",
-    "backwardsWaitTime": 2,
-    "returnRideTime": 17,
+    "backwardsRideTime": 21,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "SSAN",
+    "backwardsWaitTime": 0,
+    "returnRideTime": 20,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 42,
-    "waitTime": 5,
-  },
-  Object {
-    "backwardsRideTime": 21,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "SSAN",
-    "backwardsWaitTime": 3,
-    "returnRideTime": 20,
-    "returnRouteId": "ROUTE 8",
-    "salmonTime": 49,
-    "waitTime": 5,
+    "waitTime": 1,
   },
   Object {
     "backwardsRideTime": 24,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 4,
+    "backwardsWaitTime": 1,
     "returnRideTime": 23,
-    "returnRouteId": "ROUTE 2",
-    "salmonTime": 56,
-    "waitTime": 5,
+    "returnRouteId": "ROUTE 8",
+    "salmonTime": 49,
+    "waitTime": 1,
+  },
+  Object {
+    "backwardsRideTime": 32,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "MLBR",
+    "backwardsWaitTime": 3,
+    "returnRideTime": 31,
+    "returnRouteId": "ROUTE 8",
+    "salmonTime": 67,
+    "waitTime": 1,
   },
 ]
 `;
@@ -5906,7 +5926,7 @@ Array [
     "backwardsStation": "BAYF",
     "backwardsWaitTime": 4,
     "returnRideTime": 4,
-    "returnRouteId": "ROUTE 5",
+    "returnRouteId": "ROUTE 11",
     "salmonTime": 19,
     "waitTime": 6,
   },
@@ -5917,7 +5937,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns su
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "CIVC",
     "backwardsWaitTime": 5,
     "returnRideTime": 2,
@@ -5927,7 +5947,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 1,
     "returnRideTime": 7,
@@ -5937,7 +5957,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 11,
     "returnRideTime": 9,
@@ -5947,7 +5967,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 11,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 7,
     "returnRideTime": 12,
@@ -5957,7 +5977,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 14,
     "returnRideTime": 15,
@@ -5967,23 +5987,23 @@ Array [
   },
   Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "COLM",
-    "backwardsWaitTime": 3,
+    "backwardsWaitTime": 7,
     "returnRideTime": 19,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 46,
-    "waitTime": 5,
+    "waitTime": 1,
   },
   Object {
     "backwardsRideTime": 26,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 4,
+    "backwardsWaitTime": 8,
     "returnRideTime": 25,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 60,
-    "waitTime": 5,
+    "waitTime": 1,
   },
 ]
 `;
@@ -6037,7 +6057,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns su
 Array [
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 1,
     "returnRideTime": 7,
@@ -6047,7 +6067,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 8,
     "returnRideTime": 11,
@@ -6057,7 +6077,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 22,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
     "backwardsWaitTime": 3,
     "returnRideTime": 21,
@@ -6067,7 +6087,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SSAN",
     "backwardsWaitTime": 10,
     "returnRideTime": 18,
@@ -6077,7 +6097,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 30,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "MLBR",
     "backwardsWaitTime": 6,
     "returnRideTime": 29,
@@ -6192,7 +6212,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns su
 Array [
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "DBRK",
     "backwardsWaitTime": 2,
     "returnRideTime": 3,
@@ -6202,7 +6222,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "NBRK",
     "backwardsWaitTime": 5,
     "returnRideTime": 5,
@@ -6212,7 +6232,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "PLZA",
     "backwardsWaitTime": 6,
     "returnRideTime": 9,
@@ -6222,7 +6242,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 11,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "DELN",
     "backwardsWaitTime": 7,
     "returnRideTime": 12,
@@ -6232,7 +6252,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "RICH",
     "backwardsWaitTime": 7,
     "returnRideTime": 16,
@@ -6262,7 +6282,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns su
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "SANL",
     "backwardsWaitTime": 6,
     "returnRideTime": 5,
@@ -6272,7 +6292,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "HAYW",
     "backwardsWaitTime": 6,
     "returnRideTime": 12,
@@ -6282,7 +6302,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 21,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "UCTY",
     "backwardsWaitTime": 2,
     "returnRideTime": 21,
@@ -6292,7 +6312,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "SHAY",
     "backwardsWaitTime": 12,
     "returnRideTime": 16,
@@ -6302,7 +6322,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 26,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "FRMT",
     "backwardsWaitTime": 8,
     "returnRideTime": 26,
@@ -6467,7 +6487,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns su
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 6,
     "returnRideTime": 2,
@@ -6477,7 +6497,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 1,
     "returnRideTime": 7,
@@ -6487,7 +6507,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 1,
     "returnRideTime": 11,
@@ -6497,7 +6517,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SSAN",
     "backwardsWaitTime": 2,
     "returnRideTime": 18,
@@ -6507,7 +6527,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 16,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "COLM",
     "backwardsWaitTime": 9,
     "returnRideTime": 15,
@@ -6517,7 +6537,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 22,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
     "backwardsWaitTime": 3,
     "returnRideTime": 21,
@@ -6526,18 +6546,8 @@ Array [
     "waitTime": 2,
   },
   Object {
-    "backwardsRideTime": 26,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "SFIA",
-    "backwardsWaitTime": 2,
-    "returnRideTime": 25,
-    "returnRouteId": "ROUTE 2",
-    "salmonTime": 55,
-    "waitTime": 2,
-  },
-  Object {
     "backwardsRideTime": 30,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "MLBR",
     "backwardsWaitTime": 6,
     "returnRideTime": 29,
@@ -6556,7 +6566,7 @@ Array [
     "backwardsStation": "12TH",
     "backwardsWaitTime": 8,
     "returnRideTime": 2,
-    "returnRouteId": "ROUTE 3",
+    "returnRouteId": "ROUTE 8",
     "salmonTime": 15,
     "waitTime": 3,
   },
@@ -6667,7 +6677,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns su
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "19TH",
     "backwardsWaitTime": 3,
     "returnRideTime": 2,
@@ -6677,7 +6687,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "ASHB",
     "backwardsWaitTime": 1,
     "returnRideTime": 11,
@@ -6687,7 +6697,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 14,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "NBRK",
     "backwardsWaitTime": 7,
     "returnRideTime": 16,
@@ -6697,7 +6707,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 24,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "RICH",
     "backwardsWaitTime": 1,
     "returnRideTime": 26,
@@ -6707,7 +6717,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 20,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "DELN",
     "backwardsWaitTime": 10,
     "returnRideTime": 22,
@@ -6717,7 +6727,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "PLZA",
     "backwardsWaitTime": 16,
     "returnRideTime": 20,
@@ -6730,6 +6740,16 @@ Array [
 
 exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns suggestions when origin is transfer station 1`] = `
 Array [
+  Object {
+    "backwardsRideTime": 9,
+    "backwardsRouteId": "ROUTE 11",
+    "backwardsStation": "WOAK",
+    "backwardsWaitTime": 3,
+    "returnRideTime": 8,
+    "returnRouteId": "ROUTE 6",
+    "salmonTime": 22,
+    "waitTime": 2,
+  },
   Object {
     "backwardsRideTime": 3,
     "backwardsRouteId": "ROUTE 3",
@@ -6752,7 +6772,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "MONT",
     "backwardsWaitTime": 2,
     "returnRideTime": 16,
@@ -6772,7 +6792,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 25,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 1,
     "returnRideTime": 23,
@@ -6782,7 +6802,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 23,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "16TH",
     "backwardsWaitTime": 5,
     "returnRideTime": 22,
@@ -6792,7 +6812,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 20,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "CIVC",
     "backwardsWaitTime": 11,
     "returnRideTime": 20,
@@ -6822,7 +6842,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 30,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 6,
     "returnRideTime": 28,
@@ -6832,7 +6852,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 27,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 12,
     "returnRideTime": 26,
@@ -6857,7 +6877,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Holidays" returns su
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
@@ -6867,7 +6887,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 1,
     "returnRideTime": 8,
@@ -6877,7 +6897,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 6,
     "returnRideTime": 10,
@@ -6887,7 +6907,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 14,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 4,
     "returnRideTime": 14,
@@ -6897,43 +6917,43 @@ Array [
   },
   Object {
     "backwardsRideTime": 18,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "COLM",
-    "backwardsWaitTime": 3,
+    "backwardsWaitTime": 6,
     "returnRideTime": 17,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 44,
-    "waitTime": 6,
-  },
-  Object {
-    "backwardsRideTime": 21,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "SSAN",
-    "backwardsWaitTime": 4,
-    "returnRideTime": 20,
-    "returnRouteId": "ROUTE 8",
-    "salmonTime": 51,
-    "waitTime": 6,
+    "waitTime": 3,
   },
   Object {
     "backwardsRideTime": 24,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 5,
+    "backwardsWaitTime": 0,
     "returnRideTime": 23,
-    "returnRouteId": "ROUTE 2",
-    "salmonTime": 58,
-    "waitTime": 6,
+    "returnRouteId": "ROUTE 8",
+    "salmonTime": 50,
+    "waitTime": 3,
+  },
+  Object {
+    "backwardsRideTime": 21,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "SSAN",
+    "backwardsWaitTime": 7,
+    "returnRideTime": 20,
+    "returnRouteId": "ROUTE 8",
+    "salmonTime": 51,
+    "waitTime": 3,
   },
   Object {
     "backwardsRideTime": 32,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "MLBR",
-    "backwardsWaitTime": 0,
+    "backwardsWaitTime": 3,
     "returnRideTime": 31,
     "returnRouteId": "ROUTE 8",
     "salmonTime": 69,
-    "waitTime": 6,
+    "waitTime": 3,
   },
 ]
 `;
@@ -7092,7 +7112,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns 
 Array [
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 4,
     "returnRideTime": 7,
@@ -7101,11 +7121,11 @@ Array [
     "waitTime": 10,
   },
   Object {
-    "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 11",
-    "backwardsStation": "DALY",
-    "backwardsWaitTime": 11,
-    "returnRideTime": 15,
+    "backwardsRideTime": 19,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "COLM",
+    "backwardsWaitTime": 3,
+    "returnRideTime": 19,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 51,
     "waitTime": 10,
@@ -7117,7 +7137,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns 
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "MONT",
     "backwardsWaitTime": 3,
     "returnRideTime": 2,
@@ -7127,7 +7147,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 5,
     "returnRideTime": 13,
@@ -7142,7 +7162,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns 
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 5,
     "returnRideTime": 2,
@@ -7151,11 +7171,11 @@ Array [
     "waitTime": 14,
   },
   Object {
-    "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 11",
-    "backwardsStation": "DALY",
-    "backwardsWaitTime": 10,
-    "returnRideTime": 11,
+    "backwardsRideTime": 16,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "COLM",
+    "backwardsWaitTime": 2,
+    "returnRideTime": 15,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 47,
     "waitTime": 14,
@@ -7167,7 +7187,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns 
 Array [
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 5,
     "returnRideTime": 8,
@@ -7177,7 +7197,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 11,
     "returnRideTime": 17,
@@ -7267,17 +7287,17 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns 
 Array [
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteId": "ROUTE 12",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "BAYF",
-    "backwardsWaitTime": 6,
+    "backwardsWaitTime": 2,
     "returnRideTime": 8,
     "returnRouteId": "ROUTE 3",
     "salmonTime": 32,
-    "waitTime": 9,
+    "waitTime": 13,
   },
   Object {
     "backwardsRideTime": 21,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "UCTY",
     "backwardsWaitTime": 1,
     "returnRideTime": 21,
@@ -7341,28 +7361,48 @@ Array [
     "backwardsStation": "19TH",
     "backwardsWaitTime": 1,
     "returnRideTime": 7,
-    "returnRouteId": "ROUTE 1",
+    "returnRouteId": "ROUTE 7",
     "salmonTime": 28,
     "waitTime": 13,
   },
   Object {
-    "backwardsRideTime": 11,
+    "backwardsRideTime": 8,
     "backwardsRouteId": "ROUTE 12",
-    "backwardsStation": "FTVL",
-    "backwardsWaitTime": 2,
-    "returnRideTime": 13,
+    "backwardsStation": "LAKE",
+    "backwardsWaitTime": 9,
+    "returnRideTime": 9,
     "returnRouteId": "ROUTE 11",
     "salmonTime": 47,
     "waitTime": 21,
   },
   Object {
+    "backwardsRideTime": 11,
+    "backwardsRouteId": "ROUTE 12",
+    "backwardsStation": "FTVL",
+    "backwardsWaitTime": 6,
+    "returnRideTime": 13,
+    "returnRouteId": "ROUTE 5",
+    "salmonTime": 51,
+    "waitTime": 21,
+  },
+  Object {
+    "backwardsRideTime": 11,
+    "backwardsRouteId": "ROUTE 2",
+    "backwardsStation": "MCAR",
+    "backwardsWaitTime": 18,
+    "returnRideTime": 10,
+    "returnRouteId": "ROUTE 7",
+    "salmonTime": 52,
+    "waitTime": 13,
+  },
+  Object {
     "backwardsRideTime": 13,
     "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "ROCK",
-    "backwardsWaitTime": 12,
+    "backwardsWaitTime": 13,
     "returnRideTime": 14,
     "returnRouteId": "ROUTE 1",
-    "salmonTime": 52,
+    "salmonTime": 53,
     "waitTime": 13,
   },
   Object {
@@ -7402,7 +7442,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns 
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 5,
     "returnRideTime": 2,
@@ -7411,11 +7451,11 @@ Array [
     "waitTime": 14,
   },
   Object {
-    "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 11",
-    "backwardsStation": "DALY",
-    "backwardsWaitTime": 10,
-    "returnRideTime": 11,
+    "backwardsRideTime": 16,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "COLM",
+    "backwardsWaitTime": 2,
+    "returnRideTime": 15,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 47,
     "waitTime": 14,
@@ -7433,6 +7473,16 @@ Array [
     "returnRideTime": 10,
     "returnRouteId": "ROUTE 3",
     "salmonTime": 21,
+    "waitTime": 0,
+  },
+  Object {
+    "backwardsRideTime": 17,
+    "backwardsRouteId": "ROUTE 4",
+    "backwardsStation": "SANL",
+    "backwardsWaitTime": 10,
+    "returnRideTime": 17,
+    "returnRouteId": "ROUTE 3",
+    "salmonTime": 44,
     "waitTime": 0,
   },
   Object {
@@ -7472,7 +7522,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 14,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "NBRK",
     "backwardsWaitTime": 3,
     "returnRideTime": 16,
@@ -7512,7 +7562,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns 
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 4,
     "returnRideTime": 5,
@@ -7521,11 +7571,11 @@ Array [
     "waitTime": 11,
   },
   Object {
-    "backwardsRideTime": 14,
-    "backwardsRouteId": "ROUTE 11",
-    "backwardsStation": "DALY",
-    "backwardsWaitTime": 10,
-    "returnRideTime": 14,
+    "backwardsRideTime": 18,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "COLM",
+    "backwardsWaitTime": 3,
+    "returnRideTime": 17,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 49,
     "waitTime": 11,
@@ -7537,7 +7587,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Late Night" returns 
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "POWL",
     "backwardsWaitTime": -1,
     "returnRideTime": 4,
@@ -7547,7 +7597,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 0,
     "returnRideTime": 15,
@@ -7907,7 +7957,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Major Delays" return
 Array [
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 6",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "WARM",
     "backwardsWaitTime": 2,
     "returnRideTime": 11,
@@ -8041,13 +8091,23 @@ Array [
     "waitTime": 7,
   },
   Object {
+    "backwardsRideTime": 8,
+    "backwardsRouteId": "ROUTE 12",
+    "backwardsStation": "LAKE",
+    "backwardsWaitTime": 10,
+    "returnRideTime": 9,
+    "returnRouteId": "ROUTE 11",
+    "salmonTime": 31,
+    "waitTime": 4,
+  },
+  Object {
     "backwardsRideTime": 11,
     "backwardsRouteId": "ROUTE 12",
     "backwardsStation": "FTVL",
-    "backwardsWaitTime": 3,
+    "backwardsWaitTime": 6,
     "returnRideTime": 13,
-    "returnRouteId": "ROUTE 11",
-    "salmonTime": 31,
+    "returnRouteId": "ROUTE 5",
+    "salmonTime": 34,
     "waitTime": 4,
   },
   Object {
@@ -8078,6 +8138,16 @@ Array [
     "returnRideTime": 21,
     "returnRouteId": "ROUTE 11",
     "salmonTime": 46,
+    "waitTime": 4,
+  },
+  Object {
+    "backwardsRideTime": 15,
+    "backwardsRouteId": "ROUTE 12",
+    "backwardsStation": "COLS",
+    "backwardsWaitTime": 14,
+    "returnRideTime": 17,
+    "returnRouteId": "ROUTE 5",
+    "salmonTime": 50,
     "waitTime": 4,
   },
   Object {
@@ -8186,9 +8256,19 @@ Array [
     "backwardsStation": "12TH",
     "backwardsWaitTime": 9,
     "returnRideTime": 2,
-    "returnRouteId": "ROUTE 3",
+    "returnRouteId": "ROUTE 8",
     "salmonTime": 21,
     "waitTime": 8,
+  },
+  Object {
+    "backwardsRideTime": 6,
+    "backwardsRouteId": "ROUTE 4",
+    "backwardsStation": "LAKE",
+    "backwardsWaitTime": 1,
+    "returnRideTime": 6,
+    "returnRouteId": "ROUTE 3",
+    "salmonTime": 22,
+    "waitTime": 9,
   },
   Object {
     "backwardsRideTime": 7,
@@ -8642,7 +8722,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" return
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "CIVC",
     "backwardsWaitTime": 1,
     "returnRideTime": 2,
@@ -8652,7 +8732,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 2,
     "returnRideTime": 9,
@@ -8662,7 +8742,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 4,
     "returnRideTime": 15,
@@ -8672,43 +8752,33 @@ Array [
   },
   Object {
     "backwardsRideTime": 22,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SSAN",
-    "backwardsWaitTime": 2,
+    "backwardsWaitTime": 5,
     "returnRideTime": 22,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 49,
-    "waitTime": 3,
+    "waitTime": 0,
   },
   Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "COLM",
-    "backwardsWaitTime": 9,
+    "backwardsWaitTime": 12,
     "returnRideTime": 19,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 50,
-    "waitTime": 3,
+    "waitTime": 0,
   },
   Object {
     "backwardsRideTime": 26,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 10,
+    "backwardsWaitTime": 13,
     "returnRideTime": 25,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 64,
-    "waitTime": 3,
-  },
-  Object {
-    "backwardsRideTime": 30,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "SFIA",
-    "backwardsWaitTime": 3,
-    "returnRideTime": 29,
-    "returnRouteId": "ROUTE 2",
-    "salmonTime": 65,
-    "waitTime": 3,
+    "waitTime": 0,
   },
 ]
 `;
@@ -8717,7 +8787,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" return
 Array [
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 4,
     "returnRideTime": 10,
@@ -8727,7 +8797,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 5,
     "returnRideTime": 15,
@@ -8737,7 +8807,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 12,
     "returnRideTime": 19,
@@ -8752,7 +8822,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" return
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 3,
     "returnRideTime": 2,
@@ -8762,7 +8832,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 7,
     "returnRideTime": 7,
@@ -8772,23 +8842,23 @@ Array [
   },
   Object {
     "backwardsRideTime": 16,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "COLM",
-    "backwardsWaitTime": 3,
+    "backwardsWaitTime": 6,
     "returnRideTime": 15,
     "returnRouteId": "ROUTE 8",
     "salmonTime": 37,
-    "waitTime": 3,
+    "waitTime": 0,
   },
   Object {
     "backwardsRideTime": 22,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 6,
+    "backwardsWaitTime": 9,
     "returnRideTime": 21,
     "returnRouteId": "ROUTE 8",
     "salmonTime": 52,
-    "waitTime": 3,
+    "waitTime": 0,
   },
 ]
 `;
@@ -8796,44 +8866,34 @@ Array [
 exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" returns suggestions for WARM line 1`] = `
 Array [
   Object {
-    "backwardsRideTime": 3,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "CIVC",
-    "backwardsWaitTime": 2,
-    "returnRideTime": 4,
-    "returnRouteId": "ROUTE 6",
-    "salmonTime": 11,
-    "waitTime": 2,
-  },
-  Object {
-    "backwardsRideTime": 11,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "GLEN",
-    "backwardsWaitTime": 3,
-    "returnRideTime": 11,
+    "backwardsRideTime": 8,
+    "backwardsRouteId": "ROUTE 5",
+    "backwardsStation": "24TH",
+    "backwardsWaitTime": 4,
+    "returnRideTime": 8,
     "returnRouteId": "ROUTE 6",
     "salmonTime": 27,
-    "waitTime": 2,
-  },
-  Object {
-    "backwardsRideTime": 17,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "DALY",
-    "backwardsWaitTime": 2,
-    "returnRideTime": 17,
-    "returnRouteId": "ROUTE 6",
-    "salmonTime": 38,
-    "waitTime": 2,
+    "waitTime": 7,
   },
   Object {
     "backwardsRideTime": 13,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "BALB",
-    "backwardsWaitTime": 25,
+    "backwardsWaitTime": 5,
     "returnRideTime": 13,
     "returnRouteId": "ROUTE 6",
-    "salmonTime": 53,
-    "waitTime": 2,
+    "salmonTime": 38,
+    "waitTime": 7,
+  },
+  Object {
+    "backwardsRideTime": 17,
+    "backwardsRouteId": "ROUTE 5",
+    "backwardsStation": "DALY",
+    "backwardsWaitTime": 13,
+    "returnRideTime": 17,
+    "returnRouteId": "ROUTE 6",
+    "salmonTime": 54,
+    "waitTime": 7,
   },
 ]
 `;
@@ -8897,7 +8957,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" return
 Array [
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "DBRK",
     "backwardsWaitTime": 2,
     "returnRideTime": 3,
@@ -8907,7 +8967,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "NBRK",
     "backwardsWaitTime": 5,
     "returnRideTime": 5,
@@ -8917,7 +8977,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "PLZA",
     "backwardsWaitTime": 6,
     "returnRideTime": 9,
@@ -8927,7 +8987,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 11,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "DELN",
     "backwardsWaitTime": 7,
     "returnRideTime": 12,
@@ -8937,7 +8997,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "RICH",
     "backwardsWaitTime": 6,
     "returnRideTime": 16,
@@ -8952,7 +9012,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" return
 Array [
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 6",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "WARM",
     "backwardsWaitTime": 1,
     "returnRideTime": 11,
@@ -8962,7 +9022,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 6",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "FRMT",
     "backwardsWaitTime": 30,
     "returnRideTime": 5,
@@ -9111,7 +9171,7 @@ Array [
     "backwardsStation": "MCAR",
     "backwardsWaitTime": 1,
     "returnRideTime": 10,
-    "returnRouteId": "ROUTE 1",
+    "returnRouteId": "ROUTE 7",
     "salmonTime": 23,
     "waitTime": 1,
   },
@@ -9121,7 +9181,7 @@ Array [
     "backwardsStation": "LAKE",
     "backwardsWaitTime": 6,
     "returnRideTime": 9,
-    "returnRouteId": "ROUTE 5",
+    "returnRouteId": "ROUTE 11",
     "salmonTime": 28,
     "waitTime": 5,
   },
@@ -9141,7 +9201,7 @@ Array [
     "backwardsStation": "FTVL",
     "backwardsWaitTime": 5,
     "returnRideTime": 13,
-    "returnRouteId": "ROUTE 11",
+    "returnRouteId": "ROUTE 5",
     "salmonTime": 34,
     "waitTime": 5,
   },
@@ -9252,7 +9312,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" return
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 3,
     "returnRideTime": 2,
@@ -9262,7 +9322,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 1,
     "returnRideTime": 7,
@@ -9272,7 +9332,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 7,
     "returnRideTime": 11,
@@ -9282,33 +9342,23 @@ Array [
   },
   Object {
     "backwardsRideTime": 16,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "COLM",
-    "backwardsWaitTime": 3,
+    "backwardsWaitTime": 6,
     "returnRideTime": 15,
     "returnRouteId": "ROUTE 8",
     "salmonTime": 37,
-    "waitTime": 3,
-  },
-  Object {
-    "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "SSAN",
-    "backwardsWaitTime": 5,
-    "returnRideTime": 18,
-    "returnRouteId": "ROUTE 2",
-    "salmonTime": 45,
-    "waitTime": 3,
+    "waitTime": 0,
   },
   Object {
     "backwardsRideTime": 22,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 6,
+    "backwardsWaitTime": 2,
     "returnRideTime": 21,
-    "returnRouteId": "ROUTE 8",
-    "salmonTime": 52,
-    "waitTime": 3,
+    "returnRouteId": "ROUTE 2",
+    "salmonTime": 45,
+    "waitTime": 0,
   },
   Object {
     "backwardsRideTime": 26,
@@ -9331,7 +9381,7 @@ Array [
     "backwardsStation": "12TH",
     "backwardsWaitTime": 1,
     "returnRideTime": 2,
-    "returnRouteId": "ROUTE 3",
+    "returnRouteId": "ROUTE 8",
     "salmonTime": 6,
     "waitTime": 1,
   },
@@ -9452,7 +9502,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" return
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "19TH",
     "backwardsWaitTime": 3,
     "returnRideTime": 2,
@@ -9462,7 +9512,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "ASHB",
     "backwardsWaitTime": 1,
     "returnRideTime": 11,
@@ -9472,7 +9522,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 14,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "NBRK",
     "backwardsWaitTime": 7,
     "returnRideTime": 16,
@@ -9482,7 +9532,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 20,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "DELN",
     "backwardsWaitTime": 10,
     "returnRideTime": 22,
@@ -9492,7 +9542,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "PLZA",
     "backwardsWaitTime": 16,
     "returnRideTime": 20,
@@ -9502,7 +9552,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 24,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "RICH",
     "backwardsWaitTime": 15,
     "returnRideTime": 26,
@@ -9527,7 +9577,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "WOAK",
     "backwardsWaitTime": 6,
     "returnRideTime": 8,
@@ -9567,7 +9617,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "POWL",
     "backwardsWaitTime": 2,
     "returnRideTime": 18,
@@ -9587,7 +9637,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 25,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 2,
     "returnRideTime": 23,
@@ -9597,7 +9647,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 23,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "16TH",
     "backwardsWaitTime": 6,
     "returnRideTime": 22,
@@ -9617,7 +9667,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 30,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 11",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 6,
     "returnRideTime": 28,
@@ -9717,7 +9767,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Morning Rush" return
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "MONT",
     "backwardsWaitTime": 0,
     "returnRideTime": 2,
@@ -9727,7 +9777,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": -1,
     "returnRideTime": 13,
@@ -9737,7 +9787,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 5,
     "returnRideTime": 15,
@@ -9747,7 +9797,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 12,
     "returnRideTime": 19,
@@ -9897,7 +9947,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Saturday" returns su
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "CIVC",
     "backwardsWaitTime": 5,
     "returnRideTime": 2,
@@ -9907,7 +9957,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 11,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 4,
     "returnRideTime": 12,
@@ -9916,34 +9966,24 @@ Array [
     "waitTime": 2,
   },
   Object {
-    "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "COLM",
-    "backwardsWaitTime": 4,
-    "returnRideTime": 19,
+    "backwardsRideTime": 22,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "SSAN",
+    "backwardsWaitTime": 3,
+    "returnRideTime": 22,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 49,
-    "waitTime": 7,
+    "waitTime": 2,
   },
   Object {
     "backwardsRideTime": 26,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 11,
+    "backwardsWaitTime": 16,
     "returnRideTime": 25,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 69,
-    "waitTime": 7,
-  },
-  Object {
-    "backwardsRideTime": 30,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "SFIA",
-    "backwardsWaitTime": 4,
-    "returnRideTime": 29,
-    "returnRouteId": "ROUTE 2",
-    "salmonTime": 70,
-    "waitTime": 7,
+    "waitTime": 2,
   },
 ]
 `;
@@ -9952,7 +9992,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Saturday" returns su
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "CIVC",
     "backwardsWaitTime": 5,
     "returnRideTime": 5,
@@ -9962,7 +10002,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 5,
     "returnRideTime": 15,
@@ -9972,7 +10012,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 17,
     "returnRideTime": 19,
@@ -10012,7 +10052,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Saturday" returns su
 Array [
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "CIVC",
     "backwardsWaitTime": 1,
     "returnRideTime": 4,
@@ -10022,7 +10062,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 13,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 2,
     "returnRideTime": 13,
@@ -10032,7 +10072,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 14,
     "returnRideTime": 17,
@@ -10092,7 +10132,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Saturday" returns su
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "NBRK",
     "backwardsWaitTime": 1,
     "returnRideTime": 5,
@@ -10102,7 +10142,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "PLZA",
     "backwardsWaitTime": 3,
     "returnRideTime": 9,
@@ -10112,7 +10152,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 11,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "DELN",
     "backwardsWaitTime": 8,
     "returnRideTime": 12,
@@ -10122,7 +10162,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 8",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "RICH",
     "backwardsWaitTime": 9,
     "returnRideTime": 16,
@@ -10152,7 +10192,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Saturday" returns su
 Array [
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "HAYW",
     "backwardsWaitTime": 2,
     "returnRideTime": 12,
@@ -10162,7 +10202,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 21,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "UCTY",
     "backwardsWaitTime": 4,
     "returnRideTime": 21,
@@ -10172,7 +10212,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 33,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "WARM",
     "backwardsWaitTime": 1,
     "returnRideTime": 32,
@@ -10246,7 +10286,7 @@ Array [
     "backwardsStation": "19TH",
     "backwardsWaitTime": 3,
     "returnRideTime": 7,
-    "returnRouteId": "ROUTE 1",
+    "returnRouteId": "ROUTE 7",
     "salmonTime": 17,
     "waitTime": 0,
   },
@@ -10256,7 +10296,7 @@ Array [
     "backwardsStation": "LAKE",
     "backwardsWaitTime": 3,
     "returnRideTime": 9,
-    "returnRouteId": "ROUTE 5",
+    "returnRouteId": "ROUTE 11",
     "salmonTime": 26,
     "waitTime": 6,
   },
@@ -10276,7 +10316,7 @@ Array [
     "backwardsStation": "FTVL",
     "backwardsWaitTime": 5,
     "returnRideTime": 13,
-    "returnRouteId": "ROUTE 11",
+    "returnRouteId": "ROUTE 5",
     "salmonTime": 35,
     "waitTime": 6,
   },
@@ -10284,10 +10324,10 @@ Array [
     "backwardsRideTime": 13,
     "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "ROCK",
-    "backwardsWaitTime": 10,
+    "backwardsWaitTime": 11,
     "returnRideTime": 14,
     "returnRouteId": "ROUTE 1",
-    "salmonTime": 37,
+    "salmonTime": 38,
     "waitTime": 0,
   },
   Object {
@@ -10314,10 +10354,10 @@ Array [
     "backwardsRideTime": 23,
     "backwardsRouteId": "ROUTE 2",
     "backwardsStation": "LAFY",
-    "backwardsWaitTime": 9,
+    "backwardsWaitTime": 10,
     "returnRideTime": 25,
     "returnRouteId": "ROUTE 1",
-    "salmonTime": 57,
+    "salmonTime": 58,
     "waitTime": 0,
   },
   Object {
@@ -10465,16 +10505,6 @@ Array [
     "salmonTime": 65,
     "waitTime": 2,
   },
-  Object {
-    "backwardsRideTime": 26,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "SFIA",
-    "backwardsWaitTime": 4,
-    "returnRideTime": 25,
-    "returnRouteId": "ROUTE 2",
-    "salmonTime": 66,
-    "waitTime": 11,
-  },
 ]
 `;
 
@@ -10567,7 +10597,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Saturday" returns su
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "19TH",
     "backwardsWaitTime": 6,
     "returnRideTime": 2,
@@ -10577,7 +10607,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 14,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "NBRK",
     "backwardsWaitTime": 1,
     "returnRideTime": 16,
@@ -10587,7 +10617,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 24,
-    "backwardsRouteId": "ROUTE 3",
+    "backwardsRouteId": "ROUTE 8",
     "backwardsStation": "RICH",
     "backwardsWaitTime": 1,
     "returnRideTime": 26,
@@ -10687,7 +10717,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Saturday" returns su
 Array [
   Object {
     "backwardsRideTime": 3,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "16TH",
     "backwardsWaitTime": 0,
     "returnRideTime": 3,
@@ -10697,7 +10727,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 0,
     "returnRideTime": 8,
@@ -10707,7 +10737,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 3,
     "returnRideTime": 10,
@@ -10717,7 +10747,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 14,
-    "backwardsRouteId": "ROUTE 11",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 8,
     "returnRideTime": 14,
@@ -10726,34 +10756,24 @@ Array [
     "waitTime": 4,
   },
   Object {
-    "backwardsRideTime": 18,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "COLM",
-    "backwardsWaitTime": 3,
-    "returnRideTime": 17,
+    "backwardsRideTime": 21,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "SSAN",
+    "backwardsWaitTime": 2,
+    "returnRideTime": 20,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 47,
-    "waitTime": 9,
+    "waitTime": 4,
   },
   Object {
     "backwardsRideTime": 24,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 11,
+    "backwardsWaitTime": 16,
     "returnRideTime": 23,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 67,
-    "waitTime": 9,
-  },
-  Object {
-    "backwardsRideTime": 28,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "SFIA",
-    "backwardsWaitTime": 4,
-    "returnRideTime": 27,
-    "returnRouteId": "ROUTE 2",
-    "salmonTime": 68,
-    "waitTime": 9,
+    "waitTime": 4,
   },
 ]
 `;
@@ -10762,7 +10782,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Saturday" returns su
 Array [
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "16TH",
     "backwardsWaitTime": -1,
     "returnRideTime": 8,
@@ -10772,7 +10792,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 15,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 5,
     "returnRideTime": 15,
@@ -10782,7 +10802,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 17,
     "returnRideTime": 19,
@@ -10927,7 +10947,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Sunday" returns sugg
 Array [
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteId": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 4,
     "returnRideTime": 10,
@@ -10937,7 +10957,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 6,
     "returnRideTime": 19,
@@ -11117,7 +11137,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Sunday" returns sugg
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "SANL",
     "backwardsWaitTime": 5,
     "returnRideTime": 5,
@@ -11127,17 +11147,17 @@ Array [
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "BAYF",
     "backwardsWaitTime": 9,
     "returnRideTime": 8,
-    "returnRouteId": "ROUTE 9",
+    "returnRouteId": "ROUTE 3",
     "salmonTime": 38,
     "waitTime": 12,
   },
   Object {
     "backwardsRideTime": 17,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "SHAY",
     "backwardsWaitTime": 1,
     "returnRideTime": 16,
@@ -11147,7 +11167,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 21,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "UCTY",
     "backwardsWaitTime": 12,
     "returnRideTime": 21,
@@ -11157,7 +11177,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 26,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "FRMT",
     "backwardsWaitTime": 3,
     "returnRideTime": 26,
@@ -11256,34 +11276,44 @@ Array [
 exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Sunday" returns suggestions when more than one Northbound line is available 1`] = `
 Array [
   Object {
-    "backwardsRideTime": 6,
-    "backwardsRouteId": "ROUTE 10",
-    "backwardsStation": "LAKE",
-    "backwardsWaitTime": 4,
-    "returnRideTime": 6,
-    "returnRouteId": "ROUTE 3",
+    "backwardsRideTime": 2,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "12TH",
+    "backwardsWaitTime": 8,
+    "returnRideTime": 2,
+    "returnRouteId": "ROUTE 8",
     "salmonTime": 20,
-    "waitTime": 4,
+    "waitTime": 8,
   },
   Object {
-    "backwardsRideTime": 17,
-    "backwardsRouteId": "ROUTE 10",
-    "backwardsStation": "SANL",
-    "backwardsWaitTime": 2,
-    "returnRideTime": 17,
+    "backwardsRideTime": 9,
+    "backwardsRouteId": "ROUTE 4",
+    "backwardsStation": "FTVL",
+    "backwardsWaitTime": 4,
+    "returnRideTime": 10,
+    "returnRouteId": "ROUTE 3",
+    "salmonTime": 39,
+    "waitTime": 16,
+  },
+  Object {
+    "backwardsRideTime": 6,
+    "backwardsRouteId": "ROUTE 4",
+    "backwardsStation": "LAKE",
+    "backwardsWaitTime": 12,
+    "returnRideTime": 6,
     "returnRouteId": "ROUTE 3",
     "salmonTime": 40,
-    "waitTime": 4,
+    "waitTime": 16,
   },
   Object {
     "backwardsRideTime": 21,
-    "backwardsRouteId": "ROUTE 10",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "BAYF",
-    "backwardsWaitTime": 13,
+    "backwardsWaitTime": 1,
     "returnRideTime": 21,
     "returnRouteId": "ROUTE 3",
     "salmonTime": 59,
-    "waitTime": 4,
+    "waitTime": 16,
   },
   Object {
     "backwardsRideTime": 30,
@@ -11302,7 +11332,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Sunday" returns sugg
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 9",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "19TH",
     "backwardsWaitTime": 10,
     "returnRideTime": 2,
@@ -11312,7 +11342,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteId": "ROUTE 9",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "MCAR",
     "backwardsWaitTime": 6,
     "returnRideTime": 6,
@@ -11321,34 +11351,34 @@ Array [
     "waitTime": 8,
   },
   Object {
-    "backwardsRideTime": 10,
-    "backwardsRouteId": "ROUTE 3",
-    "backwardsStation": "ASHB",
-    "backwardsWaitTime": 4,
-    "returnRideTime": 11,
-    "returnRouteId": "ROUTE 4",
-    "salmonTime": 42,
-    "waitTime": 17,
-  },
-  Object {
     "backwardsRideTime": 14,
     "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "NBRK",
-    "backwardsWaitTime": 10,
+    "backwardsWaitTime": 4,
     "returnRideTime": 16,
     "returnRouteId": "ROUTE 4",
+    "salmonTime": 42,
+    "waitTime": 8,
+  },
+  Object {
+    "backwardsRideTime": 20,
+    "backwardsRouteId": "ROUTE 3",
+    "backwardsStation": "DELN",
+    "backwardsWaitTime": 7,
+    "returnRideTime": 22,
+    "returnRouteId": "ROUTE 4",
     "salmonTime": 57,
-    "waitTime": 17,
+    "waitTime": 8,
   },
   Object {
     "backwardsRideTime": 17,
     "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "PLZA",
-    "backwardsWaitTime": 4,
+    "backwardsWaitTime": 13,
     "returnRideTime": 20,
     "returnRouteId": "ROUTE 4",
     "salmonTime": 58,
-    "waitTime": 17,
+    "waitTime": 8,
   },
 ]
 `;
@@ -11357,7 +11387,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Sunday" returns sugg
 Array [
   Object {
     "backwardsRideTime": 6,
-    "backwardsRouteId": "ROUTE 9",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "19TH",
     "backwardsWaitTime": 8,
     "returnRideTime": 6,
@@ -11366,28 +11396,28 @@ Array [
     "waitTime": 5,
   },
   Object {
-    "backwardsRideTime": 13,
+    "backwardsRideTime": 18,
     "backwardsRouteId": "ROUTE 3",
-    "backwardsStation": "ASHB",
-    "backwardsWaitTime": 2,
-    "returnRideTime": 16,
+    "backwardsStation": "NBRK",
+    "backwardsWaitTime": 1,
+    "returnRideTime": 21,
     "returnRouteId": "ROUTE 4",
     "salmonTime": 45,
-    "waitTime": 14,
+    "waitTime": 5,
   },
   Object {
-    "backwardsRideTime": 21,
+    "backwardsRideTime": 24,
     "backwardsRouteId": "ROUTE 3",
-    "backwardsStation": "PLZA",
-    "backwardsWaitTime": 3,
-    "returnRideTime": 24,
+    "backwardsStation": "DELN",
+    "backwardsWaitTime": 6,
+    "returnRideTime": 27,
     "returnRouteId": "ROUTE 4",
     "salmonTime": 62,
-    "waitTime": 14,
+    "waitTime": 5,
   },
   Object {
     "backwardsRideTime": 9,
-    "backwardsRouteId": "ROUTE 9",
+    "backwardsRouteId": "ROUTE 3",
     "backwardsStation": "MCAR",
     "backwardsWaitTime": 38,
     "returnRideTime": 11,
@@ -11437,7 +11467,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Sunday" returns sugg
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "MONT",
     "backwardsWaitTime": 0,
     "returnRideTime": 2,
@@ -11447,7 +11477,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": -1,
     "returnRideTime": 13,
@@ -11457,7 +11487,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 23,
-    "backwardsRouteId": "ROUTE 7",
+    "backwardsRouteId": "ROUTE 1",
     "backwardsStation": "COLM",
     "backwardsWaitTime": -1,
     "returnRideTime": 22,
@@ -11647,7 +11677,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" ret
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 3,
     "returnRideTime": 5,
@@ -11657,7 +11687,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 5,
     "returnRideTime": 11,
@@ -11667,23 +11697,33 @@ Array [
   },
   Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SSAN",
-    "backwardsWaitTime": 1,
+    "backwardsWaitTime": 6,
     "returnRideTime": 18,
     "returnRouteId": "ROUTE 8",
     "salmonTime": 46,
-    "waitTime": 8,
+    "waitTime": 3,
   },
   Object {
     "backwardsRideTime": 22,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 10,
+    "backwardsWaitTime": 15,
     "returnRideTime": 21,
     "returnRouteId": "ROUTE 8",
     "salmonTime": 61,
-    "waitTime": 8,
+    "waitTime": 3,
+  },
+  Object {
+    "backwardsRideTime": 30,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "MLBR",
+    "backwardsWaitTime": 3,
+    "returnRideTime": 29,
+    "returnRouteId": "ROUTE 8",
+    "salmonTime": 65,
+    "waitTime": 3,
   },
 ]
 `;
@@ -11691,24 +11731,24 @@ Array [
 exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" returns suggestions for WARM line 1`] = `
 Array [
   Object {
-    "backwardsRideTime": 6,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "16TH",
-    "backwardsWaitTime": 2,
-    "returnRideTime": 6,
+    "backwardsRideTime": 3,
+    "backwardsRouteId": "ROUTE 5",
+    "backwardsStation": "CIVC",
+    "backwardsWaitTime": 5,
+    "returnRideTime": 4,
     "returnRouteId": "ROUTE 6",
     "salmonTime": 17,
-    "waitTime": 3,
+    "waitTime": 5,
   },
   Object {
     "backwardsRideTime": 13,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 5",
     "backwardsStation": "BALB",
-    "backwardsWaitTime": 3,
+    "backwardsWaitTime": 1,
     "returnRideTime": 13,
     "returnRouteId": "ROUTE 6",
     "salmonTime": 32,
-    "waitTime": 3,
+    "waitTime": 5,
   },
 ]
 `;
@@ -11817,7 +11857,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" ret
 Array [
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 6",
+    "backwardsRouteId": "ROUTE 4",
     "backwardsStation": "WARM",
     "backwardsWaitTime": 1,
     "returnRideTime": 11,
@@ -11832,7 +11872,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" ret
 Array [
   Object {
     "backwardsRideTime": 4,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "SANL",
     "backwardsWaitTime": 6,
     "returnRideTime": 5,
@@ -11842,7 +11882,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "HAYW",
     "backwardsWaitTime": 6,
     "returnRideTime": 12,
@@ -11852,7 +11892,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 21,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "UCTY",
     "backwardsWaitTime": 3,
     "returnRideTime": 21,
@@ -11862,7 +11902,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 26,
-    "backwardsRouteId": "ROUTE 4",
+    "backwardsRouteId": "ROUTE 6",
     "backwardsStation": "FRMT",
     "backwardsWaitTime": 8,
     "returnRideTime": 26,
@@ -12047,7 +12087,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" ret
 Array [
   Object {
     "backwardsRideTime": 2,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 2,
     "returnRideTime": 2,
@@ -12057,7 +12097,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 3,
     "returnRideTime": 5,
@@ -12067,7 +12107,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 6,
     "returnRideTime": 7,
@@ -12077,7 +12117,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 12,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 5,
     "returnRideTime": 11,
@@ -12086,24 +12126,44 @@ Array [
     "waitTime": 3,
   },
   Object {
+    "backwardsRideTime": 16,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "COLM",
+    "backwardsWaitTime": 5,
+    "returnRideTime": 15,
+    "returnRouteId": "ROUTE 2",
+    "salmonTime": 39,
+    "waitTime": 3,
+  },
+  Object {
     "backwardsRideTime": 19,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SSAN",
-    "backwardsWaitTime": 1,
+    "backwardsWaitTime": 6,
     "returnRideTime": 18,
     "returnRouteId": "ROUTE 8",
     "salmonTime": 46,
-    "waitTime": 8,
+    "waitTime": 3,
   },
   Object {
     "backwardsRideTime": 22,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 3,
+    "backwardsWaitTime": 8,
     "returnRideTime": 21,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 54,
-    "waitTime": 8,
+    "waitTime": 3,
+  },
+  Object {
+    "backwardsRideTime": 30,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "MLBR",
+    "backwardsWaitTime": 3,
+    "returnRideTime": 29,
+    "returnRouteId": "ROUTE 8",
+    "salmonTime": 65,
+    "waitTime": 3,
   },
 ]
 `;
@@ -12119,6 +12179,16 @@ Array [
     "returnRouteId": "ROUTE 8",
     "salmonTime": 6,
     "waitTime": 0,
+  },
+  Object {
+    "backwardsRideTime": 6,
+    "backwardsRouteId": "ROUTE 4",
+    "backwardsStation": "LAKE",
+    "backwardsWaitTime": 1,
+    "returnRideTime": 6,
+    "returnRouteId": "ROUTE 3",
+    "salmonTime": 16,
+    "waitTime": 3,
   },
   Object {
     "backwardsRideTime": 7,
@@ -12178,16 +12248,6 @@ Array [
     "returnRideTime": 17,
     "returnRouteId": "ROUTE 3",
     "salmonTime": 44,
-    "waitTime": 3,
-  },
-  Object {
-    "backwardsRideTime": 6,
-    "backwardsRouteId": "ROUTE 4",
-    "backwardsStation": "LAKE",
-    "backwardsWaitTime": 31,
-    "returnRideTime": 6,
-    "returnRouteId": "ROUTE 3",
-    "salmonTime": 46,
     "waitTime": 3,
   },
   Object {
@@ -12407,7 +12467,7 @@ exports[`salmon utils getSuggestedSalmonRoutesFromEtds for "Weekday Noonday" ret
 Array [
   Object {
     "backwardsRideTime": 5,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "24TH",
     "backwardsWaitTime": 0,
     "returnRideTime": 5,
@@ -12417,7 +12477,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 8,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "GLEN",
     "backwardsWaitTime": 1,
     "returnRideTime": 8,
@@ -12427,7 +12487,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 10,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "BALB",
     "backwardsWaitTime": 5,
     "returnRideTime": 10,
@@ -12437,7 +12497,7 @@ Array [
   },
   Object {
     "backwardsRideTime": 14,
-    "backwardsRouteId": "ROUTE 5",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "DALY",
     "backwardsWaitTime": 4,
     "returnRideTime": 14,
@@ -12447,33 +12507,33 @@ Array [
   },
   Object {
     "backwardsRideTime": 18,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "COLM",
-    "backwardsWaitTime": 0,
+    "backwardsWaitTime": 5,
     "returnRideTime": 17,
     "returnRouteId": "ROUTE 2",
     "salmonTime": 41,
-    "waitTime": 6,
-  },
-  Object {
-    "backwardsRideTime": 21,
-    "backwardsRouteId": "ROUTE 1",
-    "backwardsStation": "SSAN",
-    "backwardsWaitTime": 1,
-    "returnRideTime": 20,
-    "returnRouteId": "ROUTE 8",
-    "salmonTime": 48,
-    "waitTime": 6,
+    "waitTime": 1,
   },
   Object {
     "backwardsRideTime": 24,
-    "backwardsRouteId": "ROUTE 1",
+    "backwardsRouteId": "ROUTE 7",
     "backwardsStation": "SBRN",
-    "backwardsWaitTime": 3,
+    "backwardsWaitTime": 0,
     "returnRideTime": 23,
-    "returnRouteId": "ROUTE 2",
-    "salmonTime": 56,
-    "waitTime": 6,
+    "returnRouteId": "ROUTE 8",
+    "salmonTime": 48,
+    "waitTime": 1,
+  },
+  Object {
+    "backwardsRideTime": 32,
+    "backwardsRouteId": "ROUTE 7",
+    "backwardsStation": "MLBR",
+    "backwardsWaitTime": 3,
+    "returnRideTime": 31,
+    "returnRouteId": "ROUTE 8",
+    "salmonTime": 67,
+    "waitTime": 1,
   },
 ]
 `;

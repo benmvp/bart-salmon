@@ -73,7 +73,7 @@ describe('getRouteIdsWithStartAndEnd', () => {
   it('returns matching color route IDs first for stations connected by multiple routes when filtered by train color', () => {
     expect(
       getRouteIdsWithStartAndEnd('EMBR', '16TH', '#ff0000')
-    ).toEqual(['ROUTE 7', 'ROUTE 1', 'ROUTE 11', 'ROUTE 5'])
+    ).toEqual(['ROUTE 1', 'ROUTE 11', 'ROUTE 7', 'ROUTE 5'])
   })
 
   it('returns route ID when stations are connected by single route even when looking for different train color', () => {
@@ -95,7 +95,7 @@ describe('getOppositeRouteIds', () => {
   it('provides north route(s) for station when single south route is specified', () => {
     expect(
       getOppositeRouteIds('MCAR', new Set(['ROUTE 7']))
-    ).toEqual(new Set(['ROUTE 2', 'ROUTE 3', 'ROUTE 8']))
+    ).toEqual(new Set(['ROUTE 10', 'ROUTE 2', 'ROUTE 3', 'ROUTE 8']))
   })
 
   it('provides south route(s) for station when single north route is specified', () => {
@@ -107,13 +107,13 @@ describe('getOppositeRouteIds', () => {
   it('provides north route(s) for station when multiple south routes are specified', () => {
     expect(
       getOppositeRouteIds('MCAR', new Set(['ROUTE 7', 'ROUTE 1'])),
-    ).toEqual(new Set(['ROUTE 2', 'ROUTE 3', 'ROUTE 8']))
+    ).toEqual(new Set(['ROUTE 10', 'ROUTE 2', 'ROUTE 3', 'ROUTE 8']))
   })
 
   it('provides south route(s) for station when multiple north routes are specified', () => {
     expect(
       getOppositeRouteIds('19TH', new Set(['ROUTE 8', 'ROUTE 3'])),
-    ).toEqual(new Set(['ROUTE 1', 'ROUTE 4', 'ROUTE 7', 'ROUTE 10']))
+    ).toEqual(new Set(['ROUTE 1', 'ROUTE 4', 'ROUTE 7', 'ROUTE 9']))
   })
 
   it('provides all routes for station when north and south routes are specified', () => {
