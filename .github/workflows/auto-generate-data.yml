@@ -27,7 +27,7 @@ jobs:
       run: npm run gen:all
 
     # Run unit tests to make sure tests on mock data still pass
-    - name: Run unit tests w/ code coverage
+    - name: Run unit tests
       run: npm test
       env:
         CI: true
