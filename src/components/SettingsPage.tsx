@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import range from 'lodash/range'
 
 import Box from '@material-ui/core/Box';
@@ -65,17 +65,20 @@ const riskinessFactorBlurb = (value: number) => {
 }
 
 const RiskinessFactor = ({value, setValue}: SettingProps<number>) => {
+  const [localValue, setLocalValue] = useState(value)
+
   return (
     <FormElementShell name="riskinessFactor" label="Riskiness Factor">
       <Box mx={5}>
         <Slider
           name="riskinessFactor"
-          value={value}
+          value={localValue}
           min={MARKS[0].value}
           max={MARKS[MARKS.length - 1].value}
           step={1}
           marks={MARKS}
-          onChange={(e, value) => setValue(value as number)}
+          onChange={(e, value) => setLocalValue(value as number)}
+          onChangeCommitted={(e, value) => setValue(value as number)}
         />
       </Box>
       <Typography variant="body2">
@@ -153,6 +156,9 @@ const SettingsPage = ({
 
   return (
     <Box p={2}>
+      <Box mb={3}>
+        <Typography variant="h3" component="h1">Settings</Typography>
+      </Box>
       <NumArrivals value={numArrivals} setValue={setNumArrivals} />
       <RiskinessFactor value={riskinessFactor} setValue={setRiskinessFactor} />
       <NumSalmonRoutes value={numSalmonRoutes} setValue={setNumSalmonRoutes} />
