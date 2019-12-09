@@ -8,6 +8,7 @@ on:
 
 jobs:
   auto_generate_data:
+    name: Auto-generate data
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +21,7 @@ jobs:
         node-version: 12
 
     - name: Install NPM dependencies
-      run: npm install
+      run: npm ci
 
     # Generate all of the static data needed for salmon algorithms
     - name: Generate static data
