@@ -77,6 +77,7 @@ const RiskinessFactor = ({value, setValue}: SettingProps<number>) => {
           max={MARKS[MARKS.length - 1].value}
           step={1}
           marks={MARKS}
+          track={false}
           onChange={(e, value) => setLocalValue(value as number)}
           onChangeCommitted={(e, value) => setValue(value as number)}
         />
