@@ -5,9 +5,6 @@ on:
   schedule:
     # 7AM UTC is 11PM PST
     - cron: '0 7 * * *'
-  push:
-    branches:
-      - auto-generate-pr
 
 jobs:
   auto_generate_data:
@@ -44,22 +41,3 @@ jobs:
         assignees: benmvp
         branch: auto-generated-data
         branch-suffix: none
-
-    # # Run unit tests to make sure tests on mock data still pass
-    # - name: Run unit tests
-    #   run: npm test
-    #   env:
-    #     CI: true
-
-    # - name: Commit updated files
-    #   run: |
-    #     git config --local user.email "bartsalmon@benmvp.com"
-    #     git config --local user.name "Bart Salmon GitHub Action"
-    #     git add -A
-    #     # Do nothing if there are no changes
-    #     git diff-index --quiet HEAD || git commit -m "Update data from nightly cron"
-
-    # - name: Push data to repo
-    #   uses: ad-m/github-push-action@v0.5.0
-    #   with:
-    #     github_token: ${{ secrets.GITHUB_TOKEN }}
