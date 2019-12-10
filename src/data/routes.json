@@ -6,7 +6,7 @@
     "number": "10",
     "origin": "MCAR",
     "destination": "DUBL",
-    "hexcolor": "#00AEEF",
+    "hexcolor": "#0099CC",
     "color": "Blue",
     "stations": [
       "MCAR",
@@ -29,7 +29,7 @@
     "number": "11",
     "origin": "DUBL",
     "destination": "DALY",
-    "hexcolor": "#00AEEF",
+    "hexcolor": "#0099CC",
     "color": "Blue",
     "stations": [
       "DUBL",
@@ -59,7 +59,7 @@
     "number": "12",
     "origin": "DALY",
     "destination": "DUBL",
-    "hexcolor": "#00AEEF",
+    "hexcolor": "#0099CC",
     "color": "Blue",
     "stations": [
       "DALY",
@@ -89,7 +89,7 @@
     "number": "9",
     "origin": "DUBL",
     "destination": "MCAR",
-    "hexcolor": "#00AEEF",
+    "hexcolor": "#0099CC",
     "color": "Blue",
     "stations": [
       "DUBL",
@@ -112,7 +112,7 @@
     "number": "7",
     "origin": "RICH",
     "destination": "MLBR",
-    "hexcolor": "#ED1C24",
+    "hexcolor": "#FF0000",
     "color": "Red",
     "stations": [
       "RICH",
@@ -147,7 +147,7 @@
     "number": "8",
     "origin": "MLBR",
     "destination": "RICH",
-    "hexcolor": "#ED1C24",
+    "hexcolor": "#FF0000",
     "color": "Red",
     "stations": [
       "MLBR",
@@ -210,7 +210,7 @@
     "number": "5",
     "origin": "WARM",
     "destination": "DALY",
-    "hexcolor": "#00A656",
+    "hexcolor": "#339933",
     "color": "Green",
     "stations": [
       "WARM",
@@ -242,7 +242,7 @@
     "number": "6",
     "origin": "DALY",
     "destination": "WARM",
-    "hexcolor": "#00A656",
+    "hexcolor": "#339933",
     "color": "Green",
     "stations": [
       "DALY",
@@ -274,7 +274,7 @@
     "number": "3",
     "origin": "WARM",
     "destination": "RICH",
-    "hexcolor": "#EDA61A",
+    "hexcolor": "#FF9933",
     "color": "Orange",
     "stations": [
       "WARM",
@@ -305,7 +305,7 @@
     "number": "4",
     "origin": "RICH",
     "destination": "WARM",
-    "hexcolor": "#EDA61A",
+    "hexcolor": "#FF9933",
     "color": "Orange",
     "stations": [
       "RICH",
@@ -364,7 +364,7 @@
     "number": "1",
     "origin": "ANTC",
     "destination": "MLBR",
-    "hexcolor": "#FFEA00",
+    "hexcolor": "#FFFF33",
     "color": "Yellow",
     "stations": [
       "ANTC",
@@ -404,7 +404,7 @@
     "number": "2",
     "origin": "MLBR",
     "destination": "ANTC",
-    "hexcolor": "#FFEA00",
+    "hexcolor": "#FFFF33",
     "color": "Yellow",
     "stations": [
       "MLBR",
