@@ -34,7 +34,7 @@ jobs:
     - name: Create PR with updated metadata
       uses: peter-evans/create-pull-request@v1.9.1
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.REPO_SCOPED_TOKEN }}
         commit-message: Update metadata from nightly cron
         author-email: bart.salmon@users.noreply.github.com
         author-name: Bart Salmon GitHub Action
