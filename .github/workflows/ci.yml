@@ -24,10 +24,10 @@ jobs:
       env:
         CI: true
 
-    - name: Verify production build
-      run: npm run build
-
     - name: Send coverage info to Coveralls
       uses: coverallsapp/github-action@v1.0.1
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Verify production build
+      run: npm run build

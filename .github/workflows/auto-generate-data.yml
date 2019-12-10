@@ -27,21 +27,17 @@ jobs:
     - name: Generate static data
       run: npm run gen:all
 
-    # Run unit tests to make sure tests on mock data still pass
-    - name: Run unit tests
-      run: npm test
-      env:
-        CI: true
-
-    - name: Commit updated files
-      run: |
-        git config --local user.email "bartsalmon@benmvp.com"
-        git config --local user.name "Bart Salmon GitHub Action"
-        git add -A
-        # Do nothing if there are no changes
-        git diff-index --quiet HEAD || git commit -m "Update data from nightly cron"
-
-    - name: Push data to repo
-      uses: ad-m/github-push-action@v0.5.0
+    # Submit pull request for any updated data (if exists)
+    - name: Create PR with updated metadata
+      uses: peter-evans/create-pull-request@v1.9.1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.REPO_SCOPED_TOKEN }}
+        commit-message: Update metadata from nightly cron
+        author-email: bart.salmon@users.noreply.github.com
+        author-name: Bart Salmon GitHub Action
+        title: 'Update metadata from nightly cron'
+        body: 'The nightly cron has auto-generated new metadata. Verify the changes and ensure that the tests still pass.'
+        labels: auto-generated-data
+        assignees: benmvp
+        branch: auto-generated-data
+        branch-suffix: none

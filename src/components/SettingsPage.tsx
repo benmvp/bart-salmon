@@ -157,9 +157,7 @@ const SettingsPage = ({
 
   return (
     <Box p={2}>
-      <Box mb={3}>
-        <Typography variant="h3" component="h1">Settings</Typography>
-      </Box>
+      <Typography variant="h3" component="h1" gutterBottom>Settings</Typography>
       <NumArrivals value={numArrivals} setValue={setNumArrivals} />
       <RiskinessFactor value={riskinessFactor} setValue={setRiskinessFactor} />
       <NumSalmonRoutes value={numSalmonRoutes} setValue={setNumSalmonRoutes} />
