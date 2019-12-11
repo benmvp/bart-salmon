@@ -36,7 +36,17 @@ jobs:
         author-email: bart.salmon@users.noreply.github.com
         author-name: Bart Salmon GitHub Action
         title: 'Update metadata from nightly cron'
-        body: 'The nightly cron has auto-generated new metadata. Verify the changes and ensure that the tests still pass.'
+        body: |
+          ## Problem
+
+          The nightly cron has auto-generated new metadata.
+
+          - _Summary of updated data_
+          - _Description of what tests failed (if any)_
+
+          ## Solution
+
+          _Explanation of what changes were made to make tests pass again (if any)_
         labels: auto-generated-data
         assignees: benmvp
         branch: auto-generated-data
