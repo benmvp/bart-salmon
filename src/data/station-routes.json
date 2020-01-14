@@ -12911,7 +12911,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 108
+      "time": 107
     },
     "ASHB": {
       "directRoutes": [
@@ -12958,11 +12958,6 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
         ]
       ],
       "time": 72
@@ -12989,7 +12984,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 86
+      "time": 85
     },
     "CIVC": {
       "directRoutes": [
@@ -13019,11 +13014,6 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
         ]
       ],
       "time": 64
@@ -13109,7 +13099,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 99
+      "time": 98
     },
     "DELN": {
       "directRoutes": [
@@ -13126,7 +13116,7 @@
           "ROUTE 3"
         ]
       ],
-      "time": 67
+      "time": 68
     },
     "PLZA": {
       "directRoutes": [
@@ -13143,7 +13133,7 @@
           "ROUTE 3"
         ]
       ],
-      "time": 64
+      "time": 65
     },
     "EMBR": {
       "directRoutes": [
@@ -13173,11 +13163,6 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
         ]
       ],
       "time": 94
@@ -13197,11 +13182,6 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
         ]
       ],
       "time": 60
@@ -13234,11 +13214,6 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
         ]
       ],
       "time": 80
@@ -13274,14 +13249,9 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
         ]
       ],
-      "time": 56
+      "time": 57
     },
     "MCAR": {
       "directRoutes": [
@@ -13324,7 +13294,7 @@
           "ROUTE 3"
         ]
       ],
-      "time": 61
+      "time": 62
     },
     "NCON": {
       "directRoutes": [
@@ -13359,12 +13329,6 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 4",
-          "ROUTE 20"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6",
           "ROUTE 20"
         ]
       ],
@@ -13416,7 +13380,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 100
+      "time": 99
     },
     "PHIL": {
       "directRoutes": [
@@ -13432,7 +13396,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 74
+      "time": 75
     },
     "POWL": {
       "directRoutes": [
@@ -13462,7 +13426,7 @@
           "ROUTE 3"
         ]
       ],
-      "time": 71
+      "time": 72
     },
     "ROCK": {
       "directRoutes": [
@@ -13521,11 +13485,6 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
         ]
       ],
       "time": 68
@@ -13545,11 +13504,6 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
         ]
       ],
       "time": 84
@@ -13582,11 +13536,6 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
         ]
       ],
       "time": 89
@@ -13622,14 +13571,9 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
         ]
       ],
-      "time": 101
+      "time": 100
     },
     "WDUB": {
       "directRoutes": [],
@@ -13653,7 +13597,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 96
+      "time": 95
     },
     "WOAK": {
       "directRoutes": [
