@@ -1,1 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+http://bartsalmon.netlify.com/* http://bartsalmon.benmvp.com/:splat 301!
+
+# Redirect all URLs to the app
 /* /index.html 200
