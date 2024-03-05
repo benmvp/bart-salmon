@@ -218,7 +218,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 62
+      "time": 49
     },
     "MONT": {
       "directRoutes": [
@@ -447,19 +447,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 40
+      "time": 38
     },
     "CAST": {
       "directRoutes": [
@@ -467,15 +459,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 47
+      "time": 43
     },
     "CIVC": {
       "directRoutes": [
@@ -494,19 +482,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 32
+      "time": 29
     },
     "COLM": {
       "directRoutes": [
@@ -551,15 +531,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 60
+      "time": 56
     },
     "DELN": {
       "directRoutes": [
@@ -601,15 +577,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 58
+      "time": 55
     },
     "FTVL": {
       "directRoutes": [
@@ -618,19 +590,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 28
+      "time": 26
     },
     "GLEN": {
       "directRoutes": [
@@ -648,15 +612,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 44
+      "time": 42
     },
     "LAFY": {
       "directRoutes": [
@@ -672,19 +632,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 24
+      "time": 22
     },
     "MCAR": {
       "directRoutes": [
@@ -705,7 +657,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 43
+      "time": 30
     },
     "MONT": {
       "directRoutes": [
@@ -748,17 +700,12 @@
           "ROUTE 20"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 4",
-          "ROUTE 20"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4",
           "ROUTE 20"
         ]
       ],
-      "time": 47
+      "time": 44
     },
     "ORIN": {
       "directRoutes": [
@@ -839,19 +786,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 36
+      "time": 33
     },
     "SHAY": {
       "directRoutes": [
@@ -859,15 +798,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 48
+      "time": 46
     },
     "SSAN": {
       "directRoutes": [
@@ -883,15 +818,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 53
+      "time": 51
     },
     "WCRK": {
       "directRoutes": [
@@ -906,15 +837,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 64
+      "time": 62
     },
     "WDUB": {
       "directRoutes": [
@@ -922,15 +849,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 57
+      "time": 53
     },
     "WOAK": {
       "directRoutes": [
@@ -1172,7 +1095,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 64
+      "time": 50
     },
     "MONT": {
       "directRoutes": [
@@ -1422,18 +1345,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 42
+      "time": 39
     },
     "CAST": {
       "directRoutes": [
@@ -1443,13 +1358,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 49
+      "time": 45
     },
     "CIVC": {
       "directRoutes": [
@@ -1469,18 +1380,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 33
+      "time": 31
     },
     "COLM": {
       "directRoutes": [
@@ -1527,13 +1430,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 62
+      "time": 58
     },
     "DELN": {
       "directRoutes": [
@@ -1575,15 +1474,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 60
+      "time": 57
     },
     "FTVL": {
       "directRoutes": [
@@ -1593,18 +1488,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 30
+      "time": 27
     },
     "GLEN": {
       "directRoutes": [
@@ -1622,15 +1509,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 46
+      "time": 43
     },
     "LAFY": {
       "directRoutes": [
@@ -1647,18 +1530,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 26
+      "time": 23
     },
     "MCAR": {
       "directRoutes": [
@@ -1679,7 +1554,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 41
+      "time": 28
     },
     "MONT": {
       "directRoutes": [
@@ -1722,17 +1597,12 @@
           "ROUTE 20"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 4",
-          "ROUTE 20"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4",
           "ROUTE 20"
         ]
       ],
-      "time": 48
+      "time": 46
     },
     "ORIN": {
       "directRoutes": [
@@ -1814,18 +1684,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 37
+      "time": 35
     },
     "SHAY": {
       "directRoutes": [
@@ -1833,15 +1695,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 50
+      "time": 47
     },
     "SSAN": {
       "directRoutes": [
@@ -1857,15 +1715,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 55
+      "time": 52
     },
     "WCRK": {
       "directRoutes": [
@@ -1880,15 +1734,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 66
+      "time": 64
     },
     "WDUB": {
       "directRoutes": [
@@ -1898,13 +1748,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 59
+      "time": 55
     },
     "WOAK": {
       "directRoutes": [
@@ -2179,7 +2025,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 123
+      "time": 110
     },
     "MONT": {
       "directRoutes": [
@@ -2641,7 +2487,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 71
+      "time": 58
     },
     "MONT": {
       "directRoutes": [
@@ -2932,18 +2778,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 47
+      "time": 44
     },
     "CAST": {
       "directRoutes": [
@@ -2953,13 +2791,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 54
+      "time": 50
     },
     "CIVC": {
       "directRoutes": [
@@ -2979,18 +2813,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 38
+      "time": 36
     },
     "COLM": {
       "directRoutes": [
@@ -3037,13 +2863,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 67
+      "time": 63
     },
     "DELN": {
       "directRoutes": [
@@ -3085,15 +2907,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 65
+      "time": 62
     },
     "FTVL": {
       "directRoutes": [
@@ -3103,18 +2921,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 35
+      "time": 32
     },
     "GLEN": {
       "directRoutes": [
@@ -3132,15 +2942,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 51
+      "time": 48
     },
     "LAFY": {
       "directRoutes": [
@@ -3157,18 +2963,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 31
+      "time": 28
     },
     "MCAR": {
       "directRoutes": [
@@ -3189,7 +2987,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 36
+      "time": 23
     },
     "MONT": {
       "directRoutes": [
@@ -3232,17 +3030,12 @@
           "ROUTE 20"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 4",
-          "ROUTE 20"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4",
           "ROUTE 20"
         ]
       ],
-      "time": 53
+      "time": 51
     },
     "ORIN": {
       "directRoutes": [
@@ -3324,18 +3117,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 42
+      "time": 40
     },
     "SHAY": {
       "directRoutes": [
@@ -3343,15 +3128,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 55
+      "time": 52
     },
     "SSAN": {
       "directRoutes": [
@@ -3367,15 +3148,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 60
+      "time": 57
     },
     "WCRK": {
       "directRoutes": [
@@ -3390,15 +3167,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 71
+      "time": 69
     },
     "WDUB": {
       "directRoutes": [
@@ -3408,13 +3181,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 64
+      "time": 60
     },
     "WOAK": {
       "directRoutes": [
@@ -3443,11 +3212,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 42
+      "time": 38
     },
     "19TH": {
       "directRoutes": [
@@ -3464,11 +3233,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 44
+      "time": 40
     },
     "ANTC": {
       "directRoutes": [],
@@ -3494,11 +3263,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 49
+      "time": 45
     },
     "CAST": {
       "directRoutes": [
@@ -3515,11 +3284,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 40
+      "time": 36
     },
     "COLS": {
       "directRoutes": [
@@ -3547,11 +3316,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 61
+      "time": 57
     },
     "CONC": {
       "directRoutes": [],
@@ -3570,11 +3339,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 53
+      "time": 49
     },
     "DBRK": {
       "directRoutes": [
@@ -3612,11 +3381,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 35
+      "time": 31
     },
     "FRMT": {
       "directRoutes": [
@@ -3643,11 +3412,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 47
+      "time": 43
     },
     "HAYW": {
       "directRoutes": [
@@ -3697,12 +3466,12 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1",
           "ROUTE 14"
         ]
       ],
-      "time": 88
+      "time": 71
     },
     "MONT": {
       "directRoutes": [
@@ -3711,11 +3480,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 37
+      "time": 33
     },
     "NBRK": {
       "directRoutes": [
@@ -3803,11 +3572,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 38
+      "time": 34
     },
     "RICH": {
       "directRoutes": [
@@ -3842,11 +3611,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 67
+      "time": 63
     },
     "SFIA": {
       "directRoutes": [],
@@ -3860,11 +3629,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 71
+      "time": 67
     },
     "SANL": {
       "directRoutes": [
@@ -3900,11 +3669,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 64
+      "time": 60
     },
     "UCTY": {
       "directRoutes": [
@@ -3947,11 +3716,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 28
+      "time": 24
     }
   },
   "CAST": {
@@ -3975,14 +3744,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 56
+      "time": 43
     },
     "19TH": {
       "directRoutes": [
@@ -4004,14 +3768,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 58
+      "time": 45
     },
     "ANTC": {
       "directRoutes": [],
@@ -4024,14 +3783,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 95
+      "time": 90
     },
     "ASHB": {
       "directRoutes": [],
@@ -4055,14 +3809,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 63
+      "time": 50
     },
     "BAYF": {
       "directRoutes": [
@@ -4080,14 +3829,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 54
+      "time": 41
     },
     "COLS": {
       "directRoutes": [
@@ -4111,14 +3855,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 74
+      "time": 61
     },
     "CONC": {
       "directRoutes": [],
@@ -4131,14 +3870,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 69
+      "time": 64
     },
     "DALY": {
       "directRoutes": [
@@ -4148,14 +3882,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 67
+      "time": 54
     },
     "DBRK": {
       "directRoutes": [],
@@ -4215,14 +3944,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 49
+      "time": 36
     },
     "FRMT": {
       "directRoutes": [],
@@ -4258,14 +3982,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 61
+      "time": 48
     },
     "HAYW": {
       "directRoutes": [],
@@ -4295,7 +4014,6 @@
         ],
         [
           "ROUTE 9",
-          "ROUTE 3",
           "ROUTE 2"
         ]
       ],
@@ -4336,15 +4054,9 @@
           "ROUTE 9",
           "ROUTE 1",
           "ROUTE 14"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1",
-          "ROUTE 14"
         ]
       ],
-      "time": 104
+      "time": 76
     },
     "MONT": {
       "directRoutes": [
@@ -4354,14 +4066,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 51
+      "time": 38
     },
     "NBRK": {
       "directRoutes": [],
@@ -4388,14 +4095,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 72
+      "time": 67
     },
     "OAKL": {
       "directRoutes": [],
@@ -4421,7 +4123,6 @@
         ],
         [
           "ROUTE 9",
-          "ROUTE 3",
           "ROUTE 2"
         ]
       ],
@@ -4438,14 +4139,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 79
+      "time": 74
     },
     "PCTR": {
       "directRoutes": [],
@@ -4458,14 +4154,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 87
+      "time": 82
     },
     "PHIL": {
       "directRoutes": [],
@@ -4477,7 +4168,6 @@
         ],
         [
           "ROUTE 9",
-          "ROUTE 3",
           "ROUTE 2"
         ]
       ],
@@ -4491,14 +4181,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 52
+      "time": 39
     },
     "RICH": {
       "directRoutes": [],
@@ -4524,7 +4209,6 @@
         ],
         [
           "ROUTE 9",
-          "ROUTE 3",
           "ROUTE 2"
         ]
       ],
@@ -4544,14 +4228,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 81
+      "time": 68
     },
     "SFIA": {
       "directRoutes": [],
@@ -4563,14 +4242,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 87
+      "time": 75
     },
     "SANL": {
       "directRoutes": [
@@ -4612,14 +4286,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 77
+      "time": 64
     },
     "UCTY": {
       "directRoutes": [],
@@ -4649,7 +4318,6 @@
         ],
         [
           "ROUTE 9",
-          "ROUTE 3",
           "ROUTE 2"
         ]
       ],
@@ -4688,11 +4356,10 @@
       "multiRoutes": [
         [
           "ROUTE 9",
-          "ROUTE 3",
           "ROUTE 1"
         ]
       ],
-      "time": 36
+      "time": 29
     }
   },
   "CIVC": {
@@ -4768,19 +4435,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 38
+      "time": 35
     },
     "CAST": {
       "directRoutes": [
@@ -4788,15 +4447,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 45
+      "time": 41
     },
     "COLS": {
       "directRoutes": [
@@ -4805,19 +4460,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 30
+      "time": 27
     },
     "COLM": {
       "directRoutes": [
@@ -4862,15 +4509,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 58
+      "time": 54
     },
     "DELN": {
       "directRoutes": [
@@ -4912,15 +4555,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 55
+      "time": 53
     },
     "FTVL": {
       "directRoutes": [
@@ -4929,19 +4568,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 26
+      "time": 23
     },
     "GLEN": {
       "directRoutes": [
@@ -4959,15 +4590,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 41
+      "time": 39
     },
     "LAFY": {
       "directRoutes": [
@@ -4983,19 +4610,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 22
+      "time": 20
     },
     "MCAR": {
       "directRoutes": [
@@ -5016,7 +4635,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 46
+      "time": 32
     },
     "MONT": {
       "directRoutes": [
@@ -5059,17 +4678,12 @@
           "ROUTE 20"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 4",
-          "ROUTE 20"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4",
           "ROUTE 20"
         ]
       ],
-      "time": 45
+      "time": 43
     },
     "ORIN": {
       "directRoutes": [
@@ -5150,19 +4764,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 34
+      "time": 31
     },
     "SHAY": {
       "directRoutes": [
@@ -5170,15 +4776,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 45
+      "time": 43
     },
     "SSAN": {
       "directRoutes": [
@@ -5194,15 +4796,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 50
+      "time": 48
     },
     "WCRK": {
       "directRoutes": [
@@ -5217,15 +4815,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 62
+      "time": 60
     },
     "WDUB": {
       "directRoutes": [
@@ -5233,15 +4827,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 55
+      "time": 51
     },
     "WOAK": {
       "directRoutes": [
@@ -5270,11 +4860,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 35
+      "time": 31
     },
     "19TH": {
       "directRoutes": [
@@ -5291,11 +4881,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 37
+      "time": 33
     },
     "ANTC": {
       "directRoutes": [],
@@ -5321,11 +4911,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 42
+      "time": 38
     },
     "BAYF": {
       "directRoutes": [
@@ -5352,11 +4942,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 32
+      "time": 28
     },
     "COLM": {
       "directRoutes": [],
@@ -5374,11 +4964,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 53
+      "time": 49
     },
     "CONC": {
       "directRoutes": [],
@@ -5397,11 +4987,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 46
+      "time": 42
     },
     "DBRK": {
       "directRoutes": [
@@ -5439,11 +5029,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 27
+      "time": 23
     },
     "FRMT": {
       "directRoutes": [
@@ -5470,11 +5060,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 39
+      "time": 35
     },
     "HAYW": {
       "directRoutes": [
@@ -5524,12 +5114,12 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1",
           "ROUTE 14"
         ]
       ],
-      "time": 81
+      "time": 63
     },
     "MONT": {
       "directRoutes": [
@@ -5538,11 +5128,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 29
+      "time": 25
     },
     "NBRK": {
       "directRoutes": [
@@ -5615,11 +5205,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 31
+      "time": 27
     },
     "RICH": {
       "directRoutes": [
@@ -5654,11 +5244,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 59
+      "time": 55
     },
     "SFIA": {
       "directRoutes": [],
@@ -5672,11 +5262,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 63
+      "time": 59
     },
     "SANL": {
       "directRoutes": [
@@ -5712,11 +5302,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 56
+      "time": 52
     },
     "UCTY": {
       "directRoutes": [
@@ -5759,11 +5349,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 21
+      "time": 17
     }
   },
   "COLM": {
@@ -5839,14 +5429,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 59
+      "time": 56
     },
     "CAST": {
       "directRoutes": [],
@@ -5860,7 +5446,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 69
+      "time": 64
     },
     "CIVC": {
       "directRoutes": [
@@ -5883,14 +5469,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 51
+      "time": 48
     },
     "CONC": {
       "directRoutes": [
@@ -5936,7 +5518,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 82
+      "time": 77
     },
     "DELN": {
       "directRoutes": [
@@ -5982,7 +5564,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 82
+      "time": 77
     },
     "FTVL": {
       "directRoutes": [],
@@ -5997,14 +5579,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 48
+      "time": 44
     },
     "GLEN": {
       "directRoutes": [
@@ -6026,7 +5604,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 68
+      "time": 63
     },
     "LAFY": {
       "directRoutes": [
@@ -6053,14 +5631,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 44
+      "time": 40
     },
     "MCAR": {
       "directRoutes": [
@@ -6081,7 +5655,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 28
+      "time": 15
     },
     "MONT": {
       "directRoutes": [
@@ -6134,7 +5708,7 @@
           "ROUTE 20"
         ]
       ],
-      "time": 68
+      "time": 63
     },
     "ORIN": {
       "directRoutes": [
@@ -6234,14 +5808,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 55
+      "time": 52
     },
     "SHAY": {
       "directRoutes": [],
@@ -6255,7 +5825,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 72
+      "time": 67
     },
     "SSAN": {
       "directRoutes": [
@@ -6277,7 +5847,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 77
+      "time": 72
     },
     "WCRK": {
       "directRoutes": [
@@ -6303,7 +5873,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 89
+      "time": 84
     },
     "WDUB": {
       "directRoutes": [],
@@ -6317,7 +5887,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 79
+      "time": 74
     },
     "WOAK": {
       "directRoutes": [
@@ -6590,7 +6160,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 96
+      "time": 83
     },
     "MONT": {
       "directRoutes": [
@@ -6857,18 +6427,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 51
+      "time": 48
     },
     "CAST": {
       "directRoutes": [
@@ -6878,13 +6440,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 58
+      "time": 54
     },
     "CIVC": {
       "directRoutes": [
@@ -6904,18 +6462,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 42
+      "time": 40
     },
     "COLM": {
       "directRoutes": [
@@ -6952,13 +6502,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 71
+      "time": 67
     },
     "DELN": {
       "directRoutes": [
@@ -7000,15 +6546,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 69
+      "time": 66
     },
     "FTVL": {
       "directRoutes": [
@@ -7018,18 +6560,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 39
+      "time": 36
     },
     "GLEN": {
       "directRoutes": [
@@ -7047,15 +6581,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 55
+      "time": 52
     },
     "LAFY": {
       "directRoutes": [
@@ -7072,18 +6602,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 35
+      "time": 32
     },
     "MCAR": {
       "directRoutes": [
@@ -7104,7 +6626,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 32
+      "time": 19
     },
     "MONT": {
       "directRoutes": [
@@ -7147,17 +6669,12 @@
           "ROUTE 20"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 4",
-          "ROUTE 20"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4",
           "ROUTE 20"
         ]
       ],
-      "time": 57
+      "time": 55
     },
     "ORIN": {
       "directRoutes": [
@@ -7239,18 +6756,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 46
+      "time": 44
     },
     "SHAY": {
       "directRoutes": [
@@ -7258,15 +6767,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 59
+      "time": 56
     },
     "SSAN": {
       "directRoutes": [
@@ -7282,15 +6787,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 64
+      "time": 61
     },
     "WCRK": {
       "directRoutes": [
@@ -7305,15 +6806,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 75
+      "time": 73
     },
     "WDUB": {
       "directRoutes": [
@@ -7323,13 +6820,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 68
+      "time": 64
     },
     "WOAK": {
       "directRoutes": [
@@ -7611,7 +7104,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 73
+      "time": 60
     },
     "MONT": {
       "directRoutes": [
@@ -7859,14 +7352,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 69
+      "time": 56
     },
     "19TH": {
       "directRoutes": [
@@ -7888,14 +7376,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 71
+      "time": 58
     },
     "ANTC": {
       "directRoutes": [],
@@ -7908,14 +7391,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 108
+      "time": 103
     },
     "ASHB": {
       "directRoutes": [],
@@ -7939,14 +7417,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 76
+      "time": 63
     },
     "BAYF": {
       "directRoutes": [
@@ -7972,14 +7445,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 67
+      "time": 54
     },
     "COLS": {
       "directRoutes": [
@@ -8003,14 +7471,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 87
+      "time": 74
     },
     "CONC": {
       "directRoutes": [],
@@ -8023,14 +7486,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 82
+      "time": 77
     },
     "DALY": {
       "directRoutes": [
@@ -8040,14 +7498,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 80
+      "time": 67
     },
     "DBRK": {
       "directRoutes": [],
@@ -8099,14 +7552,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 62
+      "time": 49
     },
     "FRMT": {
       "directRoutes": [],
@@ -8142,14 +7590,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 74
+      "time": 61
     },
     "HAYW": {
       "directRoutes": [],
@@ -8180,14 +7623,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 69
+      "time": 64
     },
     "LAKE": {
       "directRoutes": [
@@ -8224,15 +7662,9 @@
           "ROUTE 9",
           "ROUTE 1",
           "ROUTE 14"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1",
-          "ROUTE 14"
         ]
       ],
-      "time": 117
+      "time": 89
     },
     "MONT": {
       "directRoutes": [
@@ -8242,14 +7674,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 64
+      "time": 51
     },
     "NBRK": {
       "directRoutes": [],
@@ -8276,14 +7703,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 85
+      "time": 80
     },
     "OAKL": {
       "directRoutes": [],
@@ -8309,7 +7731,6 @@
         ],
         [
           "ROUTE 9",
-          "ROUTE 3",
           "ROUTE 2"
         ]
       ],
@@ -8326,14 +7747,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 92
+      "time": 87
     },
     "PCTR": {
       "directRoutes": [],
@@ -8346,14 +7762,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 100
+      "time": 95
     },
     "PHIL": {
       "directRoutes": [],
@@ -8366,14 +7777,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 76
+      "time": 72
     },
     "POWL": {
       "directRoutes": [
@@ -8383,14 +7789,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 65
+      "time": 52
     },
     "RICH": {
       "directRoutes": [],
@@ -8416,7 +7817,6 @@
         ],
         [
           "ROUTE 9",
-          "ROUTE 3",
           "ROUTE 2"
         ]
       ],
@@ -8436,14 +7836,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 93
+      "time": 81
     },
     "SFIA": {
       "directRoutes": [],
@@ -8455,14 +7850,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 100
+      "time": 88
     },
     "SANL": {
       "directRoutes": [
@@ -8504,14 +7894,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 90
+      "time": 77
     },
     "UCTY": {
       "directRoutes": [],
@@ -8542,14 +7927,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 74
+      "time": 69
     },
     "WARM": {
       "directRoutes": [],
@@ -8585,14 +7965,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 55
+      "time": 42
     }
   },
   "DELN": {
@@ -8872,7 +8247,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 82
+      "time": 69
     },
     "MONT": {
       "directRoutes": [
@@ -9384,7 +8759,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 79
+      "time": 66
     },
     "MONT": {
       "directRoutes": [
@@ -9693,18 +9068,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 33
+      "time": 30
     },
     "CAST": {
       "directRoutes": [
@@ -9712,15 +9079,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 40
+      "time": 36
     },
     "CIVC": {
       "directRoutes": [
@@ -9740,18 +9103,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 25
+      "time": 22
     },
     "COLM": {
       "directRoutes": [
@@ -9796,15 +9151,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 53
+      "time": 49
     },
     "DELN": {
       "directRoutes": [
@@ -9838,13 +9189,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 52
+      "time": 48
     },
     "FTVL": {
       "directRoutes": [
@@ -9854,18 +9201,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 21
+      "time": 18
     },
     "GLEN": {
       "directRoutes": [
@@ -9885,13 +9224,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 38
+      "time": 34
     },
     "LAFY": {
       "directRoutes": [
@@ -9908,18 +9243,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 18
+      "time": 15
     },
     "MCAR": {
       "directRoutes": [
@@ -9940,7 +9267,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 51
+      "time": 37
     },
     "MONT": {
       "directRoutes": [
@@ -9986,14 +9313,9 @@
           "ROUTE 2",
           "ROUTE 4",
           "ROUTE 20"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4",
-          "ROUTE 20"
         ]
       ],
-      "time": 42
+      "time": 38
     },
     "ORIN": {
       "directRoutes": [
@@ -10075,18 +9397,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 29
+      "time": 26
     },
     "SHAY": {
       "directRoutes": [
@@ -10096,13 +9410,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 42
+      "time": 38
     },
     "SSAN": {
       "directRoutes": [
@@ -10120,13 +9430,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 47
+      "time": 43
     },
     "WCRK": {
       "directRoutes": [
@@ -10143,13 +9449,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 59
+      "time": 55
     },
     "WDUB": {
       "directRoutes": [
@@ -10157,15 +9459,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 50
+      "time": 46
     },
     "WOAK": {
       "directRoutes": [
@@ -10441,7 +9739,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 112
+      "time": 99
     },
     "MONT": {
       "directRoutes": [
@@ -10682,11 +9980,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 31
+      "time": 27
     },
     "19TH": {
       "directRoutes": [
@@ -10703,11 +10001,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 33
+      "time": 29
     },
     "ANTC": {
       "directRoutes": [],
@@ -10733,11 +10031,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 38
+      "time": 34
     },
     "BAYF": {
       "directRoutes": [
@@ -10764,11 +10062,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 29
+      "time": 25
     },
     "COLS": {
       "directRoutes": [
@@ -10796,11 +10094,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 50
+      "time": 46
     },
     "CONC": {
       "directRoutes": [],
@@ -10819,11 +10117,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 42
+      "time": 38
     },
     "DBRK": {
       "directRoutes": [
@@ -10861,11 +10159,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 24
+      "time": 20
     },
     "FRMT": {
       "directRoutes": [
@@ -10882,11 +10180,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 36
+      "time": 32
     },
     "HAYW": {
       "directRoutes": [
@@ -10936,12 +10234,12 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1",
           "ROUTE 14"
         ]
       ],
-      "time": 77
+      "time": 60
     },
     "MONT": {
       "directRoutes": [
@@ -10950,11 +10248,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 26
+      "time": 22
     },
     "NBRK": {
       "directRoutes": [
@@ -11038,11 +10336,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 27
+      "time": 23
     },
     "RICH": {
       "directRoutes": [
@@ -11077,11 +10375,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 56
+      "time": 52
     },
     "SFIA": {
       "directRoutes": [],
@@ -11095,11 +10393,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 60
+      "time": 56
     },
     "SANL": {
       "directRoutes": [
@@ -11135,11 +10433,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 53
+      "time": 49
     },
     "UCTY": {
       "directRoutes": [
@@ -11182,11 +10480,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 17
+      "time": 13
     }
   },
   "GLEN": {
@@ -11263,18 +10561,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 45
+      "time": 42
     },
     "CAST": {
       "directRoutes": [
@@ -11284,13 +10574,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 52
+      "time": 48
     },
     "CIVC": {
       "directRoutes": [
@@ -11310,18 +10596,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 36
+      "time": 34
     },
     "COLM": {
       "directRoutes": [
@@ -11368,13 +10646,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 65
+      "time": 61
     },
     "DELN": {
       "directRoutes": [
@@ -11416,15 +10690,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 63
+      "time": 60
     },
     "FTVL": {
       "directRoutes": [
@@ -11434,18 +10704,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 33
+      "time": 30
     },
     "HAYW": {
       "directRoutes": [
@@ -11453,15 +10715,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 49
+      "time": 46
     },
     "LAFY": {
       "directRoutes": [
@@ -11478,18 +10736,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 29
+      "time": 26
     },
     "MCAR": {
       "directRoutes": [
@@ -11510,7 +10760,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 39
+      "time": 25
     },
     "MONT": {
       "directRoutes": [
@@ -11553,17 +10803,12 @@
           "ROUTE 20"
         ],
         [
-          "ROUTE 8",
-          "ROUTE 4",
-          "ROUTE 20"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4",
           "ROUTE 20"
         ]
       ],
-      "time": 51
+      "time": 49
     },
     "ORIN": {
       "directRoutes": [
@@ -11645,18 +10890,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
           "ROUTE 4"
         ]
       ],
-      "time": 40
+      "time": 38
     },
     "SHAY": {
       "directRoutes": [
@@ -11664,15 +10901,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 53
+      "time": 50
     },
     "SSAN": {
       "directRoutes": [
@@ -11688,15 +10921,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 58
+      "time": 55
     },
     "WCRK": {
       "directRoutes": [
@@ -11711,15 +10940,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 69
+      "time": 67
     },
     "WDUB": {
       "directRoutes": [
@@ -11729,13 +10954,9 @@
         [
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 62
+      "time": 58
     },
     "WOAK": {
       "directRoutes": [
@@ -12011,7 +11232,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 98
+      "time": 85
     },
     "MONT": {
       "directRoutes": [
@@ -12494,7 +11715,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 84
+      "time": 71
     },
     "MONT": {
       "directRoutes": [
@@ -12703,11 +11924,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 27
+      "time": 23
     },
     "19TH": {
       "directRoutes": [
@@ -12724,11 +11945,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 29
+      "time": 25
     },
     "ANTC": {
       "directRoutes": [],
@@ -12754,11 +11975,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 34
+      "time": 30
     },
     "BAYF": {
       "directRoutes": [
@@ -12785,11 +12006,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 24
+      "time": 20
     },
     "COLS": {
       "directRoutes": [
@@ -12817,11 +12038,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 45
+      "time": 41
     },
     "CONC": {
       "directRoutes": [],
@@ -12840,11 +12061,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 38
+      "time": 34
     },
     "DBRK": {
       "directRoutes": [
@@ -12882,11 +12103,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 19
+      "time": 15
     },
     "FRMT": {
       "directRoutes": [
@@ -12913,11 +12134,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 31
+      "time": 27
     },
     "HAYW": {
       "directRoutes": [
@@ -12957,12 +12178,12 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1",
           "ROUTE 14"
         ]
       ],
-      "time": 73
+      "time": 56
     },
     "MONT": {
       "directRoutes": [
@@ -12971,11 +12192,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 21
+      "time": 17
     },
     "NBRK": {
       "directRoutes": [
@@ -13059,11 +12280,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 23
+      "time": 19
     },
     "RICH": {
       "directRoutes": [
@@ -13098,11 +12319,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 52
+      "time": 48
     },
     "SFIA": {
       "directRoutes": [],
@@ -13116,11 +12337,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 56
+      "time": 52
     },
     "SANL": {
       "directRoutes": [
@@ -13156,11 +12377,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 48
+      "time": 44
     },
     "UCTY": {
       "directRoutes": [
@@ -13203,11 +12424,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 13
+      "time": 9
     }
   },
   "MCAR": {
@@ -13437,7 +12658,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 67
+      "time": 54
     },
     "MONT": {
       "directRoutes": [
@@ -13635,7 +12856,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 60
+      "time": 47
     },
     "16TH": {
       "directRoutes": [
@@ -13648,7 +12869,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 42
+      "time": 29
     },
     "19TH": {
       "directRoutes": [
@@ -13661,7 +12882,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 63
+      "time": 50
     },
     "24TH": {
       "directRoutes": [
@@ -13674,7 +12895,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 40
+      "time": 27
     },
     "ANTC": {
       "directRoutes": [
@@ -13690,7 +12911,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 121
+      "time": 107
     },
     "ASHB": {
       "directRoutes": [
@@ -13707,7 +12928,7 @@
           "ROUTE 3"
         ]
       ],
-      "time": 70
+      "time": 57
     },
     "BALB": {
       "directRoutes": [
@@ -13720,7 +12941,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 35
+      "time": 22
     },
     "BAYF": {
       "directRoutes": [],
@@ -13736,20 +12957,10 @@
         [
           "ROUTE 13",
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 92
+      "time": 72
     },
     "CAST": {
       "directRoutes": [],
@@ -13771,15 +12982,9 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 103
+      "time": 85
     },
     "CIVC": {
       "directRoutes": [
@@ -13792,7 +12997,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 44
+      "time": 31
     },
     "COLS": {
       "directRoutes": [],
@@ -13808,20 +13013,10 @@
         [
           "ROUTE 13",
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 84
+      "time": 64
     },
     "COLM": {
       "directRoutes": [
@@ -13834,7 +13029,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 28
+      "time": 14
     },
     "CONC": {
       "directRoutes": [
@@ -13850,7 +13045,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 93
+      "time": 80
     },
     "DALY": {
       "directRoutes": [
@@ -13863,7 +13058,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 31
+      "time": 18
     },
     "DBRK": {
       "directRoutes": [
@@ -13880,7 +13075,7 @@
           "ROUTE 3"
         ]
       ],
-      "time": 72
+      "time": 59
     },
     "DUBL": {
       "directRoutes": [],
@@ -13902,15 +13097,9 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 116
+      "time": 98
     },
     "DELN": {
       "directRoutes": [
@@ -13927,7 +13116,7 @@
           "ROUTE 3"
         ]
       ],
-      "time": 81
+      "time": 68
     },
     "PLZA": {
       "directRoutes": [
@@ -13944,7 +13133,7 @@
           "ROUTE 3"
         ]
       ],
-      "time": 78
+      "time": 65
     },
     "EMBR": {
       "directRoutes": [
@@ -13957,7 +13146,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 49
+      "time": 36
     },
     "FRMT": {
       "directRoutes": [],
@@ -13973,15 +13162,10 @@
         [
           "ROUTE 13",
           "ROUTE 2",
-          "ROUTE 6"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 110
+      "time": 94
     },
     "FTVL": {
       "directRoutes": [],
@@ -13997,20 +13181,10 @@
         [
           "ROUTE 13",
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 80
+      "time": 60
     },
     "GLEN": {
       "directRoutes": [
@@ -14023,7 +13197,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 37
+      "time": 24
     },
     "HAYW": {
       "directRoutes": [],
@@ -14039,15 +13213,10 @@
         [
           "ROUTE 13",
           "ROUTE 2",
-          "ROUTE 6"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 96
+      "time": 80
     },
     "LAFY": {
       "directRoutes": [
@@ -14063,7 +13232,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 80
+      "time": 67
     },
     "LAKE": {
       "directRoutes": [],
@@ -14079,20 +13248,10 @@
         [
           "ROUTE 13",
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 77
+      "time": 57
     },
     "MCAR": {
       "directRoutes": [
@@ -14105,7 +13264,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 67
+      "time": 54
     },
     "MONT": {
       "directRoutes": [
@@ -14118,7 +13277,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 48
+      "time": 35
     },
     "NBRK": {
       "directRoutes": [
@@ -14135,7 +13294,7 @@
           "ROUTE 3"
         ]
       ],
-      "time": 75
+      "time": 62
     },
     "NCON": {
       "directRoutes": [
@@ -14151,7 +13310,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 96
+      "time": 83
     },
     "OAKL": {
       "directRoutes": [],
@@ -14169,17 +13328,11 @@
         [
           "ROUTE 13",
           "ROUTE 2",
-          "ROUTE 6",
-          "ROUTE 20"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
           "ROUTE 4",
           "ROUTE 20"
         ]
       ],
-      "time": 95
+      "time": 79
     },
     "ORIN": {
       "directRoutes": [
@@ -14195,7 +13348,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 76
+      "time": 63
     },
     "PITT": {
       "directRoutes": [
@@ -14211,7 +13364,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 103
+      "time": 90
     },
     "PCTR": {
       "directRoutes": [
@@ -14227,7 +13380,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 113
+      "time": 99
     },
     "PHIL": {
       "directRoutes": [
@@ -14243,7 +13396,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 88
+      "time": 75
     },
     "POWL": {
       "directRoutes": [
@@ -14256,7 +13409,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 46
+      "time": 33
     },
     "RICH": {
       "directRoutes": [
@@ -14273,7 +13426,7 @@
           "ROUTE 3"
         ]
       ],
-      "time": 85
+      "time": 72
     },
     "ROCK": {
       "directRoutes": [
@@ -14289,7 +13442,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 70
+      "time": 57
     },
     "SBRN": {
       "directRoutes": [
@@ -14302,7 +13455,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 21
+      "time": 8
     },
     "SFIA": {
       "directRoutes": [
@@ -14331,20 +13484,10 @@
         [
           "ROUTE 13",
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 88
+      "time": 68
     },
     "SHAY": {
       "directRoutes": [],
@@ -14360,15 +13503,10 @@
         [
           "ROUTE 13",
           "ROUTE 2",
-          "ROUTE 6"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 100
+      "time": 84
     },
     "SSAN": {
       "directRoutes": [
@@ -14381,7 +13519,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 25
+      "time": 11
     },
     "UCTY": {
       "directRoutes": [],
@@ -14397,15 +13535,10 @@
         [
           "ROUTE 13",
           "ROUTE 2",
-          "ROUTE 6"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 105
+      "time": 89
     },
     "WCRK": {
       "directRoutes": [
@@ -14421,7 +13554,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 85
+      "time": 72
     },
     "WARM": {
       "directRoutes": [],
@@ -14437,15 +13570,10 @@
         [
           "ROUTE 13",
           "ROUTE 2",
-          "ROUTE 6"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 117
+      "time": 100
     },
     "WDUB": {
       "directRoutes": [],
@@ -14467,15 +13595,9 @@
           "ROUTE 13",
           "ROUTE 2",
           "ROUTE 10"
-        ],
-        [
-          "ROUTE 13",
-          "ROUTE 2",
-          "ROUTE 6",
-          "ROUTE 10"
         ]
       ],
-      "time": 113
+      "time": 95
     },
     "WOAK": {
       "directRoutes": [
@@ -14488,7 +13610,7 @@
           "ROUTE 2"
         ]
       ],
-      "time": 56
+      "time": 43
     }
   },
   "MONT": {
@@ -14565,18 +13687,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 34
+      "time": 32
     },
     "CAST": {
       "directRoutes": [
@@ -14584,15 +13698,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 41
+      "time": 37
     },
     "CIVC": {
       "directRoutes": [
@@ -14612,18 +13722,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 26
+      "time": 23
     },
     "COLM": {
       "directRoutes": [
@@ -14668,15 +13770,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 54
+      "time": 50
     },
     "DELN": {
       "directRoutes": [
@@ -14720,13 +13818,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 53
+      "time": 49
     },
     "FTVL": {
       "directRoutes": [
@@ -14736,18 +13830,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 22
+      "time": 20
     },
     "GLEN": {
       "directRoutes": [
@@ -14767,13 +13853,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 40
+      "time": 36
     },
     "LAFY": {
       "directRoutes": [
@@ -14790,18 +13872,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 19
+      "time": 16
     },
     "MCAR": {
       "directRoutes": [
@@ -14822,7 +13896,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 49
+      "time": 35
     },
     "NBRK": {
       "directRoutes": [
@@ -14858,14 +13932,9 @@
           "ROUTE 2",
           "ROUTE 4",
           "ROUTE 20"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4",
-          "ROUTE 20"
         ]
       ],
-      "time": 43
+      "time": 39
     },
     "ORIN": {
       "directRoutes": [
@@ -14947,18 +14016,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 30
+      "time": 27
     },
     "SHAY": {
       "directRoutes": [
@@ -14968,13 +14029,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 44
+      "time": 40
     },
     "SSAN": {
       "directRoutes": [
@@ -14992,13 +14049,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 49
+      "time": 45
     },
     "WCRK": {
       "directRoutes": [
@@ -15015,13 +14068,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 60
+      "time": 56
     },
     "WDUB": {
       "directRoutes": [
@@ -15029,15 +14078,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 51
+      "time": 47
     },
     "WOAK": {
       "directRoutes": [
@@ -15327,7 +14372,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 76
+      "time": 63
     },
     "MONT": {
       "directRoutes": [
@@ -15815,7 +14860,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 100
+      "time": 86
     },
     "MONT": {
       "directRoutes": [
@@ -16029,11 +15074,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 49
+      "time": 45
     },
     "19TH": {
       "directRoutes": [],
@@ -16062,11 +15107,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 51
+      "time": 47
     },
     "ANTC": {
       "directRoutes": [],
@@ -16102,11 +15147,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 56
+      "time": 52
     },
     "BAYF": {
       "directRoutes": [],
@@ -16157,11 +15202,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 47
+      "time": 43
     },
     "COLS": {
       "directRoutes": [
@@ -16190,11 +15235,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 68
+      "time": 64
     },
     "CONC": {
       "directRoutes": [],
@@ -16220,11 +15265,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 60
+      "time": 56
     },
     "DBRK": {
       "directRoutes": [],
@@ -16283,11 +15328,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 42
+      "time": 38
     },
     "FRMT": {
       "directRoutes": [],
@@ -16338,11 +15383,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 54
+      "time": 50
     },
     "HAYW": {
       "directRoutes": [],
@@ -16420,12 +15465,12 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1",
           "ROUTE 14"
         ]
       ],
-      "time": 96
+      "time": 79
     },
     "MONT": {
       "directRoutes": [],
@@ -16440,11 +15485,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 44
+      "time": 40
     },
     "NBRK": {
       "directRoutes": [],
@@ -16524,11 +15569,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 45
+      "time": 41
     },
     "RICH": {
       "directRoutes": [],
@@ -16571,11 +15616,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 74
+      "time": 70
     },
     "SFIA": {
       "directRoutes": [],
@@ -16592,11 +15637,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 78
+      "time": 74
     },
     "SANL": {
       "directRoutes": [],
@@ -16654,11 +15699,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 71
+      "time": 67
     },
     "UCTY": {
       "directRoutes": [],
@@ -16726,11 +15771,11 @@
         ],
         [
           "ROUTE 19",
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 35
+      "time": 31
     }
   },
   "ORIN": {
@@ -16998,7 +16043,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 79
+      "time": 66
     },
     "MONT": {
       "directRoutes": [
@@ -17449,7 +16494,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 106
+      "time": 92
     },
     "MONT": {
       "directRoutes": [
@@ -17904,7 +16949,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 116
+      "time": 103
     },
     "MONT": {
       "directRoutes": [
@@ -18359,7 +17404,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 91
+      "time": 78
     },
     "MONT": {
       "directRoutes": [
@@ -18619,18 +17664,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 36
+      "time": 34
     },
     "CAST": {
       "directRoutes": [
@@ -18638,15 +17675,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 43
+      "time": 39
     },
     "CIVC": {
       "directRoutes": [
@@ -18666,18 +17699,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 28
+      "time": 25
     },
     "COLM": {
       "directRoutes": [
@@ -18722,15 +17747,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 56
+      "time": 52
     },
     "DELN": {
       "directRoutes": [
@@ -18774,13 +17795,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 55
+      "time": 51
     },
     "FTVL": {
       "directRoutes": [
@@ -18790,18 +17807,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 24
+      "time": 22
     },
     "GLEN": {
       "directRoutes": [
@@ -18821,13 +17830,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 41
+      "time": 38
     },
     "LAFY": {
       "directRoutes": [
@@ -18844,18 +17849,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 21
+      "time": 18
     },
     "MCAR": {
       "directRoutes": [
@@ -18876,7 +17873,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 47
+      "time": 34
     },
     "MONT": {
       "directRoutes": [
@@ -18922,14 +17919,9 @@
           "ROUTE 2",
           "ROUTE 4",
           "ROUTE 20"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4",
-          "ROUTE 20"
         ]
       ],
-      "time": 45
+      "time": 41
     },
     "ORIN": {
       "directRoutes": [
@@ -19001,18 +17993,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 32
+      "time": 29
     },
     "SHAY": {
       "directRoutes": [
@@ -19022,13 +18006,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 45
+      "time": 42
     },
     "SSAN": {
       "directRoutes": [
@@ -19046,13 +18026,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 50
+      "time": 47
     },
     "WCRK": {
       "directRoutes": [
@@ -19069,13 +18045,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 62
+      "time": 58
     },
     "WDUB": {
       "directRoutes": [
@@ -19083,15 +18055,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 53
+      "time": 49
     },
     "WOAK": {
       "directRoutes": [
@@ -19389,7 +18357,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 86
+      "time": 73
     },
     "MONT": {
       "directRoutes": [
@@ -19877,7 +18845,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 73
+      "time": 60
     },
     "MONT": {
       "directRoutes": [
@@ -20132,14 +19100,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 66
+      "time": 62
     },
     "CAST": {
       "directRoutes": [],
@@ -20153,7 +19117,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 75
+      "time": 71
     },
     "CIVC": {
       "directRoutes": [
@@ -20176,14 +19140,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 58
+      "time": 54
     },
     "COLM": {
       "directRoutes": [
@@ -20237,7 +19197,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 88
+      "time": 84
     },
     "DELN": {
       "directRoutes": [
@@ -20283,7 +19243,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 88
+      "time": 83
     },
     "FTVL": {
       "directRoutes": [],
@@ -20298,14 +19258,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 54
+      "time": 50
     },
     "GLEN": {
       "directRoutes": [
@@ -20327,7 +19283,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 74
+      "time": 69
     },
     "LAFY": {
       "directRoutes": [
@@ -20354,14 +19310,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 50
+      "time": 46
     },
     "MCAR": {
       "directRoutes": [
@@ -20382,7 +19334,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 22
+      "time": 8
     },
     "MONT": {
       "directRoutes": [
@@ -20435,7 +19387,7 @@
           "ROUTE 20"
         ]
       ],
-      "time": 74
+      "time": 69
     },
     "ORIN": {
       "directRoutes": [
@@ -20527,14 +19479,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 62
+      "time": 58
     },
     "SHAY": {
       "directRoutes": [],
@@ -20548,7 +19496,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 78
+      "time": 73
     },
     "SSAN": {
       "directRoutes": [
@@ -20570,7 +19518,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 83
+      "time": 78
     },
     "WCRK": {
       "directRoutes": [
@@ -20596,7 +19544,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 95
+      "time": 90
     },
     "WDUB": {
       "directRoutes": [],
@@ -20610,7 +19558,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 85
+      "time": 81
     },
     "WOAK": {
       "directRoutes": [
@@ -20687,14 +19635,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 69
+      "time": 66
     },
     "CAST": {
       "directRoutes": [],
@@ -20708,7 +19652,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 79
+      "time": 74
     },
     "CIVC": {
       "directRoutes": [
@@ -20730,14 +19674,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 61
+      "time": 58
     },
     "COLM": {
       "directRoutes": [
@@ -20782,7 +19722,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 92
+      "time": 87
     },
     "DELN": {
       "directRoutes": [],
@@ -20823,7 +19763,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 90
+      "time": 87
     },
     "FTVL": {
       "directRoutes": [],
@@ -20838,14 +19778,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 58
+      "time": 54
     },
     "GLEN": {
       "directRoutes": [
@@ -20866,7 +19802,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 76
+      "time": 73
     },
     "LAFY": {
       "directRoutes": [
@@ -20888,14 +19824,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 54
+      "time": 50
     },
     "MCAR": {
       "directRoutes": [
@@ -20960,7 +19892,7 @@
           "ROUTE 20"
         ]
       ],
-      "time": 76
+      "time": 72
     },
     "ORIN": {
       "directRoutes": [
@@ -21034,14 +19966,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 65
+      "time": 62
     },
     "SHAY": {
       "directRoutes": [],
@@ -21055,7 +19983,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 80
+      "time": 77
     },
     "SSAN": {
       "directRoutes": [
@@ -21076,7 +20004,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 85
+      "time": 82
     },
     "WCRK": {
       "directRoutes": [
@@ -21097,7 +20025,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 97
+      "time": 94
     },
     "WDUB": {
       "directRoutes": [],
@@ -21111,7 +20039,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 89
+      "time": 84
     },
     "WOAK": {
       "directRoutes": [
@@ -21137,11 +20065,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 39
+      "time": 35
     },
     "19TH": {
       "directRoutes": [
@@ -21158,11 +20086,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 41
+      "time": 37
     },
     "ANTC": {
       "directRoutes": [],
@@ -21188,11 +20116,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 46
+      "time": 42
     },
     "BAYF": {
       "directRoutes": [
@@ -21219,11 +20147,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 36
+      "time": 33
     },
     "COLS": {
       "directRoutes": [
@@ -21251,11 +20179,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 57
+      "time": 54
     },
     "CONC": {
       "directRoutes": [],
@@ -21274,11 +20202,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 50
+      "time": 46
     },
     "DBRK": {
       "directRoutes": [
@@ -21316,11 +20244,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 31
+      "time": 28
     },
     "FRMT": {
       "directRoutes": [
@@ -21347,11 +20275,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 43
+      "time": 40
     },
     "HAYW": {
       "directRoutes": [
@@ -21401,12 +20329,12 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1",
           "ROUTE 14"
         ]
       ],
-      "time": 85
+      "time": 68
     },
     "MONT": {
       "directRoutes": [
@@ -21415,11 +20343,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 33
+      "time": 30
     },
     "NBRK": {
       "directRoutes": [
@@ -21507,11 +20435,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 35
+      "time": 31
     },
     "RICH": {
       "directRoutes": [
@@ -21546,11 +20474,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 64
+      "time": 60
     },
     "SFIA": {
       "directRoutes": [],
@@ -21564,11 +20492,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 68
+      "time": 64
     },
     "SHAY": {
       "directRoutes": [
@@ -21594,11 +20522,11 @@
           "ROUTE 1"
         ],
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 60
+      "time": 57
     },
     "UCTY": {
       "directRoutes": [
@@ -21641,11 +20569,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 3",
+          "ROUTE 9",
           "ROUTE 1"
         ]
       ],
-      "time": 25
+      "time": 21
     }
   },
   "SHAY": {
@@ -21957,7 +20885,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 102
+      "time": 89
     },
     "MONT": {
       "directRoutes": [
@@ -22274,14 +21202,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 62
+      "time": 59
     },
     "CAST": {
       "directRoutes": [],
@@ -22295,7 +21219,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 72
+      "time": 67
     },
     "CIVC": {
       "directRoutes": [
@@ -22318,14 +21242,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 54
+      "time": 51
     },
     "COLM": {
       "directRoutes": [
@@ -22379,7 +21299,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 85
+      "time": 80
     },
     "DELN": {
       "directRoutes": [
@@ -22425,7 +21345,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 85
+      "time": 80
     },
     "FTVL": {
       "directRoutes": [],
@@ -22440,14 +21360,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 51
+      "time": 47
     },
     "GLEN": {
       "directRoutes": [
@@ -22469,7 +21385,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 71
+      "time": 66
     },
     "LAFY": {
       "directRoutes": [
@@ -22496,14 +21412,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 47
+      "time": 43
     },
     "MCAR": {
       "directRoutes": [
@@ -22524,7 +21436,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 25
+      "time": 12
     },
     "MONT": {
       "directRoutes": [
@@ -22577,7 +21489,7 @@
           "ROUTE 20"
         ]
       ],
-      "time": 71
+      "time": 66
     },
     "ORIN": {
       "directRoutes": [
@@ -22677,14 +21589,10 @@
         ],
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 58
+      "time": 55
     },
     "SHAY": {
       "directRoutes": [],
@@ -22698,7 +21606,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 75
+      "time": 70
     },
     "UCTY": {
       "directRoutes": [],
@@ -22712,7 +21620,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 80
+      "time": 75
     },
     "WCRK": {
       "directRoutes": [
@@ -22738,7 +21646,7 @@
           "ROUTE 4"
         ]
       ],
-      "time": 92
+      "time": 87
     },
     "WDUB": {
       "directRoutes": [],
@@ -22752,7 +21660,7 @@
           "ROUTE 10"
         ]
       ],
-      "time": 82
+      "time": 77
     },
     "WOAK": {
       "directRoutes": [
@@ -23034,7 +21942,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 107
+      "time": 94
     },
     "MONT": {
       "directRoutes": [
@@ -23516,7 +22424,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 88
+      "time": 75
     },
     "MONT": {
       "directRoutes": [
@@ -23973,7 +22881,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 118
+      "time": 105
     },
     "MONT": {
       "directRoutes": [
@@ -24211,14 +23119,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 66
+      "time": 53
     },
     "19TH": {
       "directRoutes": [
@@ -24240,14 +23143,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 68
+      "time": 55
     },
     "ANTC": {
       "directRoutes": [],
@@ -24260,14 +23158,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 105
+      "time": 100
     },
     "ASHB": {
       "directRoutes": [],
@@ -24291,14 +23184,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 73
+      "time": 60
     },
     "BAYF": {
       "directRoutes": [
@@ -24324,14 +23212,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 64
+      "time": 51
     },
     "COLS": {
       "directRoutes": [
@@ -24355,14 +23238,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 84
+      "time": 71
     },
     "CONC": {
       "directRoutes": [],
@@ -24375,14 +23253,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 79
+      "time": 74
     },
     "DALY": {
       "directRoutes": [
@@ -24392,14 +23265,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 77
+      "time": 64
     },
     "DBRK": {
       "directRoutes": [],
@@ -24459,14 +23327,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 59
+      "time": 46
     },
     "FRMT": {
       "directRoutes": [],
@@ -24502,14 +23365,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 71
+      "time": 58
     },
     "HAYW": {
       "directRoutes": [],
@@ -24540,14 +23398,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 66
+      "time": 61
     },
     "LAKE": {
       "directRoutes": [
@@ -24584,15 +23437,9 @@
           "ROUTE 9",
           "ROUTE 1",
           "ROUTE 14"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1",
-          "ROUTE 14"
         ]
       ],
-      "time": 114
+      "time": 86
     },
     "MONT": {
       "directRoutes": [
@@ -24602,14 +23449,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 61
+      "time": 48
     },
     "NBRK": {
       "directRoutes": [],
@@ -24636,14 +23478,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 82
+      "time": 77
     },
     "OAKL": {
       "directRoutes": [],
@@ -24669,7 +23506,6 @@
         ],
         [
           "ROUTE 9",
-          "ROUTE 3",
           "ROUTE 2"
         ]
       ],
@@ -24686,14 +23522,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 89
+      "time": 84
     },
     "PCTR": {
       "directRoutes": [],
@@ -24706,14 +23537,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 97
+      "time": 92
     },
     "PHIL": {
       "directRoutes": [],
@@ -24726,14 +23552,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 73
+      "time": 69
     },
     "POWL": {
       "directRoutes": [
@@ -24743,14 +23564,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 62
+      "time": 49
     },
     "RICH": {
       "directRoutes": [],
@@ -24776,7 +23592,6 @@
         ],
         [
           "ROUTE 9",
-          "ROUTE 3",
           "ROUTE 2"
         ]
       ],
@@ -24796,14 +23611,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 91
+      "time": 78
     },
     "SFIA": {
       "directRoutes": [],
@@ -24815,14 +23625,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 97
+      "time": 85
     },
     "SANL": {
       "directRoutes": [
@@ -24864,14 +23669,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 87
+      "time": 74
     },
     "UCTY": {
       "directRoutes": [],
@@ -24902,14 +23702,9 @@
         [
           "ROUTE 9",
           "ROUTE 2"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 2"
         ]
       ],
-      "time": 71
+      "time": 66
     },
     "WARM": {
       "directRoutes": [],
@@ -24937,14 +23732,9 @@
         [
           "ROUTE 9",
           "ROUTE 1"
-        ],
-        [
-          "ROUTE 9",
-          "ROUTE 3",
-          "ROUTE 1"
         ]
       ],
-      "time": 52
+      "time": 39
     }
   },
   "WOAK": {
@@ -25021,18 +23811,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 26
+      "time": 23
     },
     "CAST": {
       "directRoutes": [
@@ -25040,15 +23822,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 33
+      "time": 29
     },
     "CIVC": {
       "directRoutes": [
@@ -25068,18 +23846,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 18
+      "time": 15
     },
     "COLM": {
       "directRoutes": [
@@ -25124,15 +23894,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 46
+      "time": 42
     },
     "DELN": {
       "directRoutes": [
@@ -25176,13 +23942,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 45
+      "time": 41
     },
     "FTVL": {
       "directRoutes": [
@@ -25192,18 +23954,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 14
+      "time": 11
     },
     "GLEN": {
       "directRoutes": [
@@ -25223,13 +23977,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 31
+      "time": 27
     },
     "LAFY": {
       "directRoutes": [
@@ -25246,18 +23996,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 11
+      "time": 8
     },
     "MCAR": {
       "directRoutes": [
@@ -25278,7 +24020,7 @@
           "ROUTE 14"
         ]
       ],
-      "time": 57
+      "time": 44
     },
     "MONT": {
       "directRoutes": [
@@ -25324,14 +24066,9 @@
           "ROUTE 2",
           "ROUTE 4",
           "ROUTE 20"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4",
-          "ROUTE 20"
         ]
       ],
-      "time": 34
+      "time": 30
     },
     "ORIN": {
       "directRoutes": [
@@ -25413,18 +24150,10 @@
       "multiRoutes": [
         [
           "ROUTE 2",
-          "ROUTE 10"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
-        ],
-        [
-          "ROUTE 2",
           "ROUTE 4"
         ]
       ],
-      "time": 22
+      "time": 19
     },
     "SHAY": {
       "directRoutes": [
@@ -25434,13 +24163,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 35
+      "time": 31
     },
     "SSAN": {
       "directRoutes": [
@@ -25458,13 +24183,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 40
+      "time": 36
     },
     "WCRK": {
       "directRoutes": [
@@ -25481,13 +24202,9 @@
         [
           "ROUTE 2",
           "ROUTE 4"
-        ],
-        [
-          "ROUTE 8",
-          "ROUTE 4"
         ]
       ],
-      "time": 52
+      "time": 48
     },
     "WDUB": {
       "directRoutes": [
@@ -25495,15 +24212,11 @@
       ],
       "multiRoutes": [
         [
-          "ROUTE 6",
-          "ROUTE 10"
-        ],
-        [
           "ROUTE 2",
           "ROUTE 10"
         ]
       ],
-      "time": 43
+      "time": 39
     }
   }
 }
